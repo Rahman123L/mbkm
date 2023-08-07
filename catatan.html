@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RFERTECH</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        extend: {
+            spacing: {
+            13: "3.25rem",
+            },
+            fontFamily: {
+            inter: ["Inter"],
+            ArchivoBlack: ["Archivo Black"],
+            Poppins: ["Poppins"],
+            },
+            animation: {
+            "spin-slow": "spin 3s linear infinite",
+            shake: "shake 1s ease-in-out infinite",
+            },
+            keyframes: {
+            shake: {
+                "0%, 100%": {
+                transform: "rotate(-10deg)",
+                },
+                "50%": {
+                transform: "rotate(10deg)",
+                },
+            },
+            },
+        },
+        },
+    };
+    </script>
+    <!-- Tailwind End -->
+
+    <!-- Css Start -->
+    <style>
+
+    </style>
+    <!-- Css End -->
+
+</head>
+<body class="bg-[#1A202C]">
+
+    <div class="flex">
+        <div class="flex gap-3 overflow-hidden">
+            <div class="w-[100px] h-[100px] bg-blue-500"></div>
+            <div class="w-[500px] h-[100px] bg-blue-500"></div>
+        </div>
+        <div class="grow"></div>
+        <div class="w-[100px] h-[100px] bg-red-500"></div>
+    </div>
+
+    <div>
+        <h1 for="email" class="mt-3 font-inter font-bold text-sm text-[#39d0ce]">Category :</h1>
+
+        <div class="my-2" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+            <input x-model="selectedOption" @click="isOpen = !isOpen" placeholder="Category" class="w-full py-1 text-gray-700 placeholder-gray-400 bg-white rounded-lg pl-5 pr-5 rtl:pr-11 rtl:pl-5 focus:ring-[#39d0ce] focus:outline-none focus:ring"></input>
+            
+            <ul x-show="isOpen" class="py-2 px-4 mt-2 bg-white border rounded shadow-md text-center">
+                <li><a @click="selectedOption = 'DESIGN UI/UX'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#39d0ce]">DESIGN UI/UX</a></li>
+                <li><a @click="selectedOption = 'FRONTEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#39d0ce]">FRONTEND</a></li>
+                <li><a @click="selectedOption = 'BACKEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#39d0ce]">BACKEND</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav x-data="{ isOpen: false }" class="fixed bg-white shadow dark:bg-gray-800">
+        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
+                </a>
+    
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+                
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-[17rem] h-[47rem] px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+                <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Home</a>
+                    <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Shop</a>
+                    <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Contact</a>
+                    <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">About</a>
+                </div>
+    
+                <div class="flex justify-center md:block">
+                    <a class="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300" href="#">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.70711 15.2929C4.07714 15.9229 4.52331 17 5.41421 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+    
+                        <span class="absolute top-0 left-0 p-1 text-xs text-white bg-blue-500 rounded-full"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+      
+    
+    <!-- Script Start -->
+    <script>
+        // DarkMode
+        const checkbox = document.querySelector ('#toggle');
+        const html = document.querySelector ('html');
+
+        checkbox.addEventListener ('click', function () {
+            checkbox.checked ? html.classList.add ('dark') : html.classList.remove ('dark');
+        });
+
+        // Hamburger
+        const hamburger = document.querySelector ('#hamburger');
+        const navMenu = document.querySelector ('#nav-menu');
+
+        hamburger.addEventListener ('click', function () {
+            hamburger.classList.toggle ('hamburger-active');
+            navMenu.classList.toggle ('hidden');
+        });
+    </script>
+    <!-- Script End -->
+
+</body>
+</html>
