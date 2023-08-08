@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>REGISTER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        extend: {
+            spacing: {
+            13: "3.25rem",
+            },
+            fontFamily: {
+            inter: ["Inter"],
+            },
+        },
+        },
+    };
+    </script>
+    <!-- Tailwind End -->
+        
+    <!-- Css Start -->
+    <style type="text/tailwindcss">
+
+    </style>
+    <!-- Css End -->
+
+</head>
+<body class="">
+    
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full lg:flex p-8 lg:p-0 lg:px-5">
+        <div class="lg:p-16 lg:flex-1">
+
+        <!-- Pembungkus -->
+        <div class="">
+            <div class="flex items-center gap-2">
+
+                <!-- Image Feed -->
+                <img class="w-12" src="images/logo.png">
+                <h1 class="text-[#000000] text-xs font-bold">UNIVERSITAS LABUHANBATU</h1>
+            </div>
+        </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center py-8">
+
+                <!-- Text -->
+                <h1 class="text-[#000000] text-3xl font-bold py-5">Log Up</h1>
+                <h1 class="text-[#868080] text-sm font-semibold">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="pb-5">
+
+                <!-- Pembungkus Input -->
+                <form action="">
+
+                    <!-- Pembungkus Username -->
+                    <label class="" for="Username">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base font-medium cursor-pointer">Nim</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Nim" type="text" id="Username">
+                    </label>
+
+                    <!-- Pembungkus Password -->
+                    <label class="" for="Password">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base font-medium cursor-pointer">Tanggal Lahir</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Mm/Dd/Yyyy" type="date" id="Password">
+                    </label>
+
+                    <!-- Pembungkus Email -->
+                    <label class="" for="Email">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base font-medium cursor-pointer">Email</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Example@gmail.com" type="email" id="Email">
+                    </label>
+
+                    <!-- Pembungkus Program_Studi -->
+                    <label class="" for="Program_Studi">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base font-medium cursor-pointer">Program Studi</h1>
+
+                        <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+                            <input x-model="selectedOption" @click="isOpen = !isOpen" placeholder="Pilih Program Studi" id="Program_Studi" class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]"></input>
+                            
+                            <ul x-show="isOpen" class="py-2 px-4 mt-2 bg-white border rounded shadow-md text-center">
+                                <li><a @click="selectedOption = 'DESIGN UI/UX'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">DESIGN UI/UX</a></li>
+                                <li><a @click="selectedOption = 'FRONTEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">FRONTEND</a></li>
+                                <li><a @click="selectedOption = 'BACKEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">BACKEND</a></li>
+                            </ul>
+                        </div>
+                    </label>
+
+                    <!-- Pembungkus No Hp -->
+                    <label class="" for="No_Hp">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base font-medium cursor-pointer">No Hp</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="082363838328" type="number" id="No_Hp">
+                    </label>
+
+                    <!-- Pembungkus -->
+                    <div class="pt-8">
+
+                        <!-- Pembungkus Button -->
+                        <button class="w-full flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                            <!-- Text -->
+                            <div class="w-full text-center">
+                                <h1 class="text-xl font-medium text-[#989898] group-hover:text-[#FFFFFF]">Register</h1>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center py-3">
+
+                <!-- Text -->
+                <h1 class="text-[#989898] text-sm font-medium">Sudah Punya Akun? <a href="index.html" class="hover:underline hover:text-[#5697F8]">Login</a></h1>
+            </div>
+        </div>
+
+        <div class="lg:p-8 hidden lg:flex lg:w-1/2">
+            <img class="w-full h-full object-cover rounded-xl" src="images/background.png">
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script>
+
+    </script>
+    <!-- Script End -->
+
+</body>
+</html>
