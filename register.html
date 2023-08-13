@@ -110,14 +110,11 @@
                         <!-- Text -->
                         <h1 class="py-3 text-base font-medium cursor-pointer">Program Studi</h1>
 
-                        <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-                            <input x-model="selectedOption" @click="isOpen = !isOpen" placeholder="Pilih Program Studi" id="Program_Studi" class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]"></input>
-                            
-                            <ul x-show="isOpen" class="py-2 px-4 mt-2 bg-white border rounded shadow-md text-center">
-                                <li><a @click="selectedOption = 'DESIGN UI/UX'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">DESIGN UI/UX</a></li>
-                                <li><a @click="selectedOption = 'FRONTEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">FRONTEND</a></li>
-                                <li><a @click="selectedOption = 'BACKEND'; isOpen = false" class="block px-4 py-2 text-sm font-semibold text-black hover:text-[#5697F8]">BACKEND</a></li>
-                            </ul>
+                        <div class="">
+                            <select class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                <option value="" disabled selected>Pilih Program Studi</option>
+                                <option value="1">Teknologi Informasi</option>
+                            </select>
                         </div>
                     </label>
 
