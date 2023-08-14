@@ -36,6 +36,25 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
+
+        /* Animasi */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
     </style>
     <!-- Css End -->
 
@@ -47,7 +66,7 @@
         <header class="bg-[#020194] fixed top-0 left-0 w-full flex items-center z-10 border-b border-gray-800">
 
             <!-- Avatar Mobile -->
-            <div class="flex items-center m-5">
+            <div class="flex items-center m-5" style="animation: slideInLeft 1.5s;">
                 <div class="block md:hidden cursor-pointer" id="avatar" name="avatar">
 
                     <!-- Avatar -->
@@ -59,7 +78,7 @@
 
             <!-- Text Dekstop -->
             <div class="">
-                <div class="hidden md:block ml-[17rem]">
+                <div class="hidden md:block ml-[17rem]" style="animation: slideInLeft 1.5s;">
                     <h1 class="font-bold text-[#FFFFFF]">PROGRAM MBKM</h1>
                 </div>
             </div>
@@ -77,7 +96,7 @@
             <div class="grow"></div>
 
             <!-- Avatar Dekstop -->
-            <div class="flex items-center m-5 gap-3">
+            <div class="flex items-center m-5 gap-3" style="animation: slideInRight 1.5s;">
 
                 <!-- Text Username -->
                 <div class="flex flex-col text-end">
@@ -99,7 +118,7 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu" style="animation: slideInLeft 1.0s;">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
@@ -246,7 +265,7 @@
     <!-- Navbar Mobile & Dekstop End -->
 
     <!-- Avatar Mobile Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar" style="animation: slideInLeft 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -322,7 +341,7 @@
     <!-- Avatar Mobile End -->
 
     <!-- Avatar Dekstop Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop" style="animation: slideInRight 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -405,10 +424,10 @@
         <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]">Daftar Download</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]" style="animation: slideInLeft 1.5s;">Daftar Download</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: slideInRight 2.0s;">
 
                 <div class="pb-3">
                     <!-- Pembungkus Cari -->

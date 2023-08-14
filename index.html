@@ -27,7 +27,24 @@
         
     <!-- Css Start -->
     <style type="text/tailwindcss">
+        /* Animasi */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
 
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
     </style>
     <!-- Css End -->
 
@@ -40,7 +57,7 @@
 
         <!-- Pembungkus -->
         <div class="">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2" style="animation: slideInLeft 1.5s;">
 
                 <!-- Image Feed -->
                 <img class="w-12" src="images/logo.png">
@@ -52,8 +69,8 @@
             <div class="text-center py-8">
 
                 <!-- Text -->
-                <h1 class="text-[#000000] text-3xl font-bold py-5">Log In</h1>
-                <h1 class="text-[#868080] text-sm font-semibold">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
+                <h1 class="text-[#000000] text-3xl font-bold py-5" style="animation: slideInLeft 1.8s;">Log In</h1>
+                <h1 class="text-[#868080] text-sm font-semibold" style="animation: slideInLeft 2.0s;">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
             </div>
 
             <!-- Pembungkus -->
@@ -78,27 +95,27 @@
                     <label class="" for="Nim">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer">Nim</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 1.0s;">Nim</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="2208100083" type="text" id="Nim">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="2208100083" type="text" id="Nim" style="animation: slideInLeft 1.3s;">
                     </label>
 
                     <!-- Pembungkus Password -->
                     <label class="" for="Password">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer">Password</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 1.5s;">Password</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Min. 8 characters" type="password" id="Password">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Min. 8 characters" type="password" id="Password" style="animation: slideInLeft 1.8s;">
                     </label>
 
                     <!-- Pembungkus -->
                     <div class="pt-8">
 
                         <!-- Pembungkus Button -->
-                        <button class="w-full flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+                        <button class="w-full flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]" style="animation: slideInLeft 2.0s;">
 
                             <!-- Text -->
                             <div class="w-full text-center">
@@ -113,12 +130,12 @@
             <div class="text-center py-3">
 
                 <!-- Text -->
-                <h1 class="text-[#989898] text-sm font-medium">Belum Punya Akun?  <a href="register.html" class="hover:underline hover:text-[#5697F8]">Registrasi</a></h1>
+                <h1 class="text-[#989898] text-sm font-medium" style="animation: slideInLeft 1.5s;">Belum Punya Akun?  <a href="register.html" class="hover:underline hover:text-[#5697F8]">Registrasi</a></h1>
             </div>
 
         </div>
 
-        <div class="lg:p-8 hidden lg:flex lg:w-1/2">
+        <div class="lg:p-8 hidden lg:flex lg:w-1/2" style="animation: slideInRight 2.0s;">
             <img class="w-full h-full object-cover rounded-xl" src="images/background.png">
         </div>
     </div>
