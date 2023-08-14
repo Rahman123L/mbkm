@@ -40,12 +40,21 @@
         
         /* Animasi */
         @keyframes slideInRight {
-        from {
-            transform: translateX(100%);
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
-        to {
-            transform: translateX(0);
-        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     </style>
     <!-- Css End -->
@@ -489,10 +498,10 @@
         <div class="container px-6 mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase">Pengumuman</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 2.0s;">Pengumuman</h1>
 
             <!-- Pembungkus -->
-            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full">
+            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full" style="animation: slideInRight 2.0s;">
 
                 <!-- Text -->
                 <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
