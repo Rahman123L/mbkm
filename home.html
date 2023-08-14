@@ -19,6 +19,20 @@
             fontFamily: {
             inter: ["Inter"],
             },
+            animation: {
+            "spin-slow": "spin 3s linear infinite",
+            shake: "shake 1s ease-in-out infinite",
+            },
+            keyframes: {
+            shake: {
+                "0%, 100%": {
+                transform: "rotate(-10deg)",
+                },
+                "50%": {
+                transform: "rotate(10deg)",
+                },
+            },
+            },
         },
         },
     };
@@ -405,70 +419,76 @@
         <div class="container px-6 pt-[6.5rem] mx-auto sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
 
             <!-- Pembungkus -->
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
+            <div id="formContainer1" class="hidden transform translate-x-full transition-transform duration-500 ease-in-out">
+                <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
 
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
+                    <!-- Text -->
+                    <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
 
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
+                    <!-- Pembungkus -->
+                    <div class="flex items-center px-3">
 
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="images/Penawaran.png">
-                    </div>
-                    
-                    <div class="grow"></div>
+                        <!-- Icon -->
+                        <div class="">
+                            <img class="w-10" src="images/Penawaran.png">
+                        </div>
+                        
+                        <div class="grow"></div>
 
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pembungkus -->
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
-
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
-
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-9" src="images/Kegiatan.png">
-                    </div>
-                    
-                    <div class="grow"></div>
-
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                        <!-- Number -->
+                        <div class="">
+                            <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Pembungkus -->
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
+            <div id="formContainer2" class="hidden transform translate-x-full transition-transform duration-500 ease-in-out">
+                <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
 
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
+                    <!-- Text -->
+                    <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
 
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
+                    <!-- Pembungkus -->
+                    <div class="flex items-center px-3">
 
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="images/Riwayat.png">
+                        <!-- Icon -->
+                        <div class="">
+                            <img class="w-9" src="images/Kegiatan.png">
+                        </div>
+                        
+                        <div class="grow"></div>
+
+                        <!-- Number -->
+                        <div class="">
+                            <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                        </div>
                     </div>
-                    
-                    <div class="grow"></div>
+                </div>
+            </div>
 
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+            <!-- Pembungkus -->
+            <div id="formContainer3" class="hidden transform translate-x-full transition-transform duration-500 ease-in-out">
+                <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]">
+
+                    <!-- Text -->
+                    <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
+
+                    <!-- Pembungkus -->
+                    <div class="flex items-center px-3">
+
+                        <!-- Icon -->
+                        <div class="">
+                            <img class="w-10" src="images/Riwayat.png">
+                        </div>
+                        
+                        <div class="grow"></div>
+
+                        <!-- Number -->
+                        <div class="">
+                            <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -569,6 +589,29 @@
                 navDekstop.classList.add('hidden');
             }
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const formContainer1 = document.getElementById("formContainer1");
+            const formContainer2 = document.getElementById("formContainer2");
+            const formContainer3 = document.getElementById("formContainer3");
+
+            // Tampilkan form setelah halaman selesai dimuat
+            formContainer1.classList.remove("hidden");
+            formContainer2.classList.remove("hidden");
+            formContainer3.classList.remove("hidden");
+
+            // Setelah beberapa saat, hapus kelas transform untuk membuat form muncul
+            setTimeout(() => {
+                formContainer1.classList.remove("translate-x-full");
+            }, 100);
+            setTimeout(() => {
+                formContainer2.classList.remove("translate-x-full");
+            }, 150);
+            setTimeout(() => {
+                formContainer3.classList.remove("translate-x-full");
+            }, 200);
+        });
+
     </script>
     <!-- Script End -->
 
