@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BERKAS</title>
+    <title>HOME</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -36,7 +36,7 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
-
+        
         /* Animasi */
         @keyframes slideInRight {
             from {
@@ -118,7 +118,7 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu" style="animation: slideInLeft 1.0s;">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
@@ -167,10 +167,10 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-5 pb-2 border-b border-[#FFFFFF]">
+            <div class="px-5 pb-4 grid gap-3 border-b border-[#FFFFFF]">
 
                 <!-- Icon & Text ( Penawaran ) -->
-                <a href="penawaran.html">
+                <a href="penawaran(1).html">
                 <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Penawaran.png">
@@ -179,35 +179,16 @@
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Kegiatan ) -->
-                <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Icon & Text ( Pendaftran ) -->
-                <a href="pendaftaran.html">
+                <!-- Icon & Text ( Tambah ) -->
+                <a href="tambah.html">
                 <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                    <div class="flex ml-5 items-center gap-3">
-                        <img class="w-4" src="images/Pendaftaran.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Pendaftaran</h1>
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="images/Kegiatan.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Tambah</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Riwayat ) -->
-                <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-2">
-                            <img class="w-6" src="images/Riwayat.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- ( Fiktur ) -->
@@ -216,27 +197,17 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-5 pb-2">
+            <div class="px-5 pb-2 grid gap-3">
 
-                <!-- Icon & Text ( Download ) -->
+                <!-- Icon & Text ( Berkas ) -->
+                <a href="berkas(1).html">
                 <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Download.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Download</h1>
+                        <img class="w-5" src="images/KRS Dan KHS.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
                     </div>
                 </div>
-
-                <!-- Icon & Text ( KRS Dan KHS ) -->
-                <div class="py-3">
-                    <a href="dokumen.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/KRS Dan KHS.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
-                        </div>
-                    </div>
-                    </a>
-                </div>
+                </a>
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
@@ -249,23 +220,21 @@
                 </a>
 
                 <!-- Icon & Text ( Keluar ) -->
-                <div class="py-3">
-                    <a href="index.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Keluar.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
-                        </div>
+                <a href="index.html">
+                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- Navbar Mobile & Dekstop End -->
 
     <!-- Avatar Mobile Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar" style="animation: slideInLeft 1.0s;">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-avatar">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -292,7 +261,7 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-11 pb-2">
+            <div class="px-11 pb-2 grid gap-3">
 
                 <!-- Icon & Text ( Profile ) -->
                 <a href="profile.html">
@@ -303,16 +272,6 @@
                     </div>
                 </div>
                 </a>
-
-                <!-- Icon & Text ( Kegiatan ) -->
-                <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
@@ -325,23 +284,21 @@
                 </a>
 
                 <!-- Icon & Text ( Keluar ) -->
-                <div class="py-3">
-                    <a href="index.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Keluar.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
-                        </div>
+                <a href="index.html">
+                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- Avatar Mobile End -->
 
     <!-- Avatar Dekstop Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop" style="animation: slideInRight 1.0s;">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInRight 1.0s;" id="nav-desktop">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -421,104 +378,30 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[5rem] mx-auto">
+        <div class="container px-6 pt-[6.5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]" style="animation: slideInLeft 1.5s;">Lengkapi Berkas</h1>
-
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="font-bold text-white">Fail!</p>
-            </div>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 2.0s;">Admin</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
+            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full" style="animation: slideInRight 2.0s;">
 
-                <!-- Pembungkus -->
-                <div class="pb-4">
+                <!-- Text -->
+                <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
+                    Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
 
-                    <!-- Text -->
-                    <h1 class="font-medium text-[#FFFFFF]">Surat Persetujuan Orang Tua</h1>
+                    Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
 
-                    <!-- Image -->
-                    <div class="px-2 py-4">
-                        <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
-                    </div>
-
-                    <!-- Pembungkus File -->
-                    <div class="pb-4">
-                        <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                    
-                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                    
-                            <input id="file" type="file" class="hidden" />
-                        </label>
-                    </div>
-
-                    <!-- Pembungkus Button -->
-                    <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                        <!-- Text -->
-                        <div class="w-full text-center">
-                            <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Unggah</h1>
-                        </div>
-                    </button>
-                </div>
-                
-                <!-- Pembungkus -->
-                <div class="pb-4">
-
-                    <!-- Text -->
-                    <h1 class="font-medium text-[#FFFFFF]">Surat Persetujuan Dosen Wali</h1>
-
-                    <!-- Image -->
-                    <div class="px-2 py-4">
-                        <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
-                    </div>
-
-                    <!-- Pembungkus File -->
-                    <div class="pb-4">
-                        <label for="filee" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                    
-                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                    
-                            <input id="filee" type="file" class="hidden" />
-                        </label>
-                    </div>
-
-                    <!-- Pembungkus Button -->
-                    <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                        <!-- Text -->
-                        <div class="w-full text-center">
-                            <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Unggah</h1>
-                        </div>
-                    </button>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center gap-3 py-4">
-
-                    <!-- Checkbox -->
-                    <input type="checkbox" name="" id="">
-
-                    <!-- Text -->
-                    <h1 class="text-sm font-semibold text-[#FFFFFF]">Data yang saya berikan adalah data yang benar</h1>
-                </div>
-
-                <!-- Pembungkus Button -->
-                <button class="w-full sm:w-[20rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                    <!-- Text -->
-                    <div class="w-full text-center">
-                        <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Minta Persetujuan Prodi</h1>
-                    </div>
-                </button>
+                    1. Buka penewaran program <br>
+                    2. Pilih program yang akan diikuti <br>
+                    3. Baca syarat pendaftaran mahasiswa <br>
+                    4. Centang untuk memunculkan buttom daftar <br>
+                    5. Buka status pendaftaran dan klick lengkapi berkas <br>
+                    6. Upload surat izin orang tua, dan persetujuan dosen wali <br>
+                    7. Klick ajukan <br>
+                    8. Komfirmasi ke koord, prodi untuk menyetujui <br>
+                    9. Ingatkan tim MBKM ULB melalui WA (08194593455) <br>
+                </h1>
             </div>
         </div>
     </div>

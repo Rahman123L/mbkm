@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>EDIT</title>
+    <title>PENDAFTARAN</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -78,8 +78,8 @@
 
             <!-- Text Dekstop -->
             <div class="">
-                <div class="hidden md:block ml-[17rem]">
-                    <h1 class="font-bold text-[#FFFFFF]" style="animation: slideInLeft 1.5s;">PROGRAM MBKM</h1>
+                <div class="hidden md:block ml-[17rem]" style="animation: slideInLeft 1.5s;">
+                    <h1 class="font-bold text-[#FFFFFF]">PROGRAM MBKM</h1>
                 </div>
             </div>
 
@@ -102,8 +102,8 @@
                 <div class="flex flex-col text-end">
 
                     <!-- Maksimal Batas 35 Karakter -->
-                    <p class="font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
-                    <p class="font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
+                    <p class="text-sm font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
+                    <p class="text-xs font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
                 </div>
 
                 <!-- Avatar -->
@@ -419,87 +419,100 @@
 
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
-        <div class="container px-6 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]" style="animation: slideInLeft 1.5s;">Edit Profil</h1>
 
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="font-bold text-white">Fail!</p>
-            </div>
+        <!-- Pembungkus -->
+        <div class="container px-6 pt-[5rem] lg:pt-[6rem] mx-auto">
+
+            <!-- Text -->
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 1.5s;">Status Pendaftaran</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
-                
-                <!-- Pembungkus Input -->
-                <form action="">
+            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
 
-                    <!-- Image -->
-                    <div class="mx-10 my-2 flex justify-center">
-                        <img class="w-full h-full md:w-[15rem] object-cover bg-cover" src="images/avatar.jpg">
-                    </div>
-
-                    <!-- Pembungkus File -->
-                    <div class="py-4 flex justify-center">
-                        <label for="File" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
+                <!-- Pembungkus -->
+                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: slideInRight 1.5s;">
                     
-                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                    
-                            <input id="File" type="file" class="hidden" />
-                        </label>
-                    </div>
-
                     <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
 
-                        <!-- Pembungkus Tanggal Lahir -->
-                        <label class="" for="Tanggal">
+                        <div class="grid gap-4">
 
-                            <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Tanggal Lahir</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Tanggal">
-                        </label>
-
-                        <!-- Pembungkus No. Hp -->
-                        <label class="" for="No_Hp">
+                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
+                                <img class="object-cover w-full h-full bg-cover" src="images/background.png">
+                            </div>
 
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">No. Hp</h1>
+                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
+                                <h1 class="text-center font-medium text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                            </div>
 
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="No_Hp">
-                        </label>
+                            <!-- Informasi -->
+                            <div class="grid gap-4 px-4">
+                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
+                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
+                            </div>
 
-                        <!-- Pembungkus Email -->
-                        <label class="" for="Email">
-
-                            <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Email</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="email" id="Email">
-                        </label>
-
-                        <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                                <!-- Text -->
-                                <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Update</h1>
-                                </div>
-                            </button>
                         </div>
 
-                    </div>
-                </form>
+                        <div class="py-2">
 
+                            <!-- Status -->
+                            <div class="py-1">
+                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="flex justify-center pb-2">
+                                <button class="py-2 px-7 text-center rounded-xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-105">
+                                    <h1 class="text-sm font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: slideInRight 1.5s;">
+                    
+                    <!-- Pembungkus -->
+                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
+
+                        <div class="grid gap-4">
+
+                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
+                                <img class="object-cover w-full h-full bg-cover" src="images/background.png">
+                            </div>
+
+                            <!-- Text -->
+                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
+                                <h1 class="text-center font-medium text-[#1480EC]">Studi Independen Kampus Merdeka <br> (Kementrian)</h1>
+                            </div>
+
+                            <!-- Informasi -->
+                            <div class="grid gap-4 px-4">
+                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
+                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
+                            </div>
+
+                        </div>
+
+                        <div class="py-2">
+
+                            <!-- Status -->
+                            <div class="py-1">
+                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="flex justify-center pb-2">
+                                <button class="py-2 px-7 text-center rounded-xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-105">
+                                    <h1 class="text-sm font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

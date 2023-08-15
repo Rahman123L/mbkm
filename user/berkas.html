@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PENDAFTARAN</title>
+    <title>BERKAS</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -421,81 +421,104 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[5rem] lg:pt-[6rem] mx-auto">
+        <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]" style="animation: slideInLeft 1.5s;">Status Pendaftaran</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 1.5s;">Lengkapi Berkas</h1>
+
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Fail!</p>
+            </div>
 
             <!-- Pembungkus -->
-            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
+            <div class="w-full md:w-[30rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
 
                 <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] hover:scale-95">
+                <div class="pb-4">
+
+                    <!-- Text -->
+                    <h1 class="font-medium text-[#FFFFFF]">Surat Persetujuan Orang Tua</h1>
+
+                    <!-- Image -->
+                    <div class="px-2 py-4">
+                        <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
+                    </div>
+
+                    <!-- Pembungkus File -->
+                    <div class="pb-4">
+                        <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
                     
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
+                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                    
+                            <input id="file" type="file" class="hidden" />
+                        </label>
+                    </div>
+
+                    <!-- Pembungkus Button -->
+                    <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
 
                         <!-- Text -->
-                        <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                            <h1 class="text-center font-medium text-[#000000]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                        <div class="w-full text-center">
+                            <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Unggah</h1>
                         </div>
+                    </button>
+                </div>
+                
+                <!-- Pembungkus -->
+                <div class="pb-4">
 
-                        <!-- Informasi -->
-                        <div class="pt-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        </div>
-                        <div class="p-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                        </div>
+                    <!-- Text -->
+                    <h1 class="font-medium text-[#FFFFFF]">Surat Persetujuan Dosen Wali</h1>
 
-                        <!-- Status -->
-                        <div class="p-2 pb-1">
-                            <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                        </div>
-
-                        <!-- Button -->
-                        <div class="flex justify-center">
-                            <a href="berkas.html">
-                            <button class="py-2 px-7 text-center rounded-xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-105">
-                                <h1 class="text-sm font-semibold">Lengkapi Berkas</h1>
-                            </button>
-                            </a>
-                        </div>
+                    <!-- Image -->
+                    <div class="px-2 py-4">
+                        <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
                     </div>
+
+                    <!-- Pembungkus File -->
+                    <div class="pb-4">
+                        <label for="filee" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
+                    
+                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                    
+                            <input id="filee" type="file" class="hidden" />
+                        </label>
+                    </div>
+
+                    <!-- Pembungkus Button -->
+                    <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                        <!-- Text -->
+                        <div class="w-full text-center">
+                            <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Unggah</h1>
+                        </div>
+                    </button>
                 </div>
 
                 <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] hover:scale-95">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 2.0s;">
+                <div class="flex items-center gap-3 py-4">
 
-                        <!-- Text -->
-                        <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                            <h1 class="text-center font-medium text-[#000000]">Studi Independen Kampus Merdeka <br> (Kementrian)</h1>
-                        </div>
+                    <!-- Checkbox -->
+                    <input type="checkbox" name="" id="">
 
-                        <!-- Informasi -->
-                        <div class="pt-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        </div>
-                        <div class="p-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                        </div>
-
-                        <!-- Status -->
-                        <div class="p-2 pb-1">
-                            <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                        </div>
-
-                        <!-- Button -->
-                        <div class="flex justify-center">
-                            <button class="py-2 px-7 text-center rounded-xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-105">
-                                <h1 class="text-sm font-semibold">Lengkapi Berkas</h1>
-                            </button>
-                        </div>
-                    </div>
+                    <!-- Text -->
+                    <h1 class="text-sm font-semibold text-[#FFFFFF]">Data yang saya berikan adalah data yang benar</h1>
                 </div>
+
+                <!-- Pembungkus Button -->
+                <button class="w-full sm:w-[20rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                    <!-- Text -->
+                    <div class="w-full text-center">
+                        <h1 class="text-sm lg:text-base font-medium text-[#989898] group-hover:text-[#FFFFFF]">Minta Persetujuan Prodi</h1>
+                    </div>
+                </button>
             </div>
         </div>
     </div>

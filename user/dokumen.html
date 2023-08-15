@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HOME</title>
+    <title>DOKUMEN</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -36,7 +36,7 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
-        
+
         /* Animasi */
         @keyframes slideInRight {
             from {
@@ -118,7 +118,7 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu" style="animation: slideInLeft 1.0s;">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
@@ -190,7 +190,7 @@
                 </div>
 
                 <!-- Icon & Text ( Pendaftran ) -->
-                <a href="penawaran.html">
+                <a href="pendaftaran.html">
                 <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Pendaftaran.png">
@@ -265,7 +265,7 @@
     <!-- Navbar Mobile & Dekstop End -->
 
     <!-- Avatar Mobile Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-avatar">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar" style="animation: slideInLeft 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -341,7 +341,7 @@
     <!-- Avatar Mobile End -->
 
     <!-- Avatar Dekstop Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInRight 1.0s;" id="nav-desktop">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop" style="animation: slideInRight 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -421,104 +421,66 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[6.5rem] mx-auto sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
-
-            <!-- Pembungkus --> 
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]" style="animation: slideInRight 0.5s;">
-
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
-
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="images/Penawaran.png">
-                    </div>
-                    
-                    <div class="grow"></div>
-
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pembungkus -->
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]" style="animation: slideInRight 1.0s;">
-
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
-
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-9" src="images/Kegiatan.png">
-                    </div>
-                    
-                    <div class="grow"></div>
-
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pembungkus -->
-            <div class="p-4 lg:py-6 rounded-lg bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full md:w-[13rem] lg:w-[17rem]" style="animation: slideInRight 1.5s;">
-
-                <!-- Text -->
-                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center px-3">
-
-                    <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="images/Riwayat.png">
-                    </div>
-                    
-                    <div class="grow"></div>
-
-                    <!-- Number -->
-                    <div class="">
-                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pembungkus -->
-        <div class="container px-6 mx-auto">
+        <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 2.0s;">Pengumuman</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 1.5s;">Daftar Download</h1>
 
             <!-- Pembungkus -->
-            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full" style="animation: slideInRight 2.0s;">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: slideInRight 2.0s;">
 
-                <!-- Text -->
-                <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
-                    Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
+                <div class="pb-3">
+                    <!-- Pembungkus Cari -->
+                    <div class="relative">
 
-                    Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
+                        <!-- Icon -->
+                        <label class="absolute inset-y-0 left-0 flex items-center pl-5 cursor-pointer" for="Cari">
+                            <img class="w-5" src="images/Search.png">
+                        </label>
 
-                    1. Buka penewaran program <br>
-                    2. Pilih program yang akan diikuti <br>
-                    3. Baca syarat pendaftaran mahasiswa <br>
-                    4. Centang untuk memunculkan buttom daftar <br>
-                    5. Buka status pendaftaran dan klick lengkapi berkas <br>
-                    6. Upload surat izin orang tua, dan persetujuan dosen wali <br>
-                    7. Klick ajukan <br>
-                    8. Komfirmasi ke koord, prodi untuk menyetujui <br>
-                    9. Ingatkan tim MBKM ULB melalui WA (08194593455) <br>
-                </h1>
+                        <!-- Input -->
+                        <input class="w-full lg:w-[20rem] sm:w-[15rem] py-1 px-10 pl-14 pr-5 text-xl font-medium text-[#000000] placeholder:text-lg placeholder:text-[#2c2929] bg-[#DEDEDE] rounded-xl focus:outline-none focus:shadow-lg" placeholder="Search" type="text" id="Cari">
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll sm:overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border border-[#000000] text-left">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">No.</th>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Judul</th>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+
+                        <!-- Baris Ke 3 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT  PERSETUJUAN DOSEN WALI/DPA/KOPRODI MSIB</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+
+                        <!-- Baris Ke 4 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SPTJM MSIB 4</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->

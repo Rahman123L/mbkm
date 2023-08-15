@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PENAWARAN</title>
+    <title>PROFILE</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -78,8 +78,8 @@
 
             <!-- Text Dekstop -->
             <div class="">
-                <div class="hidden md:block ml-[17rem]" style="animation: slideInLeft 1.5s;">
-                    <h1 class="font-bold text-[#FFFFFF]">PROGRAM MBKM</h1>
+                <div class="hidden md:block ml-[17rem]">
+                    <h1 class="font-bold text-[#FFFFFF]" style="animation: slideInLeft 1.5s;">PROGRAM MBKM</h1>
                 </div>
             </div>
 
@@ -102,8 +102,8 @@
                 <div class="flex flex-col text-end">
 
                     <!-- Maksimal Batas 35 Karakter -->
-                    <p class="text-sm font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
-                    <p class="text-xs font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
+                    <p class="font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
+                    <p class="font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
                 </div>
 
                 <!-- Avatar -->
@@ -118,7 +118,7 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu" style="animation: slideInLeft 1.0s;">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
@@ -265,7 +265,7 @@
     <!-- Navbar Mobile & Dekstop End -->
 
     <!-- Avatar Mobile Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-avatar">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar" style="animation: slideInLeft 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -341,7 +341,7 @@
     <!-- Avatar Mobile End -->
 
     <!-- Avatar Dekstop Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInRight 1.0s;" id="nav-desktop">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop" style="animation: slideInRight 1.0s;">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -421,95 +421,73 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[5rem] lg:pt-[6rem] mx-auto">
+        <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000]" style="animation: slideInLeft 1.5s;">Daftar Penawaran Program</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 1.5s;">Profil Saya</h1>
 
             <!-- Pembungkus -->
-            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
+            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
 
                 <!-- Pembungkus -->
-                <a href="program(1).html">
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: slideInRight 1.5s;">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
+                <div class="flex items-center gap-3">
 
-                        <!-- Text -->
-                        <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                            <h1 class="text-center font-medium text-[#000000]">Magang Kampus Merdeka <br> (Kementrian)</h1>
-                        </div>
+                    <!-- Pembungkus Avatar -->
+                    <div class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-[#FFFFFF]">
 
-                        <!-- Informasi -->
-                        <div class="pt-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        </div>
-                        <div class="p-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                        </div>
+                        <!-- Logo Centang Biru -->
+                        <a href="edit.html">
+                        <button class="absolute w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-[55px] md:ml-[70px] lg:ml-[80px] mt-[56px] md:mt-[66px] lg:mt-[76px] bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF]">
+                            <img class="w-full h-full object-cover bg-cover" src="images/create-icon.svg">
+                        </button>
+                        </a>
 
-                        <!-- Pembungkus -->
-                        <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
+                        <!-- Image Avatar -->
+                        <img class="object-cover w-full h-full" src="images/avatar.jpg"/>
+                    </div>
 
-                            <!-- Informasi -->
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">37</h1>
-                                <h1 class="text-xs font-medium">Peminat</h1>
-                            </div>
-
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">2749</h1>
-                                <h1 class="text-xs font-medium">Pendaftar</h1>
-                            </div>
-
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">678</h1>
-                                <h1 class="text-xs font-medium">Diterima</h1>
-                            </div>
-                        </div>
+                    <div class="flex flex-col">
+                        <!-- Maksimal Batas 25 Karakter -->
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Rizky Rahman Rambe</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF] py-1">2208100083</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Teknologi Informasi</h1>
                     </div>
                 </div>
-                </a>
+
+                <div class="p-2">
+                    <h1 class="text-sm md:text-base lg:text-lg text-justify font-medium text-[#FFFFFF]">"Merangkul keindahan kehidupan, menyebarkan cinta dan kebaikan, serta menginspirasi orang lain untuk bersinar dengan penuh semangat."</h1>
+                </div>
 
                 <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: slideInRight 2.0s;">
+                <div class="grid gap-2 p-2">
 
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
+                    <!-- Email -->
+                    <div class="">
+                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">30-10-2003</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Tanggal Lahir</h1>
+                    </div>
 
-                        <!-- Text -->
-                        <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                            <h1 class="text-center font-medium text-[#000000]">Studi Independen Kampus Merdeka <br> (Kementrian)</h1>
-                        </div>
+                    <div class="">
+                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">rizkyrambe98@gmail.com</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Email</h1>
+                    </div>
 
-                        <!-- Informasi -->
-                        <div class="pt-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        </div>
-                        <div class="p-4">
-                            <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                        </div>
+                    <!-- No. Hp -->
+                    <div class="">
+                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">082363838328</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">No. Hp</h1>
+                    </div>
 
-                        <!-- Pembungkus -->
-                        <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
+                    <!-- IPK -->
+                    <div class="">
+                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">4</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">IPK</h1>
+                    </div>
 
-                            <!-- Informasi -->
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">37</h1>
-                                <h1 class="text-xs font-medium">Peminat</h1>
-                            </div>
-
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">2749</h1>
-                                <h1 class="text-xs font-medium">Pendaftar</h1>
-                            </div>
-
-                            <div class="w-full sm:w-[7rem] p-2 md:p-4 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-5">
-                                <h1 class="text-xl font-medium">678</h1>
-                                <h1 class="text-xs font-medium">Diterima</h1>
-                            </div>
-                        </div>
+                    <!-- SKS -->
+                    <div class="">
+                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">18</h1>
+                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">SKS</h1>
                     </div>
                 </div>
             </div>
