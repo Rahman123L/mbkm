@@ -55,18 +55,27 @@
                 transform: translateX(0);
             }
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
     <!-- Css End -->
 
 </head>
-<body class="">
+<body class="bg-gray-300">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
         <header class="bg-[#020194] fixed top-0 left-0 w-full flex items-center z-10 border-b border-gray-800">
 
             <!-- Avatar Mobile -->
-            <div class="flex items-center m-5" style="animation: slideInLeft 1.5s;">
+            <div class="flex items-center m-5" style="animation: fadeIn 0.5s;">
                 <div class="block md:hidden cursor-pointer" id="avatar" name="avatar">
 
                     <!-- Avatar -->
@@ -78,15 +87,15 @@
 
             <!-- Text Dekstop -->
             <div class="">
-                <div class="hidden md:block ml-[17rem]">
-                    <h1 class="font-bold text-[#FFFFFF]" style="animation: slideInLeft 1.5s;">PROGRAM MBKM</h1>
+                <div class="hidden md:block ml-[17rem]" style="animation: slideInLeft 1.5s;">
+                    <h1 class="font-bold text-[#FFFFFF]">PROGRAM MBKM</h1>
                 </div>
             </div>
 
             <div class="flex items-center">
 
                 <!-- Hamburger Mobile -->
-                <button class="block absolute right-4 md:hidden" id="hamburger" name="hamburger" type="button">
+                <button class="block absolute right-4 md:hidden" id="hamburger" name="hamburger" type="button" style="animation: fadeIn 0.5s;">
                 <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out origin-top-left"></span>
                 <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out"></span>
                 <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out origin-bottom-left"></span>
@@ -102,8 +111,8 @@
                 <div class="flex flex-col text-end">
 
                     <!-- Maksimal Batas 35 Karakter -->
-                    <p class="font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
-                    <p class="font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
+                    <p class="text-sm font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
+                    <p class="text-xs font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
                 </div>
 
                 <!-- Avatar -->
@@ -118,11 +127,11 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" id="nav-menu" style="animation: slideInLeft 1.0s;">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-20 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
-            <div class="fixed bg-[#202020] top-0 pt-4 px-11 w-auto border-b border-[#FFFFFF]">
+            <div class="fixed bg-[#202020] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
                 <div class="pb-2">
 
                     <!-- Logo & Text -->
@@ -146,12 +155,12 @@
         <div class="pt-[65px]">
 
             <!-- ( Dashboard ) -->
-            <div class="py-4 border-b border-[#FFFFFF]">
+            <div class="py-4 border-b-[0.1px] border-gray-500">
                 <div class="px-5">
 
                     <!-- Icon & Text ( Dashboard ) -->
                     <a href="home.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Dashboard.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Dashboard</h1>
@@ -167,11 +176,11 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-5 pb-2 border-b border-[#FFFFFF]">
+            <div class="px-5 pb-2 border-b-[0.1px] border-gray-500">
 
                 <!-- Icon & Text ( Penawaran ) -->
                 <a href="penawaran.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Penawaran.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Penawaran</h1>
@@ -181,7 +190,7 @@
 
                 <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Kegiatan.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
@@ -191,7 +200,7 @@
 
                 <!-- Icon & Text ( Pendaftran ) -->
                 <a href="pendaftaran.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Pendaftaran.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Pendaftaran</h1>
@@ -201,7 +210,7 @@
 
                 <!-- Icon & Text ( Riwayat ) -->
                 <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-2">
                             <img class="w-6" src="images/Riwayat.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
@@ -218,18 +227,18 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-2">
 
-                <!-- Icon & Text ( Download ) -->
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <!-- Icon & Text ( Berkas ) -->
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Download.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Download</h1>
+                        <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
                     </div>
                 </div>
 
                 <!-- Icon & Text ( KRS Dan KHS ) -->
                 <div class="py-3">
                     <a href="dokumen.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/KRS Dan KHS.png">
                             <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
@@ -240,7 +249,7 @@
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Ganti Password.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
@@ -251,7 +260,7 @@
                 <!-- Icon & Text ( Keluar ) -->
                 <div class="py-3">
                     <a href="index.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Keluar.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
@@ -265,7 +274,7 @@
     <!-- Navbar Mobile & Dekstop End -->
 
     <!-- Avatar Mobile Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-avatar" style="animation: slideInLeft 1.0s;">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-avatar">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -296,7 +305,7 @@
 
                 <!-- Icon & Text ( Profile ) -->
                 <a href="profile.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Profile.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
@@ -306,7 +315,7 @@
 
                 <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Kegiatan.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
@@ -316,7 +325,7 @@
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Ganti Password.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
@@ -327,7 +336,7 @@
                 <!-- Icon & Text ( Keluar ) -->
                 <div class="py-3">
                     <a href="index.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Keluar.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
@@ -341,7 +350,7 @@
     <!-- Avatar Mobile End -->
 
     <!-- Avatar Dekstop Start -->
-    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" id="nav-desktop" style="animation: slideInRight 1.0s;">
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-20 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInRight 1.0s;" id="nav-desktop">
         <div class="container mx-auto">
             
             <!-- Pembungkus Avatar -->
@@ -372,7 +381,7 @@
 
                 <!-- Icon & Text ( Profile ) -->
                 <a href="profile.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Profile.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
@@ -382,7 +391,7 @@
 
                 <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Kegiatan.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
@@ -392,7 +401,7 @@
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
-                <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Ganti Password.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
@@ -403,7 +412,7 @@
                 <!-- Icon & Text ( Keluar ) -->
                 <div class="py-3">
                     <a href="index.html">
-                    <div class="py-2 border border-[#FFFFFF] rounded-lg cursor-pointer hover:scale-105">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Keluar.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
@@ -420,7 +429,7 @@
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
         <div class="container px-6 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#000000] uppercase" style="animation: slideInLeft 1.5s;">Edit Profil</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Profil</h1>
 
             <!-- Alert -->
             <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
@@ -433,7 +442,7 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: slideInRight 1.5s;">
+            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">

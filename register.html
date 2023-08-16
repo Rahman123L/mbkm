@@ -47,6 +47,15 @@
                 transform: translateX(0);
             }
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
     <!-- Css End -->
 
@@ -59,7 +68,7 @@
 
         <!-- Pembungkus -->
         <div class="">
-            <div class="flex items-center gap-2" style="animation: slideInLeft 1.5s;">
+            <div class="flex items-center gap-2" style="animation: fadeIn 0.5s;">
 
                 <!-- Image Feed -->
                 <img class="w-12" src="images/logo.png">
@@ -71,8 +80,8 @@
             <div class="text-center py-8">
 
                 <!-- Text -->
-                <h1 class="text-[#000000] text-3xl font-bold py-5" style="animation: slideInLeft 1.8s;">Log Up</h1>
-                <h1 class="text-[#868080] text-sm font-semibold" style="animation: slideInLeft 2.0s;">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
+                <h1 class="text-[#000000] text-3xl font-bold py-5" style="animation: fadeIn 1.2s;">Log Up</h1>
+                <h1 class="text-[#868080] text-sm font-semibold" style="animation: fadeIn 1.4s;">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
             </div>
 
             <!-- Alert -->
@@ -95,50 +104,50 @@
                     <label class="" for="Nim">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 1.0s;">Nim</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 1.6s;">Nim</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="2208100083" type="text" id="Nim" style="animation: slideInLeft 1.2s;">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="2208100083" type="text" id="Nim" style="animation: slideInLeft 1.0s;">
                     </label>
 
                     <!-- Pembungkus Tanggal_lahir -->
                     <label class="" for="Tanggal_lahir">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 1.4s;">Tanggal Lahir</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 1.8s;">Tanggal Lahir</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Tanggal_lahir" style="animation: slideInLeft 1.6s;">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Tanggal_lahir" style="animation: slideInLeft 1.2s;">
                     </label>
 
                     <!-- Pembungkus Email -->
                     <label class="" for="Email">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 1.8s;">Email</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 2.0s;">Email</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Example@gmail.com" type="email" id="Email" style="animation: slideInLeft 2.0s;">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Example@gmail.com" type="email" id="Email" style="animation: slideInLeft 1.4s;">
                     </label>
 
                     <!-- Pembungkus Password -->
                     <label class="" for="Password">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 2.2s;">Password</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 2.2s;">Password</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Min. 8 characters" type="password" id="Password" style="animation: slideInLeft 2.4s;">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Min. 8 characters" type="password" id="Password" style="animation: slideInLeft 1.6s;">
                     </label>
 
                     <!-- Pembungkus Program_Studi -->
                     <label class="" for="Program_Studi">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 2.6s;">Program Studi</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 2.4s;">Program Studi</h1>
 
                         <div class="">
-                            <select class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" style="animation: slideInLeft 2.8s;">
+                            <select class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" style="animation: slideInLeft 1.8s;">
                                 <option value="" disabled selected>Pilih Program Studi</option>
                                 <option value="1">Teknologi Informasi</option>
                             </select>
@@ -149,17 +158,17 @@
                     <label class="" for="No_Hp">
 
                         <!-- Text -->
-                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: slideInLeft 3.0s;">No Hp</h1>
+                        <h1 class="py-3 text-base font-medium cursor-pointer" style="animation: fadeIn 2.6s;">No Hp</h1>
 
                         <!-- Input -->
-                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="082363838328" type="number" id="No_Hp" style="animation: slideInLeft 3.2s;">
+                        <input class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="082363838328" type="number" id="No_Hp" style="animation: slideInLeft 2.0s;">
                     </label>
 
                     <!-- Pembungkus -->
                     <div class="pt-8">
 
                         <!-- Pembungkus Button -->
-                        <button class="w-full flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]" style="animation: slideInLeft 3.4s;">
+                        <button class="w-full flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]" style="animation: slideInLeft 2.2s;">
 
                             <!-- Text -->
                             <div class="w-full text-center">
@@ -174,11 +183,11 @@
             <div class="text-center py-3">
 
                 <!-- Text -->
-                <h1 class="text-[#989898] text-sm font-medium" style="animation: slideInLeft 2.8s;">Sudah Punya Akun? <a href="index.html" class="hover:underline hover:text-[#5697F8]">Login</a></h1>
+                <h1 class="text-[#989898] text-sm font-medium" style="animation: fadeIn 2.8s;">Sudah Punya Akun? <a href="index.html" class="hover:underline hover:text-[#5697F8]">Login</a></h1>
             </div>
         </div>
 
-        <div class="lg:p-8 hidden lg:flex lg:w-1/2" style="animation: slideInRight 2.0s;">
+        <div class="lg:p-8 hidden lg:flex lg:w-1/2" style="animation: slideInRight 1.2s;">
             <img class="w-full h-full object-cover rounded-xl" src="images/background.png">
         </div>
     </div>
