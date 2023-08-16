@@ -385,28 +385,63 @@
         <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Admin Program Mbkm</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Dokumen Program Mbkm</h1>
 
             <!-- Pembungkus -->
-            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full" style="animation: fadeIn 1.0s;">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
 
-                <!-- Text -->
-                <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
-                    Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
+                <div class="pb-3">
+                    <!-- Pembungkus Cari -->
+                    <div class="relative">
 
-                    Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
+                        <!-- Icon -->
+                        <label class="absolute inset-y-0 left-0 flex items-center pl-5 cursor-pointer" for="Cari">
+                            <img class="w-5" src="images/Search.png">
+                        </label>
 
-                    1. Buka penewaran program <br>
-                    2. Pilih program yang akan diikuti <br>
-                    3. Baca syarat pendaftaran mahasiswa <br>
-                    4. Centang untuk memunculkan buttom daftar <br>
-                    5. Buka status pendaftaran dan klick lengkapi berkas <br>
-                    6. Upload surat izin orang tua, dan persetujuan dosen wali <br>
-                    7. Klick ajukan <br>
-                    8. Komfirmasi ke koord, prodi untuk menyetujui <br>
-                    9. Ingatkan tim MBKM ULB melalui WA (08194593455) <br>
-                </h1>
+                        <!-- Input -->
+                        <input class="w-full lg:w-[20rem] sm:w-[15rem] py-1 px-10 pl-14 pr-5 text-xl font-medium text-[#000000] placeholder:text-lg placeholder:text-[#2c2929] bg-[#DEDEDE] rounded-xl focus:outline-none focus:shadow-lg" placeholder="Search" type="text" id="Cari">
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll sm:overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border border-[#000000] text-left">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">No.</th>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Judul</th>
+                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+
+                        <!-- Baris Ke 3 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT  PERSETUJUAN DOSEN WALI/DPA/KOPRODI MSIB</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+
+                        <!-- Baris Ke 4 -->
+                        <tr>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3.</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SPTJM MSIB 4</td>
+                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8 h-8" src="images/Download(1).png"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->
