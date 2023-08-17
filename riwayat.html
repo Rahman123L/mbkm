@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HOME</title>
+    <title>PASSWORD</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Start -->
@@ -36,7 +36,7 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
-        
+
         /* Animasi */
         @keyframes slideInRight {
             from {
@@ -159,7 +159,7 @@
                 <div class="px-5">
 
                     <!-- Icon & Text ( Dashboard ) -->
-                    <a href="admin.html">
+                    <a href="home.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Dashboard.png">
@@ -170,31 +170,53 @@
                 </div>
             </div>
 
-            <!-- ( Program ) -->
+            <!-- ( Kegiatan ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">PROGRAM</h1>
+                <h1 class="font-bold text-[#FFFFFF] ml-7">KEGIATAN</h1>
             </div>
 
             <!-- Pembungkus -->
             <div class="px-5 pb-2 border-b-[0.1px] border-gray-500">
 
-                <!-- Icon & Text ( Mbkm ) -->
-                <a href="mbkm(1).html">
+                <!-- Icon & Text ( Penawaran ) -->
+                <a href="penawaran.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
                         <img class="w-5" src="images/Penawaran.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Mbkm</h1>
+                        <h1 class="font-semibold text-[#FFFFFF]">Penawaran</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Tambah ) -->
+                <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <a href="tambah(1).html">
+                    <a href="kegiatan.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Tambah</h1>
+                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Icon & Text ( Pendaftran ) -->
+                <a href="pendaftaran.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-5 items-center gap-3">
+                        <img class="w-4" src="images/Pendaftaran.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Pendaftaran</h1>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Icon & Text ( Riwayat ) -->
+                <div class="py-3">
+                    <a href="riwayat.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-2">
+                            <img class="w-6" src="images/Riwayat.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
                         </div>
                     </div>
                     </a>
@@ -209,37 +231,49 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-2">
 
-                <!-- Icon & Text ( Dokumen ) -->
-                <a href="dokumen(1).html">
+                <!-- Icon & Text ( Berkas ) -->
+                <a href="berkas.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/KRS Dan KHS.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Dokumen</h1>
+                        <img class="w-5" src="images/Download.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Password ) -->
+                <!-- Icon & Text ( KRS Dan KHS ) -->
                 <div class="py-3">
-                    <a href="password(1).html">
+                    <a href="dokumen.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Ganti Password.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                            <img class="w-5" src="images/KRS Dan KHS.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
                         </div>
                     </div>
                     </a>
                 </div>
 
-                <!-- Icon & Text ( Keluar ) -->     
-                <a href="index.html">
+                <!-- Icon & Text ( Password ) -->
+                <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Keluar.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        <img class="w-5" src="images/Ganti Password.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
                     </div>
                 </div>
                 </a>
+
+                <!-- Icon & Text ( Keluar ) -->
+                <div class="py-3">
+                    <a href="index.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="images/Keluar.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -276,7 +310,7 @@
             <div class="px-11 pb-2">
 
                 <!-- Icon & Text ( Profile ) -->
-                <a href="profile(1).html">
+                <a href="profile.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Profile.png">
@@ -285,27 +319,39 @@
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Password ) -->
+                <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <a href="password(1).html">
+                    <a href="kegiatan.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Ganti Password.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                            <img class="w-5" src="images/Kegiatan.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
                         </div>
                     </div>
                     </a>
                 </div>
 
-                <!-- Icon & Text ( Keluar ) -->
-                <a href="index.html">
+                <!-- Icon & Text ( Password ) -->
+                <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Keluar.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        <img class="w-5" src="images/Ganti Password.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
                     </div>
                 </div>
                 </a>
+
+                <!-- Icon & Text ( Keluar ) -->
+                <div class="py-3">
+                    <a href="index.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="images/Keluar.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -342,7 +388,7 @@
             <div class="px-11 pb-2">
 
                 <!-- Icon & Text ( Profile ) -->
-                <a href="profile(1).html">
+                <a href="profile.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
                         <img class="w-4" src="images/Profile.png">
@@ -351,27 +397,39 @@
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Password ) -->
+                <!-- Icon & Text ( Kegiatan ) -->
                 <div class="py-3">
-                    <a href="password(1).html">
+                    <a href="kegiatan.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Ganti Password.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                            <img class="w-5" src="images/Kegiatan.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
                         </div>
                     </div>
                     </a>
                 </div>
 
-                <!-- Icon & Text ( Keluar ) -->
-                <a href="index.html">
+                <!-- Icon & Text ( Password ) -->
+                <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Keluar.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        <img class="w-5" src="images/Ganti Password.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
                     </div>
                 </div>
                 </a>
+
+                <!-- Icon & Text ( Keluar ) -->
+                <div class="py-3">
+                    <a href="index.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="images/Keluar.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -385,28 +443,8 @@
         <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Admin Program Mbkm</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Riwayat Mbkm</h1>
 
-            <!-- Pembungkus -->
-            <div class="p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5 w-full" style="animation: fadeIn 1.0s;">
-
-                <!-- Text -->
-                <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
-                    Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
-
-                    Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
-
-                    1. Buka penewaran program <br>
-                    2. Pilih program yang akan diikuti <br>
-                    3. Baca syarat pendaftaran mahasiswa <br>
-                    4. Centang untuk memunculkan buttom daftar <br>
-                    5. Buka status pendaftaran dan klick lengkapi berkas <br>
-                    6. Upload surat izin orang tua, dan persetujuan dosen wali <br>
-                    7. Klick ajukan <br>
-                    8. Komfirmasi ke koord, prodi untuk menyetujui <br>
-                    9. Ingatkan tim MBKM ULB melalui WA (08194593455) <br>
-                </h1>
-            </div>
         </div>
     </div>
     <!-- Form End -->
