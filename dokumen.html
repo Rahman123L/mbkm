@@ -463,52 +463,92 @@
 
                 <div class="pb-3">
                     <!-- Pembungkus Cari -->
-                    <div class="relative">
+                    <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
 
                         <!-- Icon -->
-                        <label class="absolute inset-y-0 left-0 flex items-center pl-5 cursor-pointer" for="Cari">
+                        <label class="flex items-center pl-5 cursor-pointer" for="Cari">
                             <img class="w-5" src="images/Search.png">
                         </label>
 
                         <!-- Input -->
-                        <input class="w-full lg:w-[20rem] sm:w-[15rem] py-1 px-10 pl-14 pr-5 text-xl font-medium text-[#000000] placeholder:text-lg placeholder:text-[#2c2929] bg-[#DEDEDE] rounded-xl focus:outline-none focus:shadow-lg" placeholder="Search" type="text" id="Cari">
+                        <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
                     </div>
                 </div>
 
                 <!-- Pembungkus -->
-                <div class="overflow-x-scroll sm:overflow-hidden">
+                <div class="overflow-x-scroll overflow-hidden">
 
                     <!-- Table -->
-                    <table class="w-full border-collapse border border-[#000000] text-left">
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
 
                         <!-- Baris Ke 1 -->
                         <tr>
-                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">No.</th>
-                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Judul</th>
-                            <th class="border-b border-[#000000] bg-[#E0E0E0] px-4 py-4 font-medium text-sm">Aksi</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Judul</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
                         </tr>
 
                         <!-- Baris Ke 2 -->
                         <tr>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8" src="images/Download(1).png"></td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-8" src="images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Unduh</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
 
                         <!-- Baris Ke 3 -->
                         <tr>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT  PERSETUJUAN DOSEN WALI/DPA/KOPRODI MSIB</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8" src="images/Download(1).png"></td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SURAT PERSETUJUAN DOSEN WALI/DPA/KOPRODI MSIB</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-8" src="images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Unduh</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
 
-                        <!-- Baris Ke 4 -->
+                        <!-- Baris Ke 3 -->
                         <tr>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3.</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SPTJM MSIB 4</td>
-                            <td class="border-b border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm cursor-pointer"><img class="w-8" src="images/Download(1).png"></td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">TEMPLATE SPTJM MSIB 4</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-8" src="images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Unduh</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
-                        
+
                     </table>
                 </div>
             </div>

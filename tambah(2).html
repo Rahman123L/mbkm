@@ -406,7 +406,7 @@
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
         <div class="container px-6 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Tambah Program Mbkm</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Tambah Daftar Dokumen</h1>
 
             <!-- Alert -->
             <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
@@ -427,64 +427,33 @@
                     <!-- Pembungkus -->
                     <div class="sm:mx-3">
 
-                        <!-- Pembungkus Judul -->
-                        <label class="" for="Judul">
+                        <!-- Pembungkus Judul Dokumen -->
+                        <label class="" for="JudulDokumen">
 
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
+                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Dokumen</h1>
 
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kampus Merdeka" type="text" id="Judul">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Dokumen" type="text" id="JudulDokumen">
                         </label>
 
-                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
-
-                            <!-- Pembungkus Awal Pendaftaran -->
-                            <label class="" for="Awal">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Pendaftaran</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Awal">
-                            </label>
-
-                            <!-- Pembungkus Akhir Pendaftaran -->
-                            <label class="" for="Akhir">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Pendaftaran</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirPendaftaran">
-                            </label>
+                        <!-- Image -->
+                        <div class="px-2 py-4">
+                            <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
                         </div>
 
-                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
-
-                            <!-- Pembungkus Awal Kegiatan -->
-                            <label class="" for="AwalKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
-                            </label>
-
-                            <!-- Pembungkus Akhir Kegiatan -->
-                            <label class="" for="AkhirKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
+                        <!-- Pembungkus File -->
+                        <div class="pb-4">
+                            <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
+                        
+                                <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                        
+                                <input id="file" type="file" class="hidden" />
                             </label>
                         </div>
 
                         <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
+                        <div class="pb-1">
                             <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
 
                                 <!-- Text -->

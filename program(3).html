@@ -405,99 +405,137 @@
 
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
-        <div class="container px-6 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Tambah Program Mbkm</h1>
 
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="font-bold text-white">Fail!</p>
-            </div>
+        <!-- Pembungkus -->
+        <div class="container px-6 pt-[5rem] mx-auto">
+
+            <!-- Text -->
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Dokumen Program Mbkm</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
-                
-                <!-- Pembungkus Input -->
-                <form action="">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
 
-                    <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                <div class="md:flex">
 
-                        <!-- Pembungkus Judul -->
-                        <label class="" for="Judul">
+                    <!-- Button Edit -->
+                    <a href="tambah(1).html">
+                    <button class="flex justify-center items-center gap-3 w-full py-1 px-16 text-center rounded-xl bg-[#D9D9D9] shadow-lg overflow-hidden mb-4 hover:scale-105">
+                        <img class="w-6" src="images/Tambah(1).png">
+                        <h1 class="font-semibold text-[#1480EC]">Tambah Data</h1>
+                    </button>
+                    </a>
 
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
+                    <div class="grow"></div>
+
+                    <div class="pb-3">
+                        <!-- Pembungkus Cari -->
+                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
+
+                            <!-- Icon -->
+                            <label class="flex items-center pl-5 cursor-pointer" for="Cari">
+                                <img class="w-5" src="images/Search.png">
+                            </label>
 
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kampus Merdeka" type="text" id="Judul">
-                        </label>
-
-                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
-
-                            <!-- Pembungkus Awal Pendaftaran -->
-                            <label class="" for="Awal">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Pendaftaran</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Awal">
-                            </label>
-
-                            <!-- Pembungkus Akhir Pendaftaran -->
-                            <label class="" for="Akhir">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Pendaftaran</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirPendaftaran">
-                            </label>
+                            <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
                         </div>
-
-                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
-
-                            <!-- Pembungkus Awal Kegiatan -->
-                            <label class="" for="AwalKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
-                            </label>
-
-                            <!-- Pembungkus Akhir Kegiatan -->
-                            <label class="" for="AkhirKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
-                            </label>
-                        </div>
-
-                        <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                                <!-- Text -->
-                                <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Tambah</h1>
-                                </div>
-                            </button>
-                        </div>
-
                     </div>
-                </form>
+                </div>
 
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Foto</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Judul</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalPendaftaran</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirPendaftaran</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-16" src="images/MBKM.jpeg"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="kelola.html">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Kelola</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="edit_program.html">
+                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Baris Ke 3 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-16" src="images/MBKM.jpeg"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Studi Independen Kampus Merdeka</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="kelola.html">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Kelola</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="edit_program.html">
+                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->
