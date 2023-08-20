@@ -4,8 +4,10 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PASSWORD</title>
+    <title>KEGIATAN</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
     <!-- Tailwind Start -->
     <script>
@@ -36,7 +38,7 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
-
+        
         /* Animasi */
         @keyframes slideInRight {
             from {
@@ -80,7 +82,7 @@
 
                     <!-- Avatar -->
                     <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
-                        <img class="object-cover w-full h-full" src="images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -94,7 +96,7 @@
 
                         <!-- Image -->
                         <div class="w-10 h-10 overflow-hidden rounded-lg">
-                            <img class="object-cover w-full h-full" src="images/MBKM(1).png"/>
+                            <img class="object-cover w-full h-full" src="../images/MBKM(1).png"/>
                         </div>
 
                         <!-- Text -->
@@ -131,7 +133,7 @@
                 <!-- Avatar -->
                 <div class="hidden md:block cursor-pointer" id="dekstop" name="dekstop">
                     <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
-                        <img class="object-cover w-full h-full" src="images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -152,7 +154,7 @@
 
                         <!-- Logo -->
                         <div class="w-14 h-14 overflow-hidden border border-[#ffffff90] rounded-full">
-                            <img class="object-cover w-full h-full" src="images/Logo ULB.png"/>
+                            <img class="object-cover w-full h-full" src="../images/Logo ULB.png"/>
                         </div>
 
                         <!-- Text -->
@@ -175,7 +177,7 @@
                     <a href="home.html">
                     <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Dashboard.png">
+                            <img class="w-5" src="../images/Dashboard.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Dashboard</h1>
                         </div>
                     </div>
@@ -185,55 +187,81 @@
 
             <!-- ( Kegiatan ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">KEGIATAN</h1>
+                <h1 class="font-bold text-[#FFFFFF] ml-7">PROGRAM</h1>
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-5 pb-2 border-b-[0.1px] border-gray-500">
+            <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
                 <!-- Icon & Text ( Penawaran ) -->
                 <a href="penawaran.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Penawaran.png">
+                        <img class="w-5" src="../images/Penawaran.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Penawaran</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Kegiatan ) -->
-                <div class="py-3">
-                    <a href="kegiatan.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Kegiatan ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Kegiatan.png">
+                            <img class="w-5" src="../images/Kegiatan.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
                         </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
                     </div>
-                    </a>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( DiIkuti ) -->
+                        <a href="kegiatan.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Diikuti.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">DiIkuti</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Laporan ) -->
+                        <a href="laporan.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Pendaftaran.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Laporan</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Icon & Text ( Pendaftran ) -->
                 <a href="pendaftaran.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
-                        <img class="w-4" src="images/Pendaftaran.png">
+                        <img class="w-4" src="../images/Pendaftaran.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Pendaftaran</h1>
                     </div>
                 </div>
                 </a>
 
                 <!-- Icon & Text ( Riwayat ) -->
-                <div class="py-3">
-                    <a href="riwayat.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-2">
-                            <img class="w-6" src="images/Riwayat.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
-                        </div>
+                <a href="riwayat.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Riwayat.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
 
             <!-- ( Fiktur ) -->
@@ -242,51 +270,37 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-5 pb-2">
+            <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
                 <!-- Icon & Text ( Berkas ) -->
-                <a href="berkas.html">
+                <a href="edit(berkas).html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Download.png">
+                        <img class="w-5" src="../images/Dokumen.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
                     </div>
                 </div>
                 </a>
 
                 <!-- Icon & Text ( KRS Dan KHS ) -->
-                <div class="py-3">
-                    <a href="dokumen.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/KRS Dan KHS.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Icon & Text ( Password ) -->
-                <a href="password.html">
+                <a href="krs&khs.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Ganti Password.png">
-                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                        <img class="w-5" src="../images/KRS Dan KHS.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Keluar ) -->
-                <div class="py-3">
-                    <a href="index.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Keluar.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
-                        </div>
+                <!-- Icon & Text ( Download ) -->
+                <a href="dokumen.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Download.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Download</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -302,7 +316,7 @@
 
                     <!-- Avatar -->
                     <div class="w-24 h-24 overflow-hidden border-2 border-[#000000] rounded-full">
-                        <img class="object-cover w-full h-full" src="images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -320,51 +334,37 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-11 pb-2">
+            <div class="px-11 pb-3 grid gap-3">
 
                 <!-- Icon & Text ( Profile ) -->
                 <a href="profile.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
-                        <img class="w-4" src="images/Profile.png">
+                        <img class="w-5" src="../images/Mahasiswa.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Kegiatan ) -->
-                <div class="py-3">
-                    <a href="kegiatan.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Ganti Password.png">
+                        <img class="w-5" src="../images/Ganti Password.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
                     </div>
                 </div>
                 </a>
 
                 <!-- Icon & Text ( Keluar ) -->
-                <div class="py-3">
-                    <a href="index.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Keluar.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
-                        </div>
+                <a href="../index.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -380,7 +380,7 @@
 
                     <!-- Avatar -->
                     <div class="w-24 h-24 overflow-hidden border-2 border-[#000000] rounded-full">
-                        <img class="object-cover w-full h-full" src="images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -398,51 +398,37 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="px-11 pb-2">
+            <div class="px-11 pb-3 grid gap-3">
 
                 <!-- Icon & Text ( Profile ) -->
                 <a href="profile.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-5 items-center gap-3">
-                        <img class="w-4" src="images/Profile.png">
+                        <img class="w-5" src="../images/Mahasiswa.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
                     </div>
                 </div>
                 </a>
 
-                <!-- Icon & Text ( Kegiatan ) -->
-                <div class="py-3">
-                    <a href="kegiatan.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                     <div class="flex ml-4 items-center gap-3">
-                        <img class="w-5" src="images/Ganti Password.png">
+                        <img class="w-5" src="../images/Ganti Password.png">
                         <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
                     </div>
                 </div>
                 </a>
 
                 <!-- Icon & Text ( Keluar ) -->
-                <div class="py-3">
-                    <a href="index.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="images/Keluar.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
-                        </div>
+                <a href="../index.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
                     </div>
-                    </a>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -451,91 +437,78 @@
 
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
-        <div class="container px-6 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Mbkm</h1>
 
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="font-bold text-white">Fail!</p>
-            </div>
+        <!-- Pembungkus -->
+        <div class="container px-6 pt-[5rem] mx-auto">
+
+            <!-- Text -->
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Diikuti</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
-                
-                <!-- Pembungkus Input -->
-                <form action="">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
 
-                    <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                <div class="pb-3">
+                    <!-- Pembungkus Cari -->
+                    <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
 
-                        <!-- Pembungkus Judul Kegiatan -->
-                        <label class="" for="JudulKegiatan">
-
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Kegiatan</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kegiatan" type="text" id="JudulKegiatan">
+                        <!-- Icon -->
+                        <label class="flex items-center pl-5 cursor-pointer" for="Cari">
+                            <img class="w-5" src="../images/Search.png">
                         </label>
 
-                        <!-- Image -->
-                        <div class="px-2 py-4">
-                            <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="images/PDF.png">
-                        </div>
-
-                        <!-- Pembungkus File -->
-                        <div class="pb-4">
-                            <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                        
-                                <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                        
-                                <input id="file" type="file" class="hidden" />
-                            </label>
-                        </div>
-
-                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
-
-                            <!-- Pembungkus Awal Kegiatan -->
-                            <label class="" for="AwalKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
-                            </label>
-
-                            <!-- Pembungkus Akhir Kegiatan -->
-                            <label class="" for="AkhirKegiatan">
-
-                                <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
-
-                                <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
-                            </label>
-                        </div>
-
-                        <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
-                                <!-- Text -->
-                                <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Upload</h1>
-                                </div>
-                            </button>
-                        </div>
-
+                        <!-- Input -->
+                        <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
                     </div>
-                </form>
+                </div>
 
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Foto</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Judul</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Status</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalPendaftaran</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirPendaftaran</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-16" src="../images/MBKM.jpeg"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Aktif</th>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Batalkan</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->
