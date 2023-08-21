@@ -325,9 +325,9 @@
                 
             </div>
 
-            <!-- ( Fiktur ) -->
+            <!-- ( FITUR ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">FIKTUR</h1>
+                <h1 class="font-bold text-[#FFFFFF] ml-7">FITUR</h1>
             </div>
 
             <!-- Pembungkus -->
@@ -636,7 +636,72 @@
         <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Dosen</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Riwayat Kegiatan</h1>
+
+            <!-- Pembungkus -->
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
+
+                <div class="pb-3">
+                    <!-- Pembungkus Cari -->
+                    <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
+
+                        <!-- Icon -->
+                        <label class="flex items-center pl-5 cursor-pointer" for="Cari">
+                            <img class="w-5" src="../images/Search.png">
+                        </label>
+
+                        <!-- Input -->
+                        <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Judul</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Mengajar</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center">
+                                    <div class=""><img class="w-8" src="../images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Unduh</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
 
         </div>
     </div>

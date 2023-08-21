@@ -325,9 +325,9 @@
                 
             </div>
 
-            <!-- ( Fiktur ) -->
+            <!-- ( FITUR ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">FIKTUR</h1>
+                <h1 class="font-bold text-[#FFFFFF] ml-7">FITUR</h1>
             </div>
 
             <!-- Pembungkus -->
@@ -662,6 +662,49 @@
                             <!-- Input -->
                             <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kampus Merdeka" type="text" id="Judul">
                         </label>
+
+                        <div class="md:grid grid-cols-3 justify-center items-center md:gap-5">
+
+                            <!-- Pembungkus IPK -->
+                            <label class="" for="IPK">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">IPK</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="IPK" min="0" max="4">
+                            </label>
+
+                            <!-- Pembungkus Semester -->
+                            <label class="" for="Semester">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Semester</h1>
+
+                                <div class="">
+                                    <select class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                        <option value="1">Semester 1</option>
+                                        <option value="2">Semester 2</option>
+                                        <option value="3">Semester 3</option>
+                                        <option value="4">Semester 4</option>
+                                        <option value="5">Semester 5</option>
+                                        <option value="6">Semester 6</option>
+                                        <option value="7">Semester 7</option>
+                                        <option value="8">Semester 8</option>
+                                    </select>
+                                </div>
+                            </label>
+
+                            <!-- Pembungkus SKS -->
+                            <label class="" for="SKS">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">SKS</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="SKS">
+                            </label>
+                        </div>
 
                         <!-- Pembungkus Status -->
                         <label class="" for="Status">
