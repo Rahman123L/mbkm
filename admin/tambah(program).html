@@ -514,6 +514,32 @@
                     </div>
                 </div>
 
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Syarat ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Syarat.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(syarat).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
@@ -604,6 +630,32 @@
                     </div>
                 </div>
 
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Syarat ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Syarat.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(syarat).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
@@ -660,7 +712,7 @@
                             <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
 
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kampus Merdeka" type="text" id="Judul">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Merdeka Belajar Kampus Merdeka" type="text" id="Judul">
                         </label>
 
                         <div class="md:grid grid-cols-3 justify-center items-center md:gap-5">
@@ -672,7 +724,7 @@
                                 <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">IPK</h1>
 
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="IPK" min="0" max="4">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="IPK" id="IPK" min="0" max="4">
                             </label>
 
                             <!-- Pembungkus Semester -->
@@ -682,7 +734,8 @@
                                 <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Semester</h1>
 
                                 <div class="">
-                                    <select class="w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <select class="w-full py-3 px-10 lg:px-5 text-[#B0B0B0] border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                        <option value="" disabled selected>Pilih Semester</option>
                                         <option value="1">Semester 1</option>
                                         <option value="2">Semester 2</option>
                                         <option value="3">Semester 3</option>
@@ -702,7 +755,7 @@
                                 <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">SKS</h1>
 
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="SKS">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="SKS" id="SKS">
                             </label>
                         </div>
 
@@ -715,6 +768,7 @@
                             <!-- Input -->
                             <div class="">
                                 <select class="text-[#B0B0B0] w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <option value="" disabled selected>Pilih Status</option>
                                     <option value="1">Aktif</option>
                                     <option value="2">NonAktif</option>
                                 </select>

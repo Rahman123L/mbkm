@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PESERTA(NONAKTIF)</title>
+    <title>EDIT(PESERTA)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -683,78 +683,126 @@
 
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
-
-        <!-- Pembungkus -->
         <div class="container px-6 pt-[5rem] mx-auto">
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Peserta</h1>
 
-            <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Peserta NonAktif</h1>
-
-            <!-- Pembungkus -->
-            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
-
-                <div class="pb-3">
-                    <!-- Pembungkus Cari -->
-                    <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
-
-                        <!-- Icon -->
-                        <label class="flex items-center pl-5 cursor-pointer" for="Cari">
-                            <img class="w-5" src="../images/Search.png">
-                        </label>
-
-                        <!-- Input -->
-                        <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="overflow-x-scroll overflow-hidden">
-
-                    <!-- Table -->
-                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
-
-                        <!-- Baris Ke 1 -->
-                        <tr>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nama</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Semester</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">IPK</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">SKS</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Status</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
-                        </tr>
-
-                        <!-- Baris Ke 2 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">4</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">18</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">NonAktif</th>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="edit(peserta).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
-
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                    </button>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Fail!</p>
             </div>
 
+            <!-- Pembungkus -->
+            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+                
+                <!-- Pembungkus Input -->
+                <form action="">
+
+                    <!-- Pembungkus -->
+                    <div class="sm:mx-3">
+
+                        <!-- Pembungkus Nama -->
+                        <label class="" for="Nama">
+
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Nama</h1>
+
+                            <!-- Input -->
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="text" id="Nama">
+                        </label>
+
+                        <!-- Pembungkus Program Studi -->
+                        <label class="" for="ProgramStudi">
+
+                            <!-- Text -->
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Program Studi</h1>
+
+                            <div class="">
+                                <select class="w-full py-3 px-10 border-2 text-[#B0B0B0] border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <option value="" disabled selected>Pilih Program Studi</option>
+                                    <option value="1">Teknologi Informasi</option>
+                                </select>
+                            </div>
+                        </label>
+
+                        <div class="md:grid grid-cols-3 justify-center items-center md:gap-5">
+
+                            <!-- Pembungkus IPK -->
+                            <label class="" for="IPK">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">IPK</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="IPK" id="IPK" min="0" max="4">
+                            </label>
+
+                            <!-- Pembungkus Semester -->
+                            <label class="" for="Semester">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Semester</h1>
+
+                                <div class="">
+                                    <select class="w-full py-3 px-10 lg:px-5 border-2 text-[#B0B0B0] border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                        <option value="" disabled selected>Pilih Semester</option>
+                                        <option value="1">Semester 1</option>
+                                        <option value="2">Semester 2</option>
+                                        <option value="3">Semester 3</option>
+                                        <option value="4">Semester 4</option>
+                                        <option value="5">Semester 5</option>
+                                        <option value="6">Semester 6</option>
+                                        <option value="7">Semester 7</option>
+                                        <option value="8">Semester 8</option>
+                                    </select>
+                                </div>
+                            </label>
+
+                            <!-- Pembungkus SKS -->
+                            <label class="" for="SKS">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">SKS</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="SKS" id="SKS">
+                            </label>
+                        </div>
+
+                        <!-- Pembungkus Status -->
+                        <label class="" for="Status">
+
+                            <!-- Text -->
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Status</h1>
+
+                            <div class="">
+                                <select class="w-full py-3 px-10 border-2 text-[#B0B0B0] border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <option value="" disabled selected>Pilih Status</option>
+                                    <option value="1">Aktif</option>
+                                    <option value="2">NonAktif</option>
+                                </select>
+                            </div>
+                        </label>
+
+                        <!-- Pembungkus Button -->
+                        <div class="pt-5 pb-1">
+                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                                <!-- Text -->
+                                <div class="w-full text-center">
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Update</h1>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
     <!-- Form End -->
