@@ -310,16 +310,7 @@
                             </div>
                         </div>
                         </a>
-
-                        <!-- Icon & Text ( NonAktif ) -->
-                        <a href="peserta(nonaktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/NonAktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">NonAktif</h1>
-                            </div>
-                        </div>
-                        </a>
+                        
                     </div>
                 </div>
                 
@@ -693,17 +684,16 @@
             <!-- Pembungkus -->
             <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
 
-                <div class="pb-3">
-                    <!-- Pembungkus Cari -->
-                    <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] sm:w-[15rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-105">
+                <!-- Pembungkus -->
+                <div class="md:flex justify-center items-center pb-3">
+                    <div class="grow-0 md:grow"></div>
 
-                        <!-- Icon -->
-                        <label class="flex items-center pl-5 cursor-pointer" for="Cari">
-                            <img class="w-5" src="../images/Search.png">
-                        </label>
-
-                        <!-- Input -->
-                        <input class="w-full lg:w-[20rem] sm:w-[15rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
+                    <!-- Pilih Program Studi -->
+                    <div class="">
+                        <select class="py-1 px-10 w-full border-2 text-[#B0B0B0] border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                            <option value="1">Pilih Program Studi</option>
+                            <option value="2">Teknologi Informasi</option>
+                        </select>
                     </div>
                 </div>
 
@@ -716,39 +706,27 @@
                         <!-- Baris Ke 1 -->
                         <tr>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nama</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Profile</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nim</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Semester</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">IPK</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">SKS</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Status</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program</th>
                         </tr>
 
                         <!-- Baris Ke 2 -->
                         <tr>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">3</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">4</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">18</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Aktif</th>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="edit(peserta).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
+                                <div class="flex justify-center cursor-pointer">
 
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                    </button>
-                                    </a>
+                                    <!-- Avatar -->
+                                    <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
+                                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                    </div>
                                 </div>
                             </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2208100083</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Kampus Mengajar Kampus Merdeka</td>
                         </tr>
 
                     </table>
