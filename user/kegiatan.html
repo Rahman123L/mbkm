@@ -171,7 +171,7 @@
 
             <!-- ( Dashboard ) -->
             <div class="py-4 border-b-[0.1px] border-gray-500">
-                <div class="px-5">
+                <div class="px-5 grid gap-3">
 
                     <!-- Icon & Text ( Dashboard ) -->
                     <a href="home.html">
@@ -179,6 +179,16 @@
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="../images/Dashboard.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Dashboard</h1>
+                        </div>
+                    </div>
+                    </a>
+
+                    <!-- Icon & Text ( Notifikasi ) -->
+                    <a href="notifikasi.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Notifikasi.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Notifikasi</h1>
                         </div>
                     </div>
                     </a>
@@ -231,15 +241,6 @@
                         </div>
                         </a>
 
-                        <!-- Icon & Text ( Laporan ) -->
-                        <a href="laporan.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Pendaftaran.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Laporan</h1>
-                            </div>
-                        </div>
-                        </a>
                     </div>
                 </div>
 
@@ -458,6 +459,7 @@
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Foto</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Diikuti</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
                         </tr>
 
                         <!-- Baris Ke 2 -->
@@ -469,6 +471,21 @@
                                 </div>
                             </td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Kelola</h1>
+                                    </button>
+                                    </a>
+
+                                    <a href="laporan.html">
+                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Laporan</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
                         </tr>
 
                     </table>

@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PENDAFTARAN</title>
+    <title>EDIT(RIWAYAT)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -438,114 +438,90 @@
 
     <!-- Form Start -->
     <div class="md:ml-[17rem]">
+        <div class="container px-6 pt-[5rem] mx-auto">
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Riwayat Kegiatan</h1>
 
-        <!-- Pembungkus -->
-        <div class="container px-6 pt-[5rem] lg:pt-[6rem] mx-auto">
-
-            <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Status Pendaftaran</h1>
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Fail!</p>
+            </div>
 
             <!-- Pembungkus -->
-            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
-
-                <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: fadeIn 1.0s;">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
-
-                        <div class="grid gap-4">
-
-                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
-                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM.jpeg">
-                            </div>
-
-                            <!-- Text -->
-                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                                <h1 class="text-center font-medium text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <button class="w-full py-2 rounded-2xl bg-red-400 hover:scale-95">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Hapus</h1>
-                            </button>
-
-                            <!-- Informasi -->
-                            <div class="grid gap-4 px-4">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Kegiatan <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                            </div>
-
-                        </div>
-
-                        <div class="py-2">
-
-                            <!-- Status -->
-                            <div class="py-1">
-                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="upload(berkas).html">
-                            <div class="flex justify-center pb-2">
-                                <button class="w-full py-3 px-7 text-center rounded-2xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-95">
-                                    <h1 class="text-base font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
-                                </button>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: fadeIn 1.0s;">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
-
-                        <div class="grid gap-4">
-
-                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
-                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM.jpeg">
-                            </div>
-
-                            <!-- Text -->
-                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                                <h1 class="text-center font-medium text-[#1480EC]">Studi Independen Kampus Merdeka <br> (Kementrian)</h1>
-                            </div>
-
-                            <!-- button -->
-                            <button class="w-full py-2 rounded-2xl bg-red-400 hover:scale-95">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Hapus</h1>
-                            </button>
-
-                            <!-- Informasi -->
-                            <div class="grid gap-4 px-4">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Kegiatan <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                            </div>
-
-                        </div>
-
-                        <div class="py-2">
-
-                            <!-- Status -->
-                            <div class="py-1">
-                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="upload(berkas).html">
-                            <div class="flex justify-center pb-2">
-                                <button class="w-full py-3 px-7 text-center rounded-2xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-95">
-                                    <h1 class="text-base font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
-                                </button>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
                 
+                <!-- Pembungkus Input -->
+                <form action="">
+
+                    <!-- Pembungkus -->
+                    <div class="sm:mx-3">
+
+                        <!-- Pembungkus Judul Kegiatan -->
+                        <label class="" for="JudulKegiatan">
+
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Kegiatan</h1>
+
+                            <!-- Input -->
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kegiatan" type="text" id="JudulKegiatan">
+                        </label>
+
+                        <!-- Image -->
+                        <div class="px-2 py-4">
+                            <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="../images/PDF.png">
+                        </div>
+
+                        <!-- Pembungkus File -->
+                        <div class="pb-4">
+                            <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
+                        
+                                <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                        
+                                <input id="file" type="file" class="hidden" />
+                            </label>
+                        </div>
+
+                        <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
+
+                            <!-- Pembungkus Awal Kegiatan -->
+                            <label class="" for="AwalKegiatan">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
+                            </label>
+
+                            <!-- Pembungkus Akhir Kegiatan -->
+                            <label class="" for="AkhirKegiatan">
+
+                                <!-- Text -->
+                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
+
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
+                            </label>
+                        </div>
+
+                        <!-- Pembungkus Button -->
+                        <div class="pt-5 pb-1">
+                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                                <!-- Text -->
+                                <div class="w-full text-center">
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Update</h1>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>

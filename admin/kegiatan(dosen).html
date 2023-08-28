@@ -434,6 +434,67 @@
                     </div>
                 </div>
 
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Pengumuman ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Pengumuman.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Pengumuman</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(pengumuman).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Syarat ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Syarat.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(syarat).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                
+
             </div>
         </div>
     </div>
@@ -479,57 +540,6 @@
                 </div>
                 </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Pengumuman ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Pengumuman.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Pengumuman</h1>
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(pengumuman).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Syarat ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Syarat.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(syarat).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
@@ -595,57 +605,6 @@
                 </div>
                 </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Pengumuman ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Pengumuman.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Pengumuman</h1>
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(pengumuman).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Syarat ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Syarat.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(syarat).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
@@ -676,20 +635,70 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[10rem] mx-auto text-center leading-5 lg:leading-[5rem]">
+        <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <div class="flex justify-center">
-                <div class="absolute cursor-pointer">
-                    <h1 class="text-[4rem] sm:text-[6rem] lg:text-[10rem] font-bold text-[#1480EC] uppercase animate-bounce">404</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Dosen</h1>
+
+            <!-- Pembungkus -->
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
+
+                <!-- Pembungkus -->
+                <div class="overflow-x-scroll overflow-hidden">
+
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Profile</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nim</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Kegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
+
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
+                                <div class="flex justify-center cursor-pointer">
+
+                                    <!-- Avatar -->
+                                    <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
+                                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2208100083</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Belajar Kebaikan</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center cursor-pointer">
+                                    <div class=""><img class="w-8" src="../images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="">
+                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Unduh</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <div class="cursor-pointer">
-                    <img class="w-full bg-cover object-cover" src="../images/404.gif">
-                </div>
-            </div>
         </div>
     </div>
     <!-- Form End -->

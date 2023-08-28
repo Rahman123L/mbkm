@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PENDAFTARAN</title>
+    <title>NOTIFIKASI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -440,112 +440,54 @@
     <div class="md:ml-[17rem]">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pt-[5rem] lg:pt-[6rem] mx-auto">
+        <div class="container px-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Status Pendaftaran</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Notifikasi</h1>
 
             <!-- Pembungkus -->
-            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
+                <div class="grid gap-5">
 
-                <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: fadeIn 1.0s;">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
+                    <!-- Notifikasi -->
+                    <div class="relative bg-[#FFFFFF] flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4 text-base">
 
-                        <div class="grid gap-4">
+                        <!-- Icon -->
+                        <span class="mr-2 hidden md:block">
+                            <img class="lg:w-11" src="../images/Berhasil.png">
+                        </span>
 
-                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
-                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM.jpeg">
+                        <!-- Text -->
+                        <p class="font-bold text-[#000000]">Permohonan diterima! Selamat, Anda berhasil masuk ke Program Kampus Merdeka. Persiapkan diri untuk petualangan pendidikan yang menginspirasi!"</p>
+
+                        <!-- Button -->
+                        <button class="absolute right-[-8px] top-[-8px] cursor-pointer">
+                            <div class="bg-black rounded-full">
+                                <img class="w-6" src="../images/NonAktif.png">
                             </div>
-
-                            <!-- Text -->
-                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                                <h1 class="text-center font-medium text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <button class="w-full py-2 rounded-2xl bg-red-400 hover:scale-95">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Hapus</h1>
-                            </button>
-
-                            <!-- Informasi -->
-                            <div class="grid gap-4 px-4">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Kegiatan <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                            </div>
-
-                        </div>
-
-                        <div class="py-2">
-
-                            <!-- Status -->
-                            <div class="py-1">
-                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="upload(berkas).html">
-                            <div class="flex justify-center pb-2">
-                                <button class="w-full py-3 px-7 text-center rounded-2xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-95">
-                                    <h1 class="text-base font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
-                                </button>
-                            </div>
-                            </a>
-                        </div>
+                        </button>
                     </div>
-                </div>
 
-                <!-- Pembungkus -->
-                <div class="lg:w-[26rem] md:w-[18rem] sm:w-[30rem] cursor-pointer hover:scale-95" style="animation: fadeIn 1.0s;">
-                    
-                    <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5">
+                    <!-- Notifikasi -->
+                    <div class="relative bg-[#FFFFFF] flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4 text-base">
 
-                        <div class="grid gap-4">
+                        <!-- Icon -->
+                        <span class="mr-2 hidden md:block">
+                            <img class="lg:w-11" src="../images/Gagal.png"> 
+                        </span>
 
-                            <div class="w-full overflow-hidden border-2 border-[FFFFFF] rounded-xl">
-                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM.jpeg">
+                        <!-- Text -->
+                        <p class="font-bold text-[#000000]">Mohon maaf, permohonan Anda untuk Program Kampus Merdeka belum dapat diterima saat ini. Tetap semangat dan coba lagi di kesempatan berikutnya."</p>
+
+                        <!-- Button -->
+                        <button class="absolute right-[-8px] top-[-8px] cursor-pointer">
+                            <div class="bg-black rounded-full">
+                                <img class="w-6" src="../images/NonAktif.png">
                             </div>
-
-                            <!-- Text -->
-                            <div class="w-full py-2 rounded-2xl bg-[#ECECEC]">
-                                <h1 class="text-center font-medium text-[#1480EC]">Studi Independen Kampus Merdeka <br> (Kementrian)</h1>
-                            </div>
-
-                            <!-- button -->
-                            <button class="w-full py-2 rounded-2xl bg-red-400 hover:scale-95">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Hapus</h1>
-                            </button>
-
-                            <!-- Informasi -->
-                            <div class="grid gap-4 px-4">
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Pendaftaran <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                                <h1 class="text-center font-medium text-[#FFFFFF]">Kegiatan <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                            </div>
-
-                        </div>
-
-                        <div class="py-2">
-
-                            <!-- Status -->
-                            <div class="py-1">
-                                <h1 class="text-center text-sm font-medium text-[#FFFFFF]">Status : Mendaftar</h1>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="upload(berkas).html">
-                            <div class="flex justify-center pb-2">
-                                <button class="w-full py-3 px-7 text-center rounded-2xl bg-[#D9D9D9] shadow-lg cursor-pointer hover:scale-95">
-                                    <h1 class="text-base font-semibold text-[#1480EC]">Lengkapi Berkas</h1>
-                                </button>
-                            </div>
-                            </a>
-                        </div>
+                        </button>
                     </div>
+
                 </div>
-                
             </div>
         </div>
     </div>
