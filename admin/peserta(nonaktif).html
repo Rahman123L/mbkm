@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PENDAFTARAN(PESERTA)</title>
+    <title>PESERTA(NONAKTIF)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -291,22 +291,22 @@
                     <!-- Pembungkus Sub Menu -->
                     <div x-show="isOpen" class="pt-3 grid gap-3">
 
-                        <!-- Icon & Text ( Pendaftaran ) -->
-                        <a href="pendaftaran(peserta).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Pendaftaran.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Pendaftran</h1>
-                            </div>
-                        </div>
-                        </a>
-
                         <!-- Icon & Text ( Aktif ) -->
                         <a href="peserta(aktif).html">
                         <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                             <div class="flex ml-4 items-center gap-3">
                                 <img class="w-5" src="../images/Aktif.png">
                                 <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( NonAktif ) -->
+                        <a href="peserta(nonaktif).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/NonAktif.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">NonAktif</h1>
                             </div>
                         </div>
                         </a>
@@ -457,7 +457,7 @@
                         <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                             <div class="flex ml-4 items-center gap-3">
                                 <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
                             </div>
                         </div>
                         </a>
@@ -487,7 +487,7 @@
                         <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                             <div class="flex ml-4 items-center gap-3">
                                 <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Buat</h1>
+                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
                             </div>
                         </div>
                         </a>
@@ -648,7 +648,7 @@
 
                     <!-- Pembungkus Cari -->
                     <div class="pb-3 md:pb-0">
-                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 pr-3 bg-[#DEDEDE] rounded-xl shadow-lg hover:scale-95">
+                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 pr-3 bg-[#E0E0E0] rounded-xl shadow-lg hover:scale-95">
 
                             <!-- Icon -->
                             <label class="flex items-center pl-5 cursor-pointer" for="Cari">
@@ -664,7 +664,7 @@
 
                     <!-- Pilih Kategori -->
                     <div class="">
-                        <select class="py-1 px-10 w-full border-2 text-[#B0B0B0] text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                        <select class="py-1 px-10 w-full border-2 bg-[#E0E0E0] text-[#2c2929] font-medium text-base text-center border-[#E0E0E0] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-95">
                             <option value="1">Pilih Kategori</option>
                             <option value="2">Magang Kampus Merdeka</option>
                             <option value="3">Studi Independen Kampus Merdeka</option>
@@ -698,6 +698,7 @@
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Profile</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nim</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Diikuti</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Persetujuan Orang Tua</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Persetujuan Dosen Wali</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
@@ -717,6 +718,7 @@
                             </td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2208100083</td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Kampus Mengajar Kampus Merdeka</td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
                                 <div class="flex justify-center">
                                     <div class=""><img class="w-8 cursor-pointer" src="../images/KRS Dan KHS(1).png"></div>
@@ -735,52 +737,50 @@
                                     </button>
                                     </a>
 
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Tolak</h1>
-                                    </button>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
+                                    <!-- Pembungkus Modals -->
+                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
 
-                        <!-- Baris Ke 3 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center cursor-pointer">
+                                        <!-- Button -->
+                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                            <h1 class="text-sm text-[#FFFFFF]">Tolak</h1>
+                                        </button>
+                                    
+                                        <!-- Modals -->
+                                        <div x-show="isOpen" 
+                                            x-transition:enter="transition duration-300 ease-out"
+                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                            x-transition:leave="transition duration-150 ease-in"
+                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
+                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                        >
+                                            <div class="flex items-center justify-center h-screen">
+                                                <span aria-hidden="true"></span>
+                                    
+                                                <!-- Pembungkus -->
+                                                <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
 
-                                    <!-- Avatar -->
-                                    <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
-                                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                                    <!-- Text Peringatan -->
+                                                    <div class="pb-4">
+                                                        <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menolak?"</h1>
+                                                    </div>
+                                
+                                                    <!-- Pembungkus Button -->
+                                                    <div class="flex justify-center gap-3">
+                                                        <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                            <h1 class="text-sm text-[#FFFFFF]">Cancel</h1>
+                                                        </button>
+                                    
+                                                        <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
+                                                            <h1 class="text-sm text-[#FFFFFF]">Tolak</h1>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2208100083</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/KRS Dan KHS(1).png"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/KRS Dan KHS(1).png"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Konfimasi</h1>
-                                    </button>
-                                    </a>
-
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Tolak</h1>
-                                    </button>
-                                    </a>
                                 </div>
                             </td>
                         </tr>
