@@ -734,22 +734,26 @@
                                                 <span aria-hidden="true"></span>
                                     
                                                 <!-- Pembungkus -->
-                                                <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
+                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem]">
+                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
 
-                                                    <!-- Text Peringatan -->
-                                                    <div class="pb-4">
-                                                        <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                    </div>
-                                
-                                                    <!-- Pembungkus Button -->
-                                                    <div class="flex justify-center gap-3">
-                                                        <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                            <h1 class="text-sm text-[#FFFFFF]">Cancel</h1>
-                                                        </button>
+                                                        <!-- Text Peringatan -->
+                                                        <div class="pb-4">
+                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
+                                                        </div>
                                     
-                                                        <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                                        </button>
+                                                        <!-- Pembungkus Button -->
+                                                        <div class="flex justify-center gap-3">
+                                                            <div class="sm:grow"></div>
+
+                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                <h1 class="text-sm text-[#FFFFFF]">Cancel</h1>
+                                                            </button>
+                                        
+                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
+                                                                <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
