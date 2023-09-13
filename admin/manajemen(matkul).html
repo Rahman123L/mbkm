@@ -727,6 +727,19 @@
                 navDekstop.classList.add('hidden');
             }
         });
+
+        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
+        window.addEventListener("scroll", function () {
+            var scrollDiv = document.getElementById("scrollDiv");
+
+            if (window.scrollY > 0) {
+                scrollDiv.classList.remove("h-[100vh]");
+                scrollDiv.classList.add("h-full");
+            } else {
+                scrollDiv.classList.remove("h-full");
+                scrollDiv.classList.add("h-[100vh]");
+            }
+        });
     </script>
     <!-- Script End -->
 

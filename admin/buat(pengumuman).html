@@ -632,10 +632,10 @@
 
 
     <!-- Form Start -->
-    <div class="absolute w-full h-[100vh] lg:w-full bg-slate-800 bg-opacity-90"></div>
+    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
     <div class="md:ml-[17rem] relative z-20">
 
-        <div class="container px-6 pt-[5rem] mx-auto">
+        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Buat Pengumuman</h1>
 
             <!-- Alert -->
@@ -649,7 +649,7 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">
@@ -749,6 +749,19 @@
 
             if (!isClickInsideDekstopButton && !isClickInsideNavDekstop) {
                 navDekstop.classList.add('hidden');
+            }
+        });
+
+        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
+        window.addEventListener("scroll", function () {
+            var scrollDiv = document.getElementById("scrollDiv");
+
+            if (window.scrollY > 0) {
+                scrollDiv.classList.remove("h-[100vh]");
+                scrollDiv.classList.add("h-full");
+            } else {
+                scrollDiv.classList.remove("h-full");
+                scrollDiv.classList.add("h-[100vh]");
             }
         });
     </script>

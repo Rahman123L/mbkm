@@ -632,12 +632,12 @@
 
 
     <!-- Form Start -->
-    <div class="absolute w-full h-full bg-slate-800 bg-opacity-90"></div>
+    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
     <div class="md:ml-[17rem] relative z-20">
 
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-5 pt-[5rem] lg:pt-[6rem] mx-auto">
+        <div class="container px-6 pb-6 pt-[5rem] lg:pt-[6rem] mx-auto">
 
             <!-- Text -->
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Program Aktif</h1>
@@ -809,6 +809,19 @@
 
             if (!isClickInsideDekstopButton && !isClickInsideNavDekstop) {
                 navDekstop.classList.add('hidden');
+            }
+        });
+
+        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
+        window.addEventListener("scroll", function () {
+            var scrollDiv = document.getElementById("scrollDiv");
+
+            if (window.scrollY > 0) {
+                scrollDiv.classList.remove("h-[100vh]");
+                scrollDiv.classList.add("h-full");
+            } else {
+                scrollDiv.classList.remove("h-full");
+                scrollDiv.classList.add("h-[100vh]");
             }
         });
     </script>
