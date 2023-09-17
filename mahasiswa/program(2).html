@@ -82,7 +82,7 @@
 
                     <!-- Avatar -->
                     <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
-                        <img class="object-cover w-full h-full" src="../../images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
 
                         <!-- Image -->
                         <div class="w-10 h-10 overflow-hidden rounded-lg">
-                            <img class="object-cover w-full h-full" src="../../images/MBKM(1).png"/>
+                            <img class="object-cover w-full h-full" src="../images/MBKM(1).png"/>
                         </div>
 
                         <!-- Text -->
@@ -171,7 +171,7 @@
 
             <!-- ( Dashboard ) -->
             <div class="py-4 border-b-[0.1px] border-gray-500">
-                <div class="px-5">
+                <div class="px-5 grid gap-3">
 
                     <!-- Icon & Text ( Dashboard ) -->
                     <a href="home.html">
@@ -182,10 +182,25 @@
                         </div>
                     </div>
                     </a>
+
+                    <!-- Icon & Text ( Notifikasi ) -->
+                    <a href="notifikasi.html">
+                    <div class="relative py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Notifikasi.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Notifikasi</h1>
+                        </div>
+
+                        <!-- Button -->
+                        <button class="absolute right-[-4px] top-[-4px] cursor-pointer">
+                            <div class="bg-red-800 rounded-full p-[6px] border brightness-200"></div>
+                        </button>
+                    </div>
+                    </a>
                 </div>
             </div>
 
-            <!-- ( Program ) -->
+            <!-- ( Kegiatan ) -->
             <div class="py-2">
                 <h1 class="font-bold text-[#FFFFFF] ml-7">PROGRAM</h1>
             </div>
@@ -193,54 +208,24 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Program ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Program.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Program</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Tambah ) -->
-                        <a href="tambah.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Tambah.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Tambah</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Aktif ) -->
-                        <a href="program(aktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Aktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Icon & Text ( Penawaran ) -->
+                <a href="penawaran.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Penawaran.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Penawaran</h1>
                     </div>
                 </div>
+                </a>
 
                 <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
-                    <!-- Icon & Text ( Monitoring ) -->
+                    <!-- Icon & Text ( Kegiatan ) -->
                     <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="../images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Monitoring</h1>
+                            <h1 class="font-semibold text-[#FFFFFF]">Kegiatan</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
@@ -251,69 +236,38 @@
                     <!-- Pembungkus Sub Menu -->
                     <div x-show="isOpen" class="pt-3 grid gap-3">
 
-                        <!-- Icon & Text ( Mahasiswa ) -->
-                        <a href="kegiatan(mahasiswa).html">
+                        <!-- Icon & Text ( DiIkuti ) -->
+                        <a href="kegiatan.html">
                         <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Mahasiswa.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                                <img class="w-5" src="../images/Diikuti.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">DiIkuti</h1>
                             </div>
                         </div>
                         </a>
 
-                        <!-- Icon & Text ( Dosen ) -->
-                        <a href="kegiatan(dosen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Dosen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
-                            </div>
-                        </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Peserta ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Mahasiswa.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Peserta</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Aktif ) -->
-                        <a href="peserta(aktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Aktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( NonAktif ) -->
-                        <a href="peserta(nonaktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/NonAktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">NonAktif</h1>
-                            </div>
-                        </div>
-                        </a>
-                        
+                <!-- Icon & Text ( Pendaftran ) -->
+                <a href="pendaftaran.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-5 items-center gap-3">
+                        <img class="w-4" src="../images/Pendaftaran.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Pendaftaran</h1>
                     </div>
                 </div>
-                
+                </a>
+
+                <!-- Icon & Text ( Riwayat ) -->
+                <a href="riwayat.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Riwayat.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Riwayat</h1>
+                    </div>
+                </div>
+                </a>
             </div>
 
             <!-- ( FITUR ) -->
@@ -324,248 +278,55 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-<!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Manajemen ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Manajemen.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Fakultas ) -->
-                        <a href="tambah(fakultas).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Tambah.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Fakultas</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Prodi ) -->
-                        <a href="tambah(prodi).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Tambah.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Prodi</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Kelas ) -->
-                        <a href="manajemen(kelas).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Kelas.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Kelas</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Dosen ) -->
-                        <a href="manajemen(dosen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Dosen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Mahasiswa ) -->
-                        <a href="manajemen(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Mahasiswa.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
-                            </div>
-                        </div>
-                        </a>
-                        
+                <!-- Icon & Text ( Absen ) -->
+                <a href="isi(absen).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Edit(2).svg">
+                        <h1 class="font-semibold text-[#FFFFFF]">Absen</h1>
                     </div>
                 </div>
+                </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( KRS & KHS ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/KRS Dan KHS.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">KRS & KHS</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( IsiKRS ) -->
-                        <a href="isikrs(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">IsiKRS</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( EditKHS ) -->
-                        <a href="editkhs(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Edit.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">EditKHS</h1>
-                            </div>
-                        </div>
-                        </a>
-
-                        <!-- Icon & Text ( Manejemen ) -->
-                        <a href="manajemen(matkul).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Manajemen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Manejemen</h1>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Icon & Text ( Materi ) -->
+                <a href="akses(materi).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Materi.svg">
+                        <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
                     </div>
                 </div>
+                </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Dokumen ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Dokumen.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Dokumen</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Upload ) -->
-                        <a href="upload(dokumen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Upload.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Upload</h1>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Icon & Text ( Berkas ) -->
+                <a href="edit(berkas).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Dokumen.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
                     </div>
                 </div>
+                </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Setting ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Setting.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Setting</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Manajemen ) -->
-                        <a href="manajemen(user).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Manajemen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Icon & Text ( KRS Dan KHS ) -->
+                <a href="krs&khs.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/KRS Dan KHS.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
                     </div>
                 </div>
+                </a>
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Pengumuman ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Pengumuman.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Pengumuman</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(pengumuman).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
-                            </div>
-                        </div>
-                        </a>
+                <!-- Icon & Text ( Download ) -->
+                <a href="dokumen.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Download.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Download</h1>
                     </div>
                 </div>
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Syarat ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Syarat.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
-                        </div>
-                    </div>
-                    
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Buat ) -->
-                        <a href="buat(syarat).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                            <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Isi.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                
-
+                </a>
             </div>
         </div>
     </div>
@@ -610,7 +371,6 @@
                     </div>
                 </div>
                 </a>
-
 
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
@@ -676,7 +436,6 @@
                 </div>
                 </a>
 
-
                 <!-- Icon & Text ( Password ) -->
                 <a href="password.html">
                 <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
@@ -708,13 +467,13 @@
 
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
             <!-- Text -->
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Studi Independen Magang Kampus Merdeka</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+            <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
 
                 <!-- Text -->
                 <h1 class="text-lg font-semibold text-[#FFFFFF]">Syarat Mahasiswa</h1>

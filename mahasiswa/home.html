@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PROGRAM(2)</title>
+    <title>HOME</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -185,11 +185,16 @@
 
                     <!-- Icon & Text ( Notifikasi ) -->
                     <a href="notifikasi.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="relative py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="../images/Notifikasi.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Notifikasi</h1>
                         </div>
+
+                        <!-- Button -->
+                        <button class="absolute right-[-4px] top-[-4px] cursor-pointer">
+                            <div class="bg-red-800 rounded-full p-[6px] border brightness-200"></div>
+                        </button>
                     </div>
                     </a>
                 </div>
@@ -272,6 +277,26 @@
 
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
+
+                <!-- Icon & Text ( Absen ) -->
+                <a href="isi(absen).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Edit(2).svg">
+                        <h1 class="font-semibold text-[#FFFFFF]">Absen</h1>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Icon & Text ( Materi ) -->
+                <a href="akses(materi).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Materi.svg">
+                        <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
+                    </div>
+                </div>
+                </a>
 
                 <!-- Icon & Text ( Berkas ) -->
                 <a href="edit(berkas).html">
@@ -442,62 +467,116 @@
 
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
+        <div class="container px-6 pt-[6.5rem] mx-auto sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
 
-            <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Studi Independen Magang Kampus Merdeka</h1>
-
-            <!-- Pembungkus -->
-            <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <!-- Pembungkus --> 
+            <a href="penawaran.html">
+            <div class="p-4 lg:py-6 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 0.5s;">
 
                 <!-- Text -->
-                <h1 class="text-lg font-semibold text-[#FFFFFF]">Syarat Mahasiswa</h1>
-
-                <!-- Text -->
-                <h1 class="py-4 text-sm font-semibold text-[#FFFFFF] border-b border-[#FFFFFF]">
-                    1. Mahasiswa aktif baik akademik maupun vokasi <br>
-                    2. Berasal dari program studi yang terakreditasi pada Perguruan Tinggi Negeri (PTN) dan Perguruan Tinggi Swasta (PTS) di bawah naungan Kemendikbudristek <br>
-                    3. Mahasiswa berada dipaling rendah semester 4 pada saat pelaksanaaan program disemester genap tahun ajaran 2022/2023 <br>
-                    4. Memiliki IPK minimal 3,00 <br>
-                    5. Mengunggah Surat Pakta Integritas <br>
-                    6. Memperoleh surat rekomendasi dari pemimpin perguruan tinggi, minimal ditandatangani oleh Wakil Dekan <br>
-                    7. Mengunggah Transkrip Nilai IPK <br>
-                    8. Mengunggah Surat Izin Orang Tua <br>
-                    9. Mengunggah Surat Keterangan Sehat <br>
-                    10. Mengunggah dokumen tambahan, seperti sertifikat prestasi, pengalaman mengajar, dan/atau pengalaman berorganisasi jika ada <br>
-                    11. Belum pernah ditetapkan sebagai peserta program Kampus Mengajar angkatan sebelumnya <br>
-                    12. Bersedia mengikuti program hingga selesai <br>
-                </h1>
+                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
 
                 <!-- Pembungkus -->
-                <div class="flex items-center gap-3 py-4">
+                <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
-                    <!-- Checkbox -->
-                    <input type="checkbox" name="" id="">
-
-                    <!-- Text -->
-                    <h1 class="text-sm font-semibold text-[#FFFFFF]">Saya sudah membaca dan memahami syarat mahasiswa</h1>
-                </div>
-
-                <!-- Pembungkus Button -->
-                <div class="pb-2">
-                    <button class="w-full md:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]" type="submit">
-
-                        <!-- Text -->
-                        <div class="w-full text-center">
-                            <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Daftar</h1>
-                        </div>
-                    </button>
-                </div>
-
-                <!-- Pembungkus Button -->
-                <button class="w-full md:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02] hover:cursor-not-allowed" type="button">
-
-                    <!-- Text -->
-                    <div class="w-full text-center">
-                        <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Daftar</h1>
+                    <!-- Icon -->
+                    <div class="">
+                        <img class="w-10" src="../images/Penawaran.png">
                     </div>
-                </button>
+                    
+                    <div class="grow 2xl:px-8">
+                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                    </div>
+
+                    <!-- Number -->
+                    <div class="">
+                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Pembungkus -->
+            <a href="kegiatan.html">
+            <div class="p-4 sm:py-5 lg:py-7 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.0s;">
+
+                <!-- Text -->
+                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
+
+                <!-- Pembungkus -->
+                <div class="flex items-center px-10 sm:px-0 lg:px-16">
+
+                    <!-- Icon -->
+                    <div class="">
+                        <img class="w-10" src="../images/Kegiatan.png">
+                    </div>
+                    
+                    <div class="grow 2xl:px-8">
+                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                    </div>
+
+                    <!-- Number -->
+                    <div class="">
+                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Pembungkus -->
+            <a href="riwayat.html">
+            <div class="p-4 sm:py-[18px] lg:py-[26px] rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.5s;">
+
+                <!-- Text -->
+                <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
+
+                <!-- Pembungkus -->
+                <div class="flex items-center px-10 sm:px-0 lg:px-16">
+
+                    <!-- Icon -->
+                    <div class="">
+                        <img class="w-10" src="../images/Riwayat.png">
+                    </div>
+                    
+                    <div class="grow 2xl:px-8">
+                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                    </div>
+
+                    <!-- Number -->
+                    <div class="">
+                        <h1 class="text-3xl font-bold text-[#FFFFFF]">10</h1>
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+
+        <!-- Pembungkus -->
+        <div class="container px-6 pb-6 mx-auto">
+
+            <!-- Text -->
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#FFFFFF] uppercase" style="animation: fadeIn 2.0s;">Pengumuman</h1>
+
+            <!-- Pembungkus -->
+            <div class="p-4 rounded-2xl overflow-hidden w-full" style="animation: fadeIn 2.0s;">
+
+                <!-- Text -->
+                <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
+                    Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
+
+                    Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
+
+                    1. Buka penewaran program <br>
+                    2. Pilih program yang akan diikuti <br>
+                    3. Baca syarat pendaftaran mahasiswa <br>
+                    4. Centang untuk memunculkan buttom daftar <br>
+                    5. Buka status pendaftaran dan klick lengkapi berkas <br>
+                    6. Upload surat izin orang tua, dan persetujuan dosen wali <br>
+                    7. Klick ajukan <br>
+                    8. Komfirmasi ke koord, prodi untuk menyetujui <br>
+                    9. Ingatkan tim MBKM ULB melalui WA (08194593455) <br>
+                </h1>
             </div>
         </div>
     </div>

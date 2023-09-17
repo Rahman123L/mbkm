@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PROFILE</title>
+    <title>RIWAYAT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -185,11 +185,16 @@
 
                     <!-- Icon & Text ( Notifikasi ) -->
                     <a href="notifikasi.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="relative py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
                         <div class="flex ml-4 items-center gap-3">
                             <img class="w-5" src="../images/Notifikasi.png">
                             <h1 class="font-semibold text-[#FFFFFF]">Notifikasi</h1>
                         </div>
+
+                        <!-- Button -->
+                        <button class="absolute right-[-4px] top-[-4px] cursor-pointer">
+                            <div class="bg-red-800 rounded-full p-[6px] border brightness-200"></div>
+                        </button>
                     </div>
                     </a>
                 </div>
@@ -272,6 +277,26 @@
 
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
+
+                <!-- Icon & Text ( Materi ) -->
+                <a href="tambah(materi).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Tambah.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Icon & Text ( Absen ) -->
+                <a href="isi(absen).html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-2">
+                        <img class="w-6" src="../images/Edit(2).svg">
+                        <h1 class="font-semibold text-[#FFFFFF]">Absen</h1>
+                    </div>
+                </div>
+                </a>
 
                 <!-- Icon & Text ( Berkas ) -->
                 <a href="edit(berkas).html">
@@ -445,73 +470,53 @@
         <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Profil Saya</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Riwayat Kegiatan</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
 
                 <!-- Pembungkus -->
-                <div class="flex items-center gap-3">
+                <div class="overflow-x-scroll overflow-hidden">
 
-                    <!-- Pembungkus Avatar -->
-                    <div class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-[#FFFFFF]">
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
 
-                        <!-- Logo -->
-                        <a href="edit(profile).html">
-                        <button class="absolute w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-[55px] md:ml-[70px] lg:ml-[80px] mt-[56px] md:mt-[66px] lg:mt-[76px] bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF]">
-                            <img class="w-full h-full object-cover bg-cover" src="../images/Edit(3).svg">
-                        </button>
-                        </a>
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Kegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
 
-                        <!-- Image Avatar -->
-                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
-                    </div>
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Belajar Kebaikan</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center cursor-pointer">
+                                    <div class=""><img class="w-8" src="../images/KRS Dan KHS(1).png"></div>
+                                </div>
+                            </td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="edit(riwayat).html">
+                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                    </button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <div class="flex flex-col">
-                        <!-- Maksimal Batas 25 Karakter -->
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Rizky Rahman Rambe</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF] py-1">2208100083</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Teknologi Informasi</h1>
-                    </div>
-                </div>
-
-                <div class="p-2">
-                    <h1 class="text-sm md:text-base lg:text-lg text-justify font-medium text-[#FFFFFF]">"Merangkul keindahan kehidupan, menyebarkan cinta dan kebaikan, serta menginspirasi orang lain untuk bersinar dengan penuh semangat."</h1>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="grid gap-2 p-2">
-
-                    <!-- Email -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">30-10-2003</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Tanggal Lahir</h1>
-                    </div>
-
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">rizkyrambe98@gmail.com</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Email</h1>
-                    </div>
-
-                    <!-- No. Hp -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">082363838328</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">No. Hp</h1>
-                    </div>
-
-                    <!-- IPK -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">4</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">IPK</h1>
-                    </div>
-
-                    <!-- SKS -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">18</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">SKS</h1>
-                    </div>
+                    </table>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->
