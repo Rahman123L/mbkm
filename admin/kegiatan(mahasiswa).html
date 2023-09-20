@@ -795,54 +795,6 @@
                                     </button>
                                     </a>
 
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                        </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
-
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </td>
                         </tr>
