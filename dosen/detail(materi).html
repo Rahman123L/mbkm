@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MATERI</title>
+    <title>DETAIL(MATERI)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -460,7 +460,7 @@
     </div>
     <!-- Avatar Dekstop End -->
 
-    <!-- Form Start -->
+    <!-- Form start -->
     <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
     <div class="md:ml-[17rem] relative z-20">
 
@@ -468,135 +468,101 @@
         <div class="container px-6 pb-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Materi</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Detail Materi</h1>
 
             <!-- Pembungkus -->
             <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg" style="animation: fadeIn 1.0s;">
 
-                <div class="md:flex gap-3">
-
-                    <!-- Button Edit -->
-                    <a href="tambah(materi).html">
-                    <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 px-14 mb-3 text-center rounded-xl bg-[#E0E0E0] shadow-lg hover:scale-95">
-                        <img class="w-6" src="../images/Tambah(1).png">
-                        <h1 class="font-semibold text-[#1480EC]">TambahMateri</h1>
-                    </button>
-                    </a>
-
-                    <div class="grow"></div>
-
-                    <div class="pb-3">
-                        <!-- Pembungkus Cari -->
-                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 pr-3 bg-[#E0E0E0] rounded-xl shadow-lg hover:scale-95">
-
-                            <!-- Icon -->
-                            <label class="flex items-center pl-5 cursor-pointer" for="Cari">
-                                <img class="w-5" src="../images/Search.png">
-                            </label>
-
-                            <!-- Input -->
-                            <input class="w-full lg:w-[20rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="overflow-x-scroll overflow-hidden">
-
-                    <!-- Table -->
-                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
-
-                        <!-- Baris Ke 1 -->
-                        <tr>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Dosen</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Materi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Jam Mulai</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Jam Akhir</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
-                        </tr>
-
-                        <!-- Baris Ke 2 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Kehidupan</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Pemrograman</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center cursor-pointer">
-                                    <div class=""><img class="w-8" src="../images/KRS Dan KHS(1).png"></div>
+                <div class="grid lg:grid-cols-3 gap-5 mx-3">
+                    <div class="col-span-2 border-gray-800">
+                        <div class="flex items-center mt-0 mr-6"> 
+                            <div class="flex items-center gap-3 cursor-pointer">
+                                <div class="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
+                                    <img class="object-cover w-full h-full" src="images/OIP.jpg"/>
                                 </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">09 : 10</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">10 : 35</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="detail(materi).html">
-                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Detail</h1>
-                                    </button>
-                                    </a>
+                                <div class="flex flex-col">
+                                    <div class="flex">
+                                        <!-- Nickname batas 25 karakter -->
+                                        <p class="text-white font-bold">Rizky Rahman Rambe</p>
+                                    </div>
+                                    <p class="text-[#718096] text-sm">Tobangado@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <p class="font-inter text-sm text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo doloribus beatae corporis id maxime a incidunt, dignissimos doloremque natus sed. Praesentium laudantium veritatis molestias eaque iure exercitationem blanditiis fugit ratione et aliquam! Quae aperiam facilis, minima dolorem harum nisi quibusdam illum ipsa, nostrum unde delectus dolores adipisci? Cumque, fuga.</p>
+                        </div>
 
-                                    <a href="edit(materi).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
+                        <div class="border-t-2 border-gray-800 my-5"></div>
+                        <img class="w-full lg:h-[30rem] bg-cover" src="images/Background (3).png">
+                        <div class="border-t-2 border-gray-800 my-5"></div>
 
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
+                    </div>
 
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                        </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
+                    <div class="col-span-2 lg:col-span-1">
+                        <div class="">
+                            <div class="flex items-center"> 
+                                <div class="flex items-center gap-3 cursor-pointer">
+                                    <div class="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
+                                        <img class="object-cover w-full h-full" src="images/OIP.jpg"/>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-white font-bold">Tobangado</p>
+                                        <p class="text-[#718096] text-sm">Tobangado@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="font-inter text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
+                                <div class="mt-3">
+                                    <p class="font-inter text-sm text-[#39d0ce]">1h ago</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 border-t-2 border-gray-800"></div>
+                        </div>
 
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
+                        <div class="">
+                            <div class="flex items-center"> 
+                                <div class="flex items-center gap-3 cursor-pointer">
+                                    <div class="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
+                                        <img class="object-cover w-full h-full" src="images/OIP.jpg"/>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-white font-bold">Tobangado</p>
+                                        <p class="text-[#718096] text-sm">Tobangado@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="font-inter text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
+                                <div class="mt-3">
+                                    <p class="font-inter text-sm text-[#39d0ce]">1h ago</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 border-t-2 border-gray-800"></div>
+                        </div>
 
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="col-span-2 lg:col-span-1 pb-5">
+                            <div class="flex">
+                                <div class="flex items-center mx-4"> 
+                                    <div class="flex items-center gap-3 cursor-pointer">
+                                        <div class="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
+                                            <img class="object-cover w-full h-full" src="images/OIP.jpg"/>
                                         </div>
                                     </div>
-                                
+                                </div>        
+                                <div class="absolute left-[5rem] lg:right-[5.5em] inset-x-6 lg:inset-x-auto">
+                                    <span class="absolute inset-y-0 right-0 flex items-center">
+                                        <label class="cursor-pointer">
+                                            <img class="w-6 h-6 mx-3 rotate-45" src="images/share-icon.svg">
+                                        </label>
+                                    </span>
+                            
+                                    <input class="container py-2 pl-5 pr-[2.5rem] text-Poppins text-lg text-white bg-[#242D3B] rounded-lg focus:ring-[#39d0ce] focus:outline-none focus:ring" type="text" placeholder="Add Commant">
                                 </div>
-                            </td>
-                        </tr>
-
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TAMBAH(PRODI)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        extend: {
+            spacing: {
+            13: "3.25rem",
+            },
+            fontFamily: {
+            inter: ["Inter"],
+            },
+        },
+        },
+    };
+    </script>
+    <!-- Tailwind End -->
+        
+    <!-- Css Start -->
+    <style type="text/tailwindcss">
+        .hamburger-active > span:nth-child(1) {
+            @apply rotate-45;
+        }
+        .hamburger-active > span:nth-child(2) {
+            @apply scale-0;
+        }
+        .hamburger-active > span:nth-child(3) {
+            @apply -rotate-45;
+        }
+        
+        /* Animasi */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <!-- Css End -->
+
+</head>
+<body class="relative w-full lg:bg-cover" style="background-image: url(../images/Background-home.jpg);">
+    
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
+        <header class="bg-[#020194] fixed top-0 left-0 w-full flex items-center z-30 border-b border-gray-800">
+
+            <!-- Avatar Mobile -->
+            <div class="flex items-center m-5" style="animation: fadeIn 0.5s;">
+                <div class="block md:hidden cursor-pointer" id="avatar" name="avatar">
+
+                    <!-- Avatar -->
+                    <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
+                        <img class="object-cover w-full h-full" src="../../images/avatar.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Dekstop -->
+            <div class="">
+                <div class="hidden md:block ml-[17rem]" style="animation: slideInLeft 1.5s;">
+
+                    <!-- Avatar -->
+                    <div class="flex items-center gap-3">
+
+                        <!-- Image -->
+                        <div class="w-10 h-10 overflow-hidden rounded-lg">
+                            <img class="object-cover w-full h-full" src="../../images/MBKM(1).png"/>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="">
+                            <h1 class="font-medium text-[#FFFFFF] uppercase">Universitas Labuhanbatu</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center">
+
+                <!-- Hamburger Mobile -->
+                <button class="block absolute right-4 md:hidden" id="hamburger" name="hamburger" type="button" style="animation: fadeIn 0.5s;">
+                <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out origin-top-left"></span>
+                <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out"></span>
+                <span class="w-[30px] h-[2px] my-2 block bg-white transition duration-300 ease-in-out origin-bottom-left"></span>
+                </button>
+            </div>
+
+            <div class="grow"></div>
+
+            <!-- Avatar Dekstop -->
+            <div class="flex items-center m-5 gap-3" style="animation: slideInRight 1.5s;">
+
+                <!-- Text Username -->
+                <div class="flex flex-col text-end">
+
+                    <!-- Maksimal Batas 35 Karakter -->
+                    <p class="text-sm font-bold text-[#FFFFFF] hidden lg:block">Rizky Rahman Rambe</p>
+                    <p class="text-xs font-semibold text-[#FFFFFF] hidden lg:block">(2208100083)</p>
+                </div>
+
+                <!-- Avatar -->
+                <div class="hidden md:block cursor-pointer" id="dekstop" name="dekstop">
+                    <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Header End -->
+
+    <!-- Navbar Mobile & Dekstop Start -->
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-30 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
+        <div class="flex justify-center relative z-10">
+
+            <!-- Pembungkus -->
+            <div class="fixed bg-[#202020] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
+                <div class="pb-2">
+
+                    <!-- Logo & Text -->
+                    <div class="flex items-center gap-3">
+
+                        <!-- Logo -->
+                        <div class="w-14 h-14 overflow-hidden border border-[#ffffff90] rounded-full">
+                            <img class="object-cover w-full h-full" src="../images/Logo ULB.png"/>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="">
+                            <h1 class="font-bold text-[#FFFFFF]">MBKM ULB</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pembungkus -->
+        <div class="pt-[65px]">
+
+            <!-- ( Dashboard ) -->
+            <div class="py-4 border-b-[0.1px] border-gray-500">
+                <div class="px-5">
+
+                    <!-- Icon & Text ( Dashboard ) -->
+                    <a href="home.html">
+                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Dashboard.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Dashboard</h1>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ( Program ) -->
+            <div class="py-2">
+                <h1 class="font-bold text-[#FFFFFF] ml-7">PROGRAM</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Program ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Program.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Program</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Tambah ) -->
+                        <a href="tambah.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Tambah.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Tambah</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Aktif ) -->
+                        <a href="program(aktif).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Aktif.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Monitoring ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Kegiatan.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Monitoring</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Mahasiswa ) -->
+                        <a href="kegiatan(mahasiswa).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Mahasiswa.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Dosen ) -->
+                        <a href="kegiatan(dosen).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Dosen.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Peserta ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Mahasiswa.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Peserta</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Aktif ) -->
+                        <a href="peserta(aktif).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Aktif.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( NonAktif ) -->
+                        <a href="peserta(nonaktif).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/NonAktif.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">NonAktif</h1>
+                            </div>
+                        </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- ( FITUR ) -->
+            <div class="py-2">
+                <h1 class="font-bold text-[#FFFFFF] ml-7">FITUR</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
+
+<!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Manajemen ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Manajemen.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Fakultas ) -->
+                        <a href="fakultas.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Fakultas.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Fakultas</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Prodi ) -->
+                        <a href="prodi.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Prodi.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Prodi</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Kelas ) -->
+                        <a href="manajemen(kelas).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Kelas.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Kelas</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Dosen ) -->
+                        <a href="manajemen(dosen).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Dosen.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Mahasiswa ) -->
+                        <a href="manajemen(mahasiswa).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Mahasiswa.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                            </div>
+                        </div>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( KRS & KHS ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/KRS Dan KHS.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">KRS & KHS</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( IsiKRS ) -->
+                        <a href="isikrs(mahasiswa).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">IsiKRS</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( EditKHS ) -->
+                        <a href="editkhs(mahasiswa).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Edit.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">EditKHS</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Manejemen ) -->
+                        <a href="manajemen(matkul).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Manajemen.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Manejemen</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Dokumen ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Dokumen.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Dokumen</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Upload ) -->
+                        <a href="upload(dokumen).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Upload.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Upload</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Setting ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Setting.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Setting</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Manajemen ) -->
+                        <a href="manajemen(user).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Manajemen.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Pengumuman ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Pengumuman.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Pengumuman</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(pengumuman).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Syarat ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Syarat.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Syarat</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(syarat).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Isi.png">
+                                <h1 class="font-semibold text-[#FFFFFF]">Edit</h1>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Mobile & Dekstop End -->
+
+    <!-- Avatar Mobile Start -->
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-30 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-avatar">
+        <div class="container mx-auto">
+            
+            <!-- Pembungkus Avatar -->
+            <div class="flex justify-center">
+                <div class="absolute my-[2rem]">
+
+                    <!-- Avatar -->
+                    <div class="w-24 h-24 overflow-hidden border-2 border-[#000000] rounded-full">
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Warna -->
+            <div class="">
+                <div class="w-full h-[5rem] bg-[#FFFFFF]"></div>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center mt-16 mb-6 px-6">
+                <!-- Maksimal Batas 35 Karakter -->
+                <h1 class="font-bold text-[#FFFFFF]">Rizky Rahman Rambe</h1>
+                <h1 class="font-semibold text-[#FFFFFF]">(2208100083)</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="px-11 pb-3 grid gap-3">
+
+                <!-- Icon & Text ( Profile ) -->
+                <a href="profile.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-5 items-center gap-3">
+                        <img class="w-5" src="../images/Mahasiswa.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
+                    </div>
+                </div>
+                </a>
+
+
+                <!-- Icon & Text ( Password ) -->
+                <a href="password.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Ganti Password.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Icon & Text ( Keluar ) -->
+                <a href="../index.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Avatar Mobile End -->
+
+    <!-- Avatar Dekstop Start -->
+    <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 right-0 z-30 w-[17rem] transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInRight 1.0s;" id="nav-desktop">
+        <div class="container mx-auto">
+            
+            <!-- Pembungkus Avatar -->
+            <div class="flex justify-center">
+                <div class="absolute my-[2rem]">
+
+                    <!-- Avatar -->
+                    <div class="w-24 h-24 overflow-hidden border-2 border-[#000000] rounded-full">
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Warna -->
+            <div class="">
+                <div class="w-full h-[5rem] bg-[#FFFFFF]"></div>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center mt-16 mb-6 px-6">
+                <!-- Maksimal Batas 35 Karakter -->
+                <h1 class="font-bold text-[#FFFFFF]">Rizky Rahman Rambe</h1>
+                <h1 class="font-semibold text-[#FFFFFF]">(2208100083)</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="px-11 pb-3 grid gap-3">
+
+                <!-- Icon & Text ( Profile ) -->
+                <a href="profile.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-5 items-center gap-3">
+                        <img class="w-5" src="../images/Mahasiswa.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Profile</h1>
+                    </div>
+                </div>
+                </a>
+
+
+                <!-- Icon & Text ( Password ) -->
+                <a href="password.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Ganti Password.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Password</h1>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Icon & Text ( Keluar ) -->
+                <a href="../index.html">
+                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="flex ml-4 items-center gap-3">
+                        <img class="w-5" src="../images/Keluar.png">
+                        <h1 class="font-semibold text-[#FFFFFF]">Keluar</h1>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Avatar Dekstop End -->
+
+
+    <!-- Form Start -->
+    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
+    <div class="md:ml-[17rem] relative z-20">
+
+        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Tambah Prodi</h1>
+
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Fail!</p>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="w-full md:w-[28rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+                
+                <!-- Pembungkus Input -->
+                <form action="">
+
+                    <!-- Pembungkus -->
+                    <div class="sm:mx-3">
+
+                        <!-- Pembungkus Kode Prodi -->
+                        <label class="" for="KodeProdi">
+
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Kode Prodi</h1>
+
+                            <!-- Input -->
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="" type="text" id="KodeProdi">
+                        </label>
+
+                        <!-- Pembungkus Prodi -->
+                        <label class="" for="Prodi">
+
+                            <!-- Text -->
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Prodi</h1>
+
+                            <!-- Input -->
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="" type="text" id="Prodi">
+                        </label>
+
+                        <!-- Pembungkus Button -->
+                        <div class="pt-4 pb-1">
+                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+
+                                <!-- Text -->
+                                <div class="w-full text-center">
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Tambah</h1>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+    <!-- Script Start -->
+    <script>
+        // Hamburger
+        const hamburger = document.querySelector('#hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger-active');
+            navMenu.classList.toggle('hidden');
+        });
+
+        // Avatar Mobile
+        const navAvatar = document.querySelector('#nav-avatar');
+        const avatar = document.querySelector('#avatar');
+
+        avatar.addEventListener('click', function () {
+            navAvatar.classList.toggle('hidden');
+        });
+
+        // Avatar Dekstop
+        const navDekstop = document.querySelector('#nav-desktop');
+        const dekstopButton = document.querySelector('#dekstop');
+
+        dekstopButton.addEventListener('click', function () {
+            navDekstop.classList.toggle('hidden');
+        });
+
+
+        // Menutup form Avatar Mobile ketika area di luar form diklik
+        document.addEventListener('click', function (event) {
+            const isClickInsideAvatar = avatar.contains(event.target);
+            const isClickInsideNavAvatar = navAvatar.contains(event.target);
+
+            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
+                navAvatar.classList.add('hidden');
+            }
+        });
+
+        // Menutup form Hamburger Mobile ketika area di luar form diklik
+        document.addEventListener('click', function (event) {
+            const isClickInsideHamburger = hamburger.contains(event.target);
+            const isClickInsideNavMenu = navMenu.contains(event.target);
+
+            if (!isClickInsideHamburger && !isClickInsideNavMenu) {
+                hamburger.classList.remove('hamburger-active');
+                navMenu.classList.add('hidden');
+            }
+        });
+
+        // Menutup form Avatar Dekstop ketika area di luar form diklik
+        document.addEventListener('click', function (event) {
+            const isClickInsideAvatar = avatar.contains(event.target);
+            const isClickInsideNavAvatar = navAvatar.contains(event.target);
+
+            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
+                navAvatar.classList.add('hidden');
+            }
+            
+            const isClickInsideDekstopButton = dekstopButton.contains(event.target);
+            const isClickInsideNavDekstop = navDekstop.contains(event.target);
+
+            if (!isClickInsideDekstopButton && !isClickInsideNavDekstop) {
+                navDekstop.classList.add('hidden');
+            }
+        });
+
+        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
+        window.addEventListener("scroll", function () {
+            var scrollDiv = document.getElementById("scrollDiv");
+
+            if (window.scrollY > 0) {
+                scrollDiv.classList.remove("h-[100vh]");
+                scrollDiv.classList.add("h-full");
+            } else {
+                scrollDiv.classList.remove("h-full");
+                scrollDiv.classList.add("h-[100vh]");
+            }
+        });
+    </script>
+    <!-- Script End -->
+
+</body>
+</html>
