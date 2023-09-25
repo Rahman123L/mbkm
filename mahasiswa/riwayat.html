@@ -278,25 +278,35 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-                <!-- Icon & Text ( Absen ) -->
-                <a href="isi(absen).html">
-                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                    <div class="flex ml-4 items-center gap-2">
-                        <img class="w-6" src="../images/Edit(2).svg">
-                        <h1 class="font-semibold text-[#FFFFFF]">Absen</h1>
-                    </div>
-                </div>
-                </a>
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
-                <!-- Icon & Text ( Materi ) -->
-                <a href="akses(materi).html">
-                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
-                    <div class="flex ml-4 items-center gap-2">
-                        <img class="w-6" src="../images/Materi.svg">
-                        <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
+                    <!-- Icon & Text ( Elearning ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Elearning.svg">
+                            <h1 class="font-semibold text-[#FFFFFF]">Elearning</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Materi ) -->
+                        <a href="akses(materi).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-2">
+                                <img class="w-6" src="../images/Materi.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
+                            </div>
+                        </div>
+                        </a>
                     </div>
                 </div>
-                </a>
 
                 <!-- Icon & Text ( Berkas ) -->
                 <a href="edit(berkas).html">
