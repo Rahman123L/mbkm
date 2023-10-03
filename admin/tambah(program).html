@@ -82,7 +82,7 @@
 
                     <!-- Avatar -->
                     <div class="w-10 h-10 overflow-hidden border-2 border-[FFFFFF] rounded-full">
-                        <img class="object-cover w-full h-full" src="../../images/avatar.jpg"/>
+                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
 
                         <!-- Image -->
                         <div class="w-10 h-10 overflow-hidden rounded-lg">
-                            <img class="object-cover w-full h-full" src="../../images/MBKM(1).png"/>
+                            <img class="object-cover w-full h-full" src="../images/MBKM(1).png"/>
                         </div>
 
                         <!-- Text -->
@@ -727,11 +727,27 @@
                     <!-- Pembungkus -->
                     <div class="sm:mx-3">
 
+                        <!-- Pembungkus Kategori -->
+                        <label class="" for="Kategori">
+
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Kategori</h1>
+
+                            <!-- Input -->
+                            <div class="">
+                                <select class="text-[#B0B0B0] w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <option value="" disabled selected>Pilih Kategori</option>
+                                    <option value="1">Mahasiswa</option>
+                                    <option value="2">Dosen</option>
+                                </select>
+                            </div>
+                        </label>
+
                         <!-- Pembungkus Judul -->
                         <label class="" for="Judul">
 
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
 
                             <!-- Input -->
                             <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Merdeka Belajar Kampus Merdeka" type="text" id="Judul">
