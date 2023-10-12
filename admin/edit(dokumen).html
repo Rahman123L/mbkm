@@ -324,7 +324,7 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-<!-- Pembungkus -->
+                <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Manajemen ) -->
@@ -728,11 +728,26 @@
                     <!-- Pembungkus -->
                     <div class="sm:mx-3">
 
+                        <!-- Pembungkus Program -->
+                        <label class="" for="Program">
+
+                            <!-- Text -->
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Pilih Program</h1>
+
+                            <!-- Input -->
+                            <div class="">
+                                <select class="text-[#B0B0B0] w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
+                                    <option value="" disabled selected>Pilih Program</option>
+                                    <option value="1">Magang Kampus Merdeka</option>
+                                </select>
+                            </div>
+                        </label>
+
                         <!-- Pembungkus Judul Dokumen -->
                         <label class="" for="JudulDokumen">
 
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Dokumen</h1>
+                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Dokumen</h1>
 
                             <!-- Input -->
                             <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Dokumen" type="text" id="JudulDokumen">
