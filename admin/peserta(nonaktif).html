@@ -773,10 +773,8 @@
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Nim</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Diikuti</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Persetujuan Orang Tua</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Rekomendasi Kaprodi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Transkrip Nilai IPK</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Surat Sertifikasi Prestasi (Opsional)</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
+                            
                             <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
                         </tr>
 
@@ -802,24 +800,103 @@
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2208100083</td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Kampus Mengajar Kampus Merdeka</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/View.svg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/View.svg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/View.svg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-8 cursor-pointer" src="../images/View.svg"></div>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
+                                <!-- Pembungkus Modals -->
+                                <div x-data="{ isOpen: false }" class="relative flex justify-center">
+
+                                    <!-- Button -->
+                                    <button @click="isOpen = true" class="px-2 bg-green-400 rounded-lg hover:scale-105">
+                                        <img class="w-7 p-1" src="../images/KRS Dan KHS.png">
+                                    </button>
+                                
+                                    <!-- Modals -->
+                                    <div x-show="isOpen" 
+                                        x-transition:enter="transition duration-300 ease-out"
+                                        x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                        x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                        x-transition:leave="transition duration-150 ease-in"
+                                        x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                        x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                        class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
+                                        aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                    >
+                                        <div class="flex items-center justify-center h-screen">
+                                            <span aria-hidden="true"></span>
+                                
+                                            <!-- Pembungkus -->
+                                            <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem]">
+                                                <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
+
+                                                    <div class="md:w-[20rem] grid gap-3">
+                                                        
+                                                        <div class="md:flex items-center">
+                                                            <div class="grid gap-2">
+                                                                <h1>2208100083</h1>
+                                                            </div>
+                                                            <div class="md:grow"></div>
+                                                        </div>
+                                                        <h1>Universitas LabuhanBatu</h1>
+
+                                                        <div class="md:flex items-center">
+                                                            <div class="grid gap-2">
+                                                                <h1>IPK 3.5</h1>
+                                                                <h1>Semester 3</h1>
+                                                                <h1>KHS 40</h1>
+                                                            </div>
+                                                            <div class="md:grow"></div>
+                                                        </div>
+
+                                                        <div class="w-full h-[4.5rem] overflow-y-scroll">
+                                                            <div class="">
+                                                                <h1>Surat Persetujuan Orang Tua</h1>
+                                                                <div class="py-3">
+                                                                    <button class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                        <h1 class="text-sm text-[#FFFFFF]">Tampilkan</h1>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="">   
+                                                                <h1>Surat Persetujuan Orang Tua</h1>
+                                                                <div class="py-3">
+                                                                    <button class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                        <h1 class="text-sm text-[#FFFFFF]">Tampilkan</h1>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="">   
+                                                                <h1>Surat Persetujuan Orang Tua</h1>
+                                                                <div class="py-3">
+                                                                    <button class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                        <h1 class="text-sm text-[#FFFFFF]">Tampilkan</h1>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="">   
+                                                                <h1>Surat Persetujuan Orang Tua</h1>
+                                                                <div class="py-3">
+                                                                    <button class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                        <h1 class="text-sm text-[#FFFFFF]">Tampilkan</h1>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Pembungkus Button -->
+                                                        <div class="flex pt-4 justify-center gap-3">
+                                                            <div class="sm:grow"></div>
+
+                                                            <button @click="isOpen = false" class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
+                                                                <h1 class="text-sm text-[#FFFFFF]">Cancel</h1>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                             <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
