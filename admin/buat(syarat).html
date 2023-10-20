@@ -398,6 +398,87 @@
                 <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
+                    <!-- Icon & Text ( Identitas ) -->
+                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <img class="w-5" src="../images/Manajemen.png">
+                            <h1 class="font-semibold text-[#FFFFFF]">Identitas</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <img class="w-5" src="../images/Down.png">
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Kampus ) -->
+                        <a href="kampus.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Fakultas.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Kampus</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Sekolah ) -->
+                        <a href="sekolah.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Prodi.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Sekolah</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Desa ) -->
+                        <a href="desa.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Desa(1).svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Desa</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Instansi ) -->
+                        <a href="instansi.html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Instansi(1).svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Instansi</h1>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Icon & Text ( Mitra Mandiri ) -->
+                        <a href="mitra(mandiri).html">
+                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                            <div class="flex ml-4 items-center gap-3">
+                                <img class="w-5" src="../images/Mitra.svg">
+                                <h1 class="font-semibold text-[#FFFFFF]">Mandiri</h1>
+                            </div>
+                        </div>
+                        </a>
+                        
+                        <!-- Icon & Text ( Mitra Indenpenden ) -->
+                        <a href="mitra(independen).html">
+                            <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <img class="w-5" src="../images/Mitra.svg">
+                                    <h1 class="font-semibold text-[#FFFFFF]">Independen</h1>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
                     <!-- Icon & Text ( KRS & KHS ) -->
                     <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">

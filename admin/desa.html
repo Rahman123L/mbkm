@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PROFILE</title>
+    <title>DESA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -324,7 +324,7 @@
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-<!-- Pembungkus -->
+                <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Manajemen ) -->
@@ -784,7 +784,7 @@
 
 
     <!-- Form Start -->
-    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
+    <div class="absolute w-full h-full lg:h-[100vh] bg-slate-800 bg-opacity-90"></div>
     <div class="md:ml-[17rem] relative z-20">
 
 
@@ -792,73 +792,117 @@
         <div class="container px-6 pb-6 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Profil Saya</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Identitas Desa</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg" style="animation: fadeIn 1.0s;">
 
                 <!-- Pembungkus -->
-                <div class="flex items-center gap-3">
+                <div class="md:flex justify-center pb-3 md:pb-0 gap-3">
 
-                    <!-- Pembungkus Avatar -->
-                    <div class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-[#FFFFFF]">
+                    <!-- Button -->
+                    <a href="tambah(desa).html">
+                    <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 px-14 mb-3 text-center rounded-xl bg-[#E0E0E0] shadow-lg hover:scale-95">
+                        <img class="w-6" src="../images/Tambah(1).png">
+                        <h1 class="font-semibold text-[#1480EC]">TambahData</h1>
+                    </button>
+                    </a>
 
-                        <!-- Logo -->
-                        <a href="edit(profile).html">
-                        <button class="absolute w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-[55px] md:ml-[70px] lg:ml-[80px] mt-[56px] md:mt-[66px] lg:mt-[76px] bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF]">
-                            <img class="w-full h-full object-cover bg-cover" src="../images/Edit(3).svg">
-                        </button>
-                        </a>
+                    <div class="grow-0 md:grow"></div>
 
-                        <!-- Image Avatar -->
-                        <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <!-- Maksimal Batas 25 Karakter -->
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Rizky Rahman Rambe</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF] py-1">2208100083</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#FFFFFF]">Teknologi Informasi</h1>
+                    <!-- Pilih Kategori -->
+                    <div class="">
+                        <select class="py-1 px-10 w-full border-2 bg-[#E0E0E0] text-[#2c2929] font-medium text-base text-center border-[#E0E0E0] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-95">
+                            <option value="1">Pilih Program</option>
+                            <option value="2">Magang Kampus Merdeka</option>
+                        </select>
                     </div>
                 </div>
 
-                <div class="p-2">
-                    <h1 class="text-sm md:text-base lg:text-lg text-justify font-medium text-[#FFFFFF]">"Merangkul keindahan kehidupan, menyebarkan cinta dan kebaikan, serta menginspirasi orang lain untuk bersinar dengan penuh semangat."</h1>
-                </div>
-
                 <!-- Pembungkus -->
-                <div class="grid gap-2 p-2">
+                <div class="overflow-x-scroll overflow-hidden">
 
-                    <!-- Email -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">30-10-2003</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Tanggal Lahir</h1>
-                    </div>
+                    <!-- Table -->
+                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
 
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">rizkyrambe98@gmail.com</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">Email</h1>
-                    </div>
+                        <!-- Baris Ke 1 -->
+                        <tr>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Desa</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program</th>
+                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
+                        </tr>
 
-                    <!-- No. Hp -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">082363838328</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">No. Hp</h1>
-                    </div>
+                        <!-- Baris Ke 2 -->
+                        <tr>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">HOUTEMBARU</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
+                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
+                                <div class="flex justify-center gap-2">
+                                    <a href="edit(desa).html">
+                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
+                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                    </button>
+                                    </a>
 
-                    <!-- IPK -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">4</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">IPK</h1>
-                    </div>
+                                    <!-- Pembungkus Modals -->
+                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
 
-                    <!-- SKS -->
-                    <div class="">
-                        <h1 class="text-sm md:text-base lg:text-lg font-medium text-[#FFFFFF] mb-1">18</h1>
-                        <h1 class="text-xs md:text-sm lg:text-base font-medium text-[#989898]">SKS</h1>
-                    </div>
+                                        <!-- Button -->
+                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
+                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                        </button>
+                                    
+                                        <!-- Modals -->
+                                        <div x-show="isOpen" 
+                                            x-transition:enter="transition duration-300 ease-out"
+                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                            x-transition:leave="transition duration-150 ease-in"
+                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
+                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                        >
+                                            <div class="flex items-center justify-center h-screen">
+                                                <span aria-hidden="true"></span>
+                                    
+                                                <!-- Pembungkus -->
+                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
+                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
+
+                                                        <!-- Text Peringatan -->
+                                                        <div class="pb-4">
+                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
+                                                        </div>
+                                    
+                                                        <!-- Pembungkus Button -->
+                                                        <div class="flex justify-center gap-3">
+                                                            <div class="sm:grow"></div>
+
+                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
+                                                            </button>
+                                        
+                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
+                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Form End -->
