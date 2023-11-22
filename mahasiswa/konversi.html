@@ -501,36 +501,36 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">
 
                     <!-- Pembungkus -->
-                    <div class="sm:mx-3">
-
-                        <!-- Image -->
-                        <div class="px-2 py-4">
-                            <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="../images/PDF.png">
-                        </div>
+                    <div class="md:m-2 grid gap-1">
 
                         <!-- Pembungkus File -->
-                        <div class="pb-4">
-                            <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                        
-                                <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                        
-                                <input id="file" type="file" class="hidden" />
-                            </label>
+                        <div class="py-1">
+                        <label class="" for="File">
+                            <div class="">
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer"> Pilih File</h1>
+                            </div>
+                            <div class="flex justify-center w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500 dark:text-gray-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                                <input type="file" id="File" class="hidden">
+                            </div>
+                        </label>
                         </div>
 
                         <!-- Pembungkus Button -->
-                        <div class="pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+                        <div class="pb-2">
+                            <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
 
                                 <!-- Text -->
                                 <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Upload</h1>
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Upload</h1>
                                 </div>
                             </button>
                         </div>
