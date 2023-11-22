@@ -39,6 +39,18 @@
             @apply -rotate-45;
         }
         
+        @media (max-width: 768px) {
+            .fixeed {
+                position: fixed;
+            }
+            th, .tab {
+                display: none;
+            }
+            tr {
+                display: grid;
+            }
+        }
+        
         /* Animasi */
         @keyframes slideInRight {
             from {
@@ -70,7 +82,7 @@
     <!-- Css End -->
 
 </head>
-<body class="relative w-full lg:bg-cover" style="background-image: url(../images/Background-home.jpg);">
+<body class="bg-[#FBFBFB]">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -471,239 +483,40 @@
     <!-- Avatar Dekstop End -->
 
     <!-- Form Start -->
-    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
+
     <div class="md:ml-[17rem] relative z-20">
 
-        <!-- Pembungkus -->
-        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+        <!-- Form Start -->
+        <div class="container px-6 pt-[10rem] mx-auto text-center leading-5 lg:leading-[5rem]">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Materi</h1>
-
-            <!-- Pembungkus -->
-            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg" style="animation: fadeIn 1.0s;">
-
-                <!-- Pembungkus -->
-                <div class="md:flex justify-center items-center pb-3 gap-3">
-
-                    <!-- Pembungkus Cari -->
-                    <div class="pb-3 md:pb-0">
-                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 pr-3 bg-[#E0E0E0] rounded-xl shadow-lg hover:scale-95">
-
-                            <!-- Icon -->
-                            <label class="flex items-center pl-5 cursor-pointer" for="Cari">
-                                <img class="w-5" src="../images/Search.png">
-                            </label>
-
-                            <!-- Input -->
-                            <input class="w-full lg:w-[20rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
-                        </div>
-                    </div>
-
-                    <div class="grow-0 md:grow"></div>
-
-                    <!-- Pilih Program Studi -->
-                    <div class="">
-                        <select class="py-1 px-10 w-full border-2 bg-[#E0E0E0] text-[#2c2929] font-medium text-base text-center border-[#E0E0E0] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-95">
-                            <option value="1">Pilih Program Studi</option>
-                            <option value="2">Teknologi Informasi</option>
-                        </select>
-                    </div>
+            <div class="flex justify-center">
+                <div class="absolute cursor-pointer">
+                    <h1 class="text-[2rem] sm:text-[4rem] lg:text-[5rem] font-bold text-[#1480EC] uppercase animate-bounce">Maintenance</h1>
                 </div>
+            </div>
 
-                <!-- Pembungkus -->
-                <div class="overflow-x-scroll overflow-hidden">
-
-                    <!-- Table -->
-                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
-
-                        <!-- Baris Ke 1 -->
-                        <tr>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Dosen</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Studi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Materi</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Berkas</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Jam Mulai</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Jam Akhir</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
-                        </tr>
-
-                        <!-- Baris Ke 2 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">AkuInginPahala</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Teknologi Informasi</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Pemrograman</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center cursor-pointer">
-                                    <div class=""><img class="w-8" src="../images/KRS Dan KHS(1).png"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">09 : 10</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">10 : 35</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Hadir</h1>
-                                        </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <!-- Pembungkus Input -->
-                                                            <form action="">
-
-                                                                <!-- Pembungkus -->
-                                                                <div class="sm:mx-3">
-
-                                                                    <!-- Pembungkus Judul Kegiatan -->
-                                                                    <label class="" for="KodeMateri">
-
-                                                                        <!-- Text -->
-                                                                        <h1 class="pb-2 text-lg font-medium text-[#B0B0B0] cursor-pointer">Kode Materi</h1>
-
-                                                                        <!-- Input -->
-                                                                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="A11B4" type="text" id="KodeMateri">
-                                                                    </label>
-
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
-
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <a href="materi.html">
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
+            <div class="flex justify-center">
+                <div class="cursor-pointer">
+                    <img class="w-full bg-cover object-cover" src="../images/Maintenance.gif">
                 </div>
+            </div>
 
+            <!-- Button -->
+            <div class="flex justify-center">
+                <a href="index.html">
+                <button class="py-3 px-10 lg:px-20 text-center rounded-xl bg-[#1480EC] shadow-lg cursor-pointer hover:scale-95">
+                    <h1 class="text-sm lg:text-base font-semibold text-[#FFFFFF]">Go Back</h1>
+                </button>
+                </a>
             </div>
         </div>
     </div>
     <!-- Form End -->
     
     <!-- Script Start -->
-    <script>
-        // Hamburger
-        const hamburger = document.querySelector('#hamburger');
-        const navMenu = document.querySelector('#nav-menu');
-
-        hamburger.addEventListener('click', function () {
-            hamburger.classList.toggle('hamburger-active');
-            navMenu.classList.toggle('hidden');
-        });
-
-        // Avatar Mobile
-        const navAvatar = document.querySelector('#nav-avatar');
-        const avatar = document.querySelector('#avatar');
-
-        avatar.addEventListener('click', function () {
-            navAvatar.classList.toggle('hidden');
-        });
-
-        // Avatar Dekstop
-        const navDekstop = document.querySelector('#nav-desktop');
-        const dekstopButton = document.querySelector('#dekstop');
-
-        dekstopButton.addEventListener('click', function () {
-            navDekstop.classList.toggle('hidden');
-        });
-
-
-        // Menutup form Avatar Mobile ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideAvatar = avatar.contains(event.target);
-            const isClickInsideNavAvatar = navAvatar.contains(event.target);
-
-            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
-                navAvatar.classList.add('hidden');
-            }
-        });
-
-        // Menutup form Hamburger Mobile ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideHamburger = hamburger.contains(event.target);
-            const isClickInsideNavMenu = navMenu.contains(event.target);
-
-            if (!isClickInsideHamburger && !isClickInsideNavMenu) {
-                hamburger.classList.remove('hamburger-active');
-                navMenu.classList.add('hidden');
-            }
-        });
-
-        // Menutup form Avatar Dekstop ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideAvatar = avatar.contains(event.target);
-            const isClickInsideNavAvatar = navAvatar.contains(event.target);
-
-            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
-                navAvatar.classList.add('hidden');
-            }
-            
-            const isClickInsideDekstopButton = dekstopButton.contains(event.target);
-            const isClickInsideNavDekstop = navDekstop.contains(event.target);
-
-            if (!isClickInsideDekstopButton && !isClickInsideNavDekstop) {
-                navDekstop.classList.add('hidden');
-            }
-        });
-
-        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
-        window.addEventListener("scroll", function () {
-            var scrollDiv = document.getElementById("scrollDiv");
-
-            if (window.scrollY > 0) {
-                scrollDiv.classList.remove("h-[100vh]");
-                scrollDiv.classList.add("h-full");
-            } else {
-                scrollDiv.classList.remove("h-full");
-                scrollDiv.classList.add("h-[100vh]");
-            }
-        });
-    </script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/select.js"></script>
     <!-- Script End -->
 
 </body>

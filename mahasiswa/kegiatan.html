@@ -38,6 +38,18 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
+
+        @media (max-width: 768px) {
+            .fixeed {
+                position: fixed;
+            }
+            th, .tab {
+                display: none;
+            }
+            tr {
+                display: grid;
+            }
+        }
         
         /* Animasi */
         @keyframes slideInRight {
@@ -70,7 +82,7 @@
     <!-- Css End -->
 
 </head>
-<body class="relative w-full lg:bg-cover" style="background-image: url(../images/Background-home.jpg);">
+<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -472,152 +484,84 @@
 
 
     <!-- Form Start -->
-    <div class="absolute w-full h-[100vh] bg-slate-800 bg-opacity-90" id="scrollDiv"></div>
     <div class="md:ml-[17rem] relative z-20">
 
-
         <!-- Pembungkus -->
-        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
+        <div class="container px-6 pb-6 pt-[5rem] lg:pt-[6rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Diikuti</h1>
+            <h1 class="py-3 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Kegiatan Diikuti</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg mb-5" style="animation: fadeIn 1.0s;">
+            <div class="sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
 
                 <!-- Pembungkus -->
-                <div class="overflow-x-scroll overflow-hidden">
+                <div class="sm:w-[20rem] cursor-pointer" style="animation: fadeIn 1.0s;">
+                    
+                    <!-- Pembungkus -->
+                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#00000057] border-2 border-[#FFFFFF] shadow-lg shadow-gray-700 overflow-hidden mb-5">
 
-                    <!-- Table -->
-                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+                        <div class="grid gap-4">
 
-                        <!-- Baris Ke 1 -->
-                        <tr>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Foto</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Program Diikuti</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
-                        </tr>
+                            <div class="w-full overflow-hidden rounded-xl">
+                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
+                            </div>
 
-                        <!-- Baris Ke 2 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-16" src="../images/MBKM.jpeg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
-                                <div class="flex justify-center gap-2">
-                                    <a href="">
-                                    <button class="py-1 px-3 bg-blue-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Kelola</h1>
+                            <!-- Text -->
+                            <div class="w-full pt-2 rounded-2xl">
+                                <h1 class="text-center text-[14px] sm:text-base font-bold text-[#1480EC]">Program Yang Diikuti</h1>
+                            </div>
+
+                            <!-- Text -->
+                            <div class="w-full pb-2 rounded-2xl">
+                                <h1 class="text-center text-[16px] sm:text-lg font-bold text-[#FFFFFF]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                            </div>
+
+                            <div class="pb-2">
+    
+                                <!-- Button -->
+                                <a href="">
+                                <div class="flex justify-center pb-4 px-[1.5rem]">
+                                    <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-[#1480EC] cursor-pointer">
+                                        <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#1480EC]">Kelola</h1>
                                     </button>
-                                    </a>
+                                </div>
+                                </a>
 
+                                <div class="grid grid-cols-2 gap-4">
+
+                                    <!-- Button -->
                                     <a href="konversi.html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">konversi</h1>
-                                    </button>
+                                    <div class="flex justify-center pb-4">
+                                        <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-[#FFFFFF] cursor-pointer">
+                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#FFFFFF]">Konversi</h1>
+                                        </button>
+                                    </div>
                                     </a>
 
+                                    <!-- Button -->
                                     <a href="laporan.html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Laporan</h1>
-                                    </button>
+                                    <div class="flex justify-center pb-4">
+                                        <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-red-500 cursor-pointer">
+                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-red-500">Laporan</h1>
+                                        </button>
+                                    </div>
                                     </a>
                                 </div>
-                            </td>
-                        </tr>
+                            </div>
 
-                    </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
     <!-- Form End -->
 
     <!-- Script Start -->
-    <script>
-        // Hamburger
-        const hamburger = document.querySelector('#hamburger');
-        const navMenu = document.querySelector('#nav-menu');
-
-        hamburger.addEventListener('click', function () {
-            hamburger.classList.toggle('hamburger-active');
-            navMenu.classList.toggle('hidden');
-        });
-
-        // Avatar Mobile
-        const navAvatar = document.querySelector('#nav-avatar');
-        const avatar = document.querySelector('#avatar');
-
-        avatar.addEventListener('click', function () {
-            navAvatar.classList.toggle('hidden');
-        });
-
-        // Avatar Dekstop
-        const navDekstop = document.querySelector('#nav-desktop');
-        const dekstopButton = document.querySelector('#dekstop');
-
-        dekstopButton.addEventListener('click', function () {
-            navDekstop.classList.toggle('hidden');
-        });
-
-
-        // Menutup form Avatar Mobile ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideAvatar = avatar.contains(event.target);
-            const isClickInsideNavAvatar = navAvatar.contains(event.target);
-
-            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
-                navAvatar.classList.add('hidden');
-            }
-        });
-
-        // Menutup form Hamburger Mobile ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideHamburger = hamburger.contains(event.target);
-            const isClickInsideNavMenu = navMenu.contains(event.target);
-
-            if (!isClickInsideHamburger && !isClickInsideNavMenu) {
-                hamburger.classList.remove('hamburger-active');
-                navMenu.classList.add('hidden');
-            }
-        });
-
-        // Menutup form Avatar Dekstop ketika area di luar form diklik
-        document.addEventListener('click', function (event) {
-            const isClickInsideAvatar = avatar.contains(event.target);
-            const isClickInsideNavAvatar = navAvatar.contains(event.target);
-
-            if (!isClickInsideAvatar && !isClickInsideNavAvatar) {
-                navAvatar.classList.add('hidden');
-            }
-            
-            const isClickInsideDekstopButton = dekstopButton.contains(event.target);
-            const isClickInsideNavDekstop = navDekstop.contains(event.target);
-
-            if (!isClickInsideDekstopButton && !isClickInsideNavDekstop) {
-                navDekstop.classList.add('hidden');
-            }
-        });
-
-        // Mengubah ( h-[100vh] == h-full ) ketiak di scroll
-        window.addEventListener("scroll", function () {
-            var scrollDiv = document.getElementById("scrollDiv");
-
-            if (window.scrollY > 0) {
-                scrollDiv.classList.remove("h-[100vh]");
-                scrollDiv.classList.add("h-full");
-            } else {
-                scrollDiv.classList.remove("h-full");
-                scrollDiv.classList.add("h-[100vh]");
-            }
-        });
-    </script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/select.js"></script>
     <!-- Script End -->
 
 </body>

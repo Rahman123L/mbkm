@@ -29,6 +29,18 @@
         
     <!-- Css Start -->
     <style type="text/tailwindcss">
+        @media (max-width: 768px) {
+            .fixeed {
+                position: fixed;
+            }
+            th, .tab {
+                display: none;
+            }
+            tr {
+                display: grid;
+            }
+        }
+        
         /* Animasi */
         @keyframes slideInRight {
             from {
