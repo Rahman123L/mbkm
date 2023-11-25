@@ -516,7 +516,6 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
         <div class="container px-6 pb-5 pt-[5rem] mx-auto">
@@ -529,73 +528,74 @@
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                     </svg>
                 </span>
-                <p class="font-bold text-white">Fail!</p>
+                <p class="font-bold text-white">Gagal!</p>
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] p-4 rounded-2xl bg-transparent border-2 border-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">
 
                     <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                    <div class="md:m-2 grid gap-1">
 
                         <!-- Pembungkus Judul Kegiatan -->
                         <label class="" for="JudulKegiatan">
-
+                                
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul Kegiatan</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Judul Kegiatan</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Kegiatan" type="text" id="JudulKegiatan">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="text" id="JudulKegiatan">
                         </label>
 
-                        <!-- Image -->
-                        <div class="px-2 py-4">
-                            <img class="sm:w-[25rem] sm:h-[12rem] bg-cover object-cover w-full h-full" src="../images/PDF.png">
-                        </div>
-
                         <!-- Pembungkus File -->
-                        <div class="pb-4">
-                            <label for="file" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                        
-                                <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                        
-                                <input id="file" type="file" class="hidden" />
-                            </label>
+                        <div class="py-1">
+                        <label class="" for="File">
+                            <div class="">
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer"> Pilih File</h1>
+                            </div>
+                            <div class="flex justify-center w-full py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500 dark:text-gray-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                                <input type="file" id="File" class="hidden">
+                            </div>
+                        </label>
                         </div>
 
                         <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
 
                             <!-- Pembungkus Awal Kegiatan -->
                             <label class="" for="AwalKegiatan">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
-
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Awal Kegiatan</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
                             </label>
 
                             <!-- Pembungkus Akhir Kegiatan -->
                             <label class="" for="AkhirKegiatan">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
-
+                                <h1 class="mt-2 md:mt-0 pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Akhir Kegiatan</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
                             </label>
+
                         </div>
 
                         <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+                        <div class="pt-4 pb-2">
+                            <button class="w-full flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
 
                                 <!-- Text -->
                                 <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Upload</h1>
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Upload</h1>
                                 </div>
                             </button>
                         </div>

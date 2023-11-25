@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PROGRAM(2)</title>
+    <title>KONVERSI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -516,67 +516,59 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
+        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Konversi</h1>
 
-        <!-- Pembungkus -->
-        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
-
-            <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Studi Independen Magang Kampus Merdeka</h1>
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Gagal!</p>
+            </div>
 
             <!-- Pembungkus -->
-            <div class="w-full p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+                
+                <!-- Pembungkus Input -->
+                <form action="">
 
-                <!-- Text -->
-                <h1 class="text-lg font-semibold text-[#FFFFFF]">Syarat Mahasiswa</h1>
+                    <!-- Pembungkus -->
+                    <div class="md:m-2 grid gap-1">
 
-                <!-- Text -->
-                <h1 class="py-4 text-sm font-semibold text-[#FFFFFF] border-b border-[#FFFFFF]">
-                    1. Mahasiswa aktif baik akademik maupun vokasi <br>
-                    2. Berasal dari program studi yang terakreditasi pada Perguruan Tinggi Negeri (PTN) dan Perguruan Tinggi Swasta (PTS) di bawah naungan Kemendikbudristek <br>
-                    3. Mahasiswa berada dipaling rendah semester 4 pada saat pelaksanaaan program disemester genap tahun ajaran 2022/2023 <br>
-                    4. Memiliki IPK minimal 3,00 <br>
-                    5. Mengunggah Surat Pakta Integritas <br>
-                    6. Memperoleh surat rekomendasi dari pemimpin perguruan tinggi, minimal ditandatangani oleh Wakil Dekan <br>
-                    7. Mengunggah Transkrip Nilai IPK <br>
-                    8. Mengunggah Surat Izin Orang Tua <br>
-                    9. Mengunggah Surat Keterangan Sehat <br>
-                    10. Mengunggah dokumen tambahan, seperti sertifikat prestasi, pengalaman mengajar, dan/atau pengalaman berorganisasi jika ada <br>
-                    11. Belum pernah ditetapkan sebagai peserta program Kampus Mengajar angkatan sebelumnya <br>
-                    12. Bersedia mengikuti program hingga selesai <br>
-                </h1>
-
-                <!-- Pembungkus -->
-                <div class="flex items-center gap-3 py-4">
-
-                    <!-- Checkbox -->
-                    <input type="checkbox" name="" id="">
-
-                    <!-- Text -->
-                    <h1 class="text-sm font-semibold text-[#FFFFFF]">Saya sudah membaca dan memahami syarat mahasiswa</h1>
-                </div>
-
-                <!-- Pembungkus Button -->
-                <div class="pb-2">
-                    <button class="w-full md:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]" type="submit">
-
-                        <!-- Text -->
-                        <div class="w-full text-center">
-                            <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Daftar</h1>
+                        <!-- Pembungkus File -->
+                        <div class="py-1">
+                        <label class="" for="File">
+                            <div class="">
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer"> Pilih File</h1>
+                            </div>
+                            <div class="flex justify-center w-full py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500 dark:text-gray-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                                <input type="file" id="File" class="hidden">
+                            </div>
+                        </label>
                         </div>
-                    </button>
-                </div>
 
-                <!-- Pembungkus Button -->
-                <button class="w-full md:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02] hover:cursor-not-allowed" type="button">
+                        <!-- Pembungkus Button -->
+                        <div class="pb-2">
+                            <button class="w-full md:w-[14rem] flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
 
-                    <!-- Text -->
-                    <div class="w-full text-center">
-                        <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Daftar</h1>
+                                <!-- Text -->
+                                <div class="w-full text-center">
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Upload</h1>
+                                </div>
+                            </button>
+                        </div>
+
                     </div>
-                </button>
+                </form>
+
             </div>
         </div>
     </div>

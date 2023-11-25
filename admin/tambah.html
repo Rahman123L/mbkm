@@ -796,312 +796,107 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
             <!-- Text -->
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Program Mbkm</h1>
 
-            <!-- Pembungkus -->
-            <div class="w-full p-5 rounded-2xl bg-[#1480EC] shadow-lg" style="animation: fadeIn 1.0s;">
+            <div class="container overflow-hidden w-full bg-[#00000057] p-5 rounded-lg">
 
-                <div class="md:flex gap-3">
+                <div class="md:flex gap-3 mb-1">
 
                     <!-- Button -->
                     <a href="tambah(program).html">
-                    <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 px-14 mb-3 text-center rounded-xl bg-[#E0E0E0] shadow-lg hover:scale-95">
-                        <img class="w-6" src="../images/Tambah(1).png">
-                        <h1 class="font-semibold text-[#1480EC]">TambahData</h1>
+                    <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#A9A9A9] rounded-lg focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF] shadow-md hover:shadow focus:opacity-50">
+                        <img class="w-6" src="../images/Tambah.svg">
+                        <h1 class="font-bold text-base text-[#FFFFFF]">TambahData</h1>
                     </button>
                     </a>
-
+    
                     <div class="grow"></div>
-
-                    <div class="pb-3">
+    
+                    <div class="flex justify-center items-center gap-3 md:mb-3">
                         <!-- Pembungkus Cari -->
-                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-1 pr-3 bg-[#E0E0E0] rounded-xl shadow-lg hover:scale-95">
-
+                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#A9A9A9] rounded-xl shadow-md hover:border-[#FFFFFF] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
+    
                             <!-- Icon -->
-                            <label class="flex items-center pl-5 cursor-pointer" for="Cari">
-                                <img class="w-5" src="../images/Search.png">
+                            <label class="flex items-center ml-5 cursor-pointer" for="Search">
+                                <img class="w-6" src="../images/Search.svg">
                             </label>
-
+    
                             <!-- Input -->
-                            <input class="w-full lg:w-[20rem] text-base font-medium text-gray-500 placeholder:text-base placeholder:text-[#2c2929] bg-[#DEDEDE] focus:outline-none" placeholder="Search" type="text" id="Cari">
+                            <input class="w-full lg:w-[20rem] text-[#FFFFFF] bg-transparent text-base font-bold placeholder:text-base placeholder:text-[#FFFFFF] focus:outline-none placeholder:font-bold" placeholder="Searching" type="text" id="Search">
                         </div>
                     </div>
                 </div>
 
                 <!-- Pembungkus -->
-                <div class="overflow-x-scroll overflow-hidden">
+                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg hover:shadow">
 
-                    <!-- Table -->
-                    <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+                    <!-- Pembungkus -->
+                    <div class="md:overflow-x-scroll overflow-hidden bg-transparent">
 
-                        <!-- Baris Ke 1 -->
-                        <tr>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">No.</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Keterangan</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Foto</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Judul Mbkm</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Status</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalPendaftaran</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirPendaftaran</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AwalKegiatan</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">AkhirKegiatan</th>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#E0E0E0] px-4 py-4 font-bold text-sm">Aksi</th>
-                        </tr>
+                        <!-- Table -->
+                        <table class="w-full border-collapse bg-transparent text-center">
 
-                        <!-- Baris Ke 2 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">1.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
-                                <div class="mx-3">
-                                    <div class="bg-green-200 py-1">
-                                        <h1 class="text-xs text-green-800 font-bold uppercase">Selesai</h1>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-16" src="../images/MBKM.jpeg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Magang Kampus Merdeka</td>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Aktif</th>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="edit(program).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
+                            <!-- Baris Ke 1 -->
+                            <tr class="">
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">No.</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Keterangan</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Foto</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">JudulMbkm</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Status</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AwalPendaftaran</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AkhirPendaftaran</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AwalKegiatan</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AkhirKegiatan</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Aksi</th>
+                            </tr>
 
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                        </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
-
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <!-- Baris Ke 2 -->
+                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#A9A9A9] hover:border-[#FFFFFF] md:border-none rounded-xl shadow-md hover:shadow">  
+                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#FFFFFF]">1.</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm text-[#FFFFFF]">
+                                    <div class="md:mx-3">
+                                        <div class="md:bg-green-200 py-1">
+                                            <h1 class="text-xs text-[#FFFFFF] md:text-green-800 font-bold uppercase">Selesai</h1>
                                         </div>
                                     </div>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <!-- Baris Ke 3 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
-                                <div class="mx-3">
-                                    <div class="bg-blue-200 py-1">
-                                        <h1 class="text-xs text-blue-800 font-bold uppercase">Proses</h1>
+                                </td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm text-[#FFFFFF]">
+                                    <div class="md:flex py-1 md:py-0 justify-center cursor-pointer">
+                                        <div class=""><img class="w-11" src="../images/MBKM.jpeg"></div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-16" src="../images/MBKM.jpeg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Studi Independen Kampus Merdeka</td>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Aktif</th>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="edit(program).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
-
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                </td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">Magang Kampus Merdeka</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">Aktif</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">15 Desember 2023</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">30 Desember 2023</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">01 Februari 2024</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">30 Juni 2024</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
+                                    <div class="flex md:justify-center gap-2">
+                                        <a href="edit(riwayat).html">
+                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
+                                            <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
                                         </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
+                                        </a>
 
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
-
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <!-- Baris Ke 3 -->
-                        <tr>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">2.</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">
-                                <div class="mx-3">
-                                    <div class="bg-red-200 py-1">
-                                        <h1 class="text-xs text-red-800 font-bold uppercase">Tutup</h1>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center">
-                                    <div class=""><img class="w-16" src="../images/MBKM.jpeg"></div>
-                                </div>
-                            </td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Studi Independen Kampus Merdeka</td>
-                            <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">Aktif</th>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">15 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Desember 2023</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">01 Februari 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold text-sm">30 Juni 2024</td>
-                            <td class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-semibold">
-                                <div class="flex justify-center gap-2">
-                                    <a href="edit(program).html">
-                                    <button class="py-1 px-3 bg-green-400 rounded-lg hover:scale-105">
-                                        <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                    </button>
-                                    </a>
-
-                                    <!-- Pembungkus Modals -->
-                                    <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 bg-red-400 rounded-lg hover:scale-105">
-                                            <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                        <a href="">
+                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
+                                            <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
                                         </button>
-                                    
-                                        <!-- Modals -->
-                                        <div x-show="isOpen" 
-                                            x-transition:enter="transition duration-300 ease-out"
-                                            x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave="transition duration-150 ease-in"
-                                            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                            x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                            class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                            aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                        >
-                                            <div class="flex items-center justify-center h-screen">
-                                                <span aria-hidden="true"></span>
-                                    
-                                                <!-- Pembungkus -->
-                                                <div class="px-10 sm:px-[10rem] md:px-[13rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
-                                                    <div class="relative overflow-hidden p-6 transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                        <!-- Text Peringatan -->
-                                                        <div class="pb-4">
-                                                            <h1>"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                        </div>
-                                    
-                                                        <!-- Pembungkus Button -->
-                                                        <div class="flex justify-center gap-3">
-                                                            <div class="sm:grow"></div>
-
-                                                            <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">No</h1>
-                                                            </button>
-                                        
-                                                            <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
-                                                                <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
+                                    
+                                </td>  
+                            </tr>
 
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
+                        </table>
+                    </div>
                 </div>
             </div>
 
