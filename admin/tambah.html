@@ -879,17 +879,60 @@
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">30 Juni 2024</td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
                                     <div class="flex md:justify-center gap-2">
-                                        <a href="edit(riwayat).html">
+                                        <a href="edit(program).html">
                                         <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
                                             <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
                                         </button>
                                         </a>
+                                  
+                                        <!-- Pembungkus Modals -->
+                                        <div x-data="{ isOpen: false }" class="relative flex justify-center">
 
-                                        <a href="">
-                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
-                                        </button>
-                                        </a>
+                                            <!-- Button -->
+                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
+                                                <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
+                                            </button>
+                                        
+                                            <!-- Modals -->
+                                            <div x-show="isOpen" 
+                                                x-transition:enter="transition duration-300 ease-out"
+                                                x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                                x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                                x-transition:leave="transition duration-150 ease-in"
+                                                x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                                x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                                class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
+                                                aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                            >
+                                                <div class="flex items-center justify-center h-screen">
+                                                    <span aria-hidden="true"></span>
+                                        
+                                                    <!-- Pembungkus -->
+                                                    <div class="px-10 sm:px-[10rem] md:px-[22rem] lg:px-[28rem] xl:px-[35rem] 2xl:px-[42rem]">
+                                                        <div class="relative overflow-hidden p-6 text-center transition-all transform bg-white opacity-85 rounded-lg">
+
+                                                            <!-- Text Peringatan -->
+                                                            <div class="pb-4">
+                                                                <h1 class="text-[12px] lg:text-sm font-medium text-[#000000]">"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
+                                                            </div>
+                                        
+                                                            <!-- Pembungkus Button -->
+                                                            <div class="flex justify-center gap-3">
+                                                                <div class="sm:grow"></div>
+
+                                                                <button @click="isOpen = false" class="py-2 px-4 bg-blue-400 rounded-lg hover:scale-105">
+                                                                    <h1 class="text-sm text-[#FFFFFF]">No</h1>
+                                                                </button>
+                                            
+                                                                <button class="py-2 px-4 bg-red-400 rounded-lg hover:scale-105">
+                                                                    <h1 class="text-sm text-[#FFFFFF]">Yes</h1>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                 </td>  

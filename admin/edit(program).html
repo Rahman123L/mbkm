@@ -796,7 +796,6 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
         <div class="container px-6 pb-6 pt-[5rem] mx-auto">
@@ -809,108 +808,113 @@
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                     </svg>
                 </span>
-                <p class="font-bold text-white">Fail!</p>
+                <p class="font-bold text-white">Gagal!</p>
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">
 
                     <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                    <div class="grid gap-3 m-3">
+
+                        <!-- Pilih Kategori -->
+                        <div class="">
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Kategori</h1>
+
+                            <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-medium text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none">
+                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Kategori</option>
+                                <option class="text-[#000000] text-start" value="1">Mahasiswa</option>
+                                <option class="text-[#000000] text-start" value="2">Dosen</option>
+                            </select>
+                        </div>
 
                         <!-- Pembungkus Judul -->
                         <label class="" for="Judul">
-
+                                
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Judul</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Judul Mbkm</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Merdeka Belajar Kampus Merdeka" type="text" id="Judul">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="text" id="Judul">
                         </label>
 
                         <div class="md:grid grid-cols-3 justify-center items-center md:gap-5">
 
                             <!-- Pembungkus IPK -->
                             <label class="" for="IPK">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">IPK</h1>
-
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">IPK</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="IPK" id="IPK" min="0" max="4">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="IPK">
                             </label>
 
-                            <!-- Pembungkus Semester -->
-                            <label class="" for="Semester">
-
+                            <!-- Pilih Semester -->
+                            <div class="py-3 md:py-0">
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Semester</h1>
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Semester</h1>
 
-                                <div class="">
-                                    <select class="w-full py-3 px-10 lg:px-5 border-2 text-[#B0B0B0] border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
-                                        <option value="" disabled selected>Pilih Semester</option>
-                                        <option value="1">Semester 1</option>
-                                        <option value="2">Semester 2</option>
-                                        <option value="3">Semester 3</option>
-                                        <option value="4">Semester 4</option>
-                                        <option value="5">Semester 5</option>
-                                        <option value="6">Semester 6</option>
-                                        <option value="7">Semester 7</option>
-                                        <option value="8">Semester 8</option>
-                                    </select>
-                                </div>
-                            </label>
+                                <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-medium text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none">
+                                    <option class="text-[#000000] text-start" value="" disabled selected>Pilih Semester</option>
+                                    <option class="text-[#000000] text-start" value="1">Semester 1</option>
+                                    <option class="text-[#000000] text-start" value="2">Semester 2</option>
+                                    <option class="text-[#000000] text-start" value="3">Semester 3</option>
+                                    <option class="text-[#000000] text-start" value="4">Semester 4</option>
+                                    <option class="text-[#000000] text-start" value="5">Semester 5</option>
+                                    <option class="text-[#000000] text-start" value="6">Semester 6</option>
+                                    <option class="text-[#000000] text-start" value="7">Semester 7</option>
+                                    <option class="text-[#000000] text-start" value="8">Semester 8</option>
+                                </select>
+                            </div>
 
                             <!-- Pembungkus SKS -->
                             <label class="" for="SKS">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">SKS</h1>
-
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">SKS</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" placeholder="SKS" id="SKS">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="SKS">
                             </label>
                         </div>
 
-                        <!-- Pembungkus Status -->
-                        <label class="" for="Status">
-
+                        <!-- Pilih Status -->
+                        <div class="">
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Status</h1>
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Status</h1>
 
-                            <!-- Input -->
-                            <div class="">
-                                <select class="text-[#B0B0B0] w-full py-3 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
-                                    <option value="" disabled selected>Pilih Status</option>
-                                    <option value="1">Aktif</option>
-                                    <option value="2">NonAktif</option>
-                                </select>
-                            </div>
-                        </label>
+                            <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-medium text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none">
+                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Status</option>
+                                <option class="text-[#000000] text-start" value="1">Aktif</option>
+                                <option class="text-[#000000] text-start" value="2">NonAktif</option>
+                            </select>
+                        </div>
 
                         <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
 
                             <!-- Pembungkus Awal Pendaftaran -->
-                            <label class="" for="Awal">
-
+                            <label class="" for="AwalPendaftaran">
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Pendaftaran</h1>
-
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Awal Pendaftaran</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="Awal">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalPendaftaran">
                             </label>
 
                             <!-- Pembungkus Akhir Pendaftaran -->
-                            <label class="" for="Akhir">
-
+                            <label class="" for="AkhirPendaftaran">
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Pendaftaran</h1>
-
+                                <h1 class="pt-3 md:pt-0 pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Akhir Pendaftaran</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirPendaftaran">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirPendaftaran">
                             </label>
                         </div>
 
@@ -918,32 +922,43 @@
 
                             <!-- Pembungkus Awal Kegiatan -->
                             <label class="" for="AwalKegiatan">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Awal Kegiatan</h1>
-
+                                <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Awal Kegiatan</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AwalKegiatan">
                             </label>
 
                             <!-- Pembungkus Akhir Kegiatan -->
                             <label class="" for="AkhirKegiatan">
-
+                                    
                                 <!-- Text -->
-                                <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Akhir Kegiatan</h1>
-
+                                <h1 class="pt-3 md:pt-0 pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Akhir Kegiatan</h1>
+                                
                                 <!-- Input -->
-                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="AkhirKegiatan">
                             </label>
                         </div>
 
+                        <!-- Pilih Dosen Pembimbing -->
+                        <div class="">
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Dosen Pembimbing</h1>
+
+                            <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-medium text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none">
+                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Dosen Pembimbing</option>
+                                <option class="text-[#000000] text-start" value="1">Iwan Purnama, S.Kom, M.Kom</option>
+                            </select>
+                        </div>
+
                         <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+                        <div class="pt-4">
+                            <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
 
                                 <!-- Text -->
                                 <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Update</h1>
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Update</h1>
                                 </div>
                             </button>
                         </div>
