@@ -39,6 +39,12 @@
             @apply -rotate-45;
         }
 
+        @media (min-width: 768px) {
+            body {
+                background-image: url(../images/Background-home1.jpg);
+            }
+        }
+        
         @media (max-width: 768px) {
             .fixeed {
                 position: fixed;
@@ -82,7 +88,7 @@
     <!-- Css End -->
 
 </head>
-<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -499,7 +505,7 @@
                 <div class="sm:w-[20rem] cursor-pointer" style="animation: fadeIn 1.0s;">
                     
                     <!-- Pembungkus -->
-                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#00000070] shadow-lg shadow-gray-700 overflow-hidden mb-5">
+                    <div class="w-full p-4 pb-0 rounded-2xl bg-[#FFFFFF] md:bg-[#00000070] shadow-2xl shadow-gray-400 md:shadow-gray-700 overflow-hidden mb-5">
 
                         <div class="grid gap-4">
 
@@ -509,12 +515,12 @@
 
                             <!-- Text -->
                             <div class="w-full pt-2 rounded-2xl">
-                                <h1 class="text-center text-[14px] sm:text-base font-bold text-[#1480EC]">Program Yang Diikuti</h1>
+                                <h1 class="text-center text-[14px] sm:text-base font-bold text-[#1480EC] border-b-[1.5px] mx-12 pb-2">Program Yang Diikuti</h1>
                             </div>
 
                             <!-- Text -->
                             <div class="w-full pb-2 rounded-2xl">
-                                <h1 class="text-center text-[16px] sm:text-lg font-bold text-[#FFFFFF]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                                <h1 class="text-center text-[16px] sm:text-lg font-bold text-[#1480EC] md:text-[#FFFFFF]">Magang Kampus Merdeka <br> (Kementrian)</h1>
                             </div>
 
                             <div class="pb-2">
@@ -522,8 +528,8 @@
                                 <!-- Button -->
                                 <a href="">
                                 <div class="flex justify-center pb-4 px-[1.5rem]">
-                                    <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-[#1480EC] cursor-pointer">
-                                        <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#1480EC]">Kelola</h1>
+                                    <button class="w-full py-2 px-7 text-center rounded-xl shadow-lg bg-[#1480EC] md:bg-transparent border-2 border-[#D9D9D9] md:border-2 md:border-[#1480EC] cursor-pointer">
+                                        <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#FFFFFF] md:text-[#1480EC]">Kelola</h1>
                                     </button>
                                 </div>
                                 </a>
@@ -533,8 +539,8 @@
                                     <!-- Button -->
                                     <a href="konversi.html">
                                     <div class="flex justify-center pb-4">
-                                        <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-[#FFFFFF] cursor-pointer">
-                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#FFFFFF]">Konversi</h1>
+                                        <button class="w-full py-2 px-7 text-center rounded-2xl shadow-lg bg-[#F1F5F9] md:bg-transparent border-2 border-[#D9D9D9] cursor-pointer">
+                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#1480EC] md:text-[#FFFFFF]">Konversi</h1>
                                         </button>
                                     </div>
                                     </a>
@@ -542,8 +548,8 @@
                                     <!-- Button -->
                                     <a href="laporan.html">
                                     <div class="flex justify-center pb-4">
-                                        <button class="w-full py-2 px-7 text-center rounded-2xl border-2 border-red-500 cursor-pointer">
-                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-red-500">Laporan</h1>
+                                        <button class="w-full py-2 px-7 text-center rounded-2xl shadow-lg bg-red-500 md:bg-transparent border-2 border-[#ECECEC] md:border-red-500 cursor-pointer">
+                                            <h1 class="text-[14px] sm:text-[15px] font-semibold text-[#FFFFFF] md:text-red-500">Laporan</h1>
                                         </button>
                                     </div>
                                     </a>

@@ -38,6 +38,12 @@
         .hamburger-active > span:nth-child(3) {
             @apply -rotate-45;
         }
+
+        @media (min-width: 768px) {
+            body {
+                background-image: url(../images/Background-home1.jpg);
+            }
+        }
         
         @media (max-width: 768px) {
             .fixeed {
@@ -82,7 +88,7 @@
     <!-- Css End -->
 
 </head>
-<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Header Start -->
     <div class="container img max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -491,7 +497,7 @@
 
             <!-- Pembungkus --> 
             <a href="penawaran.html">
-            <div class="p-4 lg:py-6 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 0.5s;">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 0.5s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
@@ -500,12 +506,19 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Penawaran.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                        <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                        <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                        <path d="M9 17.5H15" stroke-linecap="round"/>
+                        <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                        <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                        <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
+                    </svg>
+                      
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -518,7 +531,7 @@
 
             <!-- Pembungkus -->
             <a href="kegiatan.html">
-            <div class="p-4 sm:py-5 lg:py-7 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.0s;">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.0s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
@@ -527,12 +540,12 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Kegiatan.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12H18L15 21L9 3L6 12H2"stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -545,7 +558,7 @@
 
             <!-- Pembungkus -->
             <a href="riwayat.html">
-            <div class="p-4 sm:py-[18px] lg:py-[26px] rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.5s;">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.5s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
@@ -554,12 +567,13 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Riwayat.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                    </svg>
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -573,17 +587,17 @@
         </div>
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-6 mx-auto lg:flex">
-            <div class="lg:p-16 lg:flex-1">
+        <div class="container md:px-6  pb-6 mx-auto lg:flex">
+            <div class="lg:p-16 lg:flex-1 rounded-xl shadow-xl bg-[#F3FCFE] md:bg-transparent">
 
                 <!-- Text -->
-                <h1 class="py-4 text-lg lg:text-xl font-bold text-[#FFFFFF] uppercase" style="animation: fadeIn 2.0s;">Pengumuman</h1>
+                <h1 class="py-4 mx-4 text-lg lg:text-xl font-bold text-[#000000] md:text-[#FFFFFF] uppercase" style="animation: fadeIn 2.0s;">Pengumuman</h1>
 
                 <!-- Pembungkus -->
-                <div class="w-full h-[20rem] rounded-2xl overflow-y-scroll w-full" style="animation: fadeIn 2.0s;">
+                <div class="w-full h-[20rem] lg:rounded-2xl overflow-y-scroll p-4" style="animation: fadeIn 2.0s;">
 
                     <!-- Text -->
-                    <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
+                    <h1 class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">
                         Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
 
                         Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>

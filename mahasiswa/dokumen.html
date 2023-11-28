@@ -39,6 +39,12 @@
             @apply -rotate-45;
         }
         
+        @media (min-width: 768px) {
+            body {
+                background-image: url(../images/Background-home1.jpg);
+            }
+        }
+        
         @media (max-width: 768px) {
             .fixeed {
                 position: fixed;
@@ -82,7 +88,7 @@
     <!-- Css End -->
 
 </head>
-<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -490,12 +496,12 @@
         <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Daftar Download</h1>
+            <h1 class="pt-5 md:pb-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Daftar Download</h1>
 
-            <div class="container overflow-hidden w-full bg-[#00000057] p-5 rounded-lg">
+            <div class="container overflow-hidden w-full bg-[#FFFFFF] md:bg-[#00000057] p-5 rounded-lg">
 
                 <!-- Pembungkus -->
-                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg hover:shadow">
+                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg">
 
                     <!-- Pembungkus -->
                     <div class="md:overflow-x-scroll overflow-hidden bg-transparent">
@@ -512,19 +518,26 @@
                             </tr>
 
                             <!-- Baris Ke 2 -->
-                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#A9A9A9] hover:border-[#FFFFFF] md:border-none rounded-xl shadow-md hover:shadow">
-                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#FFFFFF]">1.</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm text-[#FFFFFF]">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm text-[#FFFFFF]">
+                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#1480EC] md:border-[#A9A9A9] md:hover:border-[#FFFFFF] md:border-none rounded-xl">
+                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">1.</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">TEMPLATE SURAT IZIN ORANG TUA MSIB</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold">
                                     <div class="md:flex py-1 md:py-0 justify-center cursor-pointer">
-                                        <div class=""><img class="w-8" src="../images/Dokumen.svg"></div>
+
+                                        <!-- Icon -->
+                                        <svg class="w-8 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                            <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                            <path d="M8 16H13" stroke-linecap="round"/>
+                                            <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                        </svg>
                                     </div>
                                 </td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
                                     <div class="flex md:justify-center gap-2">
                                         <a href="">
-                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Unduh</h1>
+                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#1480EC] focus:border-[#1480EC] md:focus:border-[#1480EC] hover:border-[#000000] md:hover:border-[#FFFFFF]">
+                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Unduh</h1>
                                         </button>
                                         </a>
                                     </div>

@@ -39,6 +39,12 @@
             @apply -rotate-45;
         }
         
+        @media (min-width: 768px) {
+            body {
+                background-image: url(../images/Background-home1.jpg);
+            }
+        }
+        
         @media (max-width: 768px) {
             .fixeed {
                 position: fixed;
@@ -82,7 +88,7 @@
     <!-- Css End -->
 
 </head>
-<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -496,7 +502,7 @@
             <div class="grid gap-5">
 
                 <!-- Notifikasi Default -->
-                <div class="relative border-2 border-[#1480EC] flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
+                <div class="relative border-2 border-[#1480EC] shadow-lg shadow-gray-400 md:shadow flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
 
                     <!-- Icon -->
                     <span class="mr-2 hidden lg:block">
@@ -504,11 +510,11 @@
                     </span>
 
                     <!-- Text -->
-                    <p class="text-sm lg:text-base font-medium text-[#FFFFFF]">"Selamat datang di Program Kampus Merdeka! Saat ini tidak ada notifikasi baru. Terus pantau informasi terkini untuk mendapatkan pembaruan terbaru."</p>
+                    <p class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">"Selamat datang di Program Kampus Merdeka! Saat ini tidak ada notifikasi baru. Terus pantau informasi terkini untuk mendapatkan pembaruan terbaru."</p>
                 </div>
 
                 <!-- Notifikasi Berhasil -->
-                <div class="relative border-2 border-[#1480EC] flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
+                <div class="relative border-2 border-[#1480EC] shadow-lg shadow-gray-400 md:shadow flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
 
                     <!-- Icon -->
                     <span class="mr-2 hidden lg:block">
@@ -516,7 +522,7 @@
                     </span>
 
                     <!-- Text -->
-                    <p class="text-sm lg:text-base font-medium text-[#FFFFFF]">Permohonan diterima! Selamat, Anda berhasil masuk ke Program Kampus Merdeka. Persiapkan diri untuk petualangan pendidikan yang menginspirasi!"</p>
+                    <p class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">Permohonan diterima! Selamat, Anda berhasil masuk ke Program Kampus Merdeka. Persiapkan diri untuk petualangan pendidikan yang menginspirasi!"</p>
 
                     <!-- Button -->
                     <button class="absolute right-[-8px] top-[-8px] cursor-pointer">
@@ -527,7 +533,7 @@
                 </div>
 
                 <!-- Notifikasi Gagal -->
-                <div class="relative border-2 border-[#1480EC] flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
+                <div class="relative border-2 border-[#1480EC] shadow-lg shadow-gray-400 md:shadow flex gap-3 w-full items-center rounded-lg bg-danger-100 px-6 py-4">
 
                     <!-- Icon -->
                     <span class="mr-2 hidden lg:block">
@@ -535,7 +541,7 @@
                     </span>
 
                     <!-- Text -->
-                    <p class="text-sm lg:text-base font-medium text-[#FFFFFF]">Mohon maaf, permohonan Anda untuk Program Kampus Merdeka belum dapat diterima saat ini. Tetap semangat dan coba lagi di kesempatan berikutnya."</p>
+                    <p class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">Mohon maaf, permohonan Anda untuk Program Kampus Merdeka belum dapat diterima saat ini. Tetap semangat dan coba lagi di kesempatan berikutnya."</p>
 
                     <!-- Button -->
                     <button class="absolute right-[-8px] top-[-8px] cursor-pointer">

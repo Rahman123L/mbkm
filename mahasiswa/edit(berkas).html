@@ -39,6 +39,12 @@
             @apply -rotate-45;
         }
         
+        @media (min-width: 768px) {
+            body {
+                background-image: url(../images/Background-home1.jpg);
+            }
+        }
+        
         @media (max-width: 768px) {
             .fixeed {
                 position: fixed;
@@ -82,7 +88,7 @@
     <!-- Css End -->
 
 </head>
-<body class="w-full bg-cover" style="background-image: url(../images/Background-home1.jpg);">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Header Start -->
     <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
@@ -113,7 +119,7 @@
 
                         <!-- Text -->
                         <div class="">
-                            <h1 class="font-medium text-[#FFFFFF] uppercase">Universitas Labuhanbatu</h1>
+                            <h1 class="font-semibold text-[#FFFFFF] uppercase">Universitas Labuhanbatu</h1>
                         </div>
                     </div>
                 </div>
@@ -503,8 +509,8 @@
             </div>
 
             <!-- Pembungkus -->
-            <div class="my-3 border-2 border-[#1480EC] w-full md:w-[28rem] lg:w-[40rem] rounded-lg px-6 py-2 text-[10px] md:text-sm grid gap-2">
-                <div class="font-bold text-white">
+            <div class="my-3 bg-[#F3FCFE] md:bg-transparent border-2 border-[#1480EC] w-full md:w-[28rem] lg:w-[40rem] rounded-lg px-6 py-2 text-[10px] md:text-sm grid gap-2">
+                <div class="font-bold text-[#000000] md:text-[#FFFFFF]">
                     Isi Formulir Dengan Benar !! <br><br>
                     Mengunggah Surat Persetujuan Orang Tua <br>
                     Mengunggah Surat Rekomendasi Kaprodi <br>
@@ -514,15 +520,15 @@
             </div>
 
             <!-- Pembungkus -->
-            <form action="" class="w-full md:w-[28rem] lg:w-[40rem] gap-10 p-6 rounded-2xl bg-[#00000057] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+            <form action="" class="w-full md:w-[28rem] lg:w-[40rem] gap-10 p-6 rounded-2xl bg-[#FFFFFF] md:bg-[#00000057] shadow-xl overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
                 <div class="grid gap-5">
 
                     <!-- Pilih Kategori -->
                     <div class="">
                         <!-- Text -->
-                        <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Universitas Tujuan</h1>
+                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Universitas Tujuan</h1>
 
-                        <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-medium text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none">
+                        <select class="py-2 px-10 w-full border-2 bg-transparent text-[#FFFFFF] font-semibold text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:outline-none">
                             <option class="text-[#000000] text-start" value="" disabled selected>Pilih Universitas</option>
                             <option class="text-[#000000] text-start" value="1">Universitas Labuhanbatu</option>
                         </select>
@@ -532,30 +538,30 @@
                     <label class="" for="Judul">
                             
                         <!-- Text -->
-                        <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Judul Mbkm</h1>
+                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Judul Mbkm</h1>
                         
                         <!-- Input -->
-                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="text" id="Judul">
+                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02]" type="text" id="Judul">
                     </label>
 
                     <!-- Pembungkus Nama -->
                     <label class="" for="Nama">
                             
                         <!-- Text -->
-                        <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Nama</h1>
+                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Nama</h1>
                         
                         <!-- Input -->
-                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02] cursor-not-allowed" type="text" id="Nama" readonly>
+                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] cursor-not-allowed" type="text" id="Nama" readonly>
                     </label>
 
                     <!-- Pembungkus Nim -->
                     <label class="" for="Nim">
                             
                         <!-- Text -->
-                        <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Nim</h1>
+                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Nim</h1>
                         
                         <!-- Input -->
-                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02] cursor-not-allowed" type="text" id="Nim" readonly>
+                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] cursor-not-allowed" type="text" id="Nim" readonly>
                     </label>
 
                     <div class="md:grid grid-cols-2 justify-center items-center md:gap-5">
@@ -564,20 +570,20 @@
                         <label class="" for="IPK">
                                 
                             <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">IPK</h1>
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">IPK</h1>
                             
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02] cursor-not-allowed" type="text" id="IPK" readonly>
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] cursor-not-allowed" type="text" id="IPK" readonly>
                         </label>
 
                         <!-- Pembungkus KHS -->
                         <label class="" for="KHS">
                                 
                             <!-- Text -->
-                            <h1 class="pb-2 pt-5 md:pt-0 text-sm font-medium text-[#1480EC] cursor-pointer">KHS</h1>
+                            <h1 class="pb-2 pt-5 md:pt-0 text-sm font-semibold text-[#1480EC] cursor-pointer">KHS</h1>
                             
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02] cursor-not-allowed" type="text" id="KHS" readonly>
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] cursor-not-allowed" type="text" id="KHS" readonly>
                         </label>
 
                     </div>
@@ -586,25 +592,30 @@
                     <label class="" for="Semester">
                             
                         <!-- Text -->
-                        <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Semester</h1>
+                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Semester</h1>
                         
                         <!-- Input -->
-                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#1480EC] focus:border-[#5697F8] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02] cursor-not-allowed" type="text" id="Semester" readonly>
+                        <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#1480EC] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] cursor-not-allowed" type="text" id="Semester" readonly>
                     </label>
 
                     <!-- Pembungkus --> 
-                    <h1 class="font-medium text-sm text-[#1480EC]">Surat Persetujuan Orang Tua</h1>
-                    <div class="w-full border-[2px] p-5 border-dashed border-gray-300 rounded-xl">
+                    <h1 class="font-semibold text-sm text-[#1480EC]">Surat Persetujuan Orang Tua</h1>
+                    <div class="w-full border-[2px] p-5 border-dashed border-[#B0B0B0] md:border-[#FFFFFF] rounded-xl shadow-lg">
                         <div class="flex justify-center">
                             <div class="md:p-2 grid gap-3">
 
                                 <!-- Pembungkus File -->
                                 <div class="">
-                                    <label for="file" class="flex justify-center items-center w-full sm:w-[12rem] md:w-[15rem] px-8 py-2 border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                                        <div class="">
-                                            <img class="w-4 md:w-6" src="../images/Dokumen.svg" alt="">
-                                        </div>         
-                                        <h2 class="font-medium text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                                    <label for="file" class="flex justify-center items-center w-full sm:w-[12rem] md:w-[15rem] px-8 py-2 border-2 border-[#000000] md:border-[#FFFFFF] cursor-pointer rounded-xl">
+
+                                        <!-- Icon -->
+                                        <svg class="w-4 md:w-6 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                            <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                            <path d="M8 16H13" stroke-linecap="round"/>
+                                            <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                        </svg>        
+                                        <h2 class="font-semibold text-sm md:text-base tracking-wide text-[#000000] md:text-[#FFFFFF] ml-3">Pilih File</h2>
                                         <input id="file" type="file" class="hidden" />
                                     </label>
                                 </div>
@@ -613,9 +624,9 @@
                     </div>
 
                     <!-- Edit FIle -->
-                    <div class="w-full border-[2px] p-5 border-dashed border-gray-300 rounded-xl">
+                    <div class="w-full border-[2px] p-5 border-dashed border-[#B0B0B0] md:border-[#FFFFFF] rounded-xl shadow-lg">
                         <div class="pb-5">
-                            <h1 class="font-medium ml-3 text-sm md:text-base text-[#1480EC]">Alhamdulillah</h1>
+                            <h1 class="font-semibold ml-3 text-sm md:text-base text-[#1480EC]">Alhamdulillah</h1>
                         </div>
 
                         <div class="flex">
@@ -625,11 +636,16 @@
 
                                 <!-- Pembungkus File -->
                                 <div class="">
-                                    <label for="file" class="flex justify-center items-center w-full sm:w-[12rem] md:w-[15rem] px-8 py-2 border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                                        <div class="">
-                                            <img class="w-4 md:w-6" src="../images/Dokumen.svg" alt="">
-                                        </div>         
-                                        <h2 class="font-medium text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Edit File</h2>
+                                    <label for="file" class="flex justify-center items-center w-full sm:w-[12rem] md:w-[15rem] px-8 py-2 border-2 border-[#000000] md:border-[#FFFFFF] cursor-pointer rounded-xl">
+                                        
+                                        <!-- Icon -->
+                                        <svg class="w-4 md:w-6 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                            <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                            <path d="M8 16H13" stroke-linecap="round"/>
+                                            <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                        </svg>
+                                        <h2 class="font-semibold text-sm md:text-base tracking-wide text-[#000000] md:text-[#FFFFFF] ml-3">Edit File</h2>
                                         <input id="file" type="file" class="hidden" />
                                     </label>
                                 </div>
@@ -638,8 +654,8 @@
                     </div>
                     
                     <!-- Pembungkus --> 
-                    <h1 class="font-medium text-sm text-[#1480EC]">Surat Rekomendasi Kaprodi</h1>
-                    <div class="w-full border-[2px] p-5 border-dashed border-gray-300 rounded-xl">
+                    <h1 class="font-semibold text-sm text-[#1480EC]">Surat Rekomendasi Kaprodi</h1>
+                    <div class="w-full border-[2px] p-5 border-dashed border-[#B0B0B0] md:border-[#FFFFFF] rounded-xl shadow-lg">
                         <div class="flex justify-center">
                             <div class="md:p-2 grid gap-3">
 
@@ -649,7 +665,7 @@
                                         <div class="">
                                             <img class="w-4 md:w-6" src="../images/Dokumen.svg" alt="">
                                         </div>         
-                                        <h2 class="font-medium text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                                        <h2 class="font-semibold text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
                                         <input id="file" type="file" class="hidden" />
                                     </label>
                                 </div>
@@ -658,8 +674,8 @@
                     </div>
 
                     <!-- Pembungkus --> 
-                    <h1 class="font-medium text-sm text-[#1480EC]">Surat Transkrip Nilai IPK Dan SKS</h1>
-                    <div class="w-full border-[2px] p-5 border-dashed border-gray-300 rounded-xl">
+                    <h1 class="font-semibold text-sm text-[#1480EC]">Surat Transkrip Nilai IPK Dan SKS</h1>
+                    <div class="w-full border-[2px] p-5 border-dashed border-[#B0B0B0] md:border-[#FFFFFF] rounded-xl shadow-lg">
                         <div class="flex justify-center">
                             <div class="md:p-2 grid gap-3">
 
@@ -669,7 +685,7 @@
                                         <div class="">
                                             <img class="w-4 md:w-6" src="../images/Dokumen.svg" alt="">
                                         </div>         
-                                        <h2 class="font-medium text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                                        <h2 class="font-semibold text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
                                         <input id="file" type="file" class="hidden" />
                                     </label>
                                 </div>
@@ -678,8 +694,8 @@
                     </div>
 
                     <!-- Pembungkus --> 
-                    <h1 class="font-medium text-sm text-[#1480EC]">Surat Sertifikat Prestasi (Opsional)</h1>
-                    <div class="w-full border-[2px] p-5 border-dashed border-gray-300 rounded-xl">
+                    <h1 class="font-semibold text-sm text-[#1480EC]">Surat Sertifikat Prestasi (Opsional)</h1>
+                    <div class="w-full border-[2px] p-5 border-dashed border-[#B0B0B0] md:border-[#FFFFFF] rounded-xl shadow-lg">
                         <div class="flex justify-center">
                             <div class="md:p-2 grid gap-3">
 
@@ -689,7 +705,7 @@
                                         <div class="">
                                             <img class="w-4 md:w-6" src="../images/Dokumen.svg" alt="">
                                         </div>         
-                                        <h2 class="font-medium text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
+                                        <h2 class="font-semibold text-sm md:text-base tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
                                         <input id="file" type="file" class="hidden" />
                                     </label>
                                 </div>
@@ -699,11 +715,11 @@
 
                     <!-- Pembungkus Button -->
                     <div class="pb-2">
-                        <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
+                        <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:scale-95" type="button">
 
                             <!-- Text -->
                             <div class="w-full text-center">
-                                <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Upload</h1>
+                                <h1 class="text-base lg:text-lg font-bold text-[#989898] group-focus:text-[#FFFFFF]">Upload</h1>
                             </div>
                         </button>
                     </div>
