@@ -160,7 +160,7 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-30 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#FFFFFF] md:bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-30 w-[17rem] px-6 py-4 duration-1000 bg-[#FFFFFF] md:bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
@@ -193,7 +193,7 @@
 
                     <!-- Icon & Text ( Dashboard ) -->
                     <a href="home.html">
-                    <div class="py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#2D2727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                         <div class="flex ml-4 items-center gap-3">
                             <!-- Icon -->
                             <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -207,12 +207,13 @@
                             </svg>
                             <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Dashboard</h1>
                         </div>
-                    </div>
+                    </button>
                     </a>
 
                     <!-- Icon & Text ( Notifikasi ) -->
                     <a href="notifikasi.html">
-                    <div class="relative py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <div class="relative">
+                    <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                         <div class="flex ml-4 items-center gap-3">
                             <!-- Icon -->
                             <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -221,11 +222,13 @@
                             </svg>
                             <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Notifikasi</h1>
                         </div>
+                    
 
                         <!-- Button -->
-                        <button class="absolute right-[-4px] top-[-4px] cursor-pointer">
+                        <div class="absolute right-[-4px] top-[-4px] cursor-pointer">
                             <div class="bg-red-800 rounded-full p-[6px] border brightness-200"></div>
-                        </button>
+                        </div>
+                    </button>           
                     </div>
                     </a>
                 </div>
@@ -241,7 +244,7 @@
 
                 <!-- Icon & Text ( Penawaran ) -->
                 <a href="penawaran.html">
-                <div class="py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-3">
                         <!-- Icon -->
                         <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +258,7 @@
                         </svg>
                         <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Penawaran</h1>
                     </div>
-                </div>
+                </button>
                 </a>
 
                 <!-- Pembungkus -->
@@ -284,7 +287,7 @@
 
                         <!-- Icon & Text ( DiIkuti ) -->
                         <a href="kegiatan.html">
-                        <div class="py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
                                 <!-- Icon -->
                                 <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -293,7 +296,7 @@
                                 </svg>
                                 <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">DiIkuti</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                     </div>
@@ -301,7 +304,7 @@
 
                 <!-- Icon & Text ( Pendaftran ) -->
                 <a href="pendaftaran.html">
-                <div class="py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-3">
                         <!-- Icon -->
                         <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -318,12 +321,12 @@
                         </svg>
                         <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Pendaftaran</h1>
                     </div>
-                </div>
+                </button>
                 </a>
 
                 <!-- Icon & Text ( Riwayat ) -->
                 <a href="riwayat.html">
-                <div class="py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-2">
                         <!-- Icon -->
                         <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -332,7 +335,7 @@
                         </svg>
                         <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Riwayat</h1>
                     </div>
-                </div>
+                </button>
                 </a>
             </div>
 
@@ -372,10 +375,10 @@
 
                         <!-- Icon & Text ( Materi ) -->
                         <a href="akses(materi).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-2">
                                 <!-- Icon -->
-                                <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.5 14L17 14" stroke-linecap="round"/>
                                     <path d="M7 14H7.5" stroke-linecap="round"/>
                                     <path d="M7 10.5H7.5" stroke-linecap="round"/>
@@ -385,57 +388,57 @@
                                     <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
                                     <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
                                 </svg>
-                                <h1 class="font-semibold text-[#FFFFFF]">Materi</h1>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Materi</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                     </div>
                 </div>
 
                 <!-- Icon & Text ( Berkas ) -->
                 <a href="edit(berkas).html">
-                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-3">
                         <!-- Icon -->
-                        <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.5617 7C19.7904 5.69523 18.7863 4.5 17.4617 4.5H6.53788C5.21323 4.5 4.20922 5.69523 4.43784 7"/>
                             <path d="M17.4999 4.5C17.5283 4.24092 17.5425 4.11135 17.5427 4.00435C17.545 2.98072 16.7739 2.12064 15.7561 2.01142C15.6497 2 15.5194 2 15.2588 2H8.74099C8.48035 2 8.35002 2 8.24362 2.01142C7.22584 2.12064 6.45481 2.98072 6.45704 4.00434C6.45727 4.11135 6.47146 4.2409 6.49983 4.5"/>
                             <path d="M15 18H9" stroke-linecap="round"/>
                             <path d="M21.1935 16.793C20.8437 19.2739 20.6689 20.5143 19.7717 21.2572C18.8745 22 17.5512 22 14.9046 22H9.09536C6.44881 22 5.12553 22 4.22834 21.2572C3.33115 20.5143 3.15626 19.2739 2.80648 16.793L2.38351 13.793C1.93748 10.6294 1.71447 9.04765 2.66232 8.02383C3.61017 7 5.29758 7 8.67239 7H15.3276C18.7024 7 20.3898 7 21.3377 8.02383C22.0865 8.83268 22.1045 9.98979 21.8592 12" stroke-linecap="round"/>
                         </svg>
-                        <h1 class="font-semibold text-[#FFFFFF]">Berkas</h1>
+                        <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Berkas</h1>
                     </div>
-                </div>
+                </button>
                 </a>
 
                 <!-- Icon & Text ( KRS Dan KHS ) -->
                 <a href="krs&khs.html">
-                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-3">
                         <!-- Icon -->
-                        <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
                             <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
                             <path d="M8 16H13" stroke-linecap="round"/>
                             <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
                         </svg>
-                        <h1 class="font-semibold text-[#FFFFFF]">KRS Dan KHS</h1>
+                        <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">KRS Dan KHS</h1>
                     </div>
-                </div>
+                </button>
                 </a>
 
                 <!-- Icon & Text ( Download ) -->
                 <a href="dokumen.html">
-                <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                     <div class="flex ml-4 items-center gap-3">
                         <!-- Icon -->
-                        <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke-linecap="round"/>
                             <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke-linecap="round"/>
                         </svg>
-                        <h1 class="font-semibold text-[#FFFFFF]">Download</h1>
+                        <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Download</h1>
                     </div>
-                </div>
+                </button>
                 </a>
             </div>
         </div>
