@@ -160,24 +160,24 @@
     <!-- Header End -->
 
     <!-- Navbar Mobile & Dekstop Start -->
-    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-30 w-[17rem] px-6 py-4 transition-all duration-1000 bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
+    <div class="hidden md:block fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-x-0 z-30 w-[17rem] px-6 py-4 duration-1000 bg-[#FFFFFF] md:bg-[#202020] transition-transform" style="animation: slideInLeft 1.0s;" id="nav-menu">
         <div class="flex justify-center relative z-10">
 
             <!-- Pembungkus -->
-            <div class="fixed bg-[#202020] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
+            <div class="fixed bg-[#FFFFFF] md:bg-[#202020] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
                 <div class="pb-2">
 
                     <!-- Logo & Text -->
                     <div class="flex items-center gap-3">
 
                         <!-- Logo -->
-                        <div class="w-14 h-14 overflow-hidden border border-[#ffffff90] rounded-full">
+                        <div class="w-14 h-14 overflow-hidden border border-gray-500 md:border-[#FFFFFF90] rounded-full">
                             <img class="object-cover w-full h-full" src="../images/Logo ULB.png"/>
                         </div>
 
                         <!-- Text -->
                         <div class="">
-                            <h1 class="font-bold text-[#FFFFFF]">MBKM ULB</h1>
+                            <h1 class="text-base font-bold text-[#000000] md:text-[#FFFFFF]">MBKM ULB</h1>
                         </div>
                     </div>
                 </div>
@@ -193,19 +193,28 @@
 
                     <!-- Icon & Text ( Dashboard ) -->
                     <a href="home.html">
-                    <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                    <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Dashboard.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Dashboard</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 22L2 22" stroke-linecap="round"/>
+                                <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke-linecap="round"/>
+                                <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke-linecap="round"/>
+                                <path d="M4 22V9.5" stroke-linecap="round"/>
+                                <path d="M20 9.5V13.5M20 22V17.5" stroke-linecap="round"/>
+                                <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke-linecap="round"/>
+                                <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Dashboard</h1>
                         </div>
-                    </div>
+                    </button>
                     </a>
                 </div>
             </div>
 
             <!-- ( Program ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">PROGRAM</h1>
+                <h1 class="text-base font-bold text-[#1480EC] md:text-[#FFFFFF] ml-7">PROGRAM</h1>
             </div>
 
             <!-- Pembungkus -->
@@ -215,14 +224,22 @@
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Program ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Program.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Program</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00005 12H6.00005C4.11443 12 3.17162 12 2.58584 12.5858C2.11429 13.0573 2.02233 13.7602 2.00439 15M12 17V18C12 19.8856 12 20.8284 11.4143 21.4142C10.8285 22 9.88567 22 8.00005 22H6.00005C4.11443 22 3.17162 22 2.58584 21.4142C2.11429 20.9427 2.02233 20.2398 2.00439 19" stroke-linecap="round"/>
+                                <path d="M12 7H11C9.11438 7 8.17157 7 7.58579 7.58579C7 8.17157 7 9.11438 7 11V13C7 14.8856 7 15.8284 7.58579 16.4142C8.17157 17 9.11438 17 11 17H13C14.8856 17 15.8284 17 16.4142 16.4142C17 15.8284 17 14.8856 17 13V12"/>
+                                <path d="M15 2.00439C13.7602 2.02233 13.0573 2.11429 12.5858 2.58584C12 3.17162 12 4.11443 12 6.00005V8.00005C12 9.88567 12 10.8285 12.5858 11.4143C13.1716 12 14.1144 12 16 12H18C19.8856 12 20.8284 12 21.4142 11.4143C22 10.8285 22 9.88567 22 8.00005V6.00005C22 4.11443 22 3.17162 21.4142 2.58584C20.9427 2.11429 20.2398 2.02233 19 2.00439" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Program</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
                         </div>
                     </div>
                     
@@ -231,22 +248,30 @@
 
                         <!-- Icon & Text ( Tambah ) -->
                         <a href="tambah.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Tambah.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Tambah</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Tambah</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Aktif ) -->
                         <a href="program(aktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Aktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Aktif</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                     </div>
                 </div>
@@ -255,14 +280,20 @@
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Monitoring ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Kegiatan.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Monitoring</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H18L15 21L9 3L6 12H2"stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Monitoring</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
                         </div>
                     </div>
                     
@@ -271,22 +302,30 @@
 
                         <!-- Icon & Text ( Mahasiswa ) -->
                         <a href="kegiatan(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Mahasiswa.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Mahasiswa</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Dosen ) -->
                         <a href="kegiatan(dosen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Dosen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Dosen</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                     </div>
                 </div>
@@ -295,14 +334,23 @@
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Peserta ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Mahasiswa.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Peserta</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="6" r="4"/>
+                                <path d="M15 9C16.6569 9 18 7.65685 18 6C18 4.34315 16.6569 3 15 3" stroke-linecap="round"/>
+                                <path d="M5.88915 20.5843C6.82627 20.8504 7.88256 21 9 21C12.866 21 16 19.2091 16 17C16 14.7909 12.866 13 9 13C5.13401 13 2 14.7909 2 17C2 17.3453 2.07657 17.6804 2.22053 18" stroke-linecap="round"/>
+                                <path d="M18 14C19.7542 14.3847 21 15.3589 21 16.5C21 17.5293 19.9863 18.4229 18.5 18.8704" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Peserta</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
                         </div>
                     </div>
                     
@@ -311,22 +359,30 @@
 
                         <!-- Icon & Text ( Aktif ) -->
                         <a href="peserta(aktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Aktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Aktif</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Aktif</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( NonAktif ) -->
                         <a href="peserta(nonaktif).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/NonAktif.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">NonAktif</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">NonAktif</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                         
                     </div>
@@ -336,7 +392,7 @@
 
             <!-- ( FITUR ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">FITUR</h1>
+                <h1 class="text-base font-bold text-[#1480EC] md:text-[#FFFFFF] ml-7">FITUR</h1>
             </div>
 
             <!-- Pembungkus -->
@@ -346,14 +402,21 @@
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Manajemen ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Manajemen.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Manajemen</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
                         </div>
                     </div>
                     
@@ -362,52 +425,72 @@
 
                         <!-- Icon & Text ( Fakultas ) -->
                         <a href="fakultas.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Fakultas.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Fakultas</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Fakultas</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Prodi ) -->
                         <a href="prodi.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Prodi.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Prodi</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Prodi</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Kelas ) -->
                         <a href="manajemen(kelas).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Kelas.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Kelas</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                    <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Kelas</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Dosen ) -->
                         <a href="manajemen(dosen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Dosen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Dosen</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Mahasiswa ) -->
                         <a href="manajemen(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Mahasiswa.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Mahasiswa</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                         
                     </div>
@@ -802,16 +885,14 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
-
 
         <!-- Pembungkus -->
         <div class="container px-6 pt-[6.5rem] mx-auto sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto">
 
             <!-- Pembungkus --> 
             <a href="program(aktif).html">
-            <div class="p-4 lg:py-6 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 0.5s;">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] md:hover:scale-105" style="animation: fadeIn 0.5s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Penawaran Program</h1>
@@ -820,12 +901,19 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Penawaran.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                        <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                        <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                        <path d="M9 17.5H15" stroke-linecap="round"/>
+                        <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                        <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                        <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
+                    </svg>
+                      
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -837,8 +925,8 @@
             </a>
 
             <!-- Pembungkus -->
-            <a href="">
-            <div class="p-4 sm:py-5 lg:py-7 rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.0s;">
+            <a href="#">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] md:hover:scale-105" style="animation: fadeIn 1.0s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Kegiatan Aktif</h1>
@@ -847,12 +935,12 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Kegiatan.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12H18L15 21L9 3L6 12H2"stroke-linecap="round"/>
+                    </svg>
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -864,8 +952,8 @@
             </a>
 
             <!-- Pembungkus -->
-            <a href="">
-            <div class="p-4 sm:py-[18px] lg:py-[26px] rounded-lg shadow-lg overflow-hidden mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] hover:scale-105" style="animation: fadeIn 1.5s;">
+            <a href="#">
+            <div class="p-4 sm:py-5 lg:py-6 rounded-lg shadow-lg shadow-[#00000025] overflow-hidden bg-[#1480EC] md:bg-transparent mb-5 w-full sm:w-[9rem] md:w-[13rem] lg:w-[17rem] 2xl:w-[21rem] md:hover:scale-105" style="animation: fadeIn 1.5s;">
 
                 <!-- Text -->
                 <h1 class="hidden lg:block mb-5 text-center text-sm font-semibold text-[#FFFFFF]">Riwayat Kegiatan</h1>
@@ -874,12 +962,13 @@
                 <div class="flex items-center px-10 sm:px-0 lg:px-16">
 
                     <!-- Icon -->
-                    <div class="">
-                        <img class="w-10" src="../images/Riwayat.png">
-                    </div>
+                    <svg class="w-10 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                    </svg>
                     
                     <div class="grow 2xl:px-8">
-                        <div class="border border-[#FFFFFF] rotate-90"></div>
+                        <div class="border border-[#A9A9A9] md:border-[#FFFFFF] rotate-90"></div>
                     </div>
 
                     <!-- Number -->
@@ -892,18 +981,18 @@
             
         </div>
 
-        <!-- Pembungkus -->
+        <!-- Pembungkus --> 
         <div class="container px-6 pb-6 mx-auto lg:flex">
-            <div class="lg:p-16 lg:flex-1">
+            <div class="lg:p-16 lg:flex-1 rounded-xl shadow-xl bg-[#F3FCFE] md:bg-transparent">
 
                 <!-- Text -->
-                <h1 class="py-4 text-lg lg:text-xl font-bold text-[#FFFFFF] uppercase" style="animation: fadeIn 2.0s;">Pengumuman</h1>
+                <h1 class="py-4 mx-4 text-lg lg:text-xl font-bold text-[#000000] md:text-[#FFFFFF] uppercase" style="animation: fadeIn 2.0s;">Pengumuman</h1>
 
                 <!-- Pembungkus -->
-                <div class="w-full h-[20rem] rounded-2xl overflow-y-scroll w-full" style="animation: fadeIn 2.0s;">
+                <div class="w-full h-[20rem] lg:rounded-2xl overflow-y-scroll p-4" style="animation: fadeIn 2.0s;">
 
                     <!-- Text -->
-                    <h1 class="text-sm lg:text-base font-medium text-[#FFFFFF]">
+                    <h1 class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">
                         Pembukaan Pendaftaran Magang Dan Studi Independen 4. <br>
 
                         Salam sobat kaktus merdeka, program magang dan studi indenpenden 4 batch 4 telah DIBUKA pendaftaran bagi MAHASISWA dimulai tanggal 15 Desember 2023 untuk itu, berikut prosedur untuk memperoleh SR  dan SPTJM MSIB 4 : <br>
