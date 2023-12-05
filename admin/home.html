@@ -391,64 +391,64 @@
             </div>
 
             <!-- ( FITUR ) -->
-<div class="py-2">
-    <h1 class="text-base font-bold text-[#1480EC] md:text-[#FFFFFF] ml-7">FITUR</h1>
-</div>
-
-<!-- Pembungkus -->
-<div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
-
-    <!-- Pembungkus -->
-    <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-        <!-- Icon & Text ( Manajemen ) -->
-        <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
-            <div class="flex ml-4 items-center gap-3">
-                <!-- Icon -->
-                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.97883 6.31492C2.99294 7.10927 2 7.50645 2 8C2 8.49355 2.99294 8.89073 4.97883 9.68508L7.7873 10.8085C9.77318 11.6028 10.7661 12 12 12C13.2339 12 14.2268 11.6028 16.2127 10.8085L19.0212 9.68508C21.0071 8.89073 22 8.49355 22 8C22 7.50645 21.0071 7.10927 19.0212 6.31492L16.2127 5.19153C14.2268 4.39718 13.2339 4 12 4C11.0461 4 10.2361 4.2374 9 4.71221" stroke-linecap="round"/>
-                    <path d="M5.76613 10L4.97883 10.3149C2.99294 11.1093 2 11.5065 2 12C2 12.4935 2.99294 12.8907 4.97883 13.6851L7.7873 14.8085C9.77318 15.6028 10.7661 16 12 16C13.2339 16 14.2268 15.6028 16.2127 14.8085L19.0212 13.6851C21.0071 12.8907 22 12.4935 22 12C22 11.5065 21.0071 11.1093 19.0212 10.3149L18.2339 10"/>
-                    <path d="M19.0212 17.6851C21.0071 16.8907 22 16.4935 22 16C22 15.5065 21.0071 15.1093 19.0212 14.3149L18.2339 14M5.76613 14L4.97883 14.3149C2.99294 15.1093 2 15.5065 2 16C2 16.4935 2.99294 16.8907 4.97883 17.6851L7.7873 18.8085C9.77318 19.6028 10.7661 20 12 20C12.9539 20 13.7639 19.7626 15 19.2878" stroke-linecap="round"/>
-                </svg>
-                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Manajemen</h1>
+            <div class="py-2">
+                <h1 class="text-base font-bold text-[#1480EC] md:text-[#FFFFFF] ml-7">FITUR</h1>
             </div>
-            <div class="grow"></div>
-            <div class="mr-1">
-                <!-- Icon -->
-                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
-        
-        <!-- Pembungkus Sub Menu -->
-        <div x-show="isOpen" class="pt-3 grid gap-3">
 
-            <!-- Icon & Text ( Fakultas ) -->
-            <a href="fakultas.html">
-            <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
-                <div class="flex ml-4 items-center gap-3">
-                    <!-- Icon -->
-                    <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.5 7H10.25M7.5 11H10.25M7.5 15H10.25M13.75 7H16.5M13.75 11H16.5M13.75 15H16.5M20 21V6.2C20 5.0799 20 4.51984 19.782 4.09202C19.5903 3.71569 19.2843 3.40973 18.908 3.21799C18.4802 3 17.9201 3 16.8 3H7.2C6.07989 3 5.51984 3 5.09202 3.21799C4.71569 3.40973 4.40973 3.71569 4.21799 4.09202C4 4.51984 4 5.0799 4 6.2V21M22 21H2" stroke-linecap="round"/>
-                    </svg>
-                    <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Fakultas</h1>
-                </div>
-            </button>
-            </a>
+            <!-- Pembungkus -->
+            <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-            <!-- Icon & Text ( Prodi ) -->
-            <a href="prodi.html">
-            <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
-                <div class="flex ml-4 items-center gap-3">
-                    <!-- Icon -->
-                    <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.5 7H14.5M9.5 11H14.5M9.5 15H14.5M18 21V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V21M20 21H4" stroke-linecap="round"/>
-                    </svg>
-                    <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Prodi</h1>
-                </div>
-            </button>
-            </a>
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Manajemen ) -->
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.97883 6.31492C2.99294 7.10927 2 7.50645 2 8C2 8.49355 2.99294 8.89073 4.97883 9.68508L7.7873 10.8085C9.77318 11.6028 10.7661 12 12 12C13.2339 12 14.2268 11.6028 16.2127 10.8085L19.0212 9.68508C21.0071 8.89073 22 8.49355 22 8C22 7.50645 21.0071 7.10927 19.0212 6.31492L16.2127 5.19153C14.2268 4.39718 13.2339 4 12 4C11.0461 4 10.2361 4.2374 9 4.71221" stroke-linecap="round"/>
+                                <path d="M5.76613 10L4.97883 10.3149C2.99294 11.1093 2 11.5065 2 12C2 12.4935 2.99294 12.8907 4.97883 13.6851L7.7873 14.8085C9.77318 15.6028 10.7661 16 12 16C13.2339 16 14.2268 15.6028 16.2127 14.8085L19.0212 13.6851C21.0071 12.8907 22 12.4935 22 12C22 11.5065 21.0071 11.1093 19.0212 10.3149L18.2339 10"/>
+                                <path d="M19.0212 17.6851C21.0071 16.8907 22 16.4935 22 16C22 15.5065 21.0071 15.1093 19.0212 14.3149L18.2339 14M5.76613 14L4.97883 14.3149C2.99294 15.1093 2 15.5065 2 16C2 16.4935 2.99294 16.8907 4.97883 17.6851L7.7873 18.8085C9.77318 19.6028 10.7661 20 12 20C12.9539 20 13.7639 19.7626 15 19.2878" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Manajemen</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Fakultas ) -->
+                        <a href="fakultas.html">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
+                            <div class="flex ml-4 items-center gap-3">
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 7H10.25M7.5 11H10.25M7.5 15H10.25M13.75 7H16.5M13.75 11H16.5M13.75 15H16.5M20 21V6.2C20 5.0799 20 4.51984 19.782 4.09202C19.5903 3.71569 19.2843 3.40973 18.908 3.21799C18.4802 3 17.9201 3 16.8 3H7.2C6.07989 3 5.51984 3 5.09202 3.21799C4.71569 3.40973 4.40973 3.71569 4.21799 4.09202C4 4.51984 4 5.0799 4 6.2V21M22 21H2" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Fakultas</h1>
+                            </div>
+                        </button>
+                        </a>
+
+                        <!-- Icon & Text ( Prodi ) -->
+                        <a href="prodi.html">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
+                            <div class="flex ml-4 items-center gap-3">
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 7H14.5M9.5 11H14.5M9.5 15H14.5M18 21V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V21M20 21H4" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Prodi</h1>
+                            </div>
+                        </button>
+                        </a>
 
                         <!-- Icon & Text ( Kelas ) -->
                         <a href="manajemen(kelas).html">
