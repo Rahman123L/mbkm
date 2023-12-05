@@ -1013,15 +1013,19 @@
             <!-- Text -->
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Program Mbkm</h1>
 
-            <div class="container overflow-hidden w-full bg-[#00000057] p-5 rounded-lg">
+            <div class="container overflow-hidden w-full bg-gray-100 md:bg-[#00000057] p-5 rounded-lg shadow-xl">
 
                 <div class="md:flex gap-3 mb-1">
 
                     <!-- Button -->
                     <a href="tambah(program).html">
-                    <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#A9A9A9] rounded-lg focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF] shadow-md hover:shadow focus:opacity-50">
-                        <img class="w-6" src="../images/Tambah.svg">
-                        <h1 class="font-bold text-base text-[#FFFFFF]">TambahData</h1>
+                    <button class="flex justify-center items-center group gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:focus:border-blue-900 focus:bg-blue-500 md:focus:bg-blue-900 focus:border-[#1480EC] hover:border-gray-500 md:hover:bg-transparent md:hover:border-[#FFFFFF] rounded-lg shadow-md">
+                        <!-- Icon -->
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
+                            <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                        </svg>
+                        <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">TambahData</h1>
                     </button>
                     </a>
     
@@ -1029,21 +1033,24 @@
     
                     <div class="flex justify-center items-center gap-3 md:mb-3">
                         <!-- Pembungkus Cari -->
-                        <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#A9A9A9] rounded-xl shadow-md hover:border-[#FFFFFF] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
+                        <div class="flex justify-center items-center group gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:focus:border-blue-900 focus:bg-blue-500 md:focus:bg-blue-900 focus:border-[#1480EC] hover:border-gray-500 md:hover:bg-transparent md:hover:border-[#FFFFFF] rounded-lg shadow-md">
     
                             <!-- Icon -->
                             <label class="flex items-center ml-5 cursor-pointer" for="Search">
-                                <img class="w-6" src="../images/Search.svg">
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke-linecap="round"/>
+                                </svg>
                             </label>
     
                             <!-- Input -->
-                            <input class="w-full lg:w-[20rem] text-[#FFFFFF] bg-transparent text-base font-bold placeholder:text-base placeholder:text-[#FFFFFF] focus:outline-none placeholder:font-bold" placeholder="Searching" type="text" id="Search">
+                            <input class="w-full lg:w-[20rem] text-base font-semibold bg-gray-100 group-hover:bg-gray-500 md:group-hover:bg-transparent md:bg-transparent text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] placeholder:text-base placeholder:text-[#000000] group-hover:placeholder:text-[#FFFFFF] md:placeholder:text-[#FFFFFF] focus:outline-none placeholder:font-semibold" placeholder="Searching" type="text" id="Search">
                         </div>
                     </div>
                 </div>
 
                 <!-- Pembungkus -->
-                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg hover:shadow">
+                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg">
 
                     <!-- Pembungkus -->
                     <div class="md:overflow-x-scroll overflow-hidden bg-transparent">
@@ -1066,31 +1073,31 @@
                             </tr>
 
                             <!-- Baris Ke 2 -->
-                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#A9A9A9] hover:border-[#FFFFFF] md:border-none rounded-xl shadow-md hover:shadow">  
-                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#FFFFFF]">1.</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm text-[#FFFFFF]">
+                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#000000] md:border-[#A9A9A9] md:hover:border-[#FFFFFF] md:border-none rounded-xl shadow-xl">  
+                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">1.</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">
                                     <div class="md:mx-3">
                                         <div class="md:bg-green-200 py-1">
-                                            <h1 class="text-xs text-[#FFFFFF] md:text-green-800 font-bold uppercase">Selesai</h1>
+                                            <h1 class="text-xs text-green-800 font-bold uppercase">Selesai</h1>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm text-[#FFFFFF]">
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">
                                     <div class="md:flex py-1 md:py-0 justify-center cursor-pointer">
                                         <div class=""><img class="w-11" src="../images/MBKM.jpeg"></div>
                                     </div>
                                 </td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">Magang Kampus Merdeka</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">Aktif</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">15 Desember 2023</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">30 Desember 2023</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">01 Februari 2024</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#FFFFFF]">30 Juni 2024</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Magang Kampus Merdeka</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Aktif</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">15 Desember 2023</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">30 Desember 2023</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">01 Februari 2024</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">30 Juni 2024</td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
                                     <div class="flex md:justify-center gap-2">
                                         <a href="edit(program).html">
-                                        <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
+                                        <button class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
+                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
                                         </button>
                                         </a>
                                   
@@ -1098,8 +1105,8 @@
                                         <div x-data="{ isOpen: false }" class="relative flex justify-center">
 
                                             <!-- Button -->
-                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#FFFFFF]">
-                                                <h1 class="text-sm text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
+                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
+                                                <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
                                             </button>
                                         
                                             <!-- Modals -->
