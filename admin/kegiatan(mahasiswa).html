@@ -1037,11 +1037,29 @@
                     <div class="grow"></div>
     
                     <!-- Pilih Kategori -->
-                    <div class="mt-3 md:mt-0" style="animation: fadeIn 0.3s">
+                    <div class="mt-3 md:mt-0">
                         <select class="py-2 px-10 w-full group border-2 text-[#000000] md:text-[#FFFFFF] hover:text-[#FFFFFF] font-semibold text-sm md:text-base text-center bg-transparent hover:bg-gray-500 md:hover:bg-transparent border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-lg focus:outline-none shadow-md">
                             <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="1">Pilih Kategori</option>
                             <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="2">Kebaikan</option>
                         </select>
+                    </div>
+                </div>
+
+                <!-- Notifikasi Default -->
+                <div class="pt-2 md:py-0 md:pb-4">
+                    <div class="bg-transparent border-2 border-[#000000] md:border-[#A9A9A9] md:hover:border-[#FFFFFF] flex gap-3 w-full items-center rounded-lg shadow-md px-6 py-4">
+
+                        <!-- Icon -->
+                        <div class="mr-2 hidden sm:inline">
+                            <!-- Icon -->
+                            <svg class="w-6 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="6" r="4"/>
+                                <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+
+                        <!-- Text -->
+                        <p class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">"Saat ini belum ada kegiatan mahasiswa"</p>
                     </div>
                 </div>
 
@@ -1124,59 +1142,59 @@
                 </div>
 
                 <!-- Pembungkus pagination -->
-                <div class="flex w-full pt-4">
+                <div class="flex w-full pt-3 md:pt-0">
 
                     <!-- Icon -->
-                    <button class="hover:scale-105 focus:scale-100">
-                        <a href="#" class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md cursor-not-allowed">
-                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#">
+                    <button class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md shadow-md hover:scale-105 focus:scale-100 cursor-not-allowed">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                         </svg>
-                        </a>
                     </button>
+                    </a>
 
                     <div class="grow"></div>
                 
-                    <div class="hover:scale-105 pt-2">
-                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
-                            1
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
+                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">1</h1>
+                    </button>
+                    </a>
                 
-                    <div class="hover:scale-105 pt-2">
-                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
-                            2
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
+                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">2</h1>
+                    </button>
+                    </a>
                 
-                    <div class="hover:scale-105 pt-2">
-                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
-                            ...
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
+                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">...</h1>
+                    </button>
+                    </a>
                 
-                    <div class="hover:scale-105 pt-2">
-                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
-                            9
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
+                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">9</h1>
+                    </button>
+                    </a>
                 
-                    <div class="hover:scale-105 pt-2">
-                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
-                            10
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
+                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">10</h1>
+                    </button>
+                    </a>
 
                     <div class="grow"></div>
                 
                     <!-- Icon -->
-                    <div class="hover:scale-105">
-                        <a href="#" class="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 bg-white rounded-md rtl:-scale-x-100 hover:bg-blue-700 hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
+                    <a href="#">
+                    <button class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md shadow-md hover:scale-105 focus:scale-100">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    </a>
                 </div>
             </div>
 
