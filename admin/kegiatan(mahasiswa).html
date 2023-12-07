@@ -1037,10 +1037,10 @@
                     <div class="grow"></div>
     
                     <!-- Pilih Kategori -->
-                    <div class="mt-3 md:mt-0" style="animation: fadeIn 1s">
-                        <select class="py-2 px-10 w-full border-2 text-[#FFFFFF] font-bold text-base text-center bg-transparent border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl focus:outline-none shadow-md hover:shadow">
-                            <option class="text-[#1480EC] text-start" value="1">Pilih Kategori</option>
-                            <option class="text-[#1480EC] text-start" value="2">Kebaikan</option>
+                    <div class="mt-3 md:mt-0" style="animation: fadeIn 0.3s">
+                        <select class="py-2 px-10 w-full group border-2 text-[#000000] md:text-[#FFFFFF] hover:text-[#FFFFFF] font-semibold text-sm md:text-base text-center bg-transparent hover:bg-gray-500 md:hover:bg-transparent border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-lg focus:outline-none shadow-md">
+                            <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="1">Pilih Kategori</option>
+                            <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="2">Kebaikan</option>
                         </select>
                     </div>
                 </div>
@@ -1058,11 +1058,12 @@
                             <tr class="">
                                 <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">No.</th>
                                 <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Keterangan</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Foto</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">JudulMbkm</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Status</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AwalPendaftaran</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AkhirPendaftaran</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Profile</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Nim</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Program Studi</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Program Diikuti</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Kegiatan</th>
+                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Berkas</th>
                                 <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AwalKegiatan</th>
                                 <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">AkhirKegiatan</th>
                                 <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Aksi</th>
@@ -1079,78 +1080,102 @@
                                     </div>
                                 </td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">
-                                    <div class="md:flex py-1 md:py-0 justify-center cursor-pointer">
-                                        <div class=""><img class="w-11" src="../images/MBKM.jpeg"></div>
+                                    <div class="md:flex py-1 md:py-0 justify-center">
+                                        <!-- Avatar -->
+                                        <div class="w-10 h-10 overflow-hidden border-[1.5px] md:border-2 border-[#000000] md:border-[#FFFFFF] rounded-full">
+                                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                        </div>
                                     </div>
                                 </td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">2208100083</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Teknologi Informasi</td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Magang Kampus Merdeka</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Aktif</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Belajar Kebaikan</td>
+                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">
+                                    <!-- Berkas -->
+                                    <div class="md:flex py-1 md:py-0 justify-center cursor-pointer">
+
+                                        <!-- Icon -->
+                                        <svg class="w-8 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                            <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                            <path d="M8 16H13" stroke-linecap="round"/>
+                                            <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                </td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">15 Desember 2023</td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">30 Desember 2023</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">01 Februari 2024</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">30 Juni 2024</td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
                                     <div class="flex md:justify-center gap-2">
-                                        <a href="edit(program).html">
+                                        <a href="">
                                         <button class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
+                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Unduh</h1>
                                         </button>
                                         </a>
-                                  
-                                        <!-- Pembungkus Modals -->
-                                        <div x-data="{ isOpen: false }" class="relative flex justify-center">
 
-                                            <!-- Button -->
-                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
-                                                <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
-                                            </button>
-                                        
-                                            <!-- Modals -->
-                                            <div x-show="isOpen" 
-                                                x-transition:enter="transition duration-300 ease-out"
-                                                x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                                x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                                x-transition:leave="transition duration-150 ease-in"
-                                                x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                                x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                                class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                                aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                            >
-                                                <div class="flex items-center justify-center h-screen">
-                                                    <span aria-hidden="true"></span>
-                                        
-                                                    <!-- Pembungkus -->
-                                                    <div class="px-10 sm:px-[5rem] md:px-[20rem] lg:px-[22rem]">
-                                                        <div class="relative p-6 text-center transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                            <!-- Text Peringatan -->
-                                                            <div class="overflow-y-scroll w-full h-[10rem]">
-                                                                <h1 class="text-[12px] md:text-sm lg:text-base font-medium text-[#000000]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, possimus, nesciunt illum exercitationem voluptatibus voluptas labore adipisci totam assumenda fuga impedit illo quibusdam, rem blanditiis fugit ipsam sint veritatis laborum. Fugit repellat architecto quibusdam dicta saepe! Ipsum animi dolorum suscipit a eum consequuntur, nobis repellat ipsa nam optio dignissimos blanditiis?</h1>
-                                                            </div>
-                                        
-                                                            <!-- Pembungkus Button -->
-                                                            <div class="flex justify-center gap-3 mt-6">
-                                                                <div class="sm:grow"></div>
-
-                                                                <button @click="isOpen = false" class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
-                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">No</h1>
-                                                                </button>
-                                            
-                                                                <button class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
-                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Yes</h1>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     
                                 </td>  
                             </tr>
 
                         </table>
+                    </div>
+                </div>
+
+                <!-- Pembungkus pagination -->
+                <div class="flex w-full pt-4">
+
+                    <!-- Icon -->
+                    <button class="hover:scale-105 focus:scale-100">
+                        <a href="#" class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md cursor-not-allowed">
+                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        </a>
+                    </button>
+
+                    <div class="grow"></div>
+                
+                    <div class="hover:scale-105 pt-2">
+                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
+                            1
+                        </a>
+                    </div>
+                
+                    <div class="hover:scale-105 pt-2">
+                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
+                            2
+                        </a>
+                    </div>
+                
+                    <div class="hover:scale-105 pt-2">
+                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
+                            ...
+                        </a>
+                    </div>
+                
+                    <div class="hover:scale-105 pt-2">
+                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
+                            9
+                        </a>
+                    </div>
+                
+                    <div class="hover:scale-105 pt-2">
+                        <a href="#" class="hidden px-4 py-2 mx-1 text-gray-500 bg-white rounded-md sm:inline hover:bg-blue-700 hover:text-white">
+                            10
+                        </a>
+                    </div>
+
+                    <div class="grow"></div>
+                
+                    <!-- Icon -->
+                    <div class="hover:scale-105">
+                        <a href="#" class="flex items-center justify-center px-4 py-2 mx-1 text-gray-500 bg-white rounded-md rtl:-scale-x-100 hover:bg-blue-700 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
