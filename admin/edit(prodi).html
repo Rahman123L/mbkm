@@ -392,24 +392,32 @@
 
             <!-- ( FITUR ) -->
             <div class="py-2">
-                <h1 class="font-bold text-[#FFFFFF] ml-7">FITUR</h1>
+                <h1 class="text-base font-bold text-[#1480EC] md:text-[#FFFFFF] ml-7">FITUR</h1>
             </div>
 
             <!-- Pembungkus -->
             <div class="px-5 pb-3 border-b-[0.1px] border-gray-500 grid gap-3">
 
-<!-- Pembungkus -->
+                <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
                     <!-- Icon & Text ( Manajemen ) -->
-                    <div class="flex py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
+                    <div class="flex py-2 group hover:bg-gray-500 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 md:border-gray-500 rounded-lg cursor-pointer hover:scale-105" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
-                            <img class="w-5" src="../images/Manajemen.png">
-                            <h1 class="font-semibold text-[#FFFFFF]">Manajemen</h1>
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.97883 6.31492C2.99294 7.10927 2 7.50645 2 8C2 8.49355 2.99294 8.89073 4.97883 9.68508L7.7873 10.8085C9.77318 11.6028 10.7661 12 12 12C13.2339 12 14.2268 11.6028 16.2127 10.8085L19.0212 9.68508C21.0071 8.89073 22 8.49355 22 8C22 7.50645 21.0071 7.10927 19.0212 6.31492L16.2127 5.19153C14.2268 4.39718 13.2339 4 12 4C11.0461 4 10.2361 4.2374 9 4.71221" stroke-linecap="round"/>
+                                <path d="M5.76613 10L4.97883 10.3149C2.99294 11.1093 2 11.5065 2 12C2 12.4935 2.99294 12.8907 4.97883 13.6851L7.7873 14.8085C9.77318 15.6028 10.7661 16 12 16C13.2339 16 14.2268 15.6028 16.2127 14.8085L19.0212 13.6851C21.0071 12.8907 22 12.4935 22 12C22 11.5065 21.0071 11.1093 19.0212 10.3149L18.2339 10"/>
+                                <path d="M19.0212 17.6851C21.0071 16.8907 22 16.4935 22 16C22 15.5065 21.0071 15.1093 19.0212 14.3149L18.2339 14M5.76613 14L4.97883 14.3149C2.99294 15.1093 2 15.5065 2 16C2 16.4935 2.99294 16.8907 4.97883 17.6851L7.7873 18.8085C9.77318 19.6028 10.7661 20 12 20C12.9539 20 13.7639 19.7626 15 19.2878" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Manajemen</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
-                            <img class="w-5" src="../images/Down.png">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
                         </div>
                     </div>
                     
@@ -418,52 +426,71 @@
 
                         <!-- Icon & Text ( Fakultas ) -->
                         <a href="fakultas.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Fakultas.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Fakultas</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 7H10.25M7.5 11H10.25M7.5 15H10.25M13.75 7H16.5M13.75 11H16.5M13.75 15H16.5M20 21V6.2C20 5.0799 20 4.51984 19.782 4.09202C19.5903 3.71569 19.2843 3.40973 18.908 3.21799C18.4802 3 17.9201 3 16.8 3H7.2C6.07989 3 5.51984 3 5.09202 3.21799C4.71569 3.40973 4.40973 3.71569 4.21799 4.09202C4 4.51984 4 5.0799 4 6.2V21M22 21H2" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Fakultas</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Prodi ) -->
                         <a href="prodi.html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Prodi.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Prodi</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 7H14.5M9.5 11H14.5M9.5 15H14.5M18 21V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V21M20 21H4" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Prodi</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Kelas ) -->
                         <a href="manajemen(kelas).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Kelas.svg">
-                                <h1 class="font-semibold text-[#FFFFFF]">Kelas</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.78272 3.49965C11.2037 2.83345 12.7962 2.83345 14.2172 3.49965L20.9084 6.63664C22.3639 7.31899 22.3639 9.68105 20.9084 10.3634L14.2173 13.5003C12.7963 14.1665 11.2038 14.1665 9.78281 13.5003L3.0916 10.3634C1.63613 9.68101 1.63614 7.31895 3.0916 6.63659L6 5.27307" stroke-linecap="round"/>
+                                    <path d="M2 8.5V14" stroke-linecap="round"/>
+                                    <path d="M12 21C10.204 21 7.8537 19.8787 6.38533 19.0656C5.5035 18.5772 5 17.6334 5 16.6254V11.5M19 11.5V16.6254C19 17.6334 18.4965 18.5772 17.6147 19.0656C17.0843 19.3593 16.4388 19.6932 15.7459 20" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Kelas</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Dosen ) -->
                         <a href="manajemen(dosen).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Dosen.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Dosen</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Dosen</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
 
                         <!-- Icon & Text ( Mahasiswa ) -->
                         <a href="manajemen(mahasiswa).html">
-                        <div class="py-2 hover:bg-[#282727] border-[0.1px] border-gray-500 rounded-lg cursor-pointer hover:scale-105">
+                        <button class="w-full py-2 group hover:bg-gray-500 focus:bg-blue-500 md:focus:bg-blue-900 md:hover:bg-[#282727] border-[0.1px] border-[#000000] hover:border-gray-500 focus:border-blue-500 md:border-gray-500 md:focus:border-blue-900 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
                             <div class="flex ml-4 items-center gap-3">
-                                <img class="w-5" src="../images/Mahasiswa.png">
-                                <h1 class="font-semibold text-[#FFFFFF]">Mahasiswa</h1>
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4"/>
+                                    <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">Mahasiswa</h1>
                             </div>
-                        </div>
+                        </button>
                         </a>
                         
                     </div>
@@ -978,79 +1005,78 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
-        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+        <!-- Pembungkus -->
+        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
+
+            <!-- Text -->
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Prodi</h1>
 
             <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
                 <span class="mr-2">
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                     </svg>
                 </span>
-                <p class="font-bold text-white">Fail!</p>
+                <p class="font-bold text-white">Gagal!</p>
             </div>
 
-            <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
-                
-                <!-- Pembungkus Input -->
-                <form action="">
+            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
 
-                    <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                <!-- Pembungkus -->
+                <div class="pb-5 mx-4">
 
-                        <!-- Pembungkus Kode Prodi -->
-                        <label class="" for="KodeProdi">
+                    <!-- Pembungkus Input -->
+                    <form action="">
+                        <div class="grid gap-2 m-2">
 
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Kode Prodi</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="" type="text" id="KodeProdi">
-                        </label>
-
-                        <!-- Pembungkus Prodi -->
-                        <label class="" for="Prodi">
-
-                            <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Prodi</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="" type="text" id="Prodi">
-                        </label>
-
-                        <!-- Pembungkus Fakultas -->
-                        <label class="" for="Fakultas">
-
-                            <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Fakultas</h1>
-
+                            <!-- Pilih Kategori -->
                             <div class="">
-                                <select class="w-full py-3 px-10 lg:px-5 text-[#B0B0B0] border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
-                                    <option value="" disabled selected>Pilih Fakultas</option>
-                                    <option value="1">Sains Dan Teknologi</option>
+                                <!-- Text -->
+                                <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Fakultas</h1>
+
+                                <select class="py-2 px-10 w-full border-2 bg-transparent text-[#000000] md:text-[#FFFFFF] font-semibold text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:outline-none">
+                                    <option class="text-[#000000] text-start" value="" disabled selected>Pilih Fakultas</option>
+                                    <option class="text-[#000000] text-start" value="1">Sains Dan Teknologi</option>
                                 </select>
                             </div>
-                        </label>
 
-                        <!-- Pembungkus Button -->
-                        <div class="pt-4 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
-
+                            <!-- Pembungkus Prodi Kode -->
+                            <label class="" for="Kode">
+                                    
                                 <!-- Text -->
-                                <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Edit</h1>
-                                </div>
-                            </button>
+                                <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Kode Prodi</h1>
+                                
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#000000] md:text-[#FFFFFF] font-medium focus:border-[#1480EC] rounded-xl shadow-lg focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="AA321" type="text" id="Kode">
+                            </label>
+
+                            <!-- Pembungkus Prodi -->
+                            <label class="" for="Prodi">
+                                    
+                                <!-- Text -->
+                                <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Program Studi</h1>
+                                
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#000000] md:text-[#FFFFFF] font-medium focus:border-[#1480EC] rounded-xl shadow-lg focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Teknologi Informasi" type="text" id="Prodi">
+                            </label>
+
+                            <!-- Pembungkus Button -->
+                            <div class="pt-4">
+                                <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
+
+                                    <!-- Text -->
+                                    <div class="w-full text-center">
+                                        <h1 class="text-base lg:text-lg font-bold text-[#989898] group-focus:text-[#FFFFFF]">Tambah</h1>
+                                    </div>
+                                </button>
+                            </div>
+
                         </div>
-
-                    </div>
-                </form>
-
+                    </form>
+                </div>
             </div>
         </div>
     </div>

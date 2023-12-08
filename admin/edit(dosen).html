@@ -1005,10 +1005,9 @@
 
 
     <!-- Form Start -->
-
     <div class="md:ml-[17rem] relative z-20">
 
-        <div class="container px-6 pb-6 pt-[5rem] mx-auto">
+        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
             <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Dosen</h1>
 
             <!-- Alert -->
@@ -1018,120 +1017,117 @@
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                     </svg>
                 </span>
-                <p class="font-bold text-white">Fail!</p>
+                <p class="font-bold text-white">Gagal!</p>
             </div>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl bg-[#1480EC] shadow-lg overflow-hidden" style="animation: fadeIn 1.0s;">
+            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
                 
                 <!-- Pembungkus Input -->
                 <form action="">
 
-                    <!-- Image -->
-                    <div class="mx-10 my-2 flex justify-center">
-                        <img class="w-full h-full md:w-[15rem] object-cover bg-cover" src="../images/avatar.jpg">
-                    </div>
+                    <!-- Pembungkus -->
+                    <div class="flex justify-center">
 
-                    <!-- Pembungkus File -->
-                    <div class="py-4 flex justify-center">
-                        <label for="File" class="flex w-full sm:w-[20rem] px-4 py-2 bg-[#1480EC] border-2 border-[#FFFFFF] cursor-pointer rounded-xl">
-                    
-                            <h2 class="font-medium tracking-wide text-[#FFFFFF] ml-3">Pilih File</h2>
-                    
-                            <input id="File" type="file" class="hidden" />
-                        </label>
+                        <!-- Pembungkus Avatar -->
+                        <div class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-[#1480EC]">
+
+                            <!-- Logo -->
+                            <label for="file">
+                                <div class="absolute w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-[55px] md:ml-[70px] lg:ml-[80px] mt-[56px] md:mt-[66px] lg:mt-[76px] cursor-pointer">
+                                    <img class="w-full h-full object-cover bg-cover" src="../images/Kamera.png">
+                                </div>
+                                <input id="file" type="file" class="hidden" />
+                            </label>
+
+                            <!-- Image Avatar -->
+                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                        </div>
+
                     </div>
 
                     <!-- Pembungkus -->
-                    <div class="sm:mx-3">
+                    <div class="grid gap-2 m-2">
 
-                        <!-- Pembungkus Nidn-->
+                        <!-- Pembungkus Nama -->
+                        <label class="" for="Nama">
+                                
+                            <!-- Text -->
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Nama</h1>
+                            
+                            <!-- Input -->
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Iwan Purnama, S.Kom., M.Kom" type="text" id="Nama">
+                        </label>
+
+                        <!-- Pembungkus Nidn -->
                         <label class="" for="Nidn">
-
+                                
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Nidn</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Nidn</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="Nidn">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="2208100083" type="number" id="Nidn">
                         </label>
 
-                        <!-- Pembungkus TanggalLahir-->
-                        <label class="" for="TanggalLahir">
-
-                            <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">TanggalLahir</h1>
-
-                            <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="date" id="TanggalLahir">
-                        </label>
-
-                        <!-- Pembungkus Email-->
+                        <!-- Pembungkus Email -->
                         <label class="" for="Email">
-
+                                
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Email</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Email</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="email" id="Email">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="AkuInginPahala@gmail.com" type="email" id="Email">
                         </label>
 
-                        <!-- Pembungkus Password-->
+                        <!-- Pembungkus Password -->
                         <label class="" for="Password">
-
+                                
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Password</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Password</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="password" id="Password">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="**********" type="password" id="Password">
                         </label>
 
-                        <!-- Pembungkus Fakultas -->
-                        <label class="" for="Fakultas">
-
+                        <!-- Pilih Kategori -->
+                        <div class="">
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Fakultas</h1>
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Fakultas</h1>
 
-                            <!-- Input -->
-                            <div class="">
-                                <select class="text-[#B0B0B0] w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
-                                    <option value="" disabled selected>Pilih Fakultas</option>
-                                    <option value="1">Sains Dan Teknologi</option>
-                                </select>
-                            </div>
-                        </label>
+                            <select class="py-2 px-10 w-full border-2 bg-transparent text-[#000000] md:text-[#FFFFFF] font-semibold text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:outline-none">
+                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Fakultas</option>
+                                <option class="text-[#000000] text-start" value="1">Sains Dan Teknologi</option>
+                            </select>
+                        </div>
 
-                        <!-- Pembungkus Program Studi -->
-                        <label class="" for="Program_Studi">
-
+                        <!-- Pilih Kategori -->
+                        <div class="">
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">Program Studi</h1>
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Program Studi</h1>
 
-                            <!-- Input -->
-                            <div class="">
-                                <select class="text-[#B0B0B0] w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]">
-                                    <option value="" disabled selected>Pilih Program Studi</option>
-                                    <option value="1">Teknologi Informasi</option>
-                                </select>
-                            </div>
-                        </label>
+                            <select class="py-2 px-10 w-full border-2 bg-transparent text-[#000000] md:text-[#FFFFFF] font-semibold text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:outline-none">
+                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Program Studi</option>
+                                <option class="text-[#000000] text-start" value="1">Teknologi Informasi</option>
+                            </select>
+                        </div>
 
-                        <!-- Pembungkus No Hp-->
+                        <!-- Pembungkus No Hp -->
                         <label class="" for="NoHp">
-
+                                
                             <!-- Text -->
-                            <h1 class="py-2 text-sm font-medium text-[#FFFFFF] cursor-pointer">No Hp</h1>
-
+                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">No Hp</h1>
+                            
                             <!-- Input -->
-                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-full focus:outline-none focus:shadow-xl focus:scale-[1.02]" type="number" id="NoHp">
+                            <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#FFFFFF] focus:border-[#1480EC] rounded-xl focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="082363838328" type="number" id="NoHp">
                         </label>
 
                         <!-- Pembungkus Button -->
-                        <div class="pt-5 pb-1">
-                            <button class="w-full sm:w-[10rem] flex px-4 py-2 bg-[#E2E2E2] group hover:bg-[#5697F8] border border-[#B0B0B0] rounded-full hover:shadow-lg hover:scale-[1.02]">
+                        <div class="pt-4">
+                            <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
 
                                 <!-- Text -->
                                 <div class="w-full text-center">
-                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-hover:text-[#FFFFFF]">Update</h1>
+                                    <h1 class="text-base lg:text-lg font-medium text-[#989898] group-focus:text-[#FFFFFF]">Update</h1>
                                 </div>
                             </button>
                         </div>
