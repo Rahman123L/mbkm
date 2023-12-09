@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>INSTANSI</title>
+    <title>EDIT(DESA)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
@@ -1011,198 +1011,63 @@
         <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
             <!-- Text -->
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Identitas Instansi</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Edit Daftar Desa</h1>
 
-            <div class="container overflow-hidden w-full bg-gray-100 md:bg-[#00000057] p-5 rounded-lg shadow-xl">
-
-                <div class="md:flex gap-3 mb-1">
-
-                    <!-- Button -->
-                    <a href="tambah(instansi).html">
-                    <button class="flex justify-center items-center group gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:focus:border-blue-900 focus:bg-blue-500 md:focus:bg-blue-900 focus:border-[#1480EC] hover:border-gray-500 md:hover:bg-transparent md:hover:border-[#FFFFFF] rounded-lg shadow-md">
-                        <!-- Icon -->
-                        <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
-                            <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                        </svg>
-                        <h1 class="text-base font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF]">TambahData</h1>
-                    </button>
-                    </a>
-    
-                    <div class="grow"></div>
-    
-                    <!-- Pilih Kategori -->
-                    <div class="mt-3 md:mt-0">
-                        <select class="py-2 px-10 w-full group border-2 text-[#000000] md:text-[#FFFFFF] hover:text-[#FFFFFF] font-semibold text-sm md:text-base text-center bg-transparent hover:bg-gray-500 md:hover:bg-transparent border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-lg focus:outline-none shadow-md">
-                            <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="1">Pilih Program</option>
-                            <option class="text-[#000000] group-hover:text-[#FFFFFF] md:group-hover:text-[#000000] text-start" value="2">Magang Kampus Merdeka</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Notifikasi Default -->
-                <div class="pt-2 md:py-0 md:pb-4">
-                    <div class="bg-transparent border-2 border-[#000000] md:border-[#A9A9A9] md:hover:border-[#FFFFFF] flex gap-3 w-full items-center rounded-lg shadow-md px-6 py-4">
-
-                        <!-- Icon -->
-                        <div class="mr-2 hidden sm:inline">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] stroke-[#000000] group-hover:stroke-[#FFFFFF] md:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 20H4M4 20H14M4 20V6.2002C4 5.08009 4 4.51962 4.21799 4.0918C4.40973 3.71547 4.71547 3.40973 5.0918 3.21799C5.51962 3 6.08009 3 7.2002 3H10.8002C11.9203 3 12.4796 3 12.9074 3.21799C13.2837 3.40973 13.5905 3.71547 13.7822 4.0918C14 4.5192 14 5.07899 14 6.19691V12M14 20H20M14 20V12M20 20H22M20 20V12C20 11.0681 19.9999 10.6024 19.8477 10.2349C19.6447 9.74481 19.2557 9.35523 18.7656 9.15224C18.3981 9 17.9316 9 16.9997 9C16.0679 9 15.6019 9 15.2344 9.15224C14.7443 9.35523 14.3552 9.74481 14.1522 10.2349C14 10.6024 14 11.0681 14 12M7 10H11M7 7H11" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-
-                        <!-- Text -->
-                        <p class="text-sm lg:text-base font-medium text-[#000000] md:text-[#FFFFFF]">"Saat ini belum ada daftar instansi"</p>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="w-full md:mb-3 bg-transparent md:border-2 border-[#A9A9A9] hover:border-[#FFFFFF] rounded-xl shadow-lg">
-
-                    <!-- Pembungkus -->
-                    <div class="md:overflow-x-scroll overflow-hidden bg-transparent">
-
-                        <!-- Table -->
-                        <table class="w-full border-collapse bg-transparent text-center">
-
-                            <!-- Baris Ke 1 -->
-                            <tr class="">
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">No.</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Instansi</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Program</th>
-                                <th class="border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#EFEFEF] px-4 py-4 font-bold text-sm text-[#1480EC]">Aksi</th>
-                            </tr>
-
-                            <!-- Baris Ke 2 -->
-                            <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#000000] md:border-[#A9A9A9] md:hover:border-[#FFFFFF] md:border-none rounded-xl shadow-xl">  
-                                <td class="tab md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">1.</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Badan Pemeriksa Keuangan</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm text-[#000000] md:text-[#FFFFFF]">Magang Kampus Merdeka</td>
-                                <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 py-4 font-semibold">
-                                    <div class="flex md:justify-center gap-2">
-
-                                        <a href="edit(instansi).html">
-                                        <!-- Button -->
-                                        <button class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
-                                        </button>
-                                        </a>
-                                  
-                                        <!-- Pembungkus Modals -->
-                                        <div x-data="{ isOpen: false }" class="relative flex justify-center">
-
-                                            <!-- Button -->
-                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
-                                                <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Delete</h1>
-                                            </button>
-                                        
-                                            <!-- Modals -->
-                                            <div x-show="isOpen" 
-                                                x-transition:enter="transition duration-300 ease-out"
-                                                x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                                x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
-                                                x-transition:leave="transition duration-150 ease-in"
-                                                x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                                x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                                class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
-                                                aria-labelledby="modal-title" role="dialog" aria-modal="true"
-                                            >
-                                                <div class="flex items-center justify-center h-screen">
-                                                    <span aria-hidden="true"></span>
-                                        
-                                                    <!-- Pembungkus -->
-                                                    <div class="px-10 sm:px-[5rem] md:px-[20rem] lg:px-[22rem]">
-                                                        <div class="relative p-6 text-center transition-all transform bg-white opacity-85 rounded-lg">
-
-                                                            <!-- Text Peringatan -->
-                                                            <div class="overflow-y-scroll w-full h-[10rem]">
-                                                                <h1 class="text-[12px] md:text-sm lg:text-base font-medium text-[#000000]">"Penting untuk mempertimbangkan konsekuensi dari tindakan ini. Apakah Anda yakin ingin menghapus?"</h1>
-                                                            </div>
-                                        
-                                                            <!-- Pembungkus Button -->
-                                                            <div class="flex justify-center gap-3 mt-6">
-                                                                <div class="sm:grow"></div>
-
-                                                                <button @click="isOpen = false" class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
-                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">No</h1>
-                                                                </button>
-                                            
-                                                                <button class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
-                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Yes</h1>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </td>  
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Pembungkus pagination -->
-                <div class="flex w-full pt-3 md:pt-0">
-
-                    <!-- Icon -->
-                    <a href="#">
-                    <button class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md shadow-md hover:scale-105 focus:scale-100 cursor-not-allowed">
-                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    </a>
-
-                    <div class="grow"></div>
-                
-                    <a href="#">
-                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
-                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">1</h1>
-                    </button>
-                    </a>
-                
-                    <a href="#">
-                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
-                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">2</h1>
-                    </button>
-                    </a>
-                
-                    <a href="#">
-                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
-                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">...</h1>
-                    </button>
-                    </a>
-                
-                    <a href="#">
-                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
-                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">9</h1>
-                    </button>
-                    </a>
-                
-                    <a href="#">
-                    <button class="hidden sm:inline px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md hover:scale-105 focus:scale-100">
-                        <h1 class="text-[13px] font-semibold text-[#000000] group-hover:text-[#FFFFFF] md:text-[#FFFFFF] group-focus:text-[#FFFFFF]">10</h1>
-                    </button>
-                    </a>
-
-                    <div class="grow"></div>
-                
-                    <!-- Icon -->
-                    <a href="#">
-                    <button class="flex items-center justify-center px-4 py-2 mx-1 group bg-transparent hover:bg-gray-500 md:hover:bg-transparent focus:bg-blue-500 md:focus:bg-transparent focus:border-blue-500 md:focus:border-[#FFFFFF] border-2 border-[#000000] md:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF] rounded-md shadow-md hover:scale-105 focus:scale-100">
-                        <svg class="w-5 stroke-[1.5] stroke-[#000000] md:stroke-[#FFFFFF] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    </a>
-                </div>
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="font-bold text-white">Gagal!</p>
             </div>
 
+            <div class="w-full md:w-[28rem] lg:w-[40rem] p-4 rounded-2xl border-2 border-[#1480EC] shadow-lg overflow-hidden mb-5" style="animation: fadeIn 1.0s;">
+
+                <!-- Pembungkus -->
+                <div class="pb-5 mx-4">
+
+                    <!-- Pembungkus Input -->
+                    <form action="">
+                        <div class="grid gap-2 m-2">
+
+                            <!-- Pilih Kategori -->
+                            <div class="">
+                                <!-- Text -->
+                                <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Pilih Program</h1>
+
+                                <select class="py-2 px-10 w-full border-2 bg-transparent text-[#000000] md:text-[#FFFFFF] font-semibold text-sm text-center border-[#B0B0B0] focus:border-[#5697F8] rounded-xl shadow-lg focus:outline-none">
+                                    <option class="text-[#000000] text-start" value="" disabled selected>Pilih Program</option>
+                                    <option class="text-[#000000] text-start" value="1">Magang Kampus Merdeka</option>
+                                </select>
+                            </div>
+
+                            <!-- Pembungkus Desa -->
+                            <label class="" for="Desa">
+                                    
+                                <!-- Text -->
+                                <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Judul Desa</h1>
+                                
+                                <!-- Input -->
+                                <input class="w-full py-2 px-10 border-2 border-[#B0B0B0] bg-transparent text-[#000000] md:text-[#FFFFFF] font-medium focus:border-[#1480EC] rounded-xl shadow-lg focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Houtembaru" type="text" id="Desa">
+                            </label>
+
+                            <!-- Pembungkus Button -->
+                            <div class="pt-4">
+                                <button class="w-full md:w-[18rem] flex px-4 py-2 group focus:bg-[#5697F8] border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:scale-95" type="button">
+
+                                    <!-- Text -->
+                                    <div class="w-full text-center">
+                                        <h1 class="text-base lg:text-lg font-bold text-[#989898] group-focus:text-[#FFFFFF]">Update</h1>
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Form End -->
