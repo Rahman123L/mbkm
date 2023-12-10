@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LOGIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        extend: {
+            spacing: {
+            13: "3.25rem",
+            },
+            fontFamily: {
+            inter: ["Inter"],
+            },
+        },
+        },
+    };
+    </script>
+    <!-- Tailwind End -->
+        
+    <!-- Css Start -->
+    <style type="text/tailwindcss">
+        
+        @media (max-width: 768px) {
+            .fixeed {
+                position: fixed;
+            }
+            th, .tab {
+                display: none;
+            }
+            tr {
+                display: grid;
+            }
+        }
+        
+        /* Animasi */
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <!-- Css End -->
+
+</head>
+<body class="">
+    
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full lg:flex p-8 lg:p-0 lg:px-5">
+        <div class="lg:p-16 lg:flex-1">
+
+            <!-- Pembungkus -->
+            <div class="">
+                <div class="flex justify-center" style="animation: fadeIn 0.5s;">
+
+                    <!-- Image ULB -->
+                    <img class="w-[6rem] md:w-[10rem]" src="images/Logo ULB.png">  
+                </div>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center py-5">
+                <h1 class="text-[#1480EC] text-base md:text-lg font-bold" style="animation: fadeIn 1.2s;">UNIVERSITAS LABUHANBATU</h1>
+                <h1 class="text-[#868080] text-sm md:text-base font-semibold" style="animation: fadeIn 1.4s;">Temukan Bakat dan Minatmu Untuk Masa Depan</h1>
+            </div>
+
+            <div class="text-center py-2">
+                <h1 class="text-[#000000] text-xl md:text-2xl font-bold" style="animation: fadeIn 1.4s;">Log In</h1>
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="pb-5">
+
+                <div class="mt-5">
+                    <!-- Alert -->
+                    <a href="admin/home.html">
+                    <div class="mb-3 bg-green-500 inline-flex w-full items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                        <span class="mr-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <p class="font-bold text-white">Admin</p>
+                    </div>
+                    </a>
+
+                    <!-- Alert -->
+                    <a href="dosen/home.html">
+                    <div class="mb-3 bg-yellow-500 inline-flex w-full items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                        <span class="mr-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <p class="font-bold text-white">Dosen</p>
+                    </div>
+                    </a>
+                    
+                    <!-- Alert -->
+                    <a href="mahasiswa/home.html">
+                    <div class="mb-3 bg-red-500 inline-flex w-full items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                        <span class="mr-2">
+                            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <p class="font-bold text-white">Mahasiswa</p>
+                    </div>
+                    </a>
+                </div>
+
+                    <!-- Pembungkus Npm -->
+                    <label class="" for="Npm">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base md:text-lg text-[#000000] font-medium cursor-pointer" style="animation: fadeIn 1.6s;">Npm</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 text-[#000000] font-medium border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] placeholder:text-[#000000] placeholder:font-medium" placeholder="2208100083" type="text" id="Npm" style="animation: slideInLeft 1.0s;">
+                    </label>
+
+                    <!-- Pembungkus Password -->
+                    <label class="" for="Password">
+
+                        <!-- Text -->
+                        <h1 class="py-3 text-base md:text-lg text-[#000000] font-medium cursor-pointer" style="animation: fadeIn 1.6s;">Password</h1>
+
+                        <!-- Input -->
+                        <input class="w-full py-3 px-10 border-2 text-[#000000] font-medium border-[#B0B0B0] focus:border-[#5697F8] rounded-xl focus:outline-none shadow-lg focus:scale-[1.02] placeholder:text-[#000000] placeholder:font-medium" placeholder="Min. 8 characters" type="password" id="Password" style="animation: slideInLeft 1.2s;">
+                    </label>
+
+                    <!-- Pembungkus -->
+                    <div class="pt-8">
+
+                        <!-- Pembungkus Button -->
+                        <button class="w-full flex px-4 py-2 bg-[#5697F8] group hover:bg-[#B0B0B0] focus:bg-[#FFFFFF] border border-[#B0B0B0] rounded-xl shadow-lg hover:scale-[1.02] focus:scale-100" style="animation: slideInLeft 1.4s;">
+
+                            <!-- Text -->
+                            <div class="w-full text-center">
+                                <h1 class="text-xl font-medium text-[#FFFFFF] group-focus:text-[#5697F8]">Sign In</h1>
+                            </div>
+                        </button>
+                    </div>
+
+            </div>
+
+            <!-- Pembungkus -->
+            <div class="text-center">
+
+                <!-- Text -->
+                <h1 class="text-[#989898] text-sm md:text-base font-medium" style="animation: fadeIn 1.8s;">Belum Punya Akun?  <a href="register.html" class="hover:underline hover:text-[#5697F8]">Registrasi</a></h1>
+
+                <!-- Text -->
+                <h1 class="text-[#989898] text-sm md:text-base font-medium" style="animation: fadeIn 1.8s;">Ingin <a href="index.html" class="hover:underline hover:text-[#5697F8]">Kembali?</a></h1>
+            </div>
+
+        </div>
+
+        <div class="lg:p-8 hidden lg:flex lg:w-1/2" style="animation: slideInRight 1.4s;">
+            <img class="w-full h-full object-cover rounded-xl" src="images/Background(3).png">
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script>
+
+    </script>
+    <!-- Script End -->
+
+</body>
+</html>
