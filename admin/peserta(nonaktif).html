@@ -1110,10 +1110,66 @@
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold">
                                     <div class="md:flex md:justify-center my-2 md:my-0 gap-2">
                                   
-                                        <!-- Button -->
-                                        <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
-                                            <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">View</h1>
-                                        </button>
+                                        <!-- Pembungkus Modals -->
+                                        <div x-data="{ isOpen: false }" class="relative">
+
+                                            <!-- Button -->
+                                            <button @click="isOpen = true" class="py-1 px-3 border-2 border-[#000000] md:border-[#A9A9A9] hover:bg-gray-500 md:hover:bg-transparent rounded-lg group focus:bg-blue-500 focus:border-blue-500 md:focus:bg-[#A9A9A9] md:focus:border-[#A9A9A9] hover:border-gray-500 md:hover:border-[#FFFFFF]">
+                                                <h1 class="text-sm text-[#000000] md:text-[#FFFFFF] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">View</h1>
+                                            </button>
+                                        
+                                            <!-- Modals -->
+                                            <div x-show="isOpen" 
+                                                x-transition:enter="transition duration-300 ease-out"
+                                                x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                                x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                                x-transition:leave="transition duration-150 ease-in"
+                                                x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                                x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                                class="fixed inset-0 z-20 overflow-y-auto bg-black bg-opacity-70" 
+                                                aria-labelledby="modal-title" role="dialog" aria-modal="true"
+                                            >
+                                                <div class="flex items-center justify-center h-screen">
+                                                    <span aria-hidden="true"></span>
+                                        
+                                                    <!-- Pembungkus -->
+                                                    <div class="px-10 sm:px-[5rem] md:px-[20rem] lg:px-[22rem]">
+                                                        <div class="relative p-6 text-center transition-all transform bg-white opacity-85 rounded-lg">
+
+                                                            <!-- Text Peringatan -->
+                                                            <div class="overflow-y-scroll w-full h-[10rem]">
+                                                                <div class="py-3">
+                                                                    <div class="grid grid-cols-2 gap-2 col-span-2">
+                                                                        <div class="w-full p-5 bg-slate-600 md:bg-[#00000070] rounded-lg">
+                                                                            <h1 class="text-[10px] md:text-[12px] lg:text-sm text-center text-[#FFFFFF] md:text-[#1480EC] font-bold">IPK</h1>
+                                                                            <h1 class="text-base md:text-lg lg:text-xl text-center text-[#FFFFFF] font-bold">4</h1>
+                                                                        </div>
+                                            
+                                                                        <div class="w-full p-5 bg-slate-600 md:bg-[#00000070] rounded-lg">
+                                                                            <h1 class="text-[10px] md:text-[12px] lg:text-sm text-center text-[#FFFFFF] md:text-[#1480EC] font-bold">SKS</h1>
+                                                                            <h1 class="text-base md:text-lg lg:text-xl text-center text-[#FFFFFF] font-bold">22</h1>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Pembungkus Button -->
+                                                            <div class="flex justify-center gap-3 mt-6">
+                                                                <div class="sm:grow"></div>
+
+                                                                <button @click="isOpen = false" class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
+                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">No</h1>
+                                                                </button>
+                                            
+                                                                <button class="py-1 px-3 border-2 border-[#000000] hover:bg-gray-500 rounded-lg group focus:bg-blue-500 focus:border-blue-500 hover:border-gray-500">
+                                                                    <h1 class="text-sm text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Yes</h1>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                                 <td class="md:border-b-[0.5px] bg-transparent border-[#FFFFFF] bg-[#FFFFFF] px-4 md:py-4 font-semibold">
