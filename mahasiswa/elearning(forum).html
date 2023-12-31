@@ -690,24 +690,84 @@
 
                                 <!-- Text -->
                                 <div class="flex items-center gap-3">
-                                    <div class="">
-                                        <!-- Icon -->
-                                        <div class="w-10 md:w-12 overflow-hidden border md:border-2 border-gray-400 rounded-full">
-                                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                    <div class="flex items-center gap-3">
+                                        <div class="">
+                                            <!-- Icon -->
+                                            <div class="w-10 md:w-12 overflow-hidden border md:border-2 border-gray-400 rounded-full">
+                                                <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <!-- Input -->
+                                            <input class="w-full md:w-[20rem] lg:w-[40rem] text-sm md:text-base font-semibold bg-transparent text-[#000000] placeholder:text-sm md:placeholder:text-base placeholder:text-[#A9A9A9] focus:outline-none placeholder:font-medium" placeholder="Tulis Sesuatu pada kelas" type="text">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <h1 class="text-sm md:text-base font-semibold text-[#989898] capitalize">Tulis Sesuatu pada kelas</h1>
+                                    <div class="grow"></div>
+                                    <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                        <!-- Icon -->
+                                        <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 16.5974L21.0072 13.4725C22.3309 12.8822 22.3309 11.1178 21.0072 10.5275L4.49746 3.16496C3.00163 2.49789 1.45007 3.97914 2.19099 5.36689L5.34302 11.2706C5.58818 11.7298 5.58817 12.2702 5.34302 12.7294L2.19099 18.6331C1.45006 20.0209 3.00163 21.5021 4.49746 20.835L9.24873 18.7162" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Tugas -->
+                            <div class="border border-[#E6E6E6] shadow-md gap-3 w-full items-center rounded-xl my-3 px-7 md:px-10 py-4">
+
+                                <!-- Text -->
+                                <div class="w-full">
+                                    <textarea class="w-full h-[9rem] text-sm md:text-base font-semibold bg-transparent text-[#000000] placeholder:text-sm md:placeholder:text-base placeholder:text-[#A9A9A9] focus:outline-none placeholder:font-medium" placeholder="Tulis Sesuatu pada kelas" type="text"></textarea>
+                                </div>
+
+                                <div class="md:flex items-center gap-3">
+                                    <div class="flex items-center py-[10px] gap-3">
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 20C7.58172 20 4 16.4183 4 12M20 12C20 14.5264 18.8289 16.7792 17 18.2454" stroke-linecap="round"/>
+                                                <path d="M12 14L12 4M12 4L15 7M12 4L9 7" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.8876 9.9348C14.9625 10.8117 15.5 11.2501 15.5 12C15.5 12.7499 14.9625 13.1883 13.8876 14.0652C13.5909 14.3073 13.2966 14.5352 13.0261 14.7251C12.7888 14.8917 12.5201 15.064 12.2419 15.2332C11.1695 15.8853 10.6333 16.2114 10.1524 15.8504C9.6715 15.4894 9.62779 14.7336 9.54038 13.2222C9.51566 12.7947 9.5 12.3757 9.5 12C9.5 11.6243 9.51566 11.2053 9.54038 10.7778C9.62779 9.26636 9.6715 8.51061 10.1524 8.1496C10.6333 7.78859 11.1695 8.11466 12.2419 8.76679C12.5201 8.93597 12.7888 9.10831 13.0261 9.27492C13.2966 9.46483 13.5909 9.69274 13.8876 9.9348Z"/>
+                                                <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.7917 15.7991L14.2223 14.3676C16.5926 11.9959 16.5926 8.15054 14.2223 5.7788C11.8521 3.40707 8.0091 3.40707 5.63885 5.7788L2.77769 8.64174C0.407436 11.0135 0.407436 14.8588 2.77769 17.2306C3.87688 18.3304 5.29279 18.9202 6.73165 19" stroke-linecap="round"/>
+                                                <path d="M21.2223 15.3583C23.5926 12.9865 23.5926 9.14118 21.2223 6.76945C20.1231 5.66957 18.7072 5.07976 17.2683 5M18.3612 18.2212C15.9909 20.5929 12.1479 20.5929 9.77769 18.2212C7.40744 15.8495 7.40744 12.0041 9.77769 9.63239L11.2083 8.20092" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="grow"></div>
+
+                                    <div class="flex items-center gap-3">
+                                        <div class="grow"></div>
+                                        <button class="bg-red-500 py-2 px-6 rounded-lg">
+                                            <h1 class="text-sm md:text-base text-[#FFFFFF] font-semibold">Batal</h1>
+                                        </button>
+
+                                        <button class="bg-blue-500 py-2 px-6 rounded-lg">
+                                            <h1 class="text-sm md:text-base text-[#FFFFFF] font-semibold">Posting</h1>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-span-2 lg:col-span-1">
-                            <div class="w-full h-[21rem] rounded-xl p-5 border border-[#E6E6E6] shadow-md overflow-hidden overflow-y-scroll">
+                            <div class="w-full h-[18rem] rounded-xl p-5 border border-[#E6E6E6] shadow-md overflow-hidden overflow-y-scroll">
+
                                 <div class="pb-3">
                                     <div class="flex items-center"> 
-                                        <div class="flex items-center gap-3 cursor-pointer">
+                                        <div class="flex items-center gap-3">
                                             <div class="w-10 h-10 overflow-hidden border md:border-2 border-gray-400 rounded-full">
                                                 <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                                             </div>
@@ -720,12 +780,12 @@
                                     <div class="mt-3">
                                         <p class="text-sm text-[#000000]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
                                     </div>
-                                    <div class="mt-3 border-t-2 border-[#1480EC]"></div>
+                                    <div class="mt-3 border-t-2 border-gray-400"></div>
                                 </div>
 
                                 <div class="pb-3">
                                     <div class="flex items-center"> 
-                                        <div class="flex items-center gap-3 cursor-pointer">
+                                        <div class="flex items-center gap-3">
                                             <div class="w-10 h-10 overflow-hidden border md:border-2 border-gray-400 rounded-full">
                                                 <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                                             </div>
@@ -738,12 +798,12 @@
                                     <div class="mt-3">
                                         <p class="text-sm text-[#000000]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
                                     </div>
-                                    <div class="mt-3 border-t-2 border-[#1480EC]""></div>
+                                    <div class="mt-3 border-t-2 border-gray-400"></div>
                                 </div>
 
                                 <div class="pb-3">
                                     <div class="flex items-center"> 
-                                        <div class="flex items-center gap-3 cursor-pointer">
+                                        <div class="flex items-center gap-3">
                                             <div class="w-10 h-10 overflow-hidden border md:border-2 border-gray-400 rounded-full">
                                                 <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                                             </div>
@@ -756,41 +816,33 @@
                                     <div class="mt-3">
                                         <p class="text-sm text-[#000000]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
                                     </div>
-                                    <div class="mt-3 border-t-2 border-[#1480EC]""></div>
-                                </div>
-
-                                <div class="pb-3">
-                                    <div class="flex items-center"> 
-                                        <div class="flex items-center gap-3 cursor-pointer">
-                                            <div class="w-10 h-10 overflow-hidden border-2 border-gray-400 rounded-full">
-                                                <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <p class="text-[#000000] text-sm font-bold">Rizky Rahman Rambe</p>
-                                                <p class="text-[#000000] text-xs">Teknologi Inforamsi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p class="text-sm text-[#000000]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
-                                    </div>
-                                    <div class="mt-3 border-t-2 border-[#1480EC]""></div>
+                                    <div class="mt-3 border-t-2 border-gray-400"></div>
                                 </div>
 
                             </div>
 
                             <!-- Pembungkus  -->
-                            <div class="flex pt-3 gap-3">
-                                <div class="w-full">
-                                    <textarea class="w-full h-[2rem] px-10 border-2 border-[#B0B0B0] focus:border-[#5697F8] rounded-lg focus:outline-none focus:shadow-xl focus:scale-[1.02]" placeholder="Komentar" type="text"></textarea>
-                                </div>
-                                <div class="items-center cursor-pointer">
-                                    <div class="w-[3rem] bg-[#FFFFFF] rounded-lg">
-                                        <div class="flex justify-center rounded-lg border-2 border-[#B0B0B0] hover:border-[#5697F8] hover:shadow-xl hover:scale-[1.02]">
-                                            <img class="w-7" src="../images/Kirim.svg">
+                            <div class="flex items-center mt-3 p-5 border border-[#E6E6E6] shadow-md rounded-xl gap-3">
+                                <!-- Text -->
+                                <div class="flex items-center gap-3">
+                                    <div class="">
+                                        <!-- Icon -->
+                                        <div class="w-10 overflow-hidden border md:border-2 border-gray-400 rounded-full">
+                                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                                         </div>
                                     </div>
+                                    <div class="">
+                                        <!-- Input -->
+                                        <input class="w-full text-sm md:text-base font-semibold bg-transparent text-[#000000] placeholder:text-sm md:placeholder:text-base placeholder:text-[#A9A9A9] focus:outline-none placeholder:font-medium" placeholder="Tambahkan Komentar Anda" type="text">
+                                    </div>
                                 </div>
+                                <div class="grow"></div>
+                                <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 16.5974L21.0072 13.4725C22.3309 12.8822 22.3309 11.1178 21.0072 10.5275L4.49746 3.16496C3.00163 2.49789 1.45007 3.97914 2.19099 5.36689L5.34302 11.2706C5.58818 11.7298 5.58817 12.2702 5.34302 12.7294L2.19099 18.6331C1.45006 20.0209 3.00163 21.5021 4.49746 20.835L9.24873 18.7162" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
