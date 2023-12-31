@@ -643,85 +643,165 @@
     <div class="md:ml-[17rem] relative z-20">
 
         <!-- Pembungkus -->
-        <div class="container px-6 pb-5 pt-[6rem] mx-auto">
+        <div class="container px-6 pb-5 pt-[5rem] mx-auto">
 
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[28rem] lg:w-[40rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="font-bold text-white">Gagal!</p>
-            </div>
+            <!-- Text -->
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase" style="animation: fadeIn 0.5s;">Forum</h1>
 
             <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-xl shadow-md overflow-hidden" style="animation: fadeIn 1.0s;">
-                
-                <!-- Pembungkus Input -->
-                <form action="">
+            <div class="grid gap-5">
 
-                    <!-- Pembungkus -->
-                    <div class="grid gap-3 m-3">
+                <!-- Materi -->
+                <div class="bg-[#1480EC] shadow-md flex gap-3 w-full items-center rounded-xl px-7 md:px-10 py-4">
 
-                        <!-- Pilih Program Studi -->
-                        <div class="">
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Fakultas</h1>
+                    <!-- Text -->
+                    <div class="">
+                        <h1 class="text-sm md:text-lg lg:text-2xl font-bold text-[#FFFFFF] pb-1 md:pb-2 capitalize">Sistem Basis Data</h1>
+                        <h1 class="text-xs md:text-base lg:text-xl font-semibold text-[#FFFFFF]">TI 3A</h1>
+                        <h1 class="text-xs md:text-base lg:text-xl font-medium text-[#FFFFFF]">09:30 - 11:00</h1>
+                    </div>
 
-                            <select class="w-full py-2 px-5 md:px-10 border-[0.5px] border-[#B0B0B0] bg-transparent text-[#000000] text-sm font-normal focus:border-[#1480EC] rounded-lg focus:outline-none shadow focus:scale-[1.02]">
-                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Fakultas</option>
-                                <option class="text-[#000000] text-start" value="1">Sains Dan Teknologi</option>
-                            </select>
-                        </div>
+                    <div class="grow"></div>
 
-                        <!-- Pilih Program Studi -->
-                        <div class="">
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC] cursor-pointer">Program Studi</h1>
+                    <!-- Icon -->
+                    <div class="">
+                        <!-- Icon -->
+                        <img class="w-20 md:w-[12rem]" src="../images/Elearning.svg">
+                    </div>
+                </div>
 
-                            <select class="w-full py-2 px-5 md:px-10 border-[0.5px] border-[#B0B0B0] bg-transparent text-[#000000] text-sm font-normal focus:border-[#1480EC] rounded-lg focus:outline-none shadow focus:scale-[1.02]">
-                                <option class="text-[#000000] text-start" value="" disabled selected>Pilih Program Studi</option>
-                                <option class="text-[#000000] text-start" value="1">Teknologi Informasi</option>
-                            </select>
-                        </div>
+                <!-- Pembungkus -->
+                <div class="w-full">
+                    <div class="grid lg:grid-cols-3 gap-5">
 
-                        <!-- Pembungkus Mata Kuliah -->
-                        <label class="" for="MataKuliah">
-                                
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Mata Kuliah</h1>
-                            
-                            <!-- Input -->
-                            <input class="w-full py-2 px-5 md:px-10 border-[0.5px] border-[#B0B0B0] bg-transparent text-[#000000] text-sm font-normal focus:border-[#1480EC] rounded-lg focus:outline-none shadow focus:scale-[1.02]" type="text" id="MataKuliah">
-                        </label>
+                        <div class="col-span-2 border-gray-800">
+                            <h1 class="text-sm md:text-base lg:text-lg font-bold text-[#000000]">Tugas Baru</h1>
 
-                        <!-- Pembungkus Kode Kelas -->
-                        <label class="" for="KodeKelas">
-                                
-                            <!-- Text -->
-                            <h1 class="pb-2 text-sm font-medium text-[#1480EC] cursor-pointer">Kode Kelas</h1>
-                            
-                            <!-- Input -->
-                            <input class="w-full py-2 px-5 md:px-10 border-[0.5px] border-[#B0B0B0] bg-transparent text-[#000000] text-sm font-normal focus:border-[#1480EC] rounded-lg focus:outline-none shadow focus:scale-[1.02]" type="text" id="KodeKelas">
-                        </label>
-
-                        <!-- Pembungkus Button -->
-                        <div class="pt-2">
-                            <a href="detail(forum).html">
-                            <button class="w-full flex px-4 py-2 group focus:bg-[#5697F8] border-[0.5px] border-[#B0B0B0] focus:border-[#5697F8] rounded-lg shadow focus:scale-95" type="button">
+                            <!-- Materi -->
+                            <div class="border border-[#E6E6E6] shadow-md flex gap-3 w-full items-center rounded-xl my-3 px-7 md:px-10 py-4">
 
                                 <!-- Text -->
-                                <div class="w-full text-center">
-                                    <h1 class="md:text-base text-sm font-semibold text-[#989898] group-focus:text-[#FFFFFF]">Buat Kelas</h1>
+                                <div class="flex items-center gap-3">
+                                    <div class="bg-[#ECB014] p-2 rounded-full">
+                                        <!-- Icon -->
+                                        <svg class="w-6 md:w-8 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                            <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                            <path d="M8 16H13" stroke-linecap="round"/>
+                                            <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="">
+                                        <h1 class="text-sm md:text-base font-semibold text-[#000000] capitalize">Sistem Basis Data, Materi Kedua</h1>
+                                        <h1 class="text-xs md:text-sm font-medium text-[#000000]">12/30/2023, 09:00 - 11.00</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Komentar -->
+                            <button class="border border-[#E6E6E6] shadow-md flex gap-3 w-full items-center rounded-xl my-3 px-7 md:px-10 py-4">
+
+                                <!-- Text -->
+                                <div class="flex items-center gap-3">
+                                    <div class="">
+                                        <!-- Icon -->
+                                        <div class="w-10 md:w-12 overflow-hidden border md:border-2 border-gray-400 rounded-full">
+                                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <!-- Input -->
+                                        <h1 class="text-sm md:text-base font-semibold text-[#A9A9A9] capitalize">Tulis Sesuatu Pada Kelas</h1>
+                                    </div>
                                 </div>
                             </button>
-                            </a>
+
+                            <!-- Tugas -->
+                            <div class="border border-[#E6E6E6] shadow-md gap-3 w-full items-center rounded-xl my-3 px-7 md:px-10 py-4">
+
+                                <!-- Text -->
+                                <div class="w-full">
+                                    <textarea class="w-full h-[9rem] text-sm md:text-base font-semibold bg-transparent text-[#000000] placeholder:text-sm md:placeholder:text-base placeholder:text-[#A9A9A9] focus:outline-none placeholder:font-medium" placeholder="Tulis Sesuatu pada kelas" type="text"></textarea>
+                                </div>
+
+                                <div class="md:flex items-center gap-3">
+                                    <div class="flex items-center py-[10px] gap-3">
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 20C7.58172 20 4 16.4183 4 12M20 12C20 14.5264 18.8289 16.7792 17 18.2454" stroke-linecap="round"/>
+                                                <path d="M12 14L12 4M12 4L15 7M12 4L9 7" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.8876 9.9348C14.9625 10.8117 15.5 11.2501 15.5 12C15.5 12.7499 14.9625 13.1883 13.8876 14.0652C13.5909 14.3073 13.2966 14.5352 13.0261 14.7251C12.7888 14.8917 12.5201 15.064 12.2419 15.2332C11.1695 15.8853 10.6333 16.2114 10.1524 15.8504C9.6715 15.4894 9.62779 14.7336 9.54038 13.2222C9.51566 12.7947 9.5 12.3757 9.5 12C9.5 11.6243 9.51566 11.2053 9.54038 10.7778C9.62779 9.26636 9.6715 8.51061 10.1524 8.1496C10.6333 7.78859 11.1695 8.11466 12.2419 8.76679C12.5201 8.93597 12.7888 9.10831 13.0261 9.27492C13.2966 9.46483 13.5909 9.69274 13.8876 9.9348Z"/>
+                                                <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+
+                                        <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                            <!-- Icon -->
+                                            <svg class="w-5 md:w-7 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.7917 15.7991L14.2223 14.3676C16.5926 11.9959 16.5926 8.15054 14.2223 5.7788C11.8521 3.40707 8.0091 3.40707 5.63885 5.7788L2.77769 8.64174C0.407436 11.0135 0.407436 14.8588 2.77769 17.2306C3.87688 18.3304 5.29279 18.9202 6.73165 19" stroke-linecap="round"/>
+                                                <path d="M21.2223 15.3583C23.5926 12.9865 23.5926 9.14118 21.2223 6.76945C20.1231 5.66957 18.7072 5.07976 17.2683 5M18.3612 18.2212C15.9909 20.5929 12.1479 20.5929 9.77769 18.2212C7.40744 15.8495 7.40744 12.0041 9.77769 9.63239L11.2083 8.20092" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="grow"></div>
+
+                                    <div class="flex items-center gap-3">
+                                        <div class="grow"></div>
+                                        <button class="bg-red-500 py-2 px-6 rounded-lg">
+                                            <h1 class="text-[10px] md:text-base text-[#FFFFFF] font-semibold">Batal</h1>
+                                        </button>
+
+                                        <button class="bg-blue-500 py-2 px-6 rounded-lg">
+                                            <h1 class="text-[10px] md:text-base text-[#FFFFFF] font-semibold">Posting</h1>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
-                </form>
+                        <div class="col-span-2 lg:col-span-1">
+                            <div class="w-full h-[18rem] rounded-xl p-5 border border-[#E6E6E6] shadow-md overflow-hidden overflow-y-scroll">
 
+                                <div class="">
+                                    <h1 class="text-sm text-center md:text-base font-semibold text-[#A9A9A9] capitalize">Belum ada mahasiswa yang hadir</h1>
+                                </div>
+
+                            </div>
+
+                            <!-- Pembungkus  -->
+                            <div class="flex items-center mt-3 p-5 border border-[#E6E6E6] shadow-md rounded-xl gap-3">
+                                <!-- Text -->
+                                <div class="flex items-center gap-3">
+                                    <div class="">
+                                        <!-- Icon -->
+                                        <div class="w-10 overflow-hidden border md:border-2 border-gray-400 rounded-full">
+                                            <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <!-- Input -->
+                                        <input class="w-full text-sm md:text-base font-semibold bg-transparent text-[#000000] placeholder:text-sm md:placeholder:text-base placeholder:text-[#A9A9A9] focus:outline-none placeholder:font-medium" placeholder="Tambahkan Komentar Anda" type="text">
+                                    </div>
+                                </div>
+                                <div class="grow"></div>
+                                <button class="flex justify-center items-center bg-blue-500 p-2 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 16.5974L21.0072 13.4725C22.3309 12.8822 22.3309 11.1178 21.0072 10.5275L4.49746 3.16496C3.00163 2.49789 1.45007 3.97914 2.19099 5.36689L5.34302 11.2706C5.58818 11.7298 5.58817 12.2702 5.34302 12.7294L2.19099 18.6331C1.45006 20.0209 3.00163 21.5021 4.49746 20.835L9.24873 18.7162" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
