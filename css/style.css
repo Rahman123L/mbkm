@@ -1,0 +1,51 @@
+/* Font Style Livvic */
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap');
+
+.livvic {
+    font-family: "Livvic", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 4px 6px #000000;
+}
+
+.card .thumbnail {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .3s;
+}	
+
+.card .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.form .thumbnaill {
+	opacity: 0;
+	transition: .3s;
+}	
+
+.form .thumbnaill.muncull {
+	opacity: 1;
+}
+
+.konten .thumbnailll {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .3s;
+}	
+
+.konten .thumbnailll.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+@media (max-width: 768px) {
+    .fixeed {
+        position: fixed;
+    }
+    th, .tab {
+        display: none;
+    }
+    tr {
+        display: grid;
+    }
+}
