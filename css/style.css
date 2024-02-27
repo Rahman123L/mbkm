@@ -1,10 +1,15 @@
 /* Font Style Livvic */
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap');
 
-.livvic {
+.livvics {
     font-family: "Livvic", sans-serif;
     font-weight: 700;
     text-shadow: 2px 4px 6px #000000;
+}
+
+.livvic {
+    font-family: "Livvic", sans-serif;
+    font-weight: 700;
 }
 
 .card .thumbnail {
