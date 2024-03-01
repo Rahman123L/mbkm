@@ -12,6 +12,17 @@
     font-weight: 700;
 }
 
+.early .thumbnai {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .3s;
+}	
+
+.early .thumbnai.tampil {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
 .card .thumbnail {
 	opacity: 0;
 	transform: translate(0,-40px);
