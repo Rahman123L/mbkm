@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HOME</title>
+    <title>TAMBAH PROGRAM MAHASISWA</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -729,6 +729,47 @@
                     </div>
                 </div>
 
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Pengumuman ) -->
+                    <button class="flex w-full py-2 group transform transition duration-700 hover:bg-gray-500 focus:bg-blue-500 border-[0.1px] border-[#B0B0B0] hover:border-gray-500 focus:border-blue-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-500 stroke-[#000000] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8V12L14.5 14.5" stroke-linecap="round"/>
+                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-500 text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Pengumuman</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-500 stroke-[#000000] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Buat ) -->
+                        <a href="buat(pengumuman).html">
+                        <button class="w-full py-2 group transform transition duration-700 hover:bg-gray-500 focus:bg-blue-500 border-[0.1px] border-[#B0B0B0] hover:border-gray-500 focus:border-blue-500 rounded-lg cursor-pointer hover:scale-105 focus:scale-100">
+                            <div class="flex ml-4 items-center gap-3">
+                                <!-- Icon -->
+                                <svg class="w-5 stroke-[1.5] transform transition duration-500 stroke-[#000000] group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.2799 6.40005L11.7399 15.94C10.7899 16.89 7.96987 17.33 7.33987 16.7C6.70987 16.07 7.13987 13.25 8.08987 12.3L17.6399 2.75002C17.8754 2.49308 18.1605 2.28654 18.4781 2.14284C18.7956 1.99914 19.139 1.92124 19.4875 1.9139C19.8359 1.90657 20.1823 1.96991 20.5056 2.10012C20.8289 2.23033 21.1225 2.42473 21.3686 2.67153C21.6147 2.91833 21.8083 3.21243 21.9376 3.53609C22.0669 3.85976 22.1294 4.20626 22.1211 4.55471C22.1128 4.90316 22.0339 5.24635 21.8894 5.5635C21.7448 5.88065 21.5375 6.16524 21.2799 6.40005V6.40005Z" stroke-linecap="round"/>
+                                    <path d="M11 4H6C4.93913 4 3.92178 4.42142 3.17163 5.17157C2.42149 5.92172 2 6.93913 2 8V18C2 19.0609 2.42149 20.0783 3.17163 20.8284C3.92178 21.5786 4.93913 22 6 22H17C19.21 22 20 20.2 20 18V13" stroke-linecap="round"/>
+                                </svg>
+                                <h1 class="text-base font-semibold transform transition duration-500 text-[#000000] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">Edit</h1>
+                            </div>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -892,15 +933,15 @@
     <!-- Form Start -->
     <section class="md:ml-[17rem] relative z-20">
         <div class="container px-6 pb-5 pt-[5rem] mx-auto">
-            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase">Program Mbkm</h1>
+            <h1 class="py-5 text-lg lg:text-xl font-bold text-[#1480EC] uppercase transition transform animate-fadeIn">Program Mbkm</h1>
 
             <!-- Pembungkus -->
-            <div class="container overflow-hidden w-full bg-transparent p-1">
+            <div class="early container overflow-hidden w-full bg-transparent p-1">
                 <div class="md:flex gap-3 mb-1">
 
                     <!-- Button -->
                     <a href="tambah(program).html">
-                    <button class="flex justify-center items-center group gap-2 md:gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center transition transform duration-700 border-[0.5px] border-[#B0B0B0] md:hover:-translate-y-1 md:focus:-translate-y-0 bg-transparent focus:bg-blue-500 focus:border-[#1480EC] rounded-lg shadow md:hover:shadow-gray-500 md:focus:shadow-none">
+                    <button class="flex justify-center items-center group gap-2 md:gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center transition transform duration-700 animate-fadeIn border-[0.5px] border-[#B0B0B0] md:hover:-translate-y-1 md:focus:-translate-y-0 bg-transparent focus:bg-blue-500 focus:border-[#1480EC] rounded-lg shadow md:hover:shadow-gray-500 md:focus:shadow-none">
                         <!-- Icon -->
                         <svg class="w-4 md:w-5 stroke-[1.5] transition transform duration-300 stroke-gray-500 group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
@@ -914,7 +955,7 @@
     
                     <!-- Pembungkus -->
                     <div class="flex justify-center items-center gap-3 md:mb-3">
-                        <div class="flex justify-center items-center group gap-3 w-full lg:w-[20rem] py-2 pr-3 transition transform duration-700 border-[0.5px] border-[#B0B0B0] md:hover:-translate-y-1 md:focus:-translate-y-0 bg-transparent focus:bg-blue-500 focus:border-[#1480EC] rounded-lg shadow md:hover:shadow-gray-500 md:focus:shadow-none">
+                        <div class="flex justify-center items-center group gap-3 w-full lg:w-[20rem] py-2 pr-3 transition transform duration-700 animate-fadeIn border-[0.5px] border-[#B0B0B0] md:hover:-translate-y-1 md:focus:-translate-y-0 bg-transparent focus:bg-blue-500 focus:border-[#1480EC] rounded-lg shadow md:hover:shadow-gray-500 md:focus:shadow-none">
     
                             <!-- Icon -->
                             <label class="flex items-center ml-5 cursor-pointer" for="Search">
@@ -931,7 +972,7 @@
 
                 <!-- Notifikasi Default -->
                 <div class="pt-2 md:py-0 md:pb-4">
-                    <div class="w-full flex bg-transparent border-[0.5px] border-[#B0B0B0] gap-3 md:items-center rounded-lg shadow px-6 py-4">
+                    <div class="w-full flex bg-transparent border-[0.5px] border-[#B0B0B0] gap-3 md:items-center rounded-lg shadow px-6 py-4 transition transform animate-fadeIn">
 
                         <!-- Icon -->
                         <div class="mr-2">
@@ -953,68 +994,288 @@
                 </div>
 
                 <!-- Pembungkus -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-3 md:mt-0 bg-transparent shadow-md rounded-lg p-5">
+                <div class="overflow-x-scroll md:overflow-hidden max-w-screen-lg mx-auto">
+                <div class="flex">
+                <div class="flex sm:flex-wrap justify-evenly sm:overflow-auto gap-2">
 
-                    <!-- Pembungkus grid Pertama -->
-                    <div class="px-5 pt-5 pb-0 md:pb-5">
-                        <div class="w-full overflow-hidden rounded-xl">
-                            <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
-                        </div>
-                    </div>
+                    <!-- Pembungkus Card -->
+                    <div class="thumbnai w-[20rem] md:w-full grid grid-cols-1 md:grid-cols-2 gap-5 mt-3 md:mt-0 bg-transparent shadow-md border-[0.5px] rounded-lg p-5 mb-2">
 
-                    <!-- Pembungkus grid kedua -->
-                    <div class="px-2 md:px-5 py-0 md:py-4">
-                        <h1 class="livvic text-base md:text-xl font-semibold text-[#1480EC]">Magang MSIB</h1>
-                        <p class="text-xs md:text-sm font-normal text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum facilis ex vero, similique quidem? Mollitia quod ipsam eaque provident? Sunt iste tenetur, dolor eum minus eius, temporibus accusantium, quisquam earum qui non aperiam. Placeat minus nesciunt eos vero suscipit error et, aperiam quae accusantium earum dignissimos aliquam facere sequi?</p>
-                    </div>
-
-                    <!-- Pembungkus grid Ketiga -->
-                    <div class="grid grid-cols-2 gap-5">
-                        <div class="px-3 flex flex-col text-center">
-                            <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pendaftaran</h1>
-                            <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                        </div>
-                        <div class="px-3 flex flex-col text-center">
-                            <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pendaftaran</h1>
-                            <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                        </div>
-                        <div class="px-3 flex flex-col text-center">
-                            <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pelaksanaan</h1>
-                            <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                        </div>
-                        <div class="px-3 flex flex-col text-center">
-                            <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pelaksanaan</h1>
-                            <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                        </div>
-                    </div>
-
-                    <!-- Pembungkus grid Keempat -->
-                    <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
-                        <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
-                        </div>
-                        <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
-                        </div>
-                        <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
-                        </div>
-                    </div>
-                    <div class="px-5 py-0 md:py-5">
-                        <div class="flex items-center gap-2 md:gap-3">
-                            <div class="bg-red-500 rounded-full">
-                                <!-- Icon -->
-                                <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
-                                </svg>
+                        <!-- Pembungkus grid Pertama -->
+                        <div class="px-5 pt-5 pb-0 md:pb-5">
+                            <div class="w-full overflow-hidden rounded-xl">
+                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
                             </div>
-                            <h1 class="text-xs md:text-sm font-semibold text-red-500">Syarat Belum Dilengkapi</h1>
+                        </div>
+
+                        <!-- Pembungkus grid kedua -->
+                        <div class="px-2 md:px-5 py-0 md:py-4">
+                            <h1 class="livvic text-base md:text-xl font-semibold text-[#1480EC]">Magang MSIB</h1>
+                            <p class="text-xs md:text-sm font-normal text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum facilis ex vero, similique quidem? Mollitia quod ipsam eaque provident? Sunt iste tenetur, dolor eum minus eius, temporibus accusantium, quisquam earum qui non aperiam. Placeat minus nesciunt eos vero suscipit error et, aperiam quae accusantium earum dignissimos aliquam facere sequi?</p>
+                        </div>
+
+                        <!-- Pembungkus grid Ketiga -->
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pendaftaran</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pendaftaran</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pelaksanaan</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pelaksanaan</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus grid Keempat -->
+                        <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
+                            </div>
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
+                            </div>
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus grid kelima -->
+                        <div class="grid gap-3 px-5 py-0 md:py-5">
+                            <a href="buat(syarat).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-green-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">Syarat Sudah Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(nilai).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-red-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Nilai Belum Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(file).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-green-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">File Persyaratan Sudah Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(dpl).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-red-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Dpl Belum Dilengkapi</h1>
+                            </div>
+                            </a>
+                        </div>
+
+                        <!-- Pembungkus grid keenam -->    
+                        <div class="flex flex-wrap justify-evenly overflow-auto gap-3 mt-0 md:mt-10 lg:mt-20 pb-2">
+                            <div class="">
+                                <a href="#">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-green-500 focus:bg-green-500 border-[0.5px] hover:border-green-500 focus:border-green-500 rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-green-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Edit</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-red-500 focus:bg-red-500 border-[0.5px] hover:border-red-500 focus:border-red-500 rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-red-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Hapus</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-[#1480EC] focus:bg-[#1480EC] border-[0.5px] hover:border-[#1480EC] focus:border-[#1480EC] rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Konfirmasi</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-blue-500 p-5">6</div>
+
+                    <!-- Pembungkus Card -->
+                    <div class="thumbnai w-[20rem] md:w-full grid grid-cols-1 md:grid-cols-2 gap-5 mt-3 md:mt-0 bg-transparent shadow-md border-[0.5px] rounded-lg p-5 mb-2">
+
+                        <!-- Pembungkus grid Pertama -->
+                        <div class="px-5 pt-5 pb-0 md:pb-5">
+                            <div class="w-full overflow-hidden rounded-xl">
+                                <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus grid kedua -->
+                        <div class="px-2 md:px-5 py-0 md:py-4">
+                            <h1 class="livvic text-base md:text-xl font-semibold text-[#1480EC]">Magang MSIB</h1>
+                            <p class="text-xs md:text-sm font-normal text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum facilis ex vero, similique quidem? Mollitia quod ipsam eaque provident? Sunt iste tenetur, dolor eum minus eius, temporibus accusantium, quisquam earum qui non aperiam. Placeat minus nesciunt eos vero suscipit error et, aperiam quae accusantium earum dignissimos aliquam facere sequi?</p>
+                        </div>
+
+                        <!-- Pembungkus grid Ketiga -->
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pendaftaran</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pendaftaran</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pelaksanaan</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                            <div class="px-3 flex flex-col text-center">
+                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pelaksanaan</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus grid Keempat -->
+                        <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
+                            </div>
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
+                            </div>
+                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center shadow rounded-xl overflow-hidden mb-2">
+                                <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
+                                <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus grid kelima -->
+                        <div class="grid gap-3 px-5 py-0 md:py-5">
+                            <a href="buat(syarat).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-green-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">Syarat Sudah Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(nilai).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-red-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Nilai Belum Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(file).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-green-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">File Persyaratan Sudah Dilengkapi</h1>
+                            </div>
+                            </a>
+                            <a href="buat(dpl).html">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div class="bg-red-500 rounded-full">
+                                    <!-- Icon -->
+                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Dpl Belum Dilengkapi</h1>
+                            </div>
+                            </a>
+                        </div>
+
+                        <!-- Pembungkus grid keenam -->    
+                        <div class="flex flex-wrap justify-evenly overflow-auto gap-3 mt-0 md:mt-10 lg:mt-20 pb-2">
+                            <div class="">
+                                <a href="#">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-green-500 focus:bg-green-500 border-[0.5px] hover:border-green-500 focus:border-green-500 rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-green-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Edit</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-red-500 focus:bg-red-500 border-[0.5px] hover:border-red-500 focus:border-red-500 rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-red-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Hapus</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="">
+                                <div class="flex justify-center">
+                                <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-[#1480EC] focus:bg-[#1480EC] border-[0.5px] hover:border-[#1480EC] focus:border-[#1480EC] rounded-lg shadow-md focus:scale-95" type="button">
+                                    <div class="w-full text-center">
+                                        <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Konfirmasi</h1>
+                                    </div>
+                                </button>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
                 </div>
             </div>
 
