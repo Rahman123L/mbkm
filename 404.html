@@ -35,21 +35,22 @@
 <body class="">
     
     <!-- Form Start -->
-    <div class="container px-6 pt-[7rem] md:pt-[6rem] mx-auto text-center leading-5 lg:leading-[5rem]">
-
+    <div class="container px-6 pt-[10rem] md:pt-[8rem] mx-auto text-center leading-5 lg:leading-[5rem]">
+            
+        <!-- Text -->
         <div class="flex justify-center">
-            <img class="w-[60%] md:w-[40%] bg-cover object-cover" src="../images/404.svg">
+            <div class="absolute cursor-pointer">
+                <h1 class="text-[4rem] sm:text-[6rem] font-bold text-[#1480EC] uppercase animate-bounce">404</h1>
+            </div>
         </div>
 
-        <div class="my-5">
-            <h1 class="text-[2rem] sm:text-[4rem] lg:text-[5rem] font-bold text-[#1480EC] uppercase">NON FOUND</h1>
-        </div>
+        <div class="flex flex-col justify-center">
+            <img class="w-full md:w-[50%] bg-cover object-cover mx-auto" src="../images/404.gif">
 
-        <!-- Button -->
-        <div class="flex justify-center">
+            <!-- Button -->
             <a href="index.html">
-            <button class="py-2 md:py-3 px-10 lg:px-20 text-center rounded-lg md:rounded-xl bg-[#1480EC] shadow-lg cursor-pointer hover:scale-95">
-                <h1 class="text-xs lg:text-base font-semibold text-[#FFFFFF]">Go Back</h1>
+            <button class="py-3 px-10 lg:px-14 text-center rounded-xl bg-transparent group transition transform duration-700 hover:bg-gray-500 focus:bg-blue-500 border-[0.5px] border-gray-500 hover:border-gray-500 focus:border-blue-500 shadow-md hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-xs md:text-sm font-semibold transition transform duration-500 text-gray-500 group-hover:text-[#FFF] group-focus:text-[#FFF]">Go Back</h1>
             </button>
             </a>
         </div>
