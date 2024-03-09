@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>TAMBAH(SELANJUTNYA)</title>
+    <title>SIDEBAR(ADMIN)</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -929,85 +929,7 @@
     </div>
     <!-- Avatar Dekstop End -->
 
-    <!-- Form Start -->
-    <section class="md:ml-[17rem] relative z-20">
-        <div class="container px-6 pb-6 pt-[6rem] mx-auto">
 
-            <!-- Alert -->
-            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg px-6 py-2 text-base">
-                <span class="mr-2">
-                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
-                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-                <p class="text-sm md:text-base text-[#FFFFFF] font-bold">Gagal!</p>
-            </div>
-
-            <!-- Pembungkus -->
-            <div class="w-full md:w-[30rem] lg:w-[40rem] p-4 rounded-2xl shadow-md overflow-hidden transition transform animate-fadeIn">
-                <form class="grid gap-3 m-3">
-
-                    <!-- Pembungkus File -->
-                    <div class="py-1">
-                        <label class="" for="File">
-                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">Masukkan Gambar</h1>
-                            <div class="flex justify-center w-full py-2 px-5 md:px-10 mb-3 border-[0.5px] border-[#B0B0B0] rounded-lg focus:outline-none shadow cursor-pointer">
-                                <svg class="w-8 stroke-[#B0B0B0]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                                </svg>
-                                <input type="file" id="File" class="hidden">
-                            </div>
-    
-                            <div class="w-full py-2 px-4 mb-3 border-[0.5px] border-[#B0B0B0] rounded-lg focus:outline-none shadow cursor-pointer">
-                                <div class="pb-1">
-                                    <h1 class="text-sm md:text-base text-gray-400 font-medium">Alhamdulillah.png</h1>
-                                </div>
-                                <div class="flex justify-center">
-                                    <div class=""></div>
-                                    <div class="grow"></div>
-                                    <svg class="w-8 stroke-[#B0B0B0]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                                    </svg>
-                                    <input type="file" id="File" class="hidden">
-                                </div>
-                            </div>
-                            <h1 class="pb-2 text-xs font-semibold text-gray-500">Minimal 3 MB</h1>
-                        </label>
-                        </div>
-
-                    <!-- Pembungkus Deskripsi -->
-                    <label class="" for="Deskripsi">                            
-                        <h1 class="pb-2 text-sm font-semibold text-[#1480EC] capitalize">Masukkan Deskripsi Program</h1>
-                        <textarea id="Deskripsi" placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tenetur esse, ex maxime cum corrupti laudantium rerum in aliquam accusamus. sit amet consectetur adipisicing elit. Necessitatibus tenetur esse, ex maxime cum corrupti laudantium rerum in aliquam accusamus." class="w-full h-[16rem] py-2 px-5 md:px-10 border-[0.5px] bg-transparent text-[#000000] font-medium text-xs border-[#B0B0B0] focus:border-[#1480EC] rounded-lg shadow focus:outline-none focus:scale-[1.01]"></textarea>
-                        <h1 class="text-xs font-semibold text-gray-500">0 / 5000</h1>
-                    </label>
-
-                    <div class="lg:flex items-center gap-3">
-
-                        <a href="tambah(program-mahasiswa).html" class="pt-4">
-                        <button class="w-full flex px-10 mt-2 md:mt-0 py-2 group transition transform duration-700 focus:bg-[#5697F8] border-[0.5px] border-[#B0B0B0] hover:bg-gray-500 hover:border-gray-500 focus:border-[#5697F8] rounded-lg shadow focus:scale-[.98]" type="button">
-                            <div class="w-full text-center">
-                                <h1 class="text-xs lg:text-sm font-bold transition transform duration-500 text-[#989898] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Kembali</h1>
-                            </div>
-                        </button>
-                        </a>
-
-                        <div class="grow"></div>
-
-                        <a href="tambah-program(mahasiswa).html" class="pt-4">
-                        <button class="w-full flex px-10 mt-2 md:mt-0 py-2 group transition transform duration-700 focus:bg-[#5697F8] border-[0.5px] border-[#B0B0B0] hover:bg-gray-500 hover:border-gray-500 focus:border-[#5697F8] rounded-lg shadow focus:scale-[.98]" type="button">
-                            <div class="w-full text-center">
-                                <h1 class="text-xs lg:text-sm font-bold transition transform duration-500 text-[#989898] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Tambah</h1>
-                            </div>
-                        </button>
-                        </a>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Form End -->
 
     <!-- Script Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

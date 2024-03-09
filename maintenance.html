@@ -1,65 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
 <head>
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MAINTENANCE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind Start -->
     <script>
     tailwind.config = {
         darkMode: "class",
         theme: {
-        extend: {
-            spacing: {
-            13: "3.25rem",
+            extend: {
+            colors: {},
+            keyframes: {
+                // -----------------------------------------------------------------------------------------------------------
+                fadeIn: {
+                    '0%': { opacity: 0 },
+                    '100%': { opacity: 1 },
+                },
+                // -----------------------------------------------------------------------------------------------------------
+                slideInLeft: {
+                    '0%': {
+                        transform: 'translateX(-100%)',
+                    },
+                    '100%': {
+                        transform: 'translateX(0)',
+                    },
+                },
+
+                // -----------------------------------------------------------------------------------------------------------
+                slideInRight: {
+                    '0%': {
+                        transform: 'translateX(100%)',
+                    },
+                    '100%': {
+                        transform: 'translateX(0)',
+                    },
+                },
             },
-            fontFamily: {
-            inter: ["Inter"],
+            animation: {
+                fadeIn: "fadeIn 2s forwards",
+                fadeInn: "fadeIn 4s forwards",
+                fadeInnn: "fadeIn 6s forwards",
+                slideInLeft: "slideInLeft 2s forwards",
+                slideInRight: "slideInRight 2s forwards",
             },
         },
-        },
+    },
     };
     </script>
-    <!-- Tailwind End -->
-        
-    <!-- Css Start -->
-    <style type="text/tailwindcss">
-
-    </style>
-    <!-- Css End -->
+    <!-- Tailwind End forwards -->
 
 </head>
-<body class="bg-[#FBFBFB]">
+<body class="w-full bg-cover bg-[#FFFFFF]">
     
     <!-- Form Start -->
-    <div class="container px-6 pt-[7rem] md:pt-[6rem] mx-auto text-center leading-5 lg:leading-[5rem]">
+    <div class="relative z-20">
+        <div class="container px-6 pt-[10rem] md:pt-[8rem] mx-auto text-center leading-5 lg:leading-[5rem]">
+            
+                <!-- Text -->
+                <div class="flex justify-center">
+                    <div class="absolute cursor-pointer">
+                        <h1 class="text-[1.5rem] sm:text-[3rem] font-bold text-[#1480EC] uppercase animate-bounce">Maintenance</h1>
+                    </div>
+                </div>
 
-        <div class="flex justify-center">
-            <img class="w-[60%] md:w-[40%] bg-cover object-cover" src="../images/Maintenance.svg">
-        </div>
-
-        <div class="my-5">
-            <h1 class="text-[2rem] sm:text-[4rem] lg:text-[5rem] font-bold text-[#1480EC] uppercase">Maintenance</h1>
-        </div>
-
-        <!-- Button -->
-        <div class="flex justify-center">
-            <a href="index.html">
-            <button class="py-2 md:py-3 px-10 lg:px-20 text-center rounded-lg md:rounded-xl bg-[#1480EC] shadow-lg cursor-pointer hover:scale-95">
-                <h1 class="text-xs lg:text-base font-semibold text-[#FFFFFF]">Go Back</h1>
-            </button>
-            </a>
+            <div class="flex flex-col justify-center">
+                <img class="w-full md:w-[50%] bg-cover object-cover mx-auto" src="images/Maintenance.gif">
+    
+                <!-- Button -->
+                <a href="index.html">
+                <button class="py-3 px-10 lg:px-14 text-center rounded-xl bg-transparent group transition transform duration-700 hover:bg-gray-500 focus:bg-blue-500 border-[0.5px] border-gray-500 hover:border-gray-500 focus:border-blue-500 shadow-md hover:scale-[1.01] focus:scale-[1]">
+                    <h1 class="text-xs md:text-sm font-semibold transition transform duration-500 text-gray-500 group-hover:text-[#FFF] group-focus:text-[#FFF]">Go Back</h1>
+                </button>
+                </a>
+            </div>
         </div>
     </div>
     <!-- Form End -->
 
     <!-- Script Start -->
-    <script>
-
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/slinder.js"></script>
+    <script src="../js/animation.js/appear.js"></script>
+    <script src="../js/animation.js/opacity.js"></script>
+    <script src="../js/animation.js/appear(0).js"></script>
+    <script src="../js/animation.js/appear(1).js"></script>
     <!-- Script End -->
 
 </body>
