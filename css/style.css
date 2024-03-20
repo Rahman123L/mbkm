@@ -1,5 +1,13 @@
 /* Font Style Livvic */
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+.sharetech {
+	font-family: "Share Tech", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
 
 .livvics {
     font-family: "Livvic", sans-serif;
@@ -64,4 +72,16 @@
     tr {
         display: grid;
     }
+}
+
+#hamburger {
+    background-image: url('../images/open.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+#hamburger.hamburger-active {
+    background-image: url('../images/close.svg');
 }
