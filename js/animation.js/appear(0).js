@@ -1,4 +1,3 @@
-// Fungsi untuk menjalankan animasi tanpa menggulir
 function runAnimation() {
     $('.early .thumbnai').each(function(i) {
         setTimeout(function() {
@@ -7,7 +6,6 @@ function runAnimation() {
     });
 }
 
-// Memanggil fungsi animasi saat dokumen dimuat
 $(document).ready(function() {
     runAnimation();
 });

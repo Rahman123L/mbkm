@@ -54,60 +54,62 @@
 <body class="w-full bg-cover bg-[#FFF]">
     
     <!-- Header Start -->
-    <div class="container img max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
-        <header class="bg-[#1f1f6e] fixed py-4 px-0 lg:px-14 top-0 left-0 w-full z-30 border-b border-gray-800">
+    <header class="container img max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full">
+        <div class="bg-transparent py-4 px-0 lg:px-20 top-0 left-0 absolute z-30">
             <div class="flex items-center mx-5">
-
+    
                 <!-- Avatar -->
-                <a href="index.html">
-                <div class="flex items-center gap-3">
-
-                    <!-- Image -->
-                    <div class="w-12 h-12 overflow-hidden">
-                        <img class="object-cover w-full h-full" src="images/Logo ULB.svg"/>
+                <a href="/">
+                    <div class="flex items-center gap-3">
+    
+                        <!-- Image -->
+                        <div class="w-10 h-10 md:w-12 md:h-12 overflow-hidden">
+                            <img class="object-cover w-full h-full" src='images/Logo ULB.svg' />
+                        </div>
+    
+                        <!-- Text -->
+                        <div class="">
+                            <h1 class="font-medium text-white text-sm md:text-base uppercase">MBKM ULB</h1>
+                        </div>
                     </div>
-
-                    <!-- Text -->
-                    <div class="">
-                        <h1 class="font-bold text-[#FFFFFF] text-sm lg:text-base uppercase">MBKM ULB</h1>
-                    </div>
-                </div>
-                </a>
-
-            </div>
-
-        </header>
-    </div>
+                </a>  
+            </div> 
+        </div>
+    </header>
     <!-- Header End -->
 
     <!-- Hero Start -->
-    <section id="beranda">
-    <div class="relative pt-[5rem] z-20">
-
-        <!-- Pembungkus --> 
-        <div class="container absolute px-6 pb-6 mx-auto lg:flex">
+    <section class="relative z-20">
+        <div class="container z-10 absolute px-6 pb-6 mx-auto lg:flex">
             <div class="lg:px-20 py-10 lg:py-14">
                 <div class="flex-col">
 
                     <!-- Text Hero -->
-                    <div class="grid lg:w-[70%] lg:pt-10 pb-1 lg:pb-5 gap-4">
+                    <div class="grid mt-10 md:mt-5 lg:w-[70%] lg:pt-10 pb-1 lg:pb-5 gap-4">
 
                         <!-- Text -->
-                        <h1 class="livvic text-2xl lg:text-4xl font-bold text-[#FFF] animate-fadeIn">Menguasai Kendali <br> Masa Depan Anda</h1>
-                        <h1 class="text-sm lg:text-lg font-bold text-[#FFF] duration-700 animate-fadeInn">Kampus Merdeka adalah opsi terbaik untuk mengejar pendidikan tinggi. Dapatkan kebebasan untuk membentuk masa depan yang sesuai dengan aspirasi karier Anda.</h1>
+                        <h1 class="inter text-3xl lg:text-7xl font-bold text-[#FFF] animate-fadeIn">Menguasai Kendali
+                            <br>Masa <span class="text-blue-400">
+                                 Depan Anda
+                            </span></h1>
+                        <h1 class="inter text-sm lg:text-lg font-normal text-[#ccc] duration-700 animate-fadeInn">Kampus Merdeka
+                            adalah opsi terbaik untuk mengejar pendidikan tinggi. Dapatkan kebebasan untuk membentuk
+                            masa depan yang sesuai dengan aspirasi karier Anda.</h1>
                     </div>
 
                     <!-- Button -->
-                    <div class="grid grid-cols-1 md:flex items-center md:gap-3">
+                    <div class="flex items-center gap-3 md:gap-5">
                         <a href="login.html">
-                        <button class="w-[50%] md:w-full flex justify-center items-center gap-3 py-2 md:px-14 mt-2 group bg-[#FFF] rounded-xl transition transform duration-700 lg:hover:-translate-y-1 hover:bg-[#1480EC] animate-fadeInnn">
-                            <h1 class="transition transform duration-700 text-xs lg:text-base font-bold text-center text-gray-700 group-hover:text-[#FFF]">Log In</h1>
-                        </button>
+                            <button class="w-full flex justify-center items-center py-2.5 px-8 md:px-14 mt-2 group bg-blue-500 rounded-lg animate-fadeInnn">
+                                <h1 class="inter transition transform uppercase duration-700 text-sm lg:text-base font-medium text-center text-white">
+                                    Log In</h1>
+                            </button>
                         </a>
                         <a href="register.html">
-                        <button class="w-[50%] md:w-full flex justify-center items-center gap-3 py-2 md:px-14 mt-2 group bg-[#FFF] rounded-xl transition transform duration-700 lg:hover:-translate-y-1 hover:bg-[#1480EC] animate-fadeInnn">
-                            <h1 class="transition transform duration-700 text-xs lg:text-base font-bold text-center text-gray-700 group-hover:text-[#FFF]">Sign Up</h1>
-                        </button>
+                            <button class="w-full flex justify-center items-center py-2.5 px-8 md:px-14 mt-2 group border-gray-400 border bg-transparent rounded-lg animate-fadeInnn">
+                                <h1 class="inter transition transform uppercase duration-700 text-sm lg:text-base font-medium text-center text-white">
+                                    Sign Up</h1>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -115,284 +117,109 @@
         </div>
 
         <!-- Background -->
-        <div class="">
-            <img class="w-full h-[23rem] lg:h-[30rem] object-cover" src="images/bg(1).webp" alt="">
-        </div>
-    </div>
+        <div class="hero-bg w-full h-[23rem] lg:h-[30rem] bg-cover bg-center bg-no-repeat" style='background-image: url("images/dashboard.jpg")'></div>
     </section>
     <!-- Hero End -->
 
     <!-- Card Start -->
-    <section id="program" class="card relative">
-    <div class="container relative px-6 pb-6 pt-[2rem] mx-auto z-20">
-
-        <!-- Text -->
-        <h1 class="livvic lg:pt-4 pb-7 lg:pb-16 text-lg lg:text-2xl font-bold text-[#FFF] text-center capitalize">Program Aktif</h1>
-          
-        <!-- Pembungkus -->
-        <div class="overflow-x-scroll md:overflow-hidden max-w-screen-lg mx-auto">
-        <div class="flex">
-            <div class="flex sm:flex-wrap justify-evenly sm:overflow-auto gap-2">
-
-                <!-- Pembungkus -->
-                <div class="thumbnail w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] shadow-md md:shadow-lg shadow-gray-400 overflow-hidden mb-5">
+    <section class="early bg-gray-100 relative">
+        <div class="relative px-6 md:px-20 pb-6 pt-[2rem] mx-auto z-20">
+            <div class="flex flex-wrap justify-evenly space-x-5">
+                <div class="thumbnai w-full md:w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] overflow-hidden mb-5">
                     <div class="w-full overflow-hidden rounded-xl">
-                        <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
+                        <img class="object-cover w-full h-full bg-cover" src="images/card.png">
                     </div>
-
-                    <!-- Text -->
+                
                     <div class="w-full py-2 rounded-2xl">
-                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka<br> (Kementrian)</h1>
                     </div>
-    
-                    <!-- Informasi -->
+                
                     <div class="grid gap-4 px-4">
                         <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Pendaftaran</span> <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
                         <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Kegiatan</span> <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
                     </div>
-    
-                    <!-- Pembungkus -->
+                
                     <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
-    
-                        <!-- Informasi -->
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
                         </div>
-    
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
                         </div>
-    
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
                         </div>
                     </div>
-    
-                    <div class="pb-2">
-
-                        <!-- Button -->
-                        <a href="program(1).html">
-                        <div class="flex justify-center px-2 pb-2">
-                        <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-gray-500 focus:bg-[#5697F8] border-[0.5px] border-[#5697F8] hover:border-gray-500 focus:border-[#5697F8] rounded-lg focus:scale-95" type="button">
-    
-                            <!-- Text -->
-                            <div class="w-full text-center">
-                                <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Daftar</h1>
-                            </div>
-                        </button>
-                        </div>
-                        </a>
-                    </div>
                 </div>
-
-                <!-- Pembungkus -->
-                <div class="thumbnail w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] shadow-md md:shadow-lg shadow-gray-400 overflow-hidden mb-5">
+                
+                <div class="thumbnai w-full md:w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] overflow-hidden mb-5">
                     <div class="w-full overflow-hidden rounded-xl">
-                        <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
+                        <img class="object-cover w-full h-full bg-cover" src="images/card.png">
                     </div>
-
-                    <!-- Text -->
+                
                     <div class="w-full py-2 rounded-2xl">
-                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
+                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka<br> (Kementrian)</h1>
                     </div>
-    
-                    <!-- Informasi -->
+                
                     <div class="grid gap-4 px-4">
                         <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Pendaftaran</span> <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
                         <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Kegiatan</span> <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
                     </div>
-    
-                    <!-- Pembungkus -->
+                
                     <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
-    
-                        <!-- Informasi -->
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
                         </div>
-    
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
                         </div>
-    
+                
                         <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
                             <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
                             <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
                         </div>
                     </div>
-    
-                    <div class="pb-2">
-
-                        <!-- Button -->
-                        <a href="program(1).html">
-                        <div class="flex justify-center px-2 pb-2">
-                        <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-gray-500 focus:bg-[#5697F8] border-[0.5px] border-[#5697F8] hover:border-gray-500 focus:border-[#5697F8] rounded-lg focus:scale-95" type="button">
-    
-                            <!-- Text -->
-                            <div class="w-full text-center">
-                                <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Daftar</h1>
-                            </div>
-                        </button>
-                        </div>
-                        </a>
-                    </div>
                 </div>
-
-                <!-- Pembungkus -->
-                <div class="thumbnail w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] shadow-md md:shadow-lg shadow-gray-400 overflow-hidden mb-5">
-                    <div class="w-full overflow-hidden rounded-xl">
-                        <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
-                    </div>
-
-                    <!-- Text -->
-                    <div class="w-full py-2 rounded-2xl">
-                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
-                    </div>
-    
-                    <!-- Informasi -->
-                    <div class="grid gap-4 px-4">
-                        <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Pendaftaran</span> <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Kegiatan</span> <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                    </div>
-    
-                    <!-- Pembungkus -->
-                    <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
-    
-                        <!-- Informasi -->
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
-                        </div>
-    
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
-                        </div>
-    
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
-                        </div>
-                    </div>
-    
-                    <div class="pb-2">
-
-                        <!-- Button -->
-                        <a href="program(1).html">
-                        <div class="flex justify-center px-2 pb-2">
-                        <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-gray-500 focus:bg-[#5697F8] border-[0.5px] border-[#5697F8] hover:border-gray-500 focus:border-[#5697F8] rounded-lg focus:scale-95" type="button">
-    
-                            <!-- Text -->
-                            <div class="w-full text-center">
-                                <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Daftar</h1>
-                            </div>
-                        </button>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="thumbnail w-[20rem] grid gap-4 p-6 pb-2 rounded-3xl bg-[#FFFFFF] shadow-md md:shadow-lg shadow-gray-400 overflow-hidden mb-5">
-                    <div class="w-full overflow-hidden rounded-xl">
-                        <img class="object-cover w-full h-full bg-cover" src="../images/MBKM(2).png">
-                    </div>
-
-                    <!-- Text -->
-                    <div class="w-full py-2 rounded-2xl">
-                        <h1 class="text-center text-[14px] sm:text-lg font-bold text-[#1480EC]">Magang Kampus Merdeka <br> (Kementrian)</h1>
-                    </div>
-    
-                    <!-- Informasi -->
-                    <div class="grid gap-4 px-4">
-                        <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Pendaftaran</span> <br> 15 Desember 2023 s. d 30 Desember 2023</h1>
-                        <h1 class="text-center text-[10px] sm:text-[13px] font-semibold text-[#868080]"><span class="text-blue-500 font-medium">Kegiatan</span> <br> 01 Februari 2024 s. d 30 Juni 2024</h1>
-                    </div>
-    
-                    <!-- Pembungkus -->
-                    <div class="container mx-auto flex flex-wrap justify-evenly overflow-auto">
-    
-                        <!-- Informasi -->
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">37</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
-                        </div>
-    
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">2749</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
-                        </div>
-    
-                        <div class="w-[4rem] sm:w-[5rem] flex-col justify-center items-center gap-2 p-3 text-center rounded-xl overflow-hidden mb-2">
-                            <h1 class="text-[12px] sm:text-[16px] font-bold md:font-semibold text-[#1480EC]">678</h1>
-                            <h1 class="text-[8px] sm:text-[10px] font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
-                        </div>
-                    </div>
-    
-                    <div class="pb-2">
-
-                        <!-- Button -->
-                        <a href="program(1).html">
-                        <div class="flex justify-center px-2 pb-2">
-                        <button class="w-full px-7 py-2 group transition transform duration-700 bg-transparent hover:bg-gray-500 focus:bg-[#5697F8] border-[0.5px] border-[#5697F8] hover:border-gray-500 focus:border-[#5697F8] rounded-lg focus:scale-95" type="button">
-    
-                            <!-- Text -->
-                            <div class="w-full text-center">
-                                <h1 class="text-xs sm:text-sm font-semibold transition transform duration-500 text-[#1480EC] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Daftar</h1>
-                            </div>
-                        </button>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-    
             </div>
         </div>
-        </div>
-    </div>
-
-    <!-- Background -->
-    <div class="absolute top-0 w-full h-[10rem] lg:h-[15rem] bg-[#243A7B] z-10"></div>
     </section>
     <!-- Card End -->
 
-    <!-- About Start -->
-    <section id="Form" class="form">
-        <div class="flex flex-col md:flex-row justify-center items-center w-full md:h-[25rem] p-6 md:px-20 mb-6 mt-[2rem] bg-[#1E1E1E] mx-auto z-20 gap-3 md:gap-[4rem]">
-
-            <!-- Text Form -->
-            <div class="thumbnaill sm:w-[70%] md:w-[60%] grid gap-3 order-2 md:order-1">
-                <h1 class="livvic text-white text-2xl lg:text-4xl font-bold">Kampus Merdeka</h1>
-                <h1 class="text-white text-base lg:text-lg font-bold">Program persiapan karier yang komprehensif untuk mempersiapkan generasi terbaik Indonesia</h1>
-                <h1 class="text-white text-sm lg:text-base font-bold">Kampus Merdeka adalah bagian dari kebijakan Merdeka Belajar oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) yang memberikan seluruh mahasiswa kesempatan untuk mengasah kemampuan sesuai bakat dan minat dengan terjun langsung ke dunia kerja sebagai langkah persiapan karier.</h1>
-            </div>
-
-            <!-- Images Form -->
-            <div class="thumbnaill sm:w-[20rem] md:w-[25rem] order-1 md:order-2">
-                <img class="w-full h-full object-cover" src="images/bg(2).svg">
+    <!-- Konten Start -->
+    <section class="my-5">
+        <div class="flex flex-col md:flex-row justify-center items-center w-full p-6 md:px-14 mx-auto z-20 gap-3">
+            <div class="grid gap-3 text-center">
+                <h1 class="inter text-blue-400 text-3xl md:text-5xl font-bold">Kampus Merdeka</h1>
+                <div class="w-full md:w-[80%] mx-auto md:mt-8">
+                    <p class="inter text-gray-600 text-xs lg:text-base leading-5 font-normal">Program persiapan karier yang
+                        komprehensif untuk
+                        mempersiapkan generasi terbaik Indonesia Kampus Merdeka adalah bagian dari kebijakan Merdeka
+                        Belajar oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) yang
+                        memberikan seluruh mahasiswa kesempatan untuk mengasah kemampuan sesuai bakat dan minat dengan
+                        terjun
+                        langsung ke dunia kerja sebagai langkah persiapan karier.
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- About End -->
-
-    <!-- Konten Start -->
-    <section id="Konten" class="konten">
-        <div class="w-full h-[25rem] md:px-20 mb-8 mt-[2rem] mx-auto z-20 gap-[4rem]">
-
-            <!-- Text -->
-            <h1 class="livvic text-[#000] text-center text-xl md:text-3xl px-6 md:px-0 py-6 font-bold">Apa saja manfaat program Kampus Merdeka?</h1>
-
-            <!-- Icon -->
+    
+        <div class="mb-8 mx-auto z-20">
             <div class="flex justify-center">
-                <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto md:pt-20 md:gap-2">
-                    <div class="w-[10rem] m-2 thumbnailll rounded-xl md:hover:shadow-md md:hover:shadow-gray-500">
-                        <div class="flex justify-center p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-gradient-to-r from-[#DDB62A]  via-[#D9B846] to-[#EDC844] rounded-full shadow-sm md:shadow-md shadow-gray-500">
+                <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-evenly sm:overflow-auto md:gap-2">
+                    <div class="w-[10rem] md:w-[15rem]">
+                        <div class="flex justify-center p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-blue-400 rounded-full shadow-sm md:shadow-md shadow-gray-500">
                             <!-- Icon -->
-                            <svg class="md:w-10 stroke-[2] stroke-[#905803]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-10 stroke-[2] stroke-[#FFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.18 8.03933L18.6435 7.57589C19.4113 6.80804 20.6563 6.80804 21.4241 7.57589C22.192 8.34374 22.192 9.58868 21.4241 10.3565L20.9607 10.82M18.18 8.03933C18.18 8.03933 18.238 9.02414 19.1069 9.89309C19.9759 10.762 20.9607 10.82 20.9607 10.82M18.18 8.03933L13.9194 12.2999C13.6308 12.5885 13.4865 12.7328 13.3624 12.8919C13.2161 13.0796 13.0906 13.2827 12.9882 13.4975C12.9014 13.6797 12.8368 13.8732 12.7078 14.2604L12.2946 15.5L12.1609 15.901M20.9607 10.82L16.7001 15.0806C16.4115 15.3692 16.2672 15.5135 16.1081 15.6376C15.9204 15.7839 15.7173 15.9094 15.5025 16.0118C15.3203 16.0986 15.1268 16.1632 14.7396 16.2922L13.5 16.7054L13.099 16.8391M13.099 16.8391L12.6979 16.9728C12.5074 17.0363 12.2973 16.9867 12.1553 16.8447C12.0133 16.7027 11.9637 16.4926 12.0272 16.3021L12.1609 15.901M13.099 16.8391L12.1609 15.901"/>
                                 <path d="M8 13H10.5" stroke-linecap="round"/>
                                 <path d="M8 9H14.5" stroke-linecap="round"/>
@@ -400,22 +227,22 @@
                                 <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157M21 14C21 17.7712 21 19.6569 19.8284 20.8284M4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284M19.8284 20.8284C20.7715 19.8853 20.9554 18.4796 20.9913 16" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <h1 class="text-center text-[#000] font-medium text-[10px] lg:text-sm mx-3">Kegiatan dapat dikonversi menjadi sks</h1>
+                        <h1 class="inter text-center text-gray-500 font-medium text-[10px] lg:text-sm mx-3">Kegiatan dapat dikonversi menjadi sks</h1>
                     </div>
-                    <div class="w-[10rem] m-2 thumbnailll rounded-xl md:hover:shadow-md md:hover:shadow-gray-500">
-                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-gradient-to-r from-[#DDB62A]  via-[#D9B846] to-[#EDC844] rounded-full shadow-sm md:shadow-md shadow-gray-500">
+                    <div class="w-[10rem] md:w-[15rem]">
+                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-blue-400 rounded-full shadow-sm md:shadow-md shadow-gray-500">
                             <!-- Icon -->
-                            <svg class="md:w-10 stroke-[2] stroke-[#905803]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-10 stroke-[2] stroke-[#FFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.52879 16.4712C2.59014 11.5325 0.588351 5.52715 3.05768 3.05782C5.04852 1.06697 9.33779 1.98237 13.5134 5M16.471 7.52894C21.4097 12.4676 23.4115 18.473 20.9421 20.9423C18.9535 22.931 14.6713 22.0198 10.5 19.01M20.9423 3.05768C23.4117 5.52701 21.4099 11.5324 16.4712 16.4711C11.5326 21.4097 5.5272 23.4115 3.05787 20.9422C1.06704 18.9513 1.98242 14.6621 5 10.4865C5.72528 9.48285 6.57199 8.4858 7.52899 7.5288C12.4676 2.59014 18.473 0.588345 20.9423 3.05768Z" stroke-linecap="round"/>
                                 <path d="M14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5C13.3807 9.5 14.5 10.6193 14.5 12Z"/>
                             </svg>
                         </div>
-                        <h1 class="text-center text-[#000] font-medium text-[10px] lg:text-sm mx-3">Perluas jaringan hingga ke luar program studi dan universitas</h1>
+                        <h1 class="inter text-center text-gray-500 font-medium text-[10px] lg:text-sm mx-3">Perluas jaringan hingga ke luar program studi dan universitas</h1>
                     </div>
-                    <div class="w-[10rem] m-2 thumbnailll rounded-xl md:hover:shadow-md md:hover:shadow-gray-500">
-                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-gradient-to-r from-[#DDB62A]  via-[#D9B846] to-[#EDC844] rounded-full shadow-sm md:shadow-md shadow-gray-500">
+                    <div class="w-[10rem] md:w-[15rem]">
+                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-blue-400 rounded-full shadow-sm md:shadow-md shadow-gray-500">
                             <!-- Icon -->
-                            <svg class="md:w-10 stroke-[2] stroke-[#905803]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-10 stroke-[2] stroke-[#FFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 22V16C20 11.5817 16.4183 8 12 8C9.03887 8 6.4535 9.60879 5.07026 12M4 22V16" stroke-linecap="round"/>
                                 <path d="M14.2905 11.5C15.2932 11.9059 16.0939 12.7065 16.4998 13.7092" stroke-linecap="round"/>
                                 <path d="M12 2V5" stroke-linecap="round"/>
@@ -426,12 +253,12 @@
                                 <path d="M2 22H14M22 22H18" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <h1 class="text-center text-[#000] font-medium text-[10px] lg:text-sm mx-3">Eksplorasi pengetahuan dan kemampuan di lapangan selama lebih dari satu semester</h1>
+                        <h1 class="inter text-center text-gray-500 font-medium text-[10px] lg:text-sm mx-3">Eksplorasi pengetahuan dan kemampuan di lapangan selama lebih dari satu semester</h1>
                     </div>
-                    <div class="w-[10rem] m-2 thumbnailll rounded-xl md:hover:shadow-md md:hover:shadow-gray-500">
-                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-gradient-to-r from-[#DDB62A]  via-[#D9B846] to-[#EDC844] rounded-full shadow-sm md:shadow-md shadow-gray-500">
+                    <div class="w-[10rem] md:w-[15rem]">
+                        <div class="p-5 m-3 mx-auto w-[4rem] md:w-[5rem] bg-blue-400 rounded-full shadow-sm md:shadow-md shadow-gray-500">
                             <!-- Icon -->
-                            <svg class="md:w-10 stroke-[1.5] stroke-[#905803]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="md:w-10 stroke-[1.5] stroke-[#FFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 5.854V20.9999"/>
                                 <path d="M5 9L9 10" stroke-linecap="round"/>
                                 <path d="M19 9L15 10" stroke-linecap="round"/>
@@ -440,69 +267,109 @@
                                 <path d="M20.082 3.01775L20.1081 3.76729L20.082 3.01775ZM16.5 3.48744L16.2849 2.76895V2.76895L16.5 3.48744ZM13.6738 4.80275L13.2982 4.15363L13.2982 4.15363L13.6738 4.80275ZM3.9824 3.07489L3.93639 3.82348L3.9824 3.07489ZM7 3.48744L7.19136 2.76227V2.76227L7 3.48744ZM10.2823 4.87546L9.93167 5.53847L10.2823 4.87546ZM13.6276 20.0692L13.9804 20.7311L13.6276 20.0692ZM17 18.6334L16.8086 17.9082H16.8086L17 18.6334ZM19.9851 18.2228L20.032 18.9714L19.9851 18.2228ZM10.3724 20.0692L10.0196 20.7311H10.0196L10.3724 20.0692ZM7 18.6334L7.19136 17.9082H7.19136L7 18.6334ZM4.01486 18.2228L3.96804 18.9714H3.96804L4.01486 18.2228ZM22.75 10.5384C22.75 10.1242 22.4142 9.78839 22 9.78839C21.5858 9.78839 21.25 10.1242 21.25 10.5384H22.75ZM21.25 7C21.25 7.41421 21.5858 7.75 22 7.75C22.4142 7.75 22.75 7.41421 22.75 7H21.25ZM1.25 10.5707C1.25 10.9849 1.58579 11.3207 2 11.3207C2.41421 11.3207 2.75 10.9849 2.75 10.5707H1.25ZM2.75 14C2.75 13.5858 2.41421 13.25 2 13.25C1.58579 13.25 1.25 13.5858 1.25 14H2.75ZM20.0559 2.2682C18.9175 2.30785 17.4296 2.42627 16.2849 2.76895L16.7151 4.20594C17.6643 3.92179 18.9892 3.80627 20.1081 3.76729L20.0559 2.2682ZM16.2849 2.76895C15.2899 3.06684 14.1706 3.64868 13.2982 4.15363L14.0495 5.45188C14.9 4.95969 15.8949 4.45149 16.7151 4.20594L16.2849 2.76895ZM3.93639 3.82348C4.90238 3.88285 5.99643 3.99829 6.80864 4.21262L7.19136 2.76227C6.23055 2.50873 5.01517 2.38695 4.02841 2.3263L3.93639 3.82348ZM6.80864 4.21262C7.77076 4.46651 8.95486 5.02196 9.93167 5.53847L10.6328 4.21244C9.63736 3.68606 8.32766 3.06211 7.19136 2.76227L6.80864 4.21262ZM13.9804 20.7311C14.9714 20.2028 16.1988 19.6205 17.1914 19.3585L16.8086 17.9082C15.6383 18.217 14.2827 18.8701 13.2748 19.4074L13.9804 20.7311ZM17.1914 19.3585C17.9943 19.1466 19.0732 19.0313 20.032 18.9714L19.9383 17.4743C18.9582 17.5356 17.7591 17.6574 16.8086 17.9082L17.1914 19.3585ZM10.7252 19.4074C9.71727 18.8701 8.3617 18.217 7.19136 17.9082L6.80864 19.3585C7.8012 19.6205 9.0286 20.2028 10.0196 20.7311L10.7252 19.4074ZM7.19136 17.9082C6.24092 17.6574 5.04176 17.5356 4.06168 17.4743L3.96804 18.9714C4.9268 19.0313 6.00566 19.1466 6.80864 19.3585L7.19136 17.9082ZM21.25 16.1436C21.25 16.8293 20.6817 17.4278 19.9383 17.4743L20.032 18.9714C21.5062 18.8791 22.75 17.6798 22.75 16.1436H21.25ZM22.75 4.93319C22.75 3.46989 21.5847 2.21495 20.0559 2.2682L20.1081 3.76729C20.7229 3.74588 21.25 4.25161 21.25 4.93319H22.75ZM1.25 16.1436C1.25 17.6798 2.49378 18.8791 3.96804 18.9714L4.06168 17.4743C3.31831 17.4278 2.75 16.8293 2.75 16.1436H1.25ZM13.2748 19.4074C12.4825 19.8297 11.5175 19.8297 10.7252 19.4074L10.0196 20.7311C11.2529 21.3885 12.7471 21.3885 13.9804 20.7311L13.2748 19.4074ZM13.2982 4.15363C12.4801 4.62709 11.4617 4.6507 10.6328 4.21244L9.93167 5.53847C11.2239 6.22177 12.791 6.18025 14.0495 5.45188L13.2982 4.15363ZM2.75 4.9978C2.75 4.30062 3.30243 3.78451 3.93639 3.82348L4.02841 2.3263C2.47017 2.23053 1.25 3.49864 1.25 4.9978H2.75ZM22.75 16.1436V10.5384H21.25V16.1436H22.75ZM22.75 7V4.93319H21.25V7H22.75ZM2.75 10.5707V4.9978H1.25V10.5707H2.75ZM2.75 16.1436V14H1.25V16.1436H2.75Z"/>
                             </svg>
                         </div>
-                        <h1 class="text-center text-[#000] font-medium text-[10px] lg:text-sm mx-3">Menimba ilmu secara langsung dari mitra berkualitas dan terkemuka</h1>
+                        <h1 class="inter text-center text-gray-500 font-medium text-[10px] lg:text-sm mx-3">Menimba ilmu secara langsung dari mitra berkualitas dan terkemuka</h1>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
     <!-- Konten End -->
 
     <!-- Footer Start -->
-    <footer id="footer" class="">
-        <div class="w-full md:h-[13rem] bg-[#000000] p-8 mt-[2rem] md:mt-[12rem] lg:mt-[2rem] mx-auto z-20 gap-[4rem]">
+    <footer class="w-full md:h-[13rem] bg-gray-800 p-8 mt-[2rem] md:mt-[3rem] mx-auto z-20 gap-[4rem]">
+    
+        <!-- Pembungkus -->
+        <div class="flex justify-center flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-20 md:mx-10">
 
-            <!-- Pembungkus -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-5">
-
-                <!-- Logo -->
-                <div class="md:flex justify-center">
-                    <div class="w-[5rem] md:w-[7rem]">
-                        <img class="w-full h-full object-cover" src="images/Logo ULB.svg">
-                    </div>
+            <!-- Logo -->
+            <div class="">
+                <div class="w-[5rem] md:w-[8rem]">
+                    <img class="w-full h-full object-cover" src="images/Logo ULB.svg">
                 </div>
+            </div>
 
-                <!-- Text -->
-                <div class="col-span-2 grid gap-1">
-                    <h1 class="text-white font-bold text-sm lg:text-base">Universitas Labuhan Batu</h1>
-                    <p class="text-white font-medium text-xs lg:text-sm">jln, Sisingamangaraja No. 126 A KM 3.5 Aek Tapa, Bakaran  Batu, Kec, Rantau sel., Kab. Labuhanbatu, Sumatra Utara</p>
-                    <p class="text-white font-medium text-xs lg:text-sm">web: ulb.ac.id</p>
-                </div>
+            <!-- Text -->
+            <div class="space-y-1 md:space-y-4">
+                <h1 class="text-white font-medium text-sm lg:text-base">Universitas Labuhan Batu</h1>
+                <p class="text-gray-100 font-normal text-xs lg:text-sm">jln, Sisingamangaraja No. 126 A KM 3.5 Aek Tapa,
+                    Bakaran Batu, Kec, Rantau sel., Kab. Labuhanbatu, Sumatra Utara</p>
+                <p class="text-white font-normal text-xs lg:text-sm">web: ulb.ac.id</p>
+            </div>
 
-                <!-- Footer -->
-                <div class="md:flex justify-center">
-                    <div class="grid grap-1">
-                        <a href="#" class="text-white font-medium text-sm lg:text-base transition transform duration-700 hover:underline hover:text-blue-700">Beranda</a>
-                        <a href="#" class="text-white font-medium text-sm lg:text-base transition transform duration-700 hover:underline hover:text-blue-700">Program</a>
-                        <a href="#" class="text-white font-medium text-sm lg:text-base transition transform duration-700 hover:underline hover:text-blue-700">Login</a>
-                        <a href="#" class="text-white font-medium text-sm lg:text-base transition transform duration-700 hover:underline hover:text-blue-700">SignUp</a>
-                    </div>
-                </div>
-
-                <!-- Media -->
-                <div class="">
-                    <h1 class="text-white text-center text-sm lg:text-base font-semibold">Sosial Media</h1>
-                    <div class="flex justify-center items-center gap-3 mt-5 mx-1">
-                        <!-- Icon -->
-                        <a href="#">
-                        <svg class="w-6 md:w-8 stroke-[1] stroke-[#FFF] hover:stroke-pink-500 hover:-translate-y-1 hover:shadow-sm hover:shadow-pink-400 transition transform duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"/>
+            <!-- Media -->
+            <div class="md:mx-10">
+                <h1 class="text-white text-sm lg:text-base font-semibold">Sosial Media</h1>
+                <div class="flex flex-col gap-1 mt-5 mx-1">
+                    <!-- Icon -->
+                    <a href="#" class="flex items-center gap-3">
+                        <svg class="w-6 md:w-8" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#3177bc"
+                                  d="M1.4653988 6.3265778c.3526004-2.77544 2.2447314-5.29318 5.6382665-5.32658003 2.0488113.0391 3.7347257.96736003 4.7365897 2.73760003.503993.92394.66123 1.89408.694625 2.96384v1.25762H5.0042041c.034481 3.1057802 4.5696119 3.0000302 6.5232469 1.63081v2.5280402c-1.143795.68739-3.7375091 1.29964-5.7468025.51206-1.7115172-.64286-2.9304514-2.4323-2.9221025-4.1549502-.055659-2.23471 1.110399-3.71246 2.9221025-4.55291-.3840477.47672-.676258 1.00186-.8293205 1.9091l4.252355.00001s.2487127-2.54111-2.4064211-2.54111c-2.5046593.0885-4.310797 1.54482-5.3321414 3.0362z"/>
                         </svg>
-                        </a>
-                        <a href="#">
-                        <svg class="w-6 md:w-8 stroke-[1] stroke-[#FFF] hover:-translate-y-1 hover:shadow-sm hover:shadow-gray-400 transition transform duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.8217 5.1344C16.0886 4.29394 15.6479 3.19805 15.6479 2H14.7293M16.8217 5.1344C17.4898 5.90063 18.3944 6.45788 19.4245 6.67608C19.7446 6.74574 20.0786 6.78293 20.4266 6.78293V10.2191C18.645 10.2191 16.9932 9.64801 15.6477 8.68211V15.6707C15.6477 19.1627 12.8082 22 9.32386 22C7.50043 22 5.85334 21.2198 4.69806 19.98C3.64486 18.847 2.99994 17.3331 2.99994 15.6707C2.99994 12.2298 5.75592 9.42509 9.17073 9.35079M16.8217 5.1344C16.8039 5.12276 16.7861 5.11101 16.7684 5.09914M6.9855 17.3517C6.64217 16.8781 6.43802 16.2977 6.43802 15.6661C6.43802 14.0734 7.73249 12.7778 9.32394 12.7778C9.62087 12.7778 9.9085 12.8288 10.1776 12.9124V9.40192C9.89921 9.36473 9.61622 9.34149 9.32394 9.34149C9.27287 9.34149 8.86177 9.36884 8.81073 9.36884M14.7244 2H12.2097L12.2051 15.7775C12.1494 17.3192 10.8781 18.5591 9.32386 18.5591C8.35878 18.5591 7.50971 18.0808 6.98079 17.3564" stroke-linejoin="round"/>
+                        <h1 class="text-[#FFF] text-sm font-normal">ulb.ac.id</h1>
+                    </a>
+                    <a href="#" class="flex items-center gap-3">
+                        <svg class="w-6 md:w-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"/>
+                            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"/>
+                            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"/>
+                            <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                                  fill="white"/>
+                            <defs>
+                                <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                    <stop stop-color="#B13589"/>
+                                    <stop offset="0.79309" stop-color="#C62F94"/>
+                                    <stop offset="1" stop-color="#8A3AC8"/>
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                    <stop stop-color="#E0E8B7"/>
+                                    <stop offset="0.444662" stop-color="#FB8A2E"/>
+                                    <stop offset="0.71474" stop-color="#E2425C"/>
+                                    <stop offset="1" stop-color="#E2425C" stop-opacity="0"/>
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+                                                gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                    <stop offset="0.156701" stop-color="#406ADC"/>
+                                    <stop offset="0.467799" stop-color="#6A45BE"/>
+                                    <stop offset="1" stop-color="#6A45BE" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
                         </svg>
-                        </a>
-                        <a href="#">
-                        <svg class="w-6 md:w-10 stroke-[1] stroke-[#FFF] hover:stroke-red-500 hover:-translate-y-1 hover:shadow-sm hover:shadow-red-400 transition transform duration-700" fill="none" stroke="currentColor" viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30.722,20.579 C30.137,21.894 28.628,23.085 27.211,23.348 C27.066,23.375 23.603,24.000 16.010,24.000 L15.990,24.000 C8.398,24.000 4.932,23.375 4.788,23.349 C3.371,23.085 1.861,21.894 1.275,20.578 C1.223,20.461 0.001,17.647 0.001,12.000 C0.001,6.353 1.223,3.538 1.275,3.421 C1.861,2.105 3.371,0.915 4.788,0.652 C4.932,0.625 8.398,-0.000 15.990,-0.000 C23.603,-0.000 27.066,0.625 27.210,0.651 C28.628,0.915 30.137,2.105 30.723,3.420 C30.775,3.538 32.000,6.353 32.000,12.000 C32.000,17.647 30.775,20.461 30.722,20.579 ZM28.893,4.230 C28.581,3.529 27.603,2.759 26.845,2.618 C26.813,2.612 23.386,2.000 16.010,2.000 C8.615,2.000 5.185,2.612 5.152,2.618 C4.394,2.759 3.417,3.529 3.104,4.234 C3.094,4.255 2.002,6.829 2.002,12.000 C2.002,17.170 3.094,19.744 3.106,19.770 C3.417,20.471 4.394,21.241 5.153,21.382 C5.185,21.388 8.615,22.000 15.990,22.000 L16.010,22.000 C23.386,22.000 26.813,21.388 26.846,21.382 C27.604,21.241 28.581,20.471 28.894,19.766 C28.904,19.744 29.998,17.170 29.998,12.000 C29.998,6.830 28.904,4.255 28.893,4.230 ZM13.541,17.846 C13.379,17.949 13.193,18.000 13.008,18.000 C12.842,18.000 12.676,17.959 12.525,17.875 C12.206,17.699 12.008,17.364 12.008,17.000 L12.008,7.000 C12.008,6.637 12.204,6.303 12.521,6.127 C12.838,5.950 13.227,5.958 13.534,6.149 L21.553,11.105 C21.846,11.286 22.026,11.606 22.027,11.951 C22.028,12.296 21.852,12.618 21.560,12.801 L13.541,17.846 ZM14.009,8.794 L14.009,15.189 L19.137,11.963 L14.009,8.794 Z"/>
+                        <h1 class="text-[#FFF] text-sm font-normal">@universitaslabuhanbatu</h1>
+                    </a>
+                    <a href="#" class="flex items-center gap-3">
+                        <svg class="w-6 md:w-8" viewBox="0 -38 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M250.346231,28.0746923 C247.358133,17.0320558 238.732098,8.40602109 227.689461,5.41792308 C207.823743,0 127.868333,0 127.868333,0 C127.868333,0 47.9129229,0.164179487 28.0472049,5.58210256 C17.0045684,8.57020058 8.37853373,17.1962353 5.39043571,28.2388718 C-0.618533519,63.5374615 -2.94988224,117.322662 5.5546152,151.209308 C8.54271322,162.251944 17.1687479,170.877979 28.2113844,173.866077 C48.0771024,179.284 128.032513,179.284 128.032513,179.284 C128.032513,179.284 207.987923,179.284 227.853641,173.866077 C238.896277,170.877979 247.522312,162.251944 250.51041,151.209308 C256.847738,115.861464 258.801474,62.1091 250.346231,28.0746923 Z"
+                                      fill="#FF0000">
+
+                                </path>
+                                <polygon fill="#FFFFFF" points="102.420513 128.06 168.749025 89.642 102.420513 51.224">
+
+                                </polygon>
+                            </g>
                         </svg>
-                        </a>
-                    </div>
+                        <h1 class="text-[#FFF] text-sm font-normal">universitas labuhanbatu</h1>
+                    </a>
                 </div>
+            </div>
+
+            <div class="">
+                <iframe class="w-full h-full rounded-lg bg-[#FFF]"
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3987.1849379448295!2d99.85016082485646!3d2.0818139978995536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sulb!5e0!3m2!1sid!2sid!4v1710151979236!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </footer>
