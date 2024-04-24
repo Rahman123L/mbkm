@@ -1,0 +1,131 @@
+<!-- Pembungkus -->
+<div class="container overflow-hidden w-full bg-transparent p-1 rounded-lg transition transform animate-fadeIn">
+    
+    <!-- Table -->
+    <div class="w-full flex flex-col md:grid md:grid-cols-8 gap-y-5 md:mb-3 bg-transparent md:bg-white rounded-lg">
+        <div class="hidden md:flex col-span-1 justify-center pb-3 md:border-b-[0.5px] border-gray-200">
+            <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">No.</p>
+        </div>
+        <div class="flex col-span-5 justify-around items-center md:border-b-[0.5px] border-gray-200">
+            <div class="hidden md:flex justify-center pb-3">
+                <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Judul</p>
+            </div>
+            <div class="hidden md:flex justify-center pb-3">
+                <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Berkas</p>
+            </div>
+            <div class="hidden md:flex justify-center pb-3">
+                <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Berkas</p>
+            </div>
+            <div class="hidden md:flex justify-center pb-3">
+                <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Berkas</p>
+            </div>
+            <div class="hidden md:flex justify-center pb-3">
+                <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Berkas</p>
+            </div>
+        </div>
+        <div class="hidden md:flex col-span-2 justify-center pb-3 md:border-b-[0.5px] border-gray-200">
+            <p class="p-4 font-bold text-xs md:text-sm text-[#6E6893]">Aksi</p>
+        </div>
+
+        @for($i = 1; $i <= 3; $i++)
+            <div class="relative w-full flex md:grid md:col-span-8 md:grid-cols-8 rounded-lg bg-white py-5 md:py-0">
+                <div class="flex col-span-1 justify-center ml-5 md:m-0 pb-3 md:border-b-[0.5px] border-gray-200">
+                    <p class="font-medium text-xs md:text-sm text-gray-500">1.</p>
+                </div>
+                <div class="flex flex-col md:flex-row col-span-5 md:justify-around ml-5 mr-10 md:m-0 md:space-x-10 md:items-center md:border-b-[0.5px] border-gray-200">
+                    <div class="flex md:justify-center pb-3 md:-mt-5">
+                        <p class="font-medium text-xs md:text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, saepe!</p>
+                    </div>
+                    <div class="flex md:justify-center pb-3">
+                        <p class="font-medium text-xs md:text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto?</p>
+                    </div>
+                    <div class="flex md:justify-center pb-3">
+                        <p class="font-medium text-xs md:text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto?</p>
+                    </div>
+                    <div class="flex md:justify-center pb-3">
+                        <p class="font-medium text-xs md:text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto?</p>
+                    </div>
+                    <div class="flex md:justify-center pb-3">
+                        <p class="font-medium text-xs md:text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto?</p>
+                    </div>
+                </div>
+                <div class="col-span-2 gap-3 md:border-b-[0.5px] border-gray-200">
+                    <button @click="toggleTable({!! $i !!})" class="absolute right-4 md:right-10">
+                        <svg class="w-5 stroke-[1.5] stroke-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z"/>
+                        </svg>
+                    </button>
+
+                    <div id="value-{!! $i !!}" class="abs md:flex right-4 md:right-10 bg-gray-400 md:bg-transparent pt-2 px-6 md:p-0 rounded-lg md:justify-center md:items-center md:gap-3 mt-10">
+                        <a href="" class="flex justify-center pb-3">
+                            <button class="md:px-7 md:py-2 group transition transform duration-700 md:hover:bg-gray-500 md:focus:bg-gray-500 md:border-[0.5px] hover:border-gray-500 focus:border-gray-500 rounded-lg md:focus:scale-95">
+                                <h1 class="text-[10px] sm:text-xs font-semibold transition transform duration-500 text-white md:text-gray-500 md:group-hover:text-[#FFFFFF] md:group-focus:text-[#FFFFFF] uppercase">Lihat</h1>
+                            </button>
+                        </a>
+                        <a href="" class="flex justify-center pb-3">
+                            <button class="md:px-7 md:py-2 group transition transform duration-700 md:hover:bg-blue-500 md:focus:bg-blue-500 md:border-[0.5px] hover:border-blue-500 focus:border-blue-500 rounded-lg md:focus:scale-95">
+                                <h1 class="text-[10px] sm:text-xs font-semibold transition transform duration-500 text-white md:text-blue-500 md:group-hover:text-[#FFFFFF] md:group-focus:text-[#FFFFFF] uppercase">Unduh</h1>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        @endfor
+    </div>
+
+    <!-- Pembungkus pagination -->
+    <div class="flex w-full pt-3 md:pt-0">
+
+        <!-- Icon -->
+        <a href="#">
+            <button class="flex items-center justify-center px-4 py-2 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1] cursor-not-allowed">
+                <svg class="w-3 md:w-5 stroke-[1.5] stroke-gray-500 transition transform duration-500 group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </a>
+
+        <div class="grow"></div>
+
+        <a href="#">
+            <button class="hidden sm:inline px-4 py-2 mx-1 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-[13px] font-semibold text-gray-500 transition transform duration-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">1</h1>
+            </button>
+        </a>
+
+        <a href="#">
+            <button class="hidden sm:inline px-4 py-2 mx-1 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-[13px] font-semibold text-gray-500 transition transform duration-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">2</h1>
+            </button>
+        </a>
+
+        <a href="#">
+            <button class="hidden sm:inline px-4 py-2 mx-1 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-[13px] font-semibold text-gray-500 transition transform duration-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">3</h1>
+            </button>
+        </a>
+
+        <a href="#">
+            <button class="hidden sm:inline px-4 py-2 mx-1 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-[13px] font-semibold text-gray-500 transition transform duration-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">4</h1>
+            </button>
+        </a>
+
+        <a href="#">
+            <button class="hidden sm:inline px-4 py-2 mx-1 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <h1 class="text-[13px] font-semibold text-gray-500 transition transform duration-500 group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF]">5</h1>
+            </button>
+        </a>
+
+        <div class="grow"></div>
+
+        <!-- Icon -->
+        <a href="#">
+            <button class="flex items-center justify-center px-4 py-2 group bg-[#FFF] hover:bg-gray-500 focus:bg-blue-500 rounded-md transition transform duration-700 hover:scale-[1.01] focus:scale-[1]">
+                <svg class="w-3 md:w-5 stroke-[1.5] stroke-gray-500 transition transform duration-500 group-hover:stroke-[#FFFFFF] group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </a>
+    </div>
+</div>
