@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PROGRAM MAHASISWA | ADMIN</title>
+    <title>TAMBAH PROGRAM MAHASISWA | ADMIN</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -539,7 +539,7 @@
                 <div class="md:flex justify-between gap-3 mb-1">
 
                     <!-- Button -->
-                    <a href="#">
+                    <a href="tambah(program-mahasiswa).html">
                     <button class="flex justify-center items-center group gap-2 md:gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center transition transform duration-700 animate-fadeIn bg-[#FFF] focus:bg-blue-500 focus:border-[#1480EC] rounded-lg">
                         <svg class="w-4 md:w-5 stroke-[1.5] transition transform duration-300 stroke-gray-500 group-focus:stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
@@ -566,94 +566,60 @@
                     </div>
                 </div>
 
-                <div class="early">
-                    <div class="thumbnai w-full md:w-[70%] bg-[#FFF] grid grid-cols-1 md:grid-cols-2 gap-3 space-y-2 md:items-center rounded-lg p-5 my-3 cursor-pointer">
+                <!-- Pembungkus Card -->
+                <div class="flex md:flex-none justify-center md:justify-evenly">
+                    <div class="early md:flex md:flex-wrap md:justify-evenly mx-auto gap-5">
 
-                        <!-- Pembungkus grid Pertama -->
-                        <div class="px-2 md:px-5 py-0 md:py-4">
-                            <h1 class="livvic text-base md:text-xl font-semibold text-[#1480EC]">Magang MSIB</h1>
-                            <p class="text-xs md:text-sm font-normal text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum facilis ex vero, similique quidem? Mollitia quod ipsam eaque provident? Sunt iste tenetur, dolor eum minus eius, temporibus accusantium, quisquam earum qui non aperiam. Placeat minus nesciunt eos vero suscipit error et, aperiam quae accusantium earum dignissimos aliquam facere sequi?</p>
-                        </div>
-                    
-                        <!-- Pembungkus grid kedua -->
-                        <div class="flex flex-wrap justify-center md:justify-start items-center overflow-auto">
-                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center bg-transparent rounded-xl overflow-hidden mb-2">
-                                <h1 class="text-[16px] md:text-lg font-bold md:font-semibold text-[#1480EC]">37</h1>
-                                <h1 class="text-[10px] md:text-xs font-bold md:font-semibold text-[#1480EC]">Peminat</h1>
+                        <!-- Card -->
+                        <a href="detail-program(mahasiswa).html" class="w-full sm:w-[20rem] lg:w-[70%] grid grid-cols-1 lg:grid-cols-2 bg-white gap-3 space-y-2 rounded-lg p-5 my-3">
+
+                            <!-- Pembungkus grid Pertama -->
+                            <div class="w-full lg:w-[15rem] lg:py-10 mx-auto overflow-hidden">
+                                <img class="w-full h-full bg-cover object-fill" src="../images/card.png">
                             </div>
-                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center bg-transparent rounded-xl overflow-hidden mb-2">
-                                <h1 class="text-[16px] md:text-lg font-bold md:font-semibold text-[#1480EC]">2749</h1>
-                                <h1 class="text-[10px] md:text-xs font-bold md:font-semibold text-[#1480EC]">Pendaftar</h1>
+        
+                            <!-- Pembungkus grid kedua -->
+                            <div class="px-2 md:px-5 py-0 md:py-4">
+                                <h1 class="livvic text-base md:text-xl font-semibold text-[#1480EC]">Magang MSIB</h1>
+                                <p class="text-xs md:text-sm font-normal text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum facilis ex vero, similique quidem? Mollitia quod ipsam eaque provident? Sunt iste tenetur, dolor eum minus eius, temporibus accusantium, quisquam earum qui non aperiam. Placeat minus nesciunt eos vero suscipit error et, aperiam quae accusantium earum dignissimos aliquam facere sequi?</p>
                             </div>
-                            <div class="w-[4rem] sm:w-[5rem] mt-0 md:mt-6 flex-col justify-center items-center gap-2 p-3 text-center bg-transparent rounded-xl overflow-hidden mb-2">
-                                <h1 class="text-[16px] md:text-lg font-bold md:font-semibold text-[#1480EC]">678</h1>
-                                <h1 class="text-[10px] md:text-xs font-bold md:font-semibold text-[#1480EC]">Diterima</h1>
-                            </div>
-                        </div>
-                    
-                        <!-- Pembungkus grid Ketiga -->
-                        <div class="grid grid-cols-2 gap-5">
-                            <div class="px-3 flex flex-col text-center">
-                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pendaftaran</h1>
-                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                            </div>
-                            <div class="px-3 flex flex-col text-center">
-                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pendaftaran</h1>
-                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                            </div>
-                            <div class="px-3 flex flex-col text-center">
-                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pelaksanaan</h1>
-                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                            </div>
-                            <div class="px-3 flex flex-col text-center">
-                                <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pelaksanaan</h1>
-                                <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Pembungkus grid Keempat -->
-                        <div class="space-y-2">
-                            <a href="buat(syarat).html" class="flex items-center gap-2 md:gap-3">
-                                <div class="bg-green-500 rounded-full">
-                                    <!-- Icon -->
-                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+        
+                            <!-- Pembungkus grid ketiga -->
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="px-3 flex flex-col text-center">
+                                    <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pendaftaran</h1>
+                                    <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
                                 </div>
-                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">Syarat Sudah Dilengkapi</h1>
-                            </a>
-                            
-                            <a href="buat(nilai).html" class="flex items-center gap-2 md:gap-3">
-                                <div class="bg-red-500 rounded-full">
-                                    <!-- Icon -->
-                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
-                                    </svg>
+                                <div class="px-3 flex flex-col text-center">
+                                    <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pendaftaran</h1>
+                                    <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
                                 </div>
-                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Nilai Belum Dilengkapi</h1>
-                            </a>
-                    
-                            <a href="buat(file).html" class="flex items-center gap-2 md:gap-3">
-                                <div class="bg-green-500 rounded-full">
-                                    <!-- Icon -->
-                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 12L9.89075 14.8907V14.8907C9.95114 14.951 10.049 14.9511 10.1094 14.8907V14.8907L17 8" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                                <div class="px-3 flex flex-col text-center">
+                                    <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Awal Pelaksanaan</h1>
+                                    <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
                                 </div>
-                                <h1 class="text-xs md:text-sm font-semibold text-green-500 hover:underline">File Persyaratan Sudah Dilengkapi</h1>
-                            </a>
-                    
-                            <a href="buat(dpl).html" class="flex items-center gap-2 md:gap-3">
-                                <div class="bg-red-500 rounded-full">
-                                    <!-- Icon -->
-                                    <svg class="w-4 md:w-5 stroke-[1.5] stroke-[#FFFFFF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke-linecap="round"/>
-                                    </svg>
+                                <div class="px-3 flex flex-col text-center">
+                                    <h1 class="livvic text-xs md:text-sm font-semibold text-[#1480EC]">Akhir Pelaksanaan</h1>
+                                    <p class="text-xs md:text-sm font-normal text-gray-500">30/10/2024</p>
                                 </div>
-                                <h1 class="text-xs md:text-sm font-semibold text-red-500 hover:underline">Dpl Belum Dilengkapi</h1>
-                            </a>
-                        </div>
-                    
+                            </div>
+        
+                            <!-- Pembungkus grid Keempat -->
+                            <div class="flex flex-wrap justify-center items-center overflow-auto">
+                                <div class="text-center bg-transparent p-3 mb-2">
+                                    <h1 class="text-[16px] md:text-lg font-semibold text-[#1480EC]">37</h1>
+                                    <h1 class="text-[10px] md:text-xs font-semibold text-[#1480EC]">Peminat</h1>
+                                </div>
+                                <div class="text-center bg-transparent p-3 mb-2">
+                                    <h1 class="text-[16px] md:text-lg font-semibold text-[#1480EC]">2749</h1>
+                                    <h1 class="text-[10px] md:text-xs font-semibold text-[#1480EC]">Pendaftar</h1>
+                                </div>
+                                <div class="text-center bg-transparent p-3 mb-2">
+                                    <h1 class="text-[16px] md:text-lg font-semibold text-[#1480EC]">678</h1>
+                                    <h1 class="text-[10px] md:text-xs font-semibold text-[#1480EC]">Diterima</h1>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

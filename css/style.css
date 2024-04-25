@@ -99,3 +99,26 @@
 #hamburger.hamburger-active {
     background-image: url('../images/close.svg');
 }
+
+form.multi-form {
+    fieldset:not(.active) {
+        display: none;
+    }
+
+    fieldset.active:first-of-type ~ .buttons {
+        .prev,
+        .submit {
+            display: none;
+        }
+    }
+    fieldset.active:not(:last-of-type) ~ .buttons {
+        .submit {
+            display: none;
+        }
+    }
+    fieldset.active:last-of-type ~ .buttons {
+        .next {
+            display: none;
+        }
+    }
+}
