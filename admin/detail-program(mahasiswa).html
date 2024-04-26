@@ -129,7 +129,7 @@
             <div class="grid gap-3 my-4">
 
                 <!-- Icon & Text ( Dashboard ) -->
-                <a href="home.html">
+                <a href="detail-program(mahasiswa).html">
                     <button class="w-full py-2 group transform transition duration-500 rounded-lg">
                         <div class="flex ml-4 items-center gap-3">
                             <!-- Icon -->
@@ -143,6 +143,21 @@
                                 <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z"/>
                             </svg>
                             <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Dashboard</h1>
+                        </div>
+                    </button>
+                </a>
+
+                <!-- Icon & Text ( Kembali ) -->
+                <a href="tambah-program(mahasiswa).html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 4.5H8C5.64298 4.5 4.46447 4.5 3.73223 5.23223C3 5.96447 3 7.14298 3 9.5V10M9 19.5H8C5.64298 19.5 4.46447 19.5 3.73223 18.7678C3 18.0355 3 16.857 3 14.5V14" stroke-linecap="round"/>
+                                <path d="M13.6576 2.34736C11.4955 1.97026 10.4145 1.78171 9.70725 2.4087C9 3.03569 9 4.18259 9 6.4764V17.5236C9 19.8174 9 20.9643 9.70725 21.5913C10.4145 22.2183 11.4955 22.0297 13.6576 21.6526L15.9864 21.2465C18.3809 20.8288 19.5781 20.62 20.2891 19.7417C21 18.8635 21 17.5933 21 15.0529V8.94711C21 6.40672 21 5.13652 20.2891 4.25826C19.814 3.67133 19.1217 3.38338 18 3.13228" stroke-linecap="round"/>
+                                <path d="M12 11V13" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Kembali</h1>
                         </div>
                     </button>
                 </a>
@@ -182,182 +197,27 @@
                     <!-- Pembungkus Sub Menu -->
                     <div x-show="isOpen" class="pt-3 grid gap-3">
 
-                        <!-- Pembungkus -->
-                        <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                            <!-- Icon & Text ( Mahasiswa ) -->
-                            <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Mahasiswa</h1>
-                                </div>
-                                <div class="grow"></div>
-                                <div class="mr-1">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                                    </svg>
-                                </div>
-                            </button>
-
-                            <!-- Pembungkus Sub Menu -->
-                            <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                                <!-- Icon & Text ( Tambah Program ) -->
-                                <a href="tambah-program(mahasiswa).html">
-                                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                        <div class="flex ml-4 items-center gap-3">
-                                            <!-- Icon -->
-                                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
-                                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                                            </svg>
-                                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Tambah</h1>
-                                        </div>
-                                    </button>
-                                </a>
-
-                                <!-- Icon & Text ( Program Aktif ) -->
-                                <a href="program-aktif(mahasiswa).html">
-                                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                        <div class="flex ml-4 items-center gap-3">
-                                            <!-- Icon -->
-                                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
-                                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                                            </svg>
-                                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Aktif</h1>
-                                        </div>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- ( FITUR ) -->
-            <div class="py-2">
-                <h1 class="text-xs font-bold text-[#000] ml-4">FITUR</h1>
-            </div>
-
-            <!-- Pembungkus -->
-            <div class="pb-3 grid gap-3">
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Manage ) -->
-                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.97883 6.31492C2.99294 7.10927 2 7.50645 2 8C2 8.49355 2.99294 8.89073 4.97883 9.68508L7.7873 10.8085C9.77318 11.6028 10.7661 12 12 12C13.2339 12 14.2268 11.6028 16.2127 10.8085L19.0212 9.68508C21.0071 8.89073 22 8.49355 22 8C22 7.50645 21.0071 7.10927 19.0212 6.31492L16.2127 5.19153C14.2268 4.39718 13.2339 4 12 4C11.0461 4 10.2361 4.2374 9 4.71221" stroke-linecap="round"/>
-                                <path d="M5.76613 10L4.97883 10.3149C2.99294 11.1093 2 11.5065 2 12C2 12.4935 2.99294 12.8907 4.97883 13.6851L7.7873 14.8085C9.77318 15.6028 10.7661 16 12 16C13.2339 16 14.2268 15.6028 16.2127 14.8085L19.0212 13.6851C21.0071 12.8907 22 12.4935 22 12C22 11.5065 21.0071 11.1093 19.0212 10.3149L18.2339 10"/>
-                                <path d="M19.0212 17.6851C21.0071 16.8907 22 16.4935 22 16C22 15.5065 21.0071 15.1093 19.0212 14.3149L18.2339 14M5.76613 14L4.97883 14.3149C2.99294 15.1093 2 15.5065 2 16C2 16.4935 2.99294 16.8907 4.97883 17.6851L7.7873 18.8085C9.77318 19.6028 10.7661 20 12 20C12.9539 20 13.7639 19.7626 15 19.2878" stroke-linecap="round"/>
-                            </svg>
-                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Manage</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </button>
-
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Fakultas ) -->
-                        <a href="fakultas.html">
+                        <!-- Icon & Text ( Syarat ) -->
+                        <a href="buat(syarat).html">
                             <button class="w-full py-2 group transform transition duration-500 rounded-lg">
                                 <div class="flex ml-4 items-center gap-3">
                                     <!-- Icon -->
                                     <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.5 7H10.25M7.5 11H10.25M7.5 15H10.25M13.75 7H16.5M13.75 11H16.5M13.75 15H16.5M20 21V6.2C20 5.0799 20 4.51984 19.782 4.09202C19.5903 3.71569 19.2843 3.40973 18.908 3.21799C18.4802 3 17.9201 3 16.8 3H7.2C6.07989 3 5.51984 3 5.09202 3.21799C4.71569 3.40973 4.40973 3.71569 4.21799 4.09202C4 4.51984 4 5.0799 4 6.2V21M22 21H2" stroke-linecap="round"/>
+                                        <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                                        <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                                        <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                                        <path d="M9 17.5H15" stroke-linecap="round"/>
+                                        <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                                        <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                                        <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
                                     </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Fakultas</h1>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Syarat</h1>
                                 </div>
                             </button>
                         </a>
 
-                        <!-- Icon & Text ( Prodi ) -->
-                        <a href="prodi.html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.5 7H14.5M9.5 11H14.5M9.5 15H14.5M18 21V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V21M20 21H4" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Prodi</h1>
-                                </div>
-                            </button>
-                        </a>
-
-                        <!-- Icon & Text ( Dosen ) -->
-                        <a href="manajemen(dosen).html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Dosen</h1>
-                                </div>
-                            </button>
-                        </a>
-
-                        <!-- Icon & Text ( Mahasiswa ) -->
-                        <a href="manajemen(mahasiswa).html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Mahasiswa</h1>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Pengumuman ) -->
-                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 8V12L14.5 14.5" stroke-linecap="round"/>
-                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                            </svg>
-                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Pengumuman</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </button>
-
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Pengumuman Aktif ) -->
-                        <a href="buat(pengumuman).html">
+                        <!-- Icon & Text ( Nilai ) -->
+                        <a href="buat(nilai).html">
                             <button class="w-full py-2 group transform transition duration-500 rounded-lg">
                                 <div class="flex ml-4 items-center gap-3">
                                     <!-- Icon -->
@@ -365,7 +225,188 @@
                                         <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
                                         <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
                                     </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Aktif</h1>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Nilai</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( File ) -->
+                        <a href="buat(file).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                        <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                        <path d="M8 16H13" stroke-linecap="round"/>
+                                        <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">File</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( Dpl ) -->
+                        <a href="buat(dpl).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="6" r="4"/>
+                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Dpl</h1>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Peserta ) -->
+                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="6" r="4"/>
+                                <path d="M15 9C16.6569 9 18 7.65685 18 6C18 4.34315 16.6569 3 15 3" stroke-linecap="round"/>
+                                <path d="M5.88915 20.5843C6.82627 20.8504 7.88256 21 9 21C12.866 21 16 19.2091 16 17C16 14.7909 12.866 13 9 13C5.13401 13 2 14.7909 2 17C2 17.3453 2.07657 17.6804 2.22053 18" stroke-linecap="round"/>
+                                <path d="M18 14C19.7542 14.3847 21 15.3589 21 16.5C21 17.5293 19.9863 18.4229 18.5 18.8704" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Peserta</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Peserta Mendaftar ) -->
+                        <a href="peserta-mahasiswa(mendaftar).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                                        <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                                        <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                                        <path d="M9 17.5H15" stroke-linecap="round"/>
+                                        <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                                        <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                                        <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Mendaftar</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( Peserta Terima ) -->
+                        <a href="peserta-mahasiswa(terima).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Terima</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( Peserta revisi ) -->
+                        <a href="peserta-mahasiswa(revisi).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 12H9M16 12H12" stroke-linecap="round"/>
+                                        <path d="M16 8H15M12 8H8" stroke-linecap="round"/>
+                                        <path d="M8 16H13" stroke-linecap="round"/>
+                                        <path d="M3 14V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C20.4816 3.82476 20.7706 4.69989 20.8985 6M21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3.51839 20.1752 3.22937 19.3001 3.10149 18" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Revisi</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( Peserta Tolak ) -->
+                        <a href="peserta-mahasiswa(tolak).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke-linecap="round"/>
+                                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Tolak</h1>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pembungkus -->
+                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                    <!-- Icon & Text ( Kegiatan ) -->
+                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H18L15 21L9 3L6 12H2"stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Kegiatan</h1>
+                        </div>
+                        <div class="grow"></div>
+                        <div class="mr-1">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Pembungkus Sub Menu -->
+                    <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                        <!-- Icon & Text ( Peserta ) -->
+                        <a href="detail-kegiatan(mahasiswa).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="6" r="4"/>
+                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Peserta</h1>
+                                </div>
+                            </button>
+                        </a>
+
+                        <!-- Icon & Text ( Laporan ) -->
+                        <a href="detail-laporan(mahasiswa).html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                                <div class="flex ml-4 items-center gap-3">
+                                    <!-- Icon -->
+                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                                        <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                                        <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                                        <path d="M9 17.5H15" stroke-linecap="round"/>
+                                        <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                                        <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                                        <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
+                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Laporan</h1>
                                 </div>
                             </button>
                         </a>
