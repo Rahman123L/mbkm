@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Start -->
+    <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+            colors: {},
+            keyframes: {
+                // -----------------------------------------------------------------------------------------------------------
+                fadeIn: {
+                    '0%': { opacity: 0 },
+                    '100%': { opacity: 1 },
+                },
+                // -----------------------------------------------------------------------------------------------------------
+                slideInLeft: {
+                    '0%': {
+                        transform: 'translateX(-100%)',
+                    },
+                    '100%': {
+                        transform: 'translateX(0)',
+                    },
+                },
+            },
+            animation: {
+                fadeIn: "fadeIn 3s forwards",
+                fadeInn: "fadeIn 5s forwards",
+                fadeInnn: "fadeIn 7s forwards",
+                slideInLeft: "slideInLeft 2s forwards",
+            },
+        },
+    },
+    };
+    </script>
+    <!-- Tailwind End forwards -->
+
+</head>
+<body class="bg-[#F5F7FA]">
+    
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full lg:flex p-8 lg:p-0 lg:px-5">
+        <div class="lg:p-16 lg:flex-1">
+
+            <!-- Pembungkus -->
+            <div class="pb-5">
+                <div class="mt-5 space-y-3">
+                    <div class="flex w-[100%] items-start bg-white px-6 py-2 gap-3 rounded-lg">
+                        <!-- Icon -->
+                        <svg class="w-5 md:w-8 mt-1 stroke-[1.5] stroke-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8V12" stroke-linecap="round"/>
+                            <circle cx="12" cy="15" r="1"/>
+                            <path d="M3 10.4167C3 7.21907 3 5.62028 3.37752 5.08241C3.75503 4.54454 5.25832 4.02996 8.26491 3.00079L8.83772 2.80472C10.405 2.26824 11.1886 2 12 2C12.8114 2 13.595 2.26824 15.1623 2.80472L15.7351 3.00079C18.7417 4.02996 20.245 4.54454 20.6225 5.08241C21 5.62028 21 7.21907 21 10.4167C21 10.8996 21 11.4234 21 11.9914C21 14.4963 20.1632 16.4284 19 17.9041M3.19284 14C4.05026 18.2984 7.57641 20.5129 9.89856 21.5273C10.62 21.8424 10.9807 22 12 22C13.0193 22 13.38 21.8424 14.1014 21.5273C14.6796 21.2747 15.3324 20.9478 16 20.5328" stroke-linecap="round"/>
+                        </svg>
+                        <h1 class="text-[10px] md:text-base text-gray-600 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, reprehenderit?</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex space-x-4 bg-white">
+                <div class="bg-green-500 py-2 md:py-5 px-6 md:px-7 flex justify-center items-center">
+                    <svg class="w-7 md:w-10 stroke-[1.5] stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="my-2 space-y-1 pr-5">
+                    <h1 class="text-sm md:text-lg text-gray-800 font-medium">Syarat Belum Dilengkapi</h1>
+                    <p class="text-[10px] md:text-base text-gray-600 font-normal">Silakan lengkapi syarat yang kurang dan ajukan kembali.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/slinder.js"></script>
+    <script src="js/animation.js/appear.js"></script>
+    <script src="js/animation.js/opacity.js"></script>
+    <script src="js/animation.js/appear(1).js"></script>
+    <!-- Script End -->
+
+</body>
+</html>
