@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>DASHBOARD | ADMIN</title>
+    <title>EDIT PROFILE | MAHASISWA</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -125,7 +125,7 @@
         </div>
 
         <!-- Pembungkus -->
-        <div class="pt-[65px]">
+        <div class="pt-[65px]"> 
             <div class="grid gap-3 my-4">
 
                 <!-- Icon & Text ( Dashboard ) -->
@@ -156,19 +156,38 @@
             <!-- Pembungkus -->
             <div class="pb-3 grid gap-3">
 
+                <!-- Icon & Text ( Penawaran ) -->
+                <a href="penawaran.html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16.0002C21 18.8286 21 20.2429 20.1213 21.1215C19.2426 22.0002 17.8284 22.0002 15 22.0002H9C6.17157 22.0002 4.75736 22.0002 3.87868 21.1215C3 20.2429 3 18.8286 3 16.0002V13.0002" stroke-linecap="round"/>
+                                <path d="M16 4.00195C18.175 4.01406 19.3529 4.11051 20.1213 4.87889C21 5.75757 21 7.17179 21 10.0002V12.0002" stroke-linecap="round"/>
+                                <path d="M8 4.00195C5.82497 4.01406 4.64706 4.11051 3.87868 4.87889C3.11032 5.64725 3.01385 6.82511 3.00174 9" stroke-linecap="round"/>
+                                <path d="M9 17.5H15" stroke-linecap="round"/>
+                                <path d="M8 3.5C8 2.67157 8.67157 2 9.5 2H14.5C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5Z" stroke-width="1.5"/>
+                                <path d="M8 14H9M16 14H12" stroke-linecap="round"/>
+                                <path d="M17 10.5H15M12 10.5H7" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Penawaran</h1>
+                            <div class="grow"></div>
+                            <div class="py-1 px-2 bg-blue-400 rounded-md text-center text-white text-xs">6</div>
+                        </div>
+                    </button>
+                </a>
+
                 <!-- Pembungkus -->
                 <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
 
-                    <!-- Icon & Text ( Program ) -->
+                    <!-- Icon & Text ( Kegiatan ) -->
                     <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
                         <div class="flex ml-4 items-center gap-3">
                             <!-- Icon -->
                             <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.00005 12H6.00005C4.11443 12 3.17162 12 2.58584 12.5858C2.11429 13.0573 2.02233 13.7602 2.00439 15M12 17V18C12 19.8856 12 20.8284 11.4143 21.4142C10.8285 22 9.88567 22 8.00005 22H6.00005C4.11443 22 3.17162 22 2.58584 21.4142C2.11429 20.9427 2.02233 20.2398 2.00439 19" stroke-linecap="round"/>
-                                <path d="M12 7H11C9.11438 7 8.17157 7 7.58579 7.58579C7 8.17157 7 9.11438 7 11V13C7 14.8856 7 15.8284 7.58579 16.4142C8.17157 17 9.11438 17 11 17H13C14.8856 17 15.8284 17 16.4142 16.4142C17 15.8284 17 14.8856 17 13V12"/>
-                                <path d="M15 2.00439C13.7602 2.02233 13.0573 2.11429 12.5858 2.58584C12 3.17162 12 4.11443 12 6.00005V8.00005C12 9.88567 12 10.8285 12.5858 11.4143C13.1716 12 14.1144 12 16 12H18C19.8856 12 20.8284 12 21.4142 11.4143C22 10.8285 22 9.88567 22 8.00005V6.00005C22 4.11443 22 3.17162 21.4142 2.58584C20.9427 2.11429 20.2398 2.02233 19 2.00439" stroke-linecap="round"/>
+                                <path d="M22 12H18L15 21L9 3L6 12H2"stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Program</h1>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Kegiatan</h1>
                         </div>
                         <div class="grow"></div>
                         <div class="mr-1">
@@ -182,63 +201,58 @@
                     <!-- Pembungkus Sub Menu -->
                     <div x-show="isOpen" class="pt-3 grid gap-3">
 
-                        <!-- Pembungkus -->
-                        <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                            <!-- Icon & Text ( Mahasiswa ) -->
-                            <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
+                        <!-- Icon & Text ( DiIkuti ) -->
+                        <a href="kegiatan.html">
+                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
                                 <div class="flex ml-4 items-center gap-3">
                                     <!-- Icon -->
                                     <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
+                                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                                        <path d="M17 2V8.8076C17 9.78253 17 10.27 16.8709 10.5607C16.5766 11.2233 15.8506 11.5805 15.1461 11.4095C14.8369 11.3344 14.4507 11.037 13.6782 10.4422C13.2421 10.1064 13.024 9.9385 12.797 9.83985C12.2886 9.61899 11.7114 9.61899 11.203 9.83985C10.976 9.9385 10.7579 10.1064 10.3218 10.4422C9.5493 11.037 9.16307 11.3344 8.85391 11.4095C8.14942 11.5805 7.42342 11.2233 7.12914 10.5607C7 10.27 7 9.78253 7 8.8076V2"/>
                                     </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Mahasiswa</h1>
-                                </div>
-                                <div class="grow"></div>
-                                <div class="mr-1">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                                    </svg>
+                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">DiIkuti</h1>
                                 </div>
                             </button>
-
-                            <!-- Pembungkus Sub Menu -->
-                            <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                                <!-- Icon & Text ( Tambah Program ) -->
-                                <a href="tambah-program(mahasiswa).html">
-                                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                        <div class="flex ml-4 items-center gap-3">
-                                            <!-- Icon -->
-                                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 12L12 12M12 12L9 12M12 12L12 9M12 12L12 15" stroke-linecap="round"/>
-                                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                                            </svg>
-                                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Tambah</h1>
-                                        </div>
-                                    </button>
-                                </a>
-
-                                <!-- Icon & Text ( Program Aktif ) -->
-                                <a href="program-aktif(mahasiswa).html">
-                                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                        <div class="flex ml-4 items-center gap-3">
-                                            <!-- Icon -->
-                                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
-                                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                                            </svg>
-                                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Aktif</h1>
-                                        </div>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
+
+                <!-- Icon & Text ( Pendaftran ) -->
+                <a href="pendaftaran.html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985" stroke-linecap="round"/>
+                                <path d="M7 4V2.5" stroke-linecap="round"/>
+                                <path d="M17 4V2.5" stroke-linecap="round"/>
+                                <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke-linecap="round"/>
+                                <path d="M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17C16 16.4477 16.4477 16 17 16C17.5523 16 18 16.4477 18 17Z"/>
+                                <path d="M18 13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13C16 12.4477 16.4477 12 17 12C17.5523 12 18 12.4477 18 13Z"/>
+                                <path d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z"/>
+                                <path d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z"/>
+                                <path d="M8 17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17C6 16.4477 6.44772 16 7 16C7.55228 16 8 16.4477 8 17Z"/>
+                                <path d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Pendaftaran</h1>
+                        </div>
+                    </button>
+                </a>
+
+                <!-- Icon & Text ( Riwayat ) -->
+                <a href="riwayat.html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                        <div class="flex ml-4 items-center gap-2">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
+                                <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Riwayat</h1>
+                        </div>
+                    </button>
+                </a>
             </div>
 
             <!-- ( FITUR ) -->
@@ -249,132 +263,41 @@
             <!-- Pembungkus -->
             <div class="pb-3 grid gap-3">
 
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Manage ) -->
-                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
+                <!-- Icon & Text ( Inbox ) -->
+                <a href="notifikasi.html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
                         <div class="flex ml-4 items-center gap-3">
                             <!-- Icon -->
                             <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.97883 6.31492C2.99294 7.10927 2 7.50645 2 8C2 8.49355 2.99294 8.89073 4.97883 9.68508L7.7873 10.8085C9.77318 11.6028 10.7661 12 12 12C13.2339 12 14.2268 11.6028 16.2127 10.8085L19.0212 9.68508C21.0071 8.89073 22 8.49355 22 8C22 7.50645 21.0071 7.10927 19.0212 6.31492L16.2127 5.19153C14.2268 4.39718 13.2339 4 12 4C11.0461 4 10.2361 4.2374 9 4.71221" stroke-linecap="round"/>
-                                <path d="M5.76613 10L4.97883 10.3149C2.99294 11.1093 2 11.5065 2 12C2 12.4935 2.99294 12.8907 4.97883 13.6851L7.7873 14.8085C9.77318 15.6028 10.7661 16 12 16C13.2339 16 14.2268 15.6028 16.2127 14.8085L19.0212 13.6851C21.0071 12.8907 22 12.4935 22 12C22 11.5065 21.0071 11.1093 19.0212 10.3149L18.2339 10"/>
-                                <path d="M19.0212 17.6851C21.0071 16.8907 22 16.4935 22 16C22 15.5065 21.0071 15.1093 19.0212 14.3149L18.2339 14M5.76613 14L4.97883 14.3149C2.99294 15.1093 2 15.5065 2 16C2 16.4935 2.99294 16.8907 4.97883 17.6851L7.7873 18.8085C9.77318 19.6028 10.7661 20 12 20C12.9539 20 13.7639 19.7626 15 19.2878" stroke-linecap="round"/>
-                            </svg>
-                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Manage</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </button>
-
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Fakultas ) -->
-                        <a href="fakultas.html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.5 7H10.25M7.5 11H10.25M7.5 15H10.25M13.75 7H16.5M13.75 11H16.5M13.75 15H16.5M20 21V6.2C20 5.0799 20 4.51984 19.782 4.09202C19.5903 3.71569 19.2843 3.40973 18.908 3.21799C18.4802 3 17.9201 3 16.8 3H7.2C6.07989 3 5.51984 3 5.09202 3.21799C4.71569 3.40973 4.40973 3.71569 4.21799 4.09202C4 4.51984 4 5.0799 4 6.2V21M22 21H2" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Fakultas</h1>
-                                </div>
-                            </button>
-                        </a>
-
-                        <!-- Icon & Text ( Prodi ) -->
-                        <a href="prodi.html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.5 7H14.5M9.5 11H14.5M9.5 15H14.5M18 21V6.2C18 5.0799 18 4.51984 17.782 4.09202C17.5903 3.71569 17.2843 3.40973 16.908 3.21799C16.4802 3 15.9201 3 14.8 3H9.2C8.0799 3 7.51984 3 7.09202 3.21799C6.71569 3.40973 6.40973 3.71569 6.21799 4.09202C6 4.51984 6 5.0799 6 6.2V21M20 21H4" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Prodi</h1>
-                                </div>
-                            </button>
-                        </a>
-
-                        <!-- Icon & Text ( Dosen ) -->
-                        <a href="manajemen(dosen).html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M19.9975 18C20 17.8358 20 17.669 20 17.5C20 15.0147 16.4183 13 12 13C7.58172 13 4 15.0147 4 17.5C4 19.9853 4 22 12 22C14.231 22 15.8398 21.8433 17 21.5634" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Dosen</h1>
-                                </div>
-                            </button>
-                        </a>
-
-                        <!-- Icon & Text ( Mahasiswa ) -->
-                        <a href="manajemen(mahasiswa).html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6" r="4"/>
-                                        <path d="M15 20.6151C14.0907 20.8619 13.0736 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C15.866 13 19 14.7909 19 17C19 17.3453 18.9234 17.6804 18.7795 18" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Mahasiswa</h1>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Pembungkus -->
-                <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
-
-                    <!-- Icon & Text ( Pengumuman ) -->
-                    <button class="flex w-full py-2 group transform transition duration-500 rounded-lg" x-model="selectedOption" @click="isOpen = !isOpen">
-                        <div class="flex ml-4 items-center gap-3">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 8V12L14.5 14.5" stroke-linecap="round"/>
+                                <path d="M2 13H5.16026C6.06543 13 6.51802 13 6.91584 13.183C7.31367 13.3659 7.60821 13.7096 8.19729 14.3968L8.80271 15.1032C9.39179 15.7904 9.68633 16.1341 10.0842 16.317C10.482 16.5 10.9346 16.5 11.8397 16.5H12.1603C13.0654 16.5 13.518 16.5 13.9158 16.317C14.3137 16.1341 14.6082 15.7904 15.1973 15.1032L15.8027 14.3968C16.3918 13.7096 16.6863 13.3659 17.0842 13.183C17.482 13 17.9346 13 18.8397 13H22" stroke-linecap="round"/>
+                                <path d="M8 7H16" stroke-linecap="round"/>
+                                <path d="M10 10.5H14" stroke-linecap="round"/>
                                 <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
                             </svg>
-                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Pengumuman</h1>
-                        </div>
-                        <div class="grow"></div>
-                        <div class="mr-1">
-                            <!-- Icon -->
-                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke-linecap="round"/>
-                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Inbox</h1>
+                            <div class="grow"></div>
+                            <div class="py-1 px-2 bg-red-400 rounded-md text-center text-white text-xs">3</div>
                         </div>
                     </button>
+                </a>
 
-                    <!-- Pembungkus Sub Menu -->
-                    <div x-show="isOpen" class="pt-3 grid gap-3">
-
-                        <!-- Icon & Text ( Pengumuman Aktif ) -->
-                        <a href="buat(pengumuman).html">
-                            <button class="w-full py-2 group transform transition duration-500 rounded-lg">
-                                <div class="flex ml-4 items-center gap-3">
-                                    <!-- Icon -->
-                                    <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-linecap="round"/>
-                                        <path d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8" stroke-linecap="round"/>
-                                    </svg>
-                                    <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Aktif</h1>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                <!-- Icon & Text ( Download ) -->
+                <a href="dokumen.html">
+                    <button class="w-full py-2 group transform transition duration-500 rounded-lg">
+                        <div class="flex ml-4 items-center gap-3">
+                            <!-- Icon -->
+                            <svg class="w-5 stroke-[1.5] transform transition duration-300 stroke-gray-500 group-hover:stroke-gray-700 group-focus:stroke-[#000]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke-linecap="round"/>
+                                <path d="M15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15M21 15C21 17.8284 21 19.2426 20.1213 20.1213C19.8215 20.4211 19.4594 20.6186 19 20.7487" stroke-linecap="round"/>
+                            </svg>
+                            <h1 class="text-base font-semibold transform transition duration-300 text-gray-500 group-hover:text-gray-700 group-focus:text-[#000]">Download</h1>
+                        </div>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
-
+    
     <!-- Avatar Mobile Start -->
     <div class="hidden fixed overflow-hidden overflow-y-scroll top-0 bottom-0 inset-y-0 left-0 z-30 w-[17rem] bg-[#FFF] transition transform animate-slideInLeft" id="nav-avatar">
         <div class="container mx-auto">
@@ -384,7 +307,7 @@
                 <div class="absolute my-[2rem]">
 
                     <!-- Avatar -->
-                    <div class="w-24 h-24 overflow-hidden bg-transparent border-[0.5px] shadow border-[#B0B0B0] rounded-full">
+                    <div class="w-24 h-24 overflow-hidden bg-transparent border-[0.5px] border-[#B0B0B0] rounded-full">
                         <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
@@ -461,7 +384,7 @@
                 <div class="absolute my-[2rem]">
 
                     <!-- Avatar -->
-                    <div class="w-24 h-24 overflow-hidden bg-transparent border-[0.5px] shadow border-[#B0B0B0] rounded-full">
+                    <div class="w-24 h-24 overflow-hidden bg-transparent border-[0.5px] border-[#B0B0B0] rounded-full">
                         <img class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                     </div>
                 </div>
@@ -534,25 +457,76 @@
     <section class="md:ml-[17rem] relative z-20">
         <div class="container px-6 pb-5 pt-[7rem] mx-auto">
 
-            <div class="w-full md:w-[30rem] lg:w-[40rem] bg-white p-4 rounded-t-2xl overflow-hidden transition transform animate-fadeIn">
-                <div class="grid gap-3 m-3">
+            <!-- Alert -->
+            <div class="mb-3 bg-red-500 inline-flex w-full md:w-[30rem] lg:w-[40rem] items-center rounded-lg px-6 py-2 text-base">
+                <span class="mr-2">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <p class="text-sm md:text-base text-[#FFFFFF] font-bold">Gagal!</p>
+            </div>
 
-                <!-- Pembungkus File -->
-                <label class="" for="fileInput">
-                    <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">Masukkan File</h1>
-                    <div class="w-full py-2 px-5 md:px-10 mb-1 border-[0.5px] border-[#B0B0B0] rounded-lg focus:outline-none cursor-pointer">
-                        <div class="flex justify-center items-center">
-                            <svg class="w-8 stroke-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                            </svg>
-                            <input type="file" id="fileInput" class="hidden">
+            <!-- Pembungkus -->
+            <div class="w-full md:w-[30rem] lg:w-[40rem] bg-white p-4 rounded-2xl overflow-hidden mb-5 transition transform animate-fadeIn">
+                <form action="">
+
+                    <!-- Pembungkus -->
+                    <div class="flex justify-center">
+
+                        <!-- Pembungkus Avatar -->
+                        <div class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden border-[1.5px] border-[#1480EC]">
+
+                            <!-- Logo -->
+                            <label for="imageInput">
+                                <div class="absolute w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 ml-[55px] md:ml-[70px] lg:ml-[80px] mt-[56px] md:mt-[66px] lg:mt-[76px] cursor-pointer">
+                                    <img class="w-full h-full object-cover bg-cover" src="../images/camera.png">
+                                </div>
+                                <input type="file" id="imageInput" class="hidden">
+                            </label>
+
+                            <!-- Image Avatar -->
+                            <img id="previewImage" class="object-cover w-full h-full" src="../images/avatar.jpg"/>
                         </div>
-                        <h1 id="fileName" class="pb-2 text-xs text-center font-normal text-gray-400"></h1>
-                    </div>
-                    <h1 class="pb-2 text-xs font-semibold text-gray-500">Minimal 3 MB</h1>
-                </label>
 
-                </div>
+                    </div>
+
+                    <!-- Pembungkus -->
+                    <div class="grid gap-2 m-2">
+
+                        <label class="" for="Description">
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">Bio</h1>
+                            <textarea class="w-full h-32 py-2 px-5 md:px-10 text-sm border-[0.5px] border-[#B0B0B0] bg-transparent text-gray-400 font-normal focus:border-[#1480EC] rounded-lg focus:outline-none focus:scale-[1.01]" id="Description">Jika kamu yakin bisa, maka kamu benar-benar bisa melakukannya. Jika kamu yakin tidak bisa, maka jadi seperti itulah kamu. Persepsimu adalah realitamu.</textarea>
+                        </label>
+
+                        <!-- Pembungkus Tanggal Lahir -->
+                        <label class="" for="Tanggal">
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">Tgl Lahir</h1>
+                            <input class="w-full py-2 px-5 md:px-10 text-sm border-[0.5px] border-[#B0B0B0] bg-transparent text-gray-400 font-normal focus:border-[#1480EC] rounded-lg focus:outline-none focus:scale-[1.01]" value="30/10/2003" type="text" id="TglLahir" readonly>
+                        </label>
+
+                        <!-- Pembungkus Email -->
+                        <label class="" for="Email">
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">Email</h1>
+                            <input class="w-full py-2 px-5 md:px-10 text-sm border-[0.5px] border-[#B0B0B0] bg-transparent text-gray-400 font-normal focus:border-[#1480EC] rounded-lg focus:outline-none focus:scale-[1.01]" value="rizkyrambe98@gmail.com" type="email" id="Email" readonly>
+                        </label>
+                        
+                        <!-- Pembungkus No. Hp -->
+                        <label class="" for="No_Hp">
+                            <h1 class="pb-2 text-sm font-semibold text-[#1480EC]">No Handphone</h1>
+                            <input class="w-full py-2 px-5 md:px-10 text-sm border-[0.5px] border-[#B0B0B0] bg-transparent text-gray-400 font-normal focus:border-[#1480EC] rounded-lg focus:outline-none focus:scale-[1.01]" value="082363838328" type="number" id="NoHp" readonly>
+                        </label>
+
+                        <!-- Pembungkus Button -->
+                        <a href="profile.html" class="pt-4">
+                        <button class="w-full px-4 py-2 text-center group transition transform duration-700 focus:bg-[#5697F8] border-[0.5px] border-[#B0B0B0] hover:bg-gray-500 hover:border-gray-500 focus:border-[#5697F8] rounded-lg focus:scale-[.98]" type="button">
+                            <h1 class="text-xs lg:text-sm font-bold transition transform duration-500 text-[#989898] group-hover:text-[#FFFFFF] group-focus:text-[#FFFFFF] uppercase">Simpan</h1>
+                        </button>
+                        </a>
+
+                    </div>
+                </form>
+
             </div>
         </div>
     </section>
@@ -570,15 +544,22 @@
     <!-- Script End -->
 
     <script>
-        const fileInput = document.getElementById('fileInput');
-        const fileName = document.getElementById('fileName');
-        
-        fileInput.addEventListener('change', function() {
-            const file = fileInput.files[0];
+        const imageInput = document.getElementById('imageInput');
+        const previewImage = document.getElementById('previewImage');
+
+        imageInput.addEventListener('change', function() {
+            const file = this.files[0];
+
             if (file) {
-                fileName.textContent = file.name;
+                const reader = new FileReader();
+
+                reader.onload = function(event) {
+                    previewImage.src = event.target.result;
+                };
+
+                reader.readAsDataURL(file);
             } else {
-                alert('File belum dipilih!');
+                alert('Gambar belum diinputkan!');
             }
         });
     </script>
