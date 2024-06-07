@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengaktifkan Tombol dengan Checkbox</title>
+
+    <style>
+        #tombol {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aktifkan Tombol dengan Checkbox</h1>
+
+    <input type="checkbox" id="aktifkan" name="aktifkan">
+    <label for="aktifkan">Aktifkan Tombol</label>
+    <br>
+
+    <button id="tombol">Tombol yang Dinonaktifkan</button>
+
+    <script>
+        const checkbox = document.getElementById("aktifkan");
+        const tombol = document.getElementById("tombol");
+
+        checkbox.addEventListener("change", function() {
+            if (checkbox.checked) {
+                tombol.style.cursor = "pointer";
+                tombol.style.opacity = 1;
+            } else {
+                tombol.style.cursor = "not-allowed";
+                tombol.style.opacity = 0.5;
+            }
+        });
+    </script>
+</body>
+</html>
